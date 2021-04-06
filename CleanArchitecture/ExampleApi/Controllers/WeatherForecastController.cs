@@ -1,11 +1,7 @@
 ﻿using Application.Features.ExampleFeature.Commands;
-using Data.UnitOfWork;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace ExampleApi.Controllers
@@ -16,12 +12,10 @@ namespace ExampleApi.Controllers
     public class WeatherForecastController : ControllerBase
     {
         private readonly IMediator _mediat;
-        private readonly IUnitOfWork _uow;
         private readonly ILogger<WeatherForecastController> _logger;
-        public WeatherForecastController(ILogger<WeatherForecastController> logger, IUnitOfWork uow, IMediator mediat)
+        public WeatherForecastController(ILogger<WeatherForecastController> logger, IMediator mediat)
         {
             _logger = logger;
-            _uow = uow;
             _mediat = mediat;
         }
 

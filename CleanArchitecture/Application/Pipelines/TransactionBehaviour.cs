@@ -2,8 +2,6 @@
 using MediatR;
 using Microsoft.Extensions.Logging;
 using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -26,7 +24,6 @@ namespace Application.Pipelines
             {
                 _logger.LogInformation($"Start transaction Id {transaction.TransactionId} for {typeName}");
                 var response = await next();
-                _logger.LogInformation($"Start commit transaction Id {transaction.TransactionId} for {typeName}");
                 _context.SaveChanges();
                 await transaction.CommitAsync(cancellationToken);
                 _logger.LogInformation($"End transaction Id {transaction.TransactionId} for {typeName}");

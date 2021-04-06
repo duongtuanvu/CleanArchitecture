@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Application.Response
+﻿namespace Application.Response
 {
     public class Response
     {

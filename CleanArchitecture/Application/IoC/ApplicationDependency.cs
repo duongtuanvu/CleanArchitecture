@@ -1,14 +1,11 @@
 ﻿using Application.Features.ExampleFeature.Commands;
+using Application.Features.ExampleFeature.Validations;
 using Application.Pipelines;
-using Application.Validations.ExamplModelValidations;
 using FluentValidation;
 using FluentValidation.AspNetCore;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
 using System.Reflection;
-using System.Text;
 
 namespace Application.IoC
 {

@@ -1,4 +1,5 @@
 ﻿using Data.UnitOfWork;
+using Domain.Entities;
 using MediatR;
 using System;
 using System.Collections.Generic;
@@ -19,9 +20,14 @@ namespace Application.Features.ExampleFeature.Commands
             {
                 _uow = uow;
             }
-            public Task<bool> Handle(CreateExampleCommand request, CancellationToken cancellationToken)
+            public async Task<bool> Handle(CreateExampleCommand request, CancellationToken cancellationToken)
             {
-                throw new NotImplementedException();
+                var example = new ExampleModel()
+                {
+                    Name = request.Name
+                };
+                await _uow.exampleRepository.Add(example);
+                return true;
             }
         }
     }

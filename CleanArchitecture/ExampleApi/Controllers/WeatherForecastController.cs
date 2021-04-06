@@ -28,13 +28,14 @@ namespace ExampleApi.Controllers
         [HttpGet]
         public IActionResult Get()
         {
+            _logger.LogInformation("Ok");
             return Ok("Version 1");
         }
 
         [HttpPost]
-        public IActionResult Post(CreateExampleCommand request)
+        public async Task<IActionResult> Post(CreateExampleCommand request)
         {
-            _mediat.Send(request);
+            await _mediat.Send(request);
             return Ok("Version 1");
         }
 

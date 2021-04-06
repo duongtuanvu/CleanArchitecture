@@ -15,6 +15,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using Microsoft.AspNetCore.Mvc.ApiExplorer;
 using IoC;
+using FluentValidation.AspNetCore;
 
 namespace ExampleApi
 {
@@ -31,14 +32,16 @@ namespace ExampleApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            //services.AddMvc()
+            //.AddFluentValidation(opts => opts.RegisterValidatorsFromAssemblyContaining<Startup>());
             #region RegisterServices
             services.RegisterServices();
             #endregion
             #region DbContext
             services.AddDbContext<ApplicationDbContext>(opts =>
             {
-                opts.UseInMemoryDatabase("ExampleDb");
-                //opts.UseSqlServer(Configuration.GetConnectionString("LibraryConnection"));
+                //opts.UseInMemoryDatabase("ExampleDatabase");
+                opts.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
             });
             #endregion
             #region Api versioning

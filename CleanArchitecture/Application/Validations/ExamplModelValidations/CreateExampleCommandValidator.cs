@@ -4,9 +4,9 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Application.Features.ExampleFeature.Validations
+namespace Application.Validations.ExamplModelValidations
 {
-    class CreateExampleCommandValidator : AbstractValidator<CreateExampleCommand>
+    public class CreateExampleCommandValidator : AbstractValidator<CreateExampleCommand>
     {
         public CreateExampleCommandValidator()
         {

@@ -7,7 +7,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Data.Repository 
+namespace Data.Repository
 {
     public class Repository<T> : IRepository<T> where T : class
     {
@@ -18,6 +18,12 @@ namespace Data.Repository
             _context = context;
             table = _context.Set<T>();
         }
+
+        public async Task Add(T entity)
+        {
+            await table.AddAsync(entity);
+        }
+
         public Task<T> Find(Expression<Func<T, bool>> match)
         {
             return table.Where(match).FirstOrDefaultAsync();

@@ -1,0 +1,12 @@
+C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\Data\bin\Debug\netstandard2.1\Data.deps.json
+C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\Data\bin\Debug\netstandard2.1\Data.dll
+C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\Data\bin\Debug\netstandard2.1\Data.pdb
+C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\Data\bin\Debug\netstandard2.1\Domain.dll
+C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\Data\bin\Debug\netstandard2.1\Domain.pdb
+C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\Data\obj\Debug\netstandard2.1\Data.csprojAssemblyReference.cache
+C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\Data\obj\Debug\netstandard2.1\Data.AssemblyInfoInputs.cache
+C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\Data\obj\Debug\netstandard2.1\Data.AssemblyInfo.cs
+C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\Data\obj\Debug\netstandard2.1\Data.csproj.CoreCompileInputs.cache
+C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\Data\obj\Debug\netstandard2.1\Data.csproj.CopyComplete
+C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\Data\obj\Debug\netstandard2.1\Data.dll
+C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\Data\obj\Debug\netstandard2.1\Data.pdb

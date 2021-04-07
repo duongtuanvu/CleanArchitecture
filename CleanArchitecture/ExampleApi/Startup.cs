@@ -8,7 +8,7 @@ using Data.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using Microsoft.AspNetCore.Mvc.ApiExplorer;
-using IoC;
+using Application.IoC;
 
 namespace ExampleApi
 {
@@ -25,10 +25,8 @@ namespace ExampleApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            //services.AddMvc()
-            //.AddFluentValidation(opts => opts.RegisterValidatorsFromAssemblyContaining<Startup>());
             #region RegisterServices
-            services.RegisterServices();
+            services.ApplicationRegisterServices(Configuration);
             #endregion
             #region DbContext
             services.AddDbContext<ApplicationDbContext>(opts =>
@@ -96,7 +94,6 @@ namespace ExampleApi
             {
                 app.UseDeveloperExceptionPage();
             }
-
             app.UseSwagger();
             app.UseSwaggerUI(opts =>
             {
@@ -106,13 +103,10 @@ namespace ExampleApi
                     opts.SwaggerEndpoint($"/swagger/{description.GroupName}/swagger.json", description.GroupName.ToUpperInvariant());
                 }
             });
-
             app.UseHttpsRedirection();
-
             app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
-
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

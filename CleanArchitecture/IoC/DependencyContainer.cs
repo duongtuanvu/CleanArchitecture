@@ -1,5 +1,4 @@
-﻿using Application.IoC;
-using Data.Repository;
+﻿using Data.Repository;
 using Data.UnitOfWork;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -11,7 +10,6 @@ namespace IoC
         {
             service.AddScoped(typeof(IRepository<>), typeof(Repository<>));
             service.AddScoped<IUnitOfWork, UnitOfWork>();
-            service.ApplicationRegisterServices();
         }
     }
 }

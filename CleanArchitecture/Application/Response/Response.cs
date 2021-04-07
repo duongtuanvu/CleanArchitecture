@@ -16,4 +16,15 @@
         public object Data { get; set; }
         public object Errors { get; set; }
     }
+
+    public class Error
+    {
+        public Error(string message, string stackTrace)
+        {
+            Message = message;
+            StackTrace = stackTrace;
+        }
+        public string Message { get; set; }
+        public string StackTrace { get; set; }
+    }
 }

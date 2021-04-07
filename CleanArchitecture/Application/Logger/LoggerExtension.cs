@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Serilog;
+using Serilog.Formatting.Json;
 using System;
 using System.IO;
 
@@ -13,13 +14,20 @@ namespace Application.Logger
         public static void Configure()
         {
             //Read Configuration from appSettings
-            _configuration = new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
-                .Build();
+            //_configuration = new ConfigurationBuilder()
+            //    .SetBasePath(Directory.GetCurrentDirectory())
+            //    .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+            //    .Build();
             //Initialize Logger
             Log.Logger = new LoggerConfiguration()
-                .ReadFrom.Configuration(_configuration)
+                .MinimumLevel.Debug()
+                .WriteTo.Logger(c =>
+                    c.Filter.ByIncludingOnly(e => e.Level == Serilog.Events.LogEventLevel.Error)
+                    .WriteTo.File(path: ".\\Logs\\Errors\\error-.txt", outputTemplate: "[{Timestamp:dd/MM/yyyy HH:mm:ss}] [{Level:u3}] [{SourceContext}] {Message:lj}{NewLine}{Exception}", rollingInterval: RollingInterval.Day))
+                .WriteTo.Logger(c =>
+                    c.Filter.ByIncludingOnly(e => e.Level == Serilog.Events.LogEventLevel.Information)
+                    .WriteTo.File(path: ".\\Logs\\Informations\\log-.txt", outputTemplate: "[{Timestamp:dd/MM/yyyy HH:mm:ss}] [{Level:u3}] [{SourceContext}] {Message:lj}{NewLine}{Exception}", rollingInterval: RollingInterval.Day))
+                //.ReadFrom.Configuration(_configuration)
                 .CreateLogger();
         }
 
@@ -30,7 +38,7 @@ namespace Application.Logger
 
         public static void Error(Exception ex)
         {
-            Log.Fatal(ex, "The Application failed to start.");
+            Log.Logger.Fatal(ex, "The Application failed to start.");
         }
 
         public static void CloseAndFlush()

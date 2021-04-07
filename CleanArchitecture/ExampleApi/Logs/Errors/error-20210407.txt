@@ -1,0 +1,3 @@
+[07/04/2021 13:18:27] [ERR] [Application.Pipelines.TransactionBehaviour] error
+[07/04/2021 14:21:08] [ERR] [Application.Pipelines.TransactionBehaviour] error
+[07/04/2021 14:22:58] [ERR] [Application.Pipelines.TransactionBehaviour] error

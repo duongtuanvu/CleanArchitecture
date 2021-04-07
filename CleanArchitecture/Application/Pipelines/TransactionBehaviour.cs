@@ -22,17 +22,18 @@ namespace Application.Pipelines
             await using var transaction = _context.Database.BeginTransaction();
             try
             {
-                _logger.LogInformation($"Start transaction Id {transaction.TransactionId} for {typeName}");
+                _logger.LogInformation($"=====>  Start transaction Id {transaction.TransactionId} for {typeName}");
                 var response = await next();
                 _context.SaveChanges();
                 await transaction.CommitAsync(cancellationToken);
-                _logger.LogInformation($"End transaction Id {transaction.TransactionId} for {typeName}");
+                _logger.LogInformation($"=====> End transaction Id {transaction.TransactionId} for {typeName}");
+                _logger.LogError("error");
                 return response;
             }
             catch (Exception e)
             {
                 await transaction.RollbackAsync(cancellationToken);
-                _logger.LogError($"Error transaction Id {transaction.TransactionId} for {typeName}: {e.Message}");
+                _logger.LogError($"=====> Error transaction Id {transaction.TransactionId} for {typeName}: {e.Message}");
                 throw;
             }
         }

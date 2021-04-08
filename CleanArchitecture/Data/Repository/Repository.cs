@@ -18,12 +18,13 @@ namespace Data.Repository
     {
         private readonly ApplicationDbContext _context;
         private readonly IDbConnection connection;
+        private readonly IConfiguration _configuration;
         private DbSet<T> table = null;
         public Repository(ApplicationDbContext context, IConfiguration configuration)
         {
             _context = context;
             table = _context.Set<T>();
-            connection = new SqlConnection(configuration.GetConnectionString("DefaultConnection"));
+            _configuration = configuration;
         }
 
         public async Task Add(T entity)
@@ -48,19 +49,31 @@ namespace Data.Repository
             }
         }
 
-        public async Task<IEnumerable<T>> QueryAsync<T>(string sql, object param = null, CommandType commandType = CommandType.Text)
+        public async Task<List<T>> QueryAsync<T>(string sql, object param = null, CommandType commandType = CommandType.Text)
         {
-            return (await connection.QueryAsync<T>(sql, param, commandType: commandType)).AsList();
+            using (var connection = new SqlConnection(_configuration.GetConnectionString("DefaultConnection")))
+            {
+                connection.Open();
+                return (await connection.QueryAsync<T>(sql, param, commandType: commandType)).AsList();
+            }
         }
 
         public async Task<T> QueryFirstOrDefaultAsync<T>(string sql, object param = null, CommandType commandType = CommandType.Text)
         {
-            return await connection.QueryFirstOrDefaultAsync<T>(sql, param, commandType: commandType);
+            using (var connection = new SqlConnection(_configuration.GetConnectionString("DefaultConnection")))
+            {
+                connection.Open();
+                return await connection.QueryFirstOrDefaultAsync<T>(sql, param, commandType: commandType);
+            }
         }
 
         public async Task<T> QuerySingleAsync<T>(string sql, object param = null, CommandType commandType = CommandType.Text)
         {
-            return await connection.QuerySingleAsync<T>(sql, param, commandType: commandType);
+            using (var connection = new SqlConnection(_configuration.GetConnectionString("DefaultConnection")))
+            {
+                connection.Open();
+                return await connection.QuerySingleAsync<T>(sql, param, commandType: commandType);
+            }
         }
     }
 }

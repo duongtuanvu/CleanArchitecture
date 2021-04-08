@@ -1,4 +1,6 @@
-﻿using Application.Features.ExampleFeature.Commands;
+﻿using Application.ActionResult;
+using Application.Common;
+using Application.Features.ExampleFeature.Commands;
 using Application.Features.ExampleFeature.Queries;
 using Application.Token;
 using Domain.Interface;
@@ -30,16 +32,24 @@ namespace ExampleApi.Controllers
         }
 
         [HttpGet]
+        public async Task<IActionResult> List([FromQuery] SearchCommon search)
+        {
+            var result = await _exampleQuery.List(search);
+            return Ok(result);
+        }
+
+        [HttpGet]
+        [Route("{id}")]
         public async Task<IActionResult> Get(int id)
         {
             var result = await _exampleQuery.Get(id);
-            return Ok(new Application.Response.Response(data: result));
+            return Ok(result);
             //return _jwtToken.GenerateToken();
         }
 
         [HttpPost]
         [Authorize]
-        public async Task<IActionResult> Post(CreateExampleCommand request)
+        public async Task<IActionResult> Create(CreateExampleCommand request)
         {
             await _mediat.Send(request);
             return Ok("Version 1");

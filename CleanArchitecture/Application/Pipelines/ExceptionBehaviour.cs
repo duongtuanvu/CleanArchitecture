@@ -1,4 +1,4 @@
-﻿using Application.Response;
+﻿using Application.ActionResult;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
@@ -20,7 +20,7 @@ namespace Application.Pipelines
             HttpResponse response = context.HttpContext.Response;
             response.StatusCode = StatusCodes.Status500InternalServerError;
             response.ContentType = "application/json";
-            context.Result = new ObjectResult(new Response.Response(errors: new Error(context.Exception.Message, context.Exception.StackTrace)));
+            context.Result = new ObjectResult(new JsonResponse(errors: new Error(context.Exception.Message, context.Exception.StackTrace)));
         }
     }
 }

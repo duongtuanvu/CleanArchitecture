@@ -1,4 +1,5 @@
-﻿using Data.Context;
+﻿using Application.ActionResult;
+using Data.Context;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
@@ -23,7 +24,7 @@ namespace Application.Pipelines
                 HttpResponse response = context.HttpContext.Response;
                 response.StatusCode = StatusCodes.Status400BadRequest;
                 response.ContentType = "application/json";
-                context.Result = new ObjectResult(new Response.Response(errors: errors));
+                context.Result = new ObjectResult(new JsonResponse(errors: errors));
                 return;
             }
             await next();

@@ -122,3 +122,12 @@
 [08/04/2021 14:10:51] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action ExampleApi.Controllers.WeatherForecastController.Get (ExampleApi) in 128.8233ms
 [08/04/2021 14:10:51] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'ExampleApi.Controllers.WeatherForecastController.Get (ExampleApi)'
 [08/04/2021 14:10:51] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 150.3912ms 200 application/json; charset=utf-8
+[08/04/2021 16:20:21] [INF] [] Application Starting.
+[08/04/2021 16:20:26] [INF] [Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager] User profile is available. Using 'C:\Users\vu.dt99\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[08/04/2021 16:20:27] [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+[08/04/2021 16:20:27] [INF] [Microsoft.Hosting.Lifetime] Hosting environment: Development
+[08/04/2021 16:20:27] [INF] [Microsoft.Hosting.Lifetime] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[08/04/2021 16:20:27] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/index.html  
+[08/04/2021 16:20:28] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 327.7898ms 200 text/html;charset=utf-8
+[08/04/2021 16:20:28] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/v1/swagger.json  
+[08/04/2021 16:20:29] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 392.7458ms 200 application/json;charset=utf-8

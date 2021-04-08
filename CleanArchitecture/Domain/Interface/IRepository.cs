@@ -13,7 +13,7 @@ namespace Domain.Interface
         Task Add(T entity);
         Task<T> Find(Expression<Func<T, bool>> match);
         IEnumerable<T> FindAll(Expression<Func<T, bool>> match, bool asNoTracking = true);
-        Task<IEnumerable<T>> QueryAsync<T>(string sql, object param = null, CommandType commandType = CommandType.Text);
+        Task<List<T>> QueryAsync<T>(string sql, object param = null, CommandType commandType = CommandType.Text);
         Task<T> QueryFirstOrDefaultAsync<T>(string sql, object param = null, CommandType commandType = CommandType.Text);
         Task<T> QuerySingleAsync<T>(string sql, object param = null, CommandType commandType = CommandType.Text);
     }

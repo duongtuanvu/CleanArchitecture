@@ -1,5 +1,6 @@
 ﻿using Data.UnitOfWork;
 using Domain.Entities;
+using Domain.Interface;
 using MediatR;
 using System.Threading;
 using System.Threading.Tasks;

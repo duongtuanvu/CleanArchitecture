@@ -1,6 +1,8 @@
 ﻿using Data.Context;
 using Data.Repository;
 using Domain.Entities;
+using Domain.Interface;
+using Microsoft.Extensions.Configuration;
 using System;
 
 namespace Data.UnitOfWork
@@ -9,14 +11,16 @@ namespace Data.UnitOfWork
     {
         private readonly ApplicationDbContext _context;
         private IRepository<ExampleModel> _emxampleRepository;
-        public UnitOfWork(ApplicationDbContext context)
+        private readonly IConfiguration _configuration;
+        public UnitOfWork(ApplicationDbContext context, IConfiguration configuration)
         {
             _context = context;
+            _configuration = configuration;
         }
 
         public IRepository<ExampleModel> exampleRepository
         {
-            get { return _emxampleRepository ??= new Repository<ExampleModel>(_context); }
+            get { return _emxampleRepository ??= new Repository<ExampleModel>(_context, _configuration); }
         }
 
         private bool disposed = false;

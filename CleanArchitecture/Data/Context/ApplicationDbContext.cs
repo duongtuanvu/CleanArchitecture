@@ -1,12 +1,14 @@
 ﻿using Domain;
 using Domain.Entities;
+using Domain.Interface;
 using Microsoft.EntityFrameworkCore;
 using System;
+using System.Data;
 using System.Linq;
 
 namespace Data.Context
 {
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : DbContext, IApplicationDbContext
     {
         public int UserId { get; set; }
 
@@ -16,6 +18,7 @@ namespace Data.Context
         }
 
         public DbSet<ExampleModel> ExampleModel { get; set; }
+        public IDbConnection Connection => Database.GetDbConnection();
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -62,9 +65,7 @@ namespace Data.Context
             {
                 if (item.Entity is BaseEntity entity)
                 {
-                    // Set the entity to unchanged (if we mark the whole entity as Modified, every field gets sent to Db as an update)
                     item.State = EntityState.Unchanged;
-                    // Only update the IsDeleted flag - only this will get sent to the Db
                     item.Property(nameof(BaseEntity.IsDeleted)).CurrentValue = true;
                 }
             }

@@ -1,5 +1,6 @@
 ﻿using Data.Context;
 using MediatR;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Threading;
@@ -18,24 +19,29 @@ namespace Application.Pipelines
         }
         public async Task<TResponse> Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate<TResponse> next)
         {
+            var response = default(TResponse);
             var typeName = request.GetType().Name;
-            await using var transaction = _context.Database.BeginTransaction();
+            var strage = _context.Database.CreateExecutionStrategy();
             try
             {
-                _logger.LogInformation($"=====>  Start transaction Id {transaction.TransactionId} for {typeName}");
-                var response = await next();
-                _context.SaveChanges();
-                await transaction.CommitAsync(cancellationToken);
-                _logger.LogInformation($"=====> End transaction Id {transaction.TransactionId} for {typeName}");
-                _logger.LogError("error");
+                await strage.ExecuteAsync(async () =>
+                {
+                    await using var transaction = _context.Database.BeginTransaction();
+                    _logger.LogInformation($"=====>  Start transaction for {typeName}");
+                    var response = await next();
+                    _context.SaveChanges();
+                    await transaction.CommitAsync(cancellationToken);
+                    _logger.LogInformation($"=====> End transaction for {typeName}");
+                    return response;
+                });
                 return response;
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-                await transaction.RollbackAsync(cancellationToken);
-                _logger.LogError($"=====> Error transaction Id {transaction.TransactionId} for {typeName}: {e.Message}");
+                _logger.LogError($"=====> Error: {ex.Message}");
                 throw;
             }
+
         }
     }
 }

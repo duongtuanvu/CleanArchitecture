@@ -1,5 +1,7 @@
 ﻿using Application.Features.ExampleFeature.Commands;
+using Application.Features.ExampleFeature.Queries;
 using Application.Token;
+using Domain.Interface;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -15,18 +17,24 @@ namespace ExampleApi.Controllers
     {
         private readonly IMediator _mediat;
         private readonly IJwtToken _jwtToken;
+        private readonly IUnitOfWork _uow;
+        private readonly IExampleQuery _exampleQuery;
         private readonly ILogger<WeatherForecastController> _logger;
-        public WeatherForecastController(ILogger<WeatherForecastController> logger, IMediator mediat, IJwtToken jwtToken)
+        public WeatherForecastController(IExampleQuery exampleQuery, ILogger<WeatherForecastController> logger, IMediator mediat, IJwtToken jwtToken, IUnitOfWork uow)
         {
+            _exampleQuery = exampleQuery;
             _logger = logger;
             _mediat = mediat;
             _jwtToken = jwtToken;
+            _uow = uow;
         }
 
         [HttpGet]
-        public string Get()
+        public async Task<IActionResult> Get(int id)
         {
-            return _jwtToken.GenerateToken();
+            var result = await _exampleQuery.Get(id);
+            return Ok(new Application.Response.Response(data: result));
+            //return _jwtToken.GenerateToken();
         }
 
         [HttpPost]

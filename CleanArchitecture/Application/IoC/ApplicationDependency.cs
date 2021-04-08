@@ -1,4 +1,5 @@
 ﻿using Application.Features.ExampleFeature.Commands;
+using Application.Features.ExampleFeature.Queries;
 using Application.Features.ExampleFeature.Validations;
 using Application.Pipelines;
 using Application.Token;
@@ -27,6 +28,7 @@ namespace Application.IoC
             service.AddMediatR(Assembly.GetExecutingAssembly());
             service.AddScoped(typeof(IPipelineBehavior<,>), typeof(TransactionBehaviour<,>));
             service.AddScoped<IJwtToken, JwtToken>();
+            service.AddTransient<IExampleQuery, ExampleQuery>();
             #region Add jwt authen
             var jwtSettings = configuration.GetSection("JwtSettings").Get<JwtSettings>();
             service.AddAuthentication(x =>

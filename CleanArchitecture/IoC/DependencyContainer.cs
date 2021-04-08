@@ -1,5 +1,6 @@
 ﻿using Data.Repository;
 using Data.UnitOfWork;
+using Domain.Interface;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace IoC

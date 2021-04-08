@@ -1,8 +1,9 @@
-﻿using Data.Repository;
-using Domain.Entities;
+﻿using Domain.Entities;
 using System;
+using System.Collections.Generic;
+using System.Text;
 
-namespace Data.UnitOfWork
+namespace Domain.Interface
 {
     public interface IUnitOfWork : IDisposable
     {

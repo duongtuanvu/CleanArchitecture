@@ -49,12 +49,12 @@ namespace Data.Repository
             }
         }
 
-        public async Task<List<T>> QueryAsync<T>(string sql, object param = null, CommandType commandType = CommandType.Text)
+        public async Task<IEnumerable<T>> QueryAsync<T>(string sql, object param = null, CommandType commandType = CommandType.Text)
         {
             using (var connection = new SqlConnection(_configuration.GetConnectionString("DefaultConnection")))
             {
                 connection.Open();
-                return (await connection.QueryAsync<T>(sql, param, commandType: commandType)).AsList();
+                return (await connection.QueryAsync<T>(sql, param, commandType: commandType));
             }
         }
 

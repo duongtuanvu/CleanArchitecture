@@ -1,5 +1,4 @@
-﻿using Application.ActionResult;
-using Application.Common;
+﻿using Application.Common;
 using Application.Features.ExampleFeature.Commands;
 using Application.Features.ExampleFeature.Queries;
 using Application.Token;
@@ -32,9 +31,10 @@ namespace ExampleApi.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> List([FromQuery] SearchCommon search)
+        public async Task<IActionResult> List([FromQuery] Search search)
         {
             var result = await _exampleQuery.List(search);
+
             return Ok(result);
         }
 

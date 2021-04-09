@@ -18,7 +18,7 @@ using System.Text;
 
 namespace Application.IoC
 {
-    public static class ApplicationDependency
+    public static class ApplicationDependencyContainer
     {
         public static void ApplicationRegisterServices(this IServiceCollection service, IConfiguration configuration)
         {

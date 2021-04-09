@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading;
@@ -13,7 +14,7 @@ namespace Domain.Interface
         Task Add(T entity);
         Task<T> Find(Expression<Func<T, bool>> match);
         IEnumerable<T> FindAll(Expression<Func<T, bool>> match, bool asNoTracking = true);
-        Task<List<T>> QueryAsync<T>(string sql, object param = null, CommandType commandType = CommandType.Text);
+        Task<IEnumerable<T>> QueryAsync<T>(string sql, object param = null, CommandType commandType = CommandType.Text);
         Task<T> QueryFirstOrDefaultAsync<T>(string sql, object param = null, CommandType commandType = CommandType.Text);
         Task<T> QuerySingleAsync<T>(string sql, object param = null, CommandType commandType = CommandType.Text);
     }

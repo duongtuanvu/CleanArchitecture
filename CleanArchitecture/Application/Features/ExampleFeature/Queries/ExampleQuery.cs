@@ -1,12 +1,15 @@
 ﻿using Application.ActionResult;
 using Application.Common;
 using Dapper;
+using Data.Context;
 using Data.UnitOfWork;
+using Domain.Entities;
 using Domain.Interface;
 using MediatR;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -14,14 +17,16 @@ namespace Application.Features.ExampleFeature.Queries
 {
     public interface IExampleQuery
     {
-        Task<JsonResponse> List(SearchCommon search);
+        Task<JsonResponse> List(Search search);
         Task<JsonResponse> Get(int id);
     }
     public class ExampleQuery : IExampleQuery
     {
         private readonly IUnitOfWork _uow;
-        public ExampleQuery(IUnitOfWork uow)
+        private readonly ApplicationDbContext _context;
+        public ExampleQuery(IUnitOfWork uow, ApplicationDbContext context)
         {
+            _context = context;
             _uow = uow;
         }
         public async Task<JsonResponse> Get(int id)
@@ -30,11 +35,13 @@ namespace Application.Features.ExampleFeature.Queries
             return new JsonResponse(data: data);
         }
 
-        public async Task<JsonResponse> List(SearchCommon search)
+        public async Task<JsonResponse> List(Search search)
         {
             #region Query
-            var data = await _uow.exampleRepository.QueryAsync<ExampleDto>($"select * from ExampleModel where Name like = '%{search.Keyword}%'");
-            var totalRecords = data.Count;
+            var data = await _uow.exampleRepository.QueryAsync<ExampleDto>($"select * from ExampleModel");
+            //var data = await _uow.exampleRepository.QueryAsync<ExampleDto>($"select * from ExampleModel where Name like = '%{search.Keyword}%'");
+            //var da = Sorting.Sort<ExampleModel>(search.OrderBy, search.OrderByDesc, data);
+            var totalRecords = data.ToList().Count;
             var totalPages = Convert.ToInt32(Math.Ceiling((double)totalRecords / (double)search.PageSize));
             var paging = new Paging(search.PageNumber, search.PageSize, totalPages, totalRecords);
             return new JsonResponse(data: data, paging: paging);

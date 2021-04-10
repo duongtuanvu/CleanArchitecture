@@ -38,16 +38,18 @@ namespace Application.Features.ExampleFeature.Queries
         public async Task<JsonResponse> List(Search search)
         {
             #region Query
+            //var data = _context.ExampleModel.AsQueryable();
             var data = await _uow.exampleRepository.QueryAsync<ExampleDto>($"select * from ExampleModel");
+            return data.Sort<ExampleDto>(search);
             //var data = await _uow.exampleRepository.QueryAsync<ExampleDto>($"select * from ExampleModel where Name like = '%{search.Keyword}%'");
             //var da = Sorting.Sort<ExampleModel>(search.OrderBy, search.OrderByDesc, data);
-            var totalRecords = data.ToList().Count;
-            var totalPages = Convert.ToInt32(Math.Ceiling((double)totalRecords / (double)search.PageSize));
-            var paging = new Paging(search.PageNumber, search.PageSize, totalPages, totalRecords);
-            return new JsonResponse(data: data, paging: paging);
+            //var totalRecords = data.ToList().Count;
+            //var totalPages = Convert.ToInt32(Math.Ceiling((double)totalRecords / (double)search.PageSize));
+            //var paging = new Paging(search.PageNumber, search.PageSize, totalPages, totalRecords);
+            //return new JsonResponse(data: data, paging: paging);
             #endregion
 
-            #region Stored
+            #region StoredProcedure
             //var dp_params = new DynamicParameters();
             //dp_params.Add("Keyword", search.Keyword);
             ////dp_params.Add("retVal", DbType.String, direction: ParameterDirection.Output);

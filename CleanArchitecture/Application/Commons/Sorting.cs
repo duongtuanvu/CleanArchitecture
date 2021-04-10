@@ -1,4 +1,6 @@
-﻿using Application.Helper;
+﻿using Application.ActionResult;
+using Application.Helper;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,98 +12,114 @@ namespace Application.Common
 {
     public static class Sorting
     {
-        public static List<T> Sort<T>(string orderBy, bool orderByDesc, IQueryable<T> data)
+        public static JsonResponse Sort<T>(this IQueryable<T> query, Search search) where T : class
         {
-            data.OrderByDynamic("Id DESC");
-            //data.OrderByDescending(GetPropertyGetter<T>("Id")).ToList();
-            if (!string.IsNullOrWhiteSpace(orderBy))
+            if (!string.IsNullOrWhiteSpace(search.Keyword))
+            {
+                query.Where("Name");
+            }
+            var source = query;
+            if (!string.IsNullOrWhiteSpace(search.OrderBy))
             {
                 var lstProperties = typeof(T).GetProperties();
                 foreach (var prop in lstProperties)
                 {
-                    if (prop.Name.ToLower().Equals(orderBy.ToLower()))
+                    if (prop.Name.ToLower().Equals(search.OrderBy.ToLower()))
                     {
-                        if (orderByDesc)
+                        if (search.OrderByDesc)
                         {
-                            //data.OrderByDescending(CreateExpression<T>(orderBy)).ToList();
-                            //data.OrderByPropertyDescending<T>(prop.Name).ToList();
-                            data.OrderByDescending(CreateExpression<T>(prop.Name));
-                            var sql = data.ToString();
+                            source = query.OrderByDescending(prop.Name);
                         }
                         else
                         {
-                            data.OrderBy(x => x.GetReflectedPropertyValue(orderBy)).ToList();
+                            source = query.OrderBy(prop.Name);
                         }
+                        break;
                     }
                 }
             }
-            return data.ToList();
+            var totalRecords = source.ToList().Count;
+            var totalPages = Convert.ToInt32(Math.Ceiling((double)totalRecords / (double)search.PageSize));
+            var paging = new Paging(search.PageNumber, search.PageSize, totalPages, totalRecords);
+            source = source.Skip((search.PageNumber - 1) * search.PageSize).Take(search.PageSize);
+            return new JsonResponse(data: source, paging: paging);
         }
 
-        //public static Expression<Func<TEntity, object>> GetPropertyGetter<TEntity>(string property)
-        //{
-        //    if (property == null)
-        //        throw new ArgumentNullException(nameof(property));
-
-        //    var param = Expression.Parameter(typeof(TEntity));
-        //    var prop = Expression.PropertyOrField(param, "Id");
-        //    var convertedProp = Expression.Convert(prop, typeof(object));
-        //    return Expression.Lambda<Func<TEntity, object>>(convertedProp, param);
-        //}
-
-        private static readonly MethodInfo OrderByDescendingMethod = typeof(Queryable).GetMethods().Single(method => method.Name == "OrderByDescending" && method.GetParameters().Length == 2);
-
-        private static IQueryable<T> OrderByPropertyDescending<T>(
-        this IQueryable<T> source, string propertyName)
+        private static IOrderedQueryable<TEntity> Where<TEntity>(this IQueryable<TEntity> query, string propertyName, string keyword = null) where TEntity : class
         {
-            if (typeof(T).GetProperty(propertyName, BindingFlags.IgnoreCase |
-                BindingFlags.Public | BindingFlags.Instance) == null)
+            return CallOrderedQueryable(query, "Where", propertyName, keyword, new List<string> { "Name" });
+        }
+
+        private static IOrderedQueryable<TEntity> OrderBy<TEntity>(this IQueryable<TEntity> query, string propertyName) where TEntity : class
+        {
+            return CallOrderedQueryable(query, "OrderBy", propertyName);
+        }
+
+        private static IOrderedQueryable<TEntity> OrderByDescending<TEntity>(this IQueryable<TEntity> query, string propertyName) where TEntity : class
+        {
+            return CallOrderedQueryable(query, "OrderByDescending", propertyName);
+        }
+        public static IOrderedQueryable<TEntity> CallOrderedQueryable<TEntity>(this IQueryable<TEntity> query, string methodName, string propertyName,
+                string keyword = null, List<string> propertyNameToSearch = null) where TEntity : class
+        {
+            var param = Expression.Parameter(typeof(TEntity), "x");
+            MemberExpression body;
+            if (keyword != null && propertyNameToSearch != null)
             {
-                return null;
+                foreach (var prop in propertyNameToSearch)
+                {
+                    var nameProperty = Expression.PropertyOrField(param, prop);
+                    var val1 = Expression.Constant(keyword);
+                }
+                body = Expression.PropertyOrField(param, propertyName); // propertyName.Split('.').Aggregate<string, Expression>(param, Expression.PropertyOrField);
             }
-            ParameterExpression paramterExpression = Expression.Parameter(typeof(T));
-            Expression orderByProperty = Expression.Property(paramterExpression, propertyName);
-            LambdaExpression lambda = Expression.Lambda(orderByProperty, paramterExpression);
-            MethodInfo genericMethod =
-              OrderByDescendingMethod.MakeGenericMethod(typeof(T), orderByProperty.Type);
-            object ret = genericMethod.Invoke(null, new object[] { source, lambda });
-            return (IQueryable<T>)ret;
+            else
+            {
+                body = Expression.PropertyOrField(param, propertyName); // propertyName.Split('.').Aggregate<string, Expression>(param, Expression.PropertyOrField);
+            }
+            return (IOrderedQueryable<TEntity>)query.Provider.CreateQuery(
+                    Expression.Call(
+                        typeof(Queryable),
+                        methodName,
+                        new[] { typeof(TEntity), body.Type },
+                        query.Expression,
+                        Expression.Lambda(body, param)
+                    )
+                );
         }
 
-        private static Expression<Func<T, int>> CreateExpression<T>(string field)
+        private static Expression<Func<T, int>> CreateExpression<T>(string prop)
         {
-            var t1 = Expression.Parameter(typeof(T), "t1");
-            var idProp = Expression.PropertyOrField(t1, field);
-            var lamda = Expression.Lambda<Func<T, int>>(idProp, t1);
+            var param = Expression.Parameter(typeof(T), "x");
+            var idProp = Expression.PropertyOrField(param, prop);
+            var lamda = Expression.Lambda<Func<T, int>>(idProp, param);
             return lamda;
         }
 
-        private static object GetReflectedPropertyValue(this object subject, string field)
-        {
-            return subject.GetType().GetProperty(field).GetValue(subject, null);
-        }
+        //private static object GetReflectedPropertyValue(this object subject, string field)
+        //{
+        //    return subject.GetType().GetProperty(field).GetValue(subject, null);
+        //}
 
-        public static Expression<Func<TSource, object>> GetExpression<TSource>(string propertyName)
-        {
-            var param = Expression.Parameter(typeof(TSource), "x");
-            Expression conversion = Expression.Convert(Expression.Property
-            (param, propertyName), typeof(object));   //important to use the Expression.Convert
-            return Expression.Lambda<Func<TSource, object>>(conversion, param);
-        }
+        //public static Expression<Func<TSource, object>> GetExpression<TSource>(string propertyName)
+        //{
+        //    var param = Expression.Parameter(typeof(TSource), "x");
+        //    Expression conversion = Expression.Convert(Expression.Property
+        //    (param, propertyName), typeof(object));   //important to use the Expression.Convert
+        //    return Expression.Lambda<Func<TSource, object>>(conversion, param);
+        //}
 
-        //makes deleget for specific prop
-        public static Func<TSource, object> GetFunc<TSource>(string propertyName)
-        {
-            return GetExpression<TSource>(propertyName).Compile();  //only need compiled expression
-        }
+        ////makes deleget for specific prop
+        //public static Func<TSource, object> GetFunc<TSource>(string propertyName)
+        //{
+        //    return GetExpression<TSource>(propertyName).Compile();  //only need compiled expression
+        //}
 
-        //OrderBy overload
         //public static IOrderedEnumerable<TSource> OrderBy<TSource>(this IEnumerable<TSource> source, string propertyName)
         //{
         //    return source.OrderBy(GetFunc<TSource>(propertyName));
         //}
 
-        //OrderBy overload
         //public static IOrderedQueryable<TSource> OrderBy<TSource>(this IQueryable<TSource> source, string propertyName)
         //{
         //    return source.OrderBy(GetExpression<TSource>(propertyName));

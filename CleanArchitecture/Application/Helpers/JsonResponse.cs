@@ -38,7 +38,7 @@ namespace Application.ActionResult
     }
 
     public class Paging
-    {
+    {        
         public Paging(int pageNumber, int pageSize, int totalPages, int totalRecords)
         {
             PageNumber = pageNumber;

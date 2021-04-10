@@ -710,19 +710,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\vu.dt99\\.nuget\\packages\\": {}
+    "C:\\Users\\Duong Vu\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Domain\\Domain.csproj",
+      "projectUniqueName": "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Domain\\Domain.csproj",
-      "packagesPath": "C:\\Users\\vu.dt99\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Domain\\obj\\",
+      "projectPath": "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\Domain\\Domain.csproj",
+      "packagesPath": "C:\\Users\\Duong Vu\\.nuget\\packages\\",
+      "outputPath": "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\vu.dt99\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Duong Vu\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -734,7 +734,6 @@
       },
       "frameworks": {
         "netstandard2.1": {
-          "targetAlias": "netstandard2.1",
           "projectReferences": {}
         }
       },
@@ -746,7 +745,6 @@
     },
     "frameworks": {
       "netstandard2.1": {
-        "targetAlias": "netstandard2.1",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
@@ -768,7 +766,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.406\\RuntimeIdentifierGraph.json"
       }
     }
   }

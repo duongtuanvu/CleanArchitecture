@@ -59,8 +59,7 @@ namespace Application.Common
         {
             return CallOrderedQueryable(query, "OrderByDescending", propertyName);
         }
-        public static IOrderedQueryable<TEntity> CallOrderedQueryable<TEntity>(this IQueryable<TEntity> query, string methodName, string propertyName,
-                string keyword = null, List<string> propertyNameToSearch = null) where TEntity : class
+        public static IOrderedQueryable<TEntity> CallOrderedQueryable<TEntity>(this IQueryable<TEntity> query, string methodName, string propertyName, string keyword = null, List<string> propertyNameToSearch = null) where TEntity : class
         {
             var param = Expression.Parameter(typeof(TEntity), "x");
             MemberExpression body;

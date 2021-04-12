@@ -1,10 +1,12 @@
 ﻿using Application.Common;
+using Application.Commons;
 using Application.Features.ExampleFeature.Commands;
 using Application.Features.ExampleFeature.Queries;
 using Application.Token;
 using Domain.Interface;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System.Threading.Tasks;
@@ -53,6 +55,13 @@ namespace ExampleApi.Controllers
         {
             await _mediat.Send(request);
             return Ok("Version 1");
+        }
+
+        [HttpPost("Import")]
+        public async Task<IActionResult> Import(IFormFile file)
+        {
+            var result = await Excel.ReadDataFromExcelFile<ExampleDto>(file);
+            return Ok(result);
         }
 
         [HttpGet]

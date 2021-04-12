@@ -10260,7 +10260,6 @@
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.1": [
       "Data >= 1.0.0",
-      "Domain >= 1.0.0",
       "FluentValidation >= 8.6.3",
       "FluentValidation.AspNetCore >= 8.6.3",
       "IoC >= 1.0.0",
@@ -10311,9 +10310,6 @@
           "projectReferences": {
             "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Data\\Data.csproj": {
               "projectPath": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Data\\Data.csproj"
-            },
-            "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Domain\\Domain.csproj"
             },
             "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\IoC\\IoC.csproj": {
               "projectPath": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\IoC\\IoC.csproj"

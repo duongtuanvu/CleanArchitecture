@@ -38,9 +38,15 @@ namespace Application.Features.ExampleFeature.Queries
         public async Task<JsonResponse> List(Search search)
         {
             #region Query
+            //var data = _context.ExampleModel.AsQueryable();
             var data = await _uow.exampleRepository.QueryAsync<ExampleDto>($"select * from ExampleModel");
-            //var data = await _uow.exampleRepository.QueryAsync<ExampleDto>($"select * from ExampleModel where Name like = '%{search.Keyword}%'");
             return data.Sort<ExampleDto>(search);
+            //var data = await _uow.exampleRepository.QueryAsync<ExampleDto>($"select * from ExampleModel where Name like = '%{search.Keyword}%'");
+            //var da = Sorting.Sort<ExampleModel>(search.OrderBy, search.OrderByDesc, data);
+            //var totalRecords = data.ToList().Count;
+            //var totalPages = Convert.ToInt32(Math.Ceiling((double)totalRecords / (double)search.PageSize));
+            //var paging = new Paging(search.PageNumber, search.PageSize, totalPages, totalRecords);
+            //return new JsonResponse(data: data, paging: paging);
             #endregion
 
             #region StoredProcedure
@@ -48,7 +54,10 @@ namespace Application.Features.ExampleFeature.Queries
             //dp_params.Add("Keyword", search.Keyword);
             ////dp_params.Add("retVal", DbType.String, direction: ParameterDirection.Output);
             //var data = await _uow.exampleRepository.QueryAsync<ExampleDto>("StoredName", dp_params, CommandType.StoredProcedure);
-            //return data.Sort<ExampleDto>(search);
+            //var totalRecords = data.Count;
+            //var totalPages = Convert.ToInt32(Math.Ceiling((double)totalRecords / (double)search.PageSize));
+            //var paging = new Paging(search.PageNumber, search.PageSize, totalPages, totalRecords);
+            //return new JsonResponse(data: data, paging: paging);
             #endregion
         }
     }

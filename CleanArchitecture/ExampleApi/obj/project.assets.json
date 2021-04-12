@@ -3490,6 +3490,7 @@
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
           "Data": "1.0.0",
+          "Domain": "1.0.0",
           "FluentValidation": "8.6.3",
           "FluentValidation.AspNetCore": "8.6.3",
           "IoC": "1.0.0",

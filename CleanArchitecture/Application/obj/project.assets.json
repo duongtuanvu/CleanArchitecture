@@ -10260,6 +10260,7 @@
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.1": [
       "Data >= 1.0.0",
+      "Domain >= 1.0.0",
       "FluentValidation >= 8.6.3",
       "FluentValidation.AspNetCore >= 8.6.3",
       "IoC >= 1.0.0",
@@ -10282,19 +10283,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Duong Vu\\.nuget\\packages\\": {}
+    "C:\\Users\\vu.dt99\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\Application\\Application.csproj",
+      "projectUniqueName": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Application\\Application.csproj",
       "projectName": "Application",
-      "projectPath": "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\Application\\Application.csproj",
-      "packagesPath": "C:\\Users\\Duong Vu\\.nuget\\packages\\",
-      "outputPath": "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\Application\\obj\\",
+      "projectPath": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Application\\Application.csproj",
+      "packagesPath": "C:\\Users\\vu.dt99\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Duong Vu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\vu.dt99\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10306,12 +10307,16 @@
       },
       "frameworks": {
         "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
           "projectReferences": {
-            "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\Data\\Data.csproj": {
-              "projectPath": "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\Data\\Data.csproj"
+            "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Data\\Data.csproj": {
+              "projectPath": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Data\\Data.csproj"
             },
-            "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\IoC\\IoC.csproj": {
-              "projectPath": "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\IoC\\IoC.csproj"
+            "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Domain\\Domain.csproj"
+            },
+            "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\IoC\\IoC.csproj": {
+              "projectPath": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\IoC\\IoC.csproj"
             }
           }
         }
@@ -10324,6 +10329,7 @@
     },
     "frameworks": {
       "netstandard2.1": {
+        "targetAlias": "netstandard2.1",
         "dependencies": {
           "FluentValidation": {
             "target": "Package",
@@ -10413,7 +10419,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.406\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

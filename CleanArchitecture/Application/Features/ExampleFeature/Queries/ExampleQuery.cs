@@ -1,25 +1,15 @@
 ﻿using Application.Commons;
 using Application.Extensions;
-using Application.Extensions;
-using Dapper;
 using Data.Context;
-using Data.UnitOfWork;
-using Domain.Entities;
 using Domain.Interface;
-using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Linq;
-using System.Threading;
 using System.Threading.Tasks;
 
 namespace Application.Features.ExampleFeature.Queries
 {
     public interface IExampleQuery
     {
-        Task<JsonResponse> List(Search search);
-        Task<JsonResponse> Get(int id);
+        Task<ResponseExtension> List(Search search);
+        Task<ResponseExtension> Get(int id);
     }
     public class ExampleQuery : IExampleQuery
     {
@@ -30,12 +20,12 @@ namespace Application.Features.ExampleFeature.Queries
             _context = context;
             _uow = uow;
         }
-        public async Task<JsonResponse> Get(int id)
+        public async Task<ResponseExtension> Get(int id)
         {
             var data = await _uow.exampleRepository.QuerySingleAsync<ExampleDto>($"select * from ExampleModel where Id = {id}");
-            return new JsonResponse(data: data);
+            return new ResponseExtension(data: data);
         }
-        public async Task<JsonResponse> List(Search search)
+        public async Task<ResponseExtension> List(Search search)
         {
             #region Query
             var data = await _uow.exampleRepository.QueryAsync<ExampleDto>($"select * from ExampleModel");

@@ -20,7 +20,7 @@ namespace Application.Behaviours
             HttpResponse response = context.HttpContext.Response;
             response.StatusCode = StatusCodes.Status500InternalServerError;
             response.ContentType = "application/json";
-            context.Result = new ObjectResult(new JsonResponse(errors: new Error(context.Exception.Message, context.Exception.StackTrace)));
+            context.Result = new ObjectResult(new ResponseExtension(errors: new Error(context.Exception.Message, context.Exception.StackTrace)));
         }
     }
 }

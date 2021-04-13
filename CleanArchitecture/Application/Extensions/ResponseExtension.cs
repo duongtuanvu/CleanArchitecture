@@ -4,13 +4,13 @@ using System.Text;
 
 namespace Application.Extensions
 {
-    public class JsonResponse
+    public class ResponseExtension
     {
-        public JsonResponse()
+        public ResponseExtension()
         {
 
         }
-        public JsonResponse(string message = null, object data = null, object errors = null, Paging paging = null)
+        public ResponseExtension(string message = null, object data = null, object errors = null, Paging paging = null)
         {
             Message = message;
             Data = data;

@@ -11,7 +11,7 @@ namespace Application.Extensions
     public class JwtSettings
     {
         public string SecretKey { get; set; }
-        public int ExpiryHours { get; set; }
+        public int Expires { get; set; }
         public string Issuer { get; set; }
         public string Audience { get; set; }
     }
@@ -33,7 +33,7 @@ namespace Application.Extensions
             var tokenHandler = new JwtSecurityTokenHandler();
             var tokenDescriptor = new SecurityTokenDescriptor
             {
-                Expires = DateTime.UtcNow.AddHours(_jwtSettings.ExpiryHours),
+                Expires = DateTime.UtcNow.AddHours(_jwtSettings.Expires),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(Encoding.ASCII.GetBytes(_jwtSettings.SecretKey)), SecurityAlgorithms.HmacSha256Signature),
                 Issuer = _jwtSettings.Issuer,
                 Audience = _jwtSettings.Audience

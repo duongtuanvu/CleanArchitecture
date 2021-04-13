@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Application.Extensions
 {
-    public static class Excel
+    public static class ExcelExtension
     {
         public static async Task<object> ReadDataFromExcelFile<T>(IFormFile file) where T : class, new()
         {

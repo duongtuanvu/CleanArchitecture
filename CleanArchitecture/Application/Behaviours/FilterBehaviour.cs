@@ -24,7 +24,7 @@ namespace Application.Behaviours
                 HttpResponse response = context.HttpContext.Response;
                 response.StatusCode = StatusCodes.Status400BadRequest;
                 response.ContentType = "application/json";
-                context.Result = new ObjectResult(new JsonResponse(errors: errors));
+                context.Result = new ObjectResult(new ResponseExtension(errors: errors));
                 return;
             }
             await next();

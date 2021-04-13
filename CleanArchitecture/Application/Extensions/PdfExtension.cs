@@ -9,7 +9,7 @@ using System.Text;
 
 namespace Application.Extensions
 {
-    public class Pdf
+    public class PdfExtension
     {
         public IConverter converter { get; set; }
         public byte[] ExportPdf<T>(IEnumerable<T> data, bool isSaveFile = false, string pathSaveFile = null) where T : class

@@ -10,9 +10,9 @@ using System.Text;
 
 namespace Application.Extensions
 {
-    public static class Sorting
+    public static class SortingExtension
     {
-        public static JsonResponse Sort<T>(this IQueryable<T> query, Search search) where T : class
+        public static ResponseExtension Sort<T>(this IQueryable<T> query, Search search) where T : class
         {
             if (!string.IsNullOrWhiteSpace(search.Keyword))
             {
@@ -42,7 +42,7 @@ namespace Application.Extensions
             var totalPages = Convert.ToInt32(Math.Ceiling((double)totalRecords / (double)search.PageSize));
             var paging = new Paging(search.PageNumber, search.PageSize, totalPages, totalRecords);
             source = source.Skip((search.PageNumber - 1) * search.PageSize).Take(search.PageSize);
-            return new JsonResponse(data: source, paging: paging);
+            return new ResponseExtension(data: source, paging: paging);
         }
 
         private static IOrderedQueryable<TEntity> Where<TEntity>(this IQueryable<TEntity> query, string propertyName, string keyword = null) where TEntity : class

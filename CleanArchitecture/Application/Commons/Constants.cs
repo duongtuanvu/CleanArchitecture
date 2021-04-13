@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Application.Commons
 {
-    class Message
+    class Constants
     {
     }
 }

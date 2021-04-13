@@ -1,15 +1,15 @@
-﻿using Application.Common;
-using Application.Commons;
+﻿using Application.Extensions;
 using Application.Features.ExampleFeature.Commands;
 using Application.Features.ExampleFeature.Queries;
-using Application.Token;
 using Domain.Interface;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using System.Collections.Generic;
 using System.Threading.Tasks;
+using Application.Commons;
 
 namespace ExampleApi.Controllers
 {
@@ -23,6 +23,7 @@ namespace ExampleApi.Controllers
         private readonly IUnitOfWork _uow;
         private readonly IExampleQuery _exampleQuery;
         private readonly ILogger<WeatherForecastController> _logger;
+
         public WeatherForecastController(IExampleQuery exampleQuery, ILogger<WeatherForecastController> logger, IMediator mediat, IJwtToken jwtToken, IUnitOfWork uow)
         {
             _exampleQuery = exampleQuery;
@@ -36,7 +37,6 @@ namespace ExampleApi.Controllers
         public async Task<IActionResult> List([FromQuery] Search search)
         {
             var result = await _exampleQuery.List(search);
-
             return Ok(result);
         }
 
@@ -57,11 +57,27 @@ namespace ExampleApi.Controllers
             return Ok("Version 1");
         }
 
-        [HttpPost("Import")]
-        public async Task<IActionResult> Import(IFormFile file)
+        [HttpPost("Excel")]
+        public async Task<IActionResult> ImportExcel(IFormFile file)
         {
             var result = await Excel.ReadDataFromExcelFile<ExampleDto>(file);
             return Ok(result);
+        }
+
+        [HttpGet("Excel")]
+        public async Task<IActionResult> ExportExcel([FromQuery] Search search)
+        {
+            var result = await _exampleQuery.List(search);
+            return File(((IEnumerable<ExampleDto>)result.Data).ExportExcel(), "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "text.xlsx");
+        }
+
+        [HttpGet("Pdf")]
+        public async Task<IActionResult> ExportPdf([FromQuery] Search search)
+        {
+            var result = await _exampleQuery.List(search);
+            //var _byte = Pdf.Export<ExampleDto>((IEnumerable<ExampleDto>)result.Data);
+            //return File(_byte, "application/pdf", "text.pdf");
+            return Ok();
         }
 
         [HttpGet]

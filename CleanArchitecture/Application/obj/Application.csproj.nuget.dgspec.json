@@ -47,6 +47,10 @@
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
           "dependencies": {
+            "DinkToPdf": {
+              "target": "Package",
+              "version": "[1.0.8, )"
+            },
             "EPPlus": {
               "target": "Package",
               "version": "[5.6.2, )"

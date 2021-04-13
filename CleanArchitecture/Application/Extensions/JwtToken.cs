@@ -6,7 +6,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 
-namespace Application.Token
+namespace Application.Extensions
 {
     public class JwtSettings
     {

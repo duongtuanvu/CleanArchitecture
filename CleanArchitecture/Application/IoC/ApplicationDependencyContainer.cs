@@ -1,8 +1,10 @@
 ﻿using Application.Features.ExampleFeature.Commands;
 using Application.Features.ExampleFeature.Queries;
 using Application.Features.ExampleFeature.Validations;
-using Application.Pipelines;
-using Application.Token;
+using Application.Behaviours;
+using Application.Extensions;
+using DinkToPdf;
+using DinkToPdf.Contracts;
 using FluentValidation;
 using FluentValidation.AspNetCore;
 using IoC;
@@ -29,6 +31,7 @@ namespace Application.IoC
             service.AddScoped(typeof(IPipelineBehavior<,>), typeof(TransactionBehaviour<,>));
             service.AddScoped<IJwtToken, JwtToken>();
             service.AddTransient<IExampleQuery, ExampleQuery>();
+            service.AddSingleton(typeof(IConverter), new SynchronizedConverter(new PdfTools()));
             #region Add jwt authen
             var jwtSettings = configuration.GetSection("JwtSettings").Get<JwtSettings>();
             service.AddAuthentication(x =>

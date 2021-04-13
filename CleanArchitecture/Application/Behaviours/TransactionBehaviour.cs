@@ -6,7 +6,7 @@ using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Application.Pipelines
+namespace Application.Behaviours
 {
     public class TransactionBehaviour<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse> where TRequest : IRequest<TResponse>
     {

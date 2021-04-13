@@ -1,4 +1,4 @@
-﻿using Application.ActionResult;
+﻿using Application.Extensions;
 using Data.Context;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc.Filters;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Application.Pipelines
+namespace Application.Behaviours
 {
     public class FilterBehaviour : IAsyncActionFilter
     {

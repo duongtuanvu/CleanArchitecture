@@ -1,10 +1,10 @@
-﻿using Application.ActionResult;
+﻿using Application.Extensions;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.Extensions.Logging;
 
-namespace Application.Pipelines
+namespace Application.Behaviours
 {
     public class ExceptionBehaviour : IExceptionFilter
     {

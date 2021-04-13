@@ -1,5 +1,6 @@
-﻿using Application.ActionResult;
-using Application.Common;
+﻿using Application.Commons;
+using Application.Extensions;
+using Application.Extensions;
 using Dapper;
 using Data.Context;
 using Data.UnitOfWork;
@@ -34,7 +35,6 @@ namespace Application.Features.ExampleFeature.Queries
             var data = await _uow.exampleRepository.QuerySingleAsync<ExampleDto>($"select * from ExampleModel where Id = {id}");
             return new JsonResponse(data: data);
         }
-
         public async Task<JsonResponse> List(Search search)
         {
             #region Query

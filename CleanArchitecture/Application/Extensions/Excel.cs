@@ -9,7 +9,7 @@ using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
 
-namespace Application.Commons
+namespace Application.Extensions
 {
     public static class Excel
     {
@@ -79,6 +79,22 @@ namespace Application.Commons
                     }
                     return data;
                 }
+            }
+        }
+
+        public static byte[] ExportExcel<T>(this IEnumerable<T> data) where T : class
+        {
+            using (var stream = new MemoryStream())
+            {
+                ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
+                using (var package = new ExcelPackage(stream))
+                {
+                    ExcelWorksheet workSheet = package.Workbook.Worksheets.Add("Data");
+                    workSheet.Cells.LoadFromCollection(data, true);
+                    package.Save();
+                }
+                //stream.Position = 0;
+                return stream.ToArray();
             }
         }
 

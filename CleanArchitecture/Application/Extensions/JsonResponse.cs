@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Application.ActionResult
+namespace Application.Extensions
 {
     public class JsonResponse
     {

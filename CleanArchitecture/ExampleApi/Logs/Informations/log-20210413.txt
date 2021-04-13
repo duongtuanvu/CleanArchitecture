@@ -1,0 +1,254 @@
+[13/04/2021 08:33:46] [INF] [] Application Starting.
+[13/04/2021 08:33:56] [INF] [Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager] User profile is available. Using 'C:\Users\vu.dt99\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[13/04/2021 08:33:57] [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+[13/04/2021 08:33:57] [INF] [Microsoft.Hosting.Lifetime] Hosting environment: Development
+[13/04/2021 08:33:57] [INF] [Microsoft.Hosting.Lifetime] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[13/04/2021 08:33:57] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/index.html  
+[13/04/2021 08:33:57] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 312.539ms 200 text/html;charset=utf-8
+[13/04/2021 08:33:58] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/v1/swagger.json  
+[13/04/2021 08:33:58] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 340.9048ms 200 application/json;charset=utf-8
+[13/04/2021 08:34:10] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 POST https://localhost:44371/api/v1/WeatherForecast/Import multipart/form-data; boundary=----WebKitFormBoundaryAACR4BlUHk6jwYTE 5155
+[13/04/2021 08:34:10] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.Import (ExampleApi)'
+[13/04/2021 08:34:11] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "Import", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Import(Microsoft.AspNetCore.Http.IFormFile) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[13/04/2021 08:34:23] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Application.Features.ExampleFeature.Queries.ExampleDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[13/04/2021 08:34:23] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action ExampleApi.Controllers.WeatherForecastController.Import (ExampleApi) in 12342.2904ms
+[13/04/2021 08:34:23] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'ExampleApi.Controllers.WeatherForecastController.Import (ExampleApi)'
+[13/04/2021 08:34:23] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 13580.3509ms 200 application/json; charset=utf-8
+[13/04/2021 08:46:48] [INF] [] Application Starting.
+[13/04/2021 08:46:50] [INF] [Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager] User profile is available. Using 'C:\Users\vu.dt99\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[13/04/2021 08:46:51] [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+[13/04/2021 08:46:51] [INF] [Microsoft.Hosting.Lifetime] Hosting environment: Development
+[13/04/2021 08:46:51] [INF] [Microsoft.Hosting.Lifetime] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[13/04/2021 08:46:51] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/index.html  
+[13/04/2021 08:46:51] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 331.1939ms 200 text/html;charset=utf-8
+[13/04/2021 08:46:51] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/v1/swagger.json  
+[13/04/2021 08:46:52] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 301.613ms 200 application/json;charset=utf-8
+[13/04/2021 08:47:04] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 POST https://localhost:44371/api/v1/WeatherForecast/Import multipart/form-data; boundary=----WebKitFormBoundaryWmDdviHuAWcI0sSm 5318
+[13/04/2021 08:47:04] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.Import (ExampleApi)'
+[13/04/2021 08:47:04] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "Import", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Import(Microsoft.AspNetCore.Http.IFormFile) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[13/04/2021 08:47:58] [INF] [] Application Starting.
+[13/04/2021 08:48:01] [INF] [Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager] User profile is available. Using 'C:\Users\vu.dt99\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[13/04/2021 08:48:01] [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+[13/04/2021 08:48:01] [INF] [Microsoft.Hosting.Lifetime] Hosting environment: Development
+[13/04/2021 08:48:01] [INF] [Microsoft.Hosting.Lifetime] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[13/04/2021 08:48:01] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/index.html  
+[13/04/2021 08:48:02] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 263.5007ms 200 text/html;charset=utf-8
+[13/04/2021 08:48:02] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/v1/swagger.json  
+[13/04/2021 08:48:02] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 236.0028ms 200 application/json;charset=utf-8
+[13/04/2021 09:08:32] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 POST https://localhost:44371/api/v1/WeatherForecast/Import multipart/form-data; boundary=----WebKitFormBoundaryQiiBkS659zwwtXUk 5318
+[13/04/2021 09:08:32] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.Import (ExampleApi)'
+[13/04/2021 09:08:33] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "Import", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Import(Microsoft.AspNetCore.Http.IFormFile) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[13/04/2021 09:09:31] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'Application.ActionResult.JsonResponse'.
+[13/04/2021 09:09:31] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action ExampleApi.Controllers.WeatherForecastController.Import (ExampleApi) in 58521.9688ms
+[13/04/2021 09:09:31] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'ExampleApi.Controllers.WeatherForecastController.Import (ExampleApi)'
+[13/04/2021 09:09:31] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 59039.4905ms 500 application/json; charset=utf-8
+[13/04/2021 09:13:55] [INF] [] Application Starting.
+[13/04/2021 09:13:57] [INF] [Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager] User profile is available. Using 'C:\Users\vu.dt99\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[13/04/2021 09:13:58] [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+[13/04/2021 09:13:58] [INF] [Microsoft.Hosting.Lifetime] Hosting environment: Development
+[13/04/2021 09:13:58] [INF] [Microsoft.Hosting.Lifetime] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[13/04/2021 09:13:58] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/index.html  
+[13/04/2021 09:13:58] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 269.373ms 200 text/html;charset=utf-8
+[13/04/2021 09:13:58] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/v1/swagger.json  
+[13/04/2021 09:13:59] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 264.7094ms 200 application/json;charset=utf-8
+[13/04/2021 09:14:26] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 POST https://localhost:44371/api/v1/WeatherForecast/Import multipart/form-data; boundary=----WebKitFormBoundaryIv3YqXAaUjKg8T0k 5318
+[13/04/2021 09:14:26] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.Import (ExampleApi)'
+[13/04/2021 09:14:26] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "Import", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Import(Microsoft.AspNetCore.Http.IFormFile) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[13/04/2021 09:16:57] [INF] [] Application Starting.
+[13/04/2021 09:17:00] [INF] [Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager] User profile is available. Using 'C:\Users\vu.dt99\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[13/04/2021 09:17:00] [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+[13/04/2021 09:17:00] [INF] [Microsoft.Hosting.Lifetime] Hosting environment: Development
+[13/04/2021 09:17:00] [INF] [Microsoft.Hosting.Lifetime] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[13/04/2021 09:17:00] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/index.html  
+[13/04/2021 09:17:00] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 255.907ms 200 text/html;charset=utf-8
+[13/04/2021 09:17:01] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/v1/swagger.json  
+[13/04/2021 09:17:01] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 262.3413ms 200 application/json;charset=utf-8
+[13/04/2021 09:17:08] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 POST https://localhost:44371/api/v1/WeatherForecast/Import multipart/form-data; boundary=----WebKitFormBoundaryS96uBKqpw2hGxCSg 13011
+[13/04/2021 09:17:08] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.Import (ExampleApi)'
+[13/04/2021 09:17:09] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "Import", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Import(Microsoft.AspNetCore.Http.IFormFile) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[13/04/2021 09:29:47] [INF] [] Application Starting.
+[13/04/2021 09:29:50] [INF] [Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager] User profile is available. Using 'C:\Users\vu.dt99\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[13/04/2021 09:29:50] [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+[13/04/2021 09:29:50] [INF] [Microsoft.Hosting.Lifetime] Hosting environment: Development
+[13/04/2021 09:29:50] [INF] [Microsoft.Hosting.Lifetime] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[13/04/2021 09:29:50] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/index.html  
+[13/04/2021 09:29:50] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 321.684ms 200 text/html;charset=utf-8
+[13/04/2021 09:29:51] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/v1/swagger.json  
+[13/04/2021 09:29:51] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 276.3202ms 200 application/json;charset=utf-8
+[13/04/2021 09:29:57] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 POST https://localhost:44371/api/v1/WeatherForecast/Import multipart/form-data; boundary=----WebKitFormBoundarybLhiDBp8iscYvKyz 13011
+[13/04/2021 09:29:57] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.Import (ExampleApi)'
+[13/04/2021 09:29:58] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "Import", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Import(Microsoft.AspNetCore.Http.IFormFile) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[13/04/2021 09:30:11] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'Application.ActionResult.JsonResponse'.
+[13/04/2021 09:30:11] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action ExampleApi.Controllers.WeatherForecastController.Import (ExampleApi) in 13102.9881ms
+[13/04/2021 09:30:11] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'ExampleApi.Controllers.WeatherForecastController.Import (ExampleApi)'
+[13/04/2021 09:30:11] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 13663.8309ms 500 application/json; charset=utf-8
+[13/04/2021 09:30:20] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 POST https://localhost:44371/api/v1/WeatherForecast/Import multipart/form-data; boundary=----WebKitFormBoundaryHsqugfAKGSUwpWGo 13011
+[13/04/2021 09:30:20] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.Import (ExampleApi)'
+[13/04/2021 09:30:20] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "Import", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Import(Microsoft.AspNetCore.Http.IFormFile) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[13/04/2021 09:30:59] [INF] [] Application Starting.
+[13/04/2021 09:31:02] [INF] [Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager] User profile is available. Using 'C:\Users\vu.dt99\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[13/04/2021 09:31:02] [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+[13/04/2021 09:31:02] [INF] [Microsoft.Hosting.Lifetime] Hosting environment: Development
+[13/04/2021 09:31:02] [INF] [Microsoft.Hosting.Lifetime] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[13/04/2021 09:31:02] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/index.html  
+[13/04/2021 09:31:03] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 215.7573ms 200 text/html;charset=utf-8
+[13/04/2021 09:31:03] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/v1/swagger.json  
+[13/04/2021 09:31:03] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 264.0536ms 200 application/json;charset=utf-8
+[13/04/2021 09:31:10] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 POST https://localhost:44371/api/v1/WeatherForecast/Import multipart/form-data; boundary=----WebKitFormBoundaryCYJRKAw5vTAqcgXu 13011
+[13/04/2021 09:31:10] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.Import (ExampleApi)'
+[13/04/2021 09:31:11] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "Import", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Import(Microsoft.AspNetCore.Http.IFormFile) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[13/04/2021 10:00:47] [INF] [] Application Starting.
+[13/04/2021 10:00:50] [INF] [Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager] User profile is available. Using 'C:\Users\vu.dt99\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[13/04/2021 10:00:51] [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+[13/04/2021 10:00:51] [INF] [Microsoft.Hosting.Lifetime] Hosting environment: Development
+[13/04/2021 10:00:51] [INF] [Microsoft.Hosting.Lifetime] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[13/04/2021 10:00:51] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/index.html  
+[13/04/2021 10:00:51] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 232.0853ms 200 text/html;charset=utf-8
+[13/04/2021 10:00:51] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/v1/swagger.json  
+[13/04/2021 10:00:51] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 264.8147ms 200 application/json;charset=utf-8
+[13/04/2021 10:00:59] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 POST https://localhost:44371/api/v1/WeatherForecast/Import multipart/form-data; boundary=----WebKitFormBoundaryTZrtlUVP6uxjCqWs 13011
+[13/04/2021 10:00:59] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.Import (ExampleApi)'
+[13/04/2021 10:00:59] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "Import", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Import(Microsoft.AspNetCore.Http.IFormFile) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[13/04/2021 10:01:00] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'Application.ActionResult.JsonResponse'.
+[13/04/2021 10:01:00] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action ExampleApi.Controllers.WeatherForecastController.Import (ExampleApi) in 803.3061ms
+[13/04/2021 10:01:00] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'ExampleApi.Controllers.WeatherForecastController.Import (ExampleApi)'
+[13/04/2021 10:01:00] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 1309.8564ms 500 application/json; charset=utf-8
+[13/04/2021 10:01:25] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 POST https://localhost:44371/api/v1/WeatherForecast/Import multipart/form-data; boundary=----WebKitFormBoundarydvKj1qgQMtrdWz3z 13011
+[13/04/2021 10:01:25] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.Import (ExampleApi)'
+[13/04/2021 10:01:25] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "Import", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Import(Microsoft.AspNetCore.Http.IFormFile) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[13/04/2021 10:03:34] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'Application.ActionResult.JsonResponse'.
+[13/04/2021 10:03:34] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action ExampleApi.Controllers.WeatherForecastController.Import (ExampleApi) in 128248.5766ms
+[13/04/2021 10:03:34] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'ExampleApi.Controllers.WeatherForecastController.Import (ExampleApi)'
+[13/04/2021 10:03:34] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 128287.1397ms 500 application/json; charset=utf-8
+[13/04/2021 10:04:35] [INF] [] Application Starting.
+[13/04/2021 10:04:37] [INF] [Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager] User profile is available. Using 'C:\Users\vu.dt99\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[13/04/2021 10:04:37] [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+[13/04/2021 10:04:37] [INF] [Microsoft.Hosting.Lifetime] Hosting environment: Development
+[13/04/2021 10:04:37] [INF] [Microsoft.Hosting.Lifetime] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[13/04/2021 10:04:37] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/index.html  
+[13/04/2021 10:04:37] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 261.4313ms 200 text/html;charset=utf-8
+[13/04/2021 10:04:38] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/v1/swagger.json  
+[13/04/2021 10:04:38] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 255.1045ms 200 application/json;charset=utf-8
+[13/04/2021 10:04:50] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 POST https://localhost:44371/api/v1/WeatherForecast/Import multipart/form-data; boundary=----WebKitFormBoundaryzna2a4XFuDrnbdwv 13011
+[13/04/2021 10:04:50] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.Import (ExampleApi)'
+[13/04/2021 10:04:50] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "Import", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Import(Microsoft.AspNetCore.Http.IFormFile) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[13/04/2021 10:04:51] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'Application.ActionResult.JsonResponse'.
+[13/04/2021 10:04:51] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action ExampleApi.Controllers.WeatherForecastController.Import (ExampleApi) in 814.8348ms
+[13/04/2021 10:04:51] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'ExampleApi.Controllers.WeatherForecastController.Import (ExampleApi)'
+[13/04/2021 10:04:51] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 1378.6495ms 500 application/json; charset=utf-8
+[13/04/2021 10:06:38] [INF] [] Application Starting.
+[13/04/2021 10:06:40] [INF] [Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager] User profile is available. Using 'C:\Users\vu.dt99\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[13/04/2021 10:06:40] [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+[13/04/2021 10:06:40] [INF] [Microsoft.Hosting.Lifetime] Hosting environment: Development
+[13/04/2021 10:06:40] [INF] [Microsoft.Hosting.Lifetime] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[13/04/2021 10:06:41] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/index.html  
+[13/04/2021 10:06:41] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 228.1163ms 200 text/html;charset=utf-8
+[13/04/2021 10:06:41] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/v1/swagger.json  
+[13/04/2021 10:06:41] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 252.2876ms 200 application/json;charset=utf-8
+[13/04/2021 10:06:49] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 POST https://localhost:44371/api/v1/WeatherForecast/Import multipart/form-data; boundary=----WebKitFormBoundaryfYRsKVpTatmaNdqG 13011
+[13/04/2021 10:06:49] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.Import (ExampleApi)'
+[13/04/2021 10:06:49] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "Import", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Import(Microsoft.AspNetCore.Http.IFormFile) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[13/04/2021 10:06:50] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'Application.ActionResult.JsonResponse'.
+[13/04/2021 10:06:50] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action ExampleApi.Controllers.WeatherForecastController.Import (ExampleApi) in 757.7578ms
+[13/04/2021 10:06:50] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'ExampleApi.Controllers.WeatherForecastController.Import (ExampleApi)'
+[13/04/2021 10:06:50] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 1237.3202ms 500 application/json; charset=utf-8
+[13/04/2021 10:21:35] [INF] [] Application Starting.
+[13/04/2021 10:21:38] [INF] [Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager] User profile is available. Using 'C:\Users\vu.dt99\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[13/04/2021 10:21:39] [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+[13/04/2021 10:21:39] [INF] [Microsoft.Hosting.Lifetime] Hosting environment: Development
+[13/04/2021 10:21:39] [INF] [Microsoft.Hosting.Lifetime] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[13/04/2021 10:21:39] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/index.html  
+[13/04/2021 10:21:39] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 223.3035ms 200 text/html;charset=utf-8
+[13/04/2021 10:21:39] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/v1/swagger.json  
+[13/04/2021 10:21:39] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 237.2484ms 200 application/json;charset=utf-8
+[13/04/2021 10:21:46] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 POST https://localhost:44371/api/v1/WeatherForecast/Import multipart/form-data; boundary=----WebKitFormBoundarygpQ9pVj7nPOMiotC 13011
+[13/04/2021 10:21:47] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.Import (ExampleApi)'
+[13/04/2021 10:21:47] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "Import", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Import(Microsoft.AspNetCore.Http.IFormFile) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[13/04/2021 10:22:32] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'Application.ActionResult.JsonResponse'.
+[13/04/2021 10:22:33] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action ExampleApi.Controllers.WeatherForecastController.Import (ExampleApi) in 45579.9244ms
+[13/04/2021 10:22:33] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'ExampleApi.Controllers.WeatherForecastController.Import (ExampleApi)'
+[13/04/2021 10:22:33] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 46044.2846ms 500 application/json; charset=utf-8
+[13/04/2021 10:23:21] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 POST https://localhost:44371/api/v1/WeatherForecast/Import multipart/form-data; boundary=----WebKitFormBoundaryr5ARrTGbqhKeXkS3 13011
+[13/04/2021 10:23:21] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.Import (ExampleApi)'
+[13/04/2021 10:23:21] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "Import", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Import(Microsoft.AspNetCore.Http.IFormFile) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[13/04/2021 10:26:29] [INF] [] Application Starting.
+[13/04/2021 10:26:32] [INF] [Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager] User profile is available. Using 'C:\Users\vu.dt99\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[13/04/2021 10:26:32] [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+[13/04/2021 10:26:32] [INF] [Microsoft.Hosting.Lifetime] Hosting environment: Development
+[13/04/2021 10:26:32] [INF] [Microsoft.Hosting.Lifetime] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[13/04/2021 10:26:32] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/index.html  
+[13/04/2021 10:26:33] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 288.985ms 200 text/html;charset=utf-8
+[13/04/2021 10:26:33] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/v1/swagger.json  
+[13/04/2021 10:26:34] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 499.8364ms 200 application/json;charset=utf-8
+[13/04/2021 10:27:13] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 POST https://localhost:44371/api/v1/WeatherForecast/Import multipart/form-data; boundary=----WebKitFormBoundarypXVVJBqAY3oKauB1 13011
+[13/04/2021 10:27:13] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.Import (ExampleApi)'
+[13/04/2021 10:27:14] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "Import", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Import(Microsoft.AspNetCore.Http.IFormFile) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[13/04/2021 10:32:33] [INF] [] Application Starting.
+[13/04/2021 10:32:36] [INF] [Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager] User profile is available. Using 'C:\Users\vu.dt99\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[13/04/2021 10:32:36] [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+[13/04/2021 10:32:36] [INF] [Microsoft.Hosting.Lifetime] Hosting environment: Development
+[13/04/2021 10:32:36] [INF] [Microsoft.Hosting.Lifetime] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[13/04/2021 10:32:36] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/index.html  
+[13/04/2021 10:32:37] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 258.5485ms 200 text/html;charset=utf-8
+[13/04/2021 10:32:37] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/v1/swagger.json  
+[13/04/2021 10:32:37] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 242.4924ms 200 application/json;charset=utf-8
+[13/04/2021 10:33:20] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 POST https://localhost:44371/api/v1/WeatherForecast/Import multipart/form-data; boundary=----WebKitFormBoundaryKl5uFDliW7fitaFZ 13011
+[13/04/2021 10:33:20] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.Import (ExampleApi)'
+[13/04/2021 10:33:20] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "Import", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Import(Microsoft.AspNetCore.Http.IFormFile) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[13/04/2021 10:39:34] [INF] [] Application Starting.
+[13/04/2021 10:39:37] [INF] [Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager] User profile is available. Using 'C:\Users\vu.dt99\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[13/04/2021 10:39:37] [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+[13/04/2021 10:39:37] [INF] [Microsoft.Hosting.Lifetime] Hosting environment: Development
+[13/04/2021 10:39:37] [INF] [Microsoft.Hosting.Lifetime] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[13/04/2021 10:39:37] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/index.html  
+[13/04/2021 10:39:37] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 242.2944ms 200 text/html;charset=utf-8
+[13/04/2021 10:39:38] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/v1/swagger.json  
+[13/04/2021 10:39:38] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 255.5634ms 200 application/json;charset=utf-8
+[13/04/2021 10:39:43] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 POST https://localhost:44371/api/v1/WeatherForecast/Import multipart/form-data; boundary=----WebKitFormBoundaryvY7BgiSMB3LuL7VB 13011
+[13/04/2021 10:39:44] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.Import (ExampleApi)'
+[13/04/2021 10:39:44] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "Import", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Import(Microsoft.AspNetCore.Http.IFormFile) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[13/04/2021 10:41:01] [INF] [] Application Starting.
+[13/04/2021 10:41:03] [INF] [Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager] User profile is available. Using 'C:\Users\vu.dt99\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[13/04/2021 10:41:03] [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+[13/04/2021 10:41:03] [INF] [Microsoft.Hosting.Lifetime] Hosting environment: Development
+[13/04/2021 10:41:03] [INF] [Microsoft.Hosting.Lifetime] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[13/04/2021 10:41:03] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/index.html  
+[13/04/2021 10:41:04] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 250.0651ms 200 text/html;charset=utf-8
+[13/04/2021 10:41:04] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/v1/swagger.json  
+[13/04/2021 10:41:04] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 266.539ms 200 application/json;charset=utf-8
+[13/04/2021 10:41:10] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 POST https://localhost:44371/api/v1/WeatherForecast/Import multipart/form-data; boundary=----WebKitFormBoundarySkqz2z8fYPXpibKk 13011
+[13/04/2021 10:41:11] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.Import (ExampleApi)'
+[13/04/2021 10:41:11] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "Import", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Import(Microsoft.AspNetCore.Http.IFormFile) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[13/04/2021 10:47:35] [INF] [] Application Starting.
+[13/04/2021 10:47:37] [INF] [Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager] User profile is available. Using 'C:\Users\vu.dt99\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[13/04/2021 10:47:37] [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+[13/04/2021 10:47:37] [INF] [Microsoft.Hosting.Lifetime] Hosting environment: Development
+[13/04/2021 10:47:37] [INF] [Microsoft.Hosting.Lifetime] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[13/04/2021 10:47:37] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/index.html  
+[13/04/2021 10:47:37] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 222.9678ms 200 text/html;charset=utf-8
+[13/04/2021 10:47:38] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/v1/swagger.json  
+[13/04/2021 10:47:38] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 269.4891ms 200 application/json;charset=utf-8
+[13/04/2021 10:47:52] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 POST https://localhost:44371/api/v1/WeatherForecast/Import multipart/form-data; boundary=----WebKitFormBoundarycHYAVd3oeCreq5vS 19498
+[13/04/2021 10:47:52] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.Import (ExampleApi)'
+[13/04/2021 10:47:52] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "Import", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Import(Microsoft.AspNetCore.Http.IFormFile) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[13/04/2021 10:48:02] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'Application.ActionResult.JsonResponse'.
+[13/04/2021 10:48:02] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action ExampleApi.Controllers.WeatherForecastController.Import (ExampleApi) in 10168.8611ms
+[13/04/2021 10:48:02] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'ExampleApi.Controllers.WeatherForecastController.Import (ExampleApi)'
+[13/04/2021 10:48:02] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 10682.7019ms 500 application/json; charset=utf-8
+[13/04/2021 10:48:14] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 POST https://localhost:44371/api/v1/WeatherForecast/Import multipart/form-data; boundary=----WebKitFormBoundaryqPanMkJov5wKhpWD 15200
+[13/04/2021 10:48:14] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.Import (ExampleApi)'
+[13/04/2021 10:48:14] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "Import", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Import(Microsoft.AspNetCore.Http.IFormFile) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[13/04/2021 10:48:28] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'Application.ActionResult.JsonResponse'.
+[13/04/2021 10:48:28] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action ExampleApi.Controllers.WeatherForecastController.Import (ExampleApi) in 14309.1706ms
+[13/04/2021 10:48:28] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'ExampleApi.Controllers.WeatherForecastController.Import (ExampleApi)'
+[13/04/2021 10:48:28] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 14320.044ms 500 application/json; charset=utf-8
+[13/04/2021 10:50:14] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 POST https://localhost:44371/api/v1/WeatherForecast/Import multipart/form-data; boundary=----WebKitFormBoundarylBJGoBpDkipMAjrh 947327
+[13/04/2021 10:50:14] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.Import (ExampleApi)'
+[13/04/2021 10:50:14] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "Import", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Import(Microsoft.AspNetCore.Http.IFormFile) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[13/04/2021 10:50:21] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'Application.ActionResult.JsonResponse'.
+[13/04/2021 10:50:21] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action ExampleApi.Controllers.WeatherForecastController.Import (ExampleApi) in 6583.6594ms
+[13/04/2021 10:50:21] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'ExampleApi.Controllers.WeatherForecastController.Import (ExampleApi)'
+[13/04/2021 10:50:21] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 6606.674ms 500 application/json; charset=utf-8
+[13/04/2021 10:50:26] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 POST https://localhost:44371/api/v1/WeatherForecast/Import multipart/form-data; boundary=----WebKitFormBoundaryp1LyKrZCV0J71wlF 8977
+[13/04/2021 10:50:26] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.Import (ExampleApi)'
+[13/04/2021 10:50:26] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "Import", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Import(Microsoft.AspNetCore.Http.IFormFile) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).

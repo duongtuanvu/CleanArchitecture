@@ -1,5 +1,4 @@
-﻿using Application.Features.ExampleFeature.Queries;
-using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Http;
 using OfficeOpenXml;
 using System;
 using System.Collections.Generic;
@@ -8,7 +7,6 @@ using System.Dynamic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Application.Commons
@@ -19,21 +17,20 @@ namespace Application.Commons
         {
             if (file == null || file.Length <= 0)
             {
-                return "File is empty";
+                throw new Exception($"File is empty");
             }
 
             if (!Path.GetExtension(file.FileName).Equals(".xlsx", StringComparison.OrdinalIgnoreCase))
             {
-                return "Not support file extension";
+                throw new Exception($"Not support file extension");
             }
-
-            var data = new List<T>();
 
             using (var stream = new MemoryStream())
             {
                 await file.CopyToAsync(stream);
                 using (var package = new ExcelPackage(stream))
                 {
+                    var data = new List<T>();
                     var lstProperties = typeof(T).GetProperties();
 
                     ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
@@ -52,13 +49,37 @@ namespace Application.Commons
                         var dynamicObject = new ExpandoObject() as IDictionary<string, Object>;
                         foreach (var prop in lstProperties)
                         {
-                            dynamicObject.Add(prop.Name, worksheet.Cells[row, dictionaryHeader[prop.Name]].Value.ToString().Trim());
+                            try
+                            {
+                                object value = null;
+                                var cell = worksheet.Cells[row, dictionaryHeader[prop.Name]];
+                                var cellFormat = cell.Style.Numberformat.Format;
+                                var cellValue = cell.Value.ToString().Trim();
+
+                                if (prop.PropertyType == typeof(int))
+                                {
+                                    value = int.Parse(cellValue);
+                                }
+                                if (prop.PropertyType == typeof(string))
+                                {
+                                    value = cellValue;
+                                }
+                                if (prop.PropertyType == typeof(DateTime))
+                                {
+                                    value = DateTime.FromOADate(double.Parse(cellValue));
+                                }
+                                dynamicObject.Add(prop.Name, value);
+                            }
+                            catch (Exception ex)
+                            {
+                                throw new Exception($"{ex.Message} [Column/Row: {prop.Name}/{row}]");
+                            }
                         }
                         data.Add(dynamicObject.ToObject<T>());
                     }
+                    return data;
                 }
             }
-            return data;
         }
 
         public static TObject ToObject<TObject>(this IDictionary<string, object> someSource, BindingFlags bindingFlags = BindingFlags.Instance | BindingFlags.Public) where TObject : class, new()
@@ -66,21 +87,23 @@ namespace Application.Commons
             Contract.Requires(someSource != null);
             TObject targetObject = new TObject();
             Type targetObjectType = typeof(TObject);
-
             // Go through all bound target object type properties...
-            foreach (PropertyInfo property in
-                        targetObjectType.GetProperties(bindingFlags))
+            foreach (PropertyInfo property in targetObjectType.GetProperties(bindingFlags))
             {
                 // ...and check that both the target type property name and its type matches
                 // its counterpart in the ExpandoObject
-                if (someSource.ContainsKey(property.Name)
-                    && property.PropertyType == someSource[property.Name].GetType())
+                if (someSource.ContainsKey(property.Name) && property.PropertyType == someSource[property.Name].GetType())
                 {
                     property.SetValue(targetObject, someSource[property.Name]);
                 }
             }
-
             return targetObject;
         }
+    }
+
+    public class FormatExcel
+    {
+        public const string Date = "m/d/yy";
+
     }
 }

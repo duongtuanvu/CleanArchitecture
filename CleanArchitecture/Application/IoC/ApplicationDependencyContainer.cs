@@ -17,6 +17,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.Configuration;
 using System.Reflection;
 using System.Text;
+using Application.RestSharpClients;
 
 namespace Application.IoC
 {
@@ -32,6 +33,7 @@ namespace Application.IoC
             service.AddScoped<IJwtToken, JwtToken>();
             service.AddTransient<IExampleQuery, ExampleQuery>();
             service.AddSingleton(typeof(IConverter), new SynchronizedConverter(new PdfTools()));
+            service.AddTransient<IRestSharpClient, RestSharpClient>();
             #region Add jwt authen
             var jwtSettings = configuration.GetSection("JwtSettings").Get<JwtSettings>();
             service.AddAuthentication(x =>

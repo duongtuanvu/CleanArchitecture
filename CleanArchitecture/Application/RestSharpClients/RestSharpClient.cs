@@ -27,7 +27,17 @@ namespace Application.RestSharpClients
 
             if (rq_params.Method.Equals(RequestMethods.GET))
             {
-                request.AddJsonBody(rq_params.Body);
+                foreach (var param in rq_params.Parameters)
+                {
+                    if (rq_params.isUrlSegment)
+                    {
+                        request.AddParameter(param.Key, param.Value, ParameterType.UrlSegment);
+                    }
+                    else
+                    {
+                        request.AddParameter(param.Key, param.Value, ParameterType.GetOrPost);
+                    }
+                }
             }
             if (rq_params.Method.Equals(RequestMethods.POST))
             {
@@ -92,12 +102,16 @@ namespace Application.RestSharpClients
         public RequestParams()
         {
             Headers = new Dictionary<string, string>();
+            Parameters = new Dictionary<string, string>();
+
         }
         public string BaseUrl { get; set; }
         public string ApiEndPoint { get; set; }
         public object Body { get; set; }
         public Dictionary<string, string> Headers { get; set; }
+        public Dictionary<string, string> Parameters { get; set; }
         public RequestMethods Method { get; set; }
+        public bool isUrlSegment { get; set; }
     }
 
     public enum RequestMethods

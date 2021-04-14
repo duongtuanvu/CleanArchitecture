@@ -35,6 +35,8 @@ namespace Application.IoC
             service.AddSingleton(typeof(IConverter), new SynchronizedConverter(new PdfTools()));
             service.AddTransient<IRestSharpClient, RestSharpClient>();
             service.AddHttpContextAccessor();
+            service.AddAutoMapper(typeof(ExampleDto)
+); ;
             #region Add jwt authen
             var jwtSettings = configuration.GetSection("JwtSettings").Get<JwtSettings>();
             service.AddAuthentication(x =>
@@ -66,7 +68,7 @@ namespace Application.IoC
                 opts.Filters.Add<ExceptionBehaviour>();
             })
                 .AddFluentValidation();
-            service.AddTransient<IValidator<CreateExampleCommand>, CreateExampleCommandValidator>();
+            service.AddTransient<IValidator<CreateCommand>, CreateCommandValidator>();
             service.Configure<ApiBehaviorOptions>(options =>
             {
                 options.SuppressModelStateInvalidFilter = true;

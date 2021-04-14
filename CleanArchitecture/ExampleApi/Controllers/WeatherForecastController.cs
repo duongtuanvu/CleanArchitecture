@@ -36,22 +36,21 @@ namespace ExampleApi.Controllers
         [HttpGet]
         public async Task<IActionResult> List([FromQuery] SearchExtension search)
         {
-            var result = await _exampleQuery.List(search);
-            return Ok(result);
+            return Ok(await _mediat.Send(new ListQuery(search)));
+            //var result = await _exampleQuery.List(search);
+            //return Ok(result);
         }
 
         [HttpGet]
         [Route("{id}")]
         public async Task<IActionResult> Get(int id)
         {
-            var result = await _exampleQuery.Get(id);
-            return Ok(result);
-            //return _jwtToken.GenerateToken();
+            return Ok(await _mediat.Send(new GetQuery(id)));
         }
 
         [HttpPost]
         //[Authorize]
-        public async Task<IActionResult> Create(CreateExampleCommand request)
+        public async Task<IActionResult> Create(CreateCommand request)
         {
             await _mediat.Send(request);
             return Ok("Version 1");

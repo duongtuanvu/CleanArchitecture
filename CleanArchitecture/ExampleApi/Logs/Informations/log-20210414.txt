@@ -169,3 +169,612 @@
 [14/04/2021 13:33:44] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 POST https://localhost:44371/api/v1/WeatherForecast application/json 17
 [14/04/2021 13:33:45] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.Create (ExampleApi)'
 [14/04/2021 13:33:45] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "Create", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Application.Features.ExampleFeature.Commands.CreateExampleCommand) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[14/04/2021 15:00:47] [INF] [] Application Starting.
+[14/04/2021 15:00:54] [INF] [Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager] User profile is available. Using 'C:\Users\vu.dt99\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[14/04/2021 15:00:55] [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+[14/04/2021 15:00:55] [INF] [Microsoft.Hosting.Lifetime] Hosting environment: Development
+[14/04/2021 15:00:55] [INF] [Microsoft.Hosting.Lifetime] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[14/04/2021 15:00:55] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/index.html  
+[14/04/2021 15:00:55] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 344.3844ms 200 text/html;charset=utf-8
+[14/04/2021 15:00:56] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/v1/swagger.json  
+[14/04/2021 15:00:56] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 316.9562ms 200 application/json;charset=utf-8
+[14/04/2021 15:01:03] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/api/v1/WeatherForecast/{id}  
+[14/04/2021 15:01:04] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.Get (ExampleApi)'
+[14/04/2021 15:01:05] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Application.Extensions.ResponseExtension] Get(Query) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[14/04/2021 15:01:05] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'Application.Extensions.ResponseExtension'.
+[14/04/2021 15:01:05] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action ExampleApi.Controllers.WeatherForecastController.Get (ExampleApi) in 107.1977ms
+[14/04/2021 15:01:05] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'ExampleApi.Controllers.WeatherForecastController.Get (ExampleApi)'
+[14/04/2021 15:01:05] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 1667.2266ms 400 application/json; charset=utf-8
+[14/04/2021 15:03:33] [INF] [] Application Starting.
+[14/04/2021 15:03:36] [INF] [Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager] User profile is available. Using 'C:\Users\vu.dt99\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[14/04/2021 15:03:37] [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+[14/04/2021 15:03:37] [INF] [Microsoft.Hosting.Lifetime] Hosting environment: Development
+[14/04/2021 15:03:37] [INF] [Microsoft.Hosting.Lifetime] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[14/04/2021 15:03:38] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/index.html  
+[14/04/2021 15:03:38] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 409.8952ms 200 text/html;charset=utf-8
+[14/04/2021 15:03:38] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/v1/swagger.json  
+[14/04/2021 15:03:39] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 373.5759ms 200 application/json;charset=utf-8
+[14/04/2021 15:03:53] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/api/v1/WeatherForecast/{id}  
+[14/04/2021 15:03:54] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.Get (ExampleApi)'
+[14/04/2021 15:03:54] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Application.Extensions.ResponseExtension] Get(Query) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[14/04/2021 15:03:54] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'Application.Extensions.ResponseExtension'.
+[14/04/2021 15:03:54] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action ExampleApi.Controllers.WeatherForecastController.Get (ExampleApi) in 117.2371ms
+[14/04/2021 15:03:54] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'ExampleApi.Controllers.WeatherForecastController.Get (ExampleApi)'
+[14/04/2021 15:03:54] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 716.5521ms 400 application/json; charset=utf-8
+[14/04/2021 15:09:07] [INF] [] Application Starting.
+[14/04/2021 15:09:10] [INF] [Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager] User profile is available. Using 'C:\Users\vu.dt99\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[14/04/2021 15:09:11] [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+[14/04/2021 15:09:11] [INF] [Microsoft.Hosting.Lifetime] Hosting environment: Development
+[14/04/2021 15:09:11] [INF] [Microsoft.Hosting.Lifetime] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[14/04/2021 15:09:11] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/index.html  
+[14/04/2021 15:09:11] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 391.2992ms 200 text/html;charset=utf-8
+[14/04/2021 15:09:12] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/v1/swagger.json  
+[14/04/2021 15:09:12] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 327.4192ms 200 application/json;charset=utf-8
+[14/04/2021 15:09:17] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/api/v1/WeatherForecast/8  
+[14/04/2021 15:09:17] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.Get (ExampleApi)'
+[14/04/2021 15:09:18] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Application.Extensions.ResponseExtension] Get(Int32) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[14/04/2021 15:09:18] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'null'.
+[14/04/2021 15:09:18] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action ExampleApi.Controllers.WeatherForecastController.Get (ExampleApi) in 91.251ms
+[14/04/2021 15:09:18] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'ExampleApi.Controllers.WeatherForecastController.Get (ExampleApi)'
+[14/04/2021 15:09:18] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 779.3483ms 204 
+[14/04/2021 15:10:07] [INF] [] Application Starting.
+[14/04/2021 15:10:09] [INF] [Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager] User profile is available. Using 'C:\Users\vu.dt99\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[14/04/2021 15:10:10] [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+[14/04/2021 15:10:10] [INF] [Microsoft.Hosting.Lifetime] Hosting environment: Development
+[14/04/2021 15:10:10] [INF] [Microsoft.Hosting.Lifetime] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[14/04/2021 15:10:10] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/index.html  
+[14/04/2021 15:10:10] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 335.2819ms 200 text/html;charset=utf-8
+[14/04/2021 15:10:11] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/v1/swagger.json  
+[14/04/2021 15:10:11] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 369.3345ms 200 application/json;charset=utf-8
+[14/04/2021 15:10:16] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/api/v1/WeatherForecast/8  
+[14/04/2021 15:10:16] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.Get (ExampleApi)'
+[14/04/2021 15:10:17] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Int32) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[14/04/2021 15:10:17] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'null'.
+[14/04/2021 15:10:17] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action ExampleApi.Controllers.WeatherForecastController.Get (ExampleApi) in 97.0164ms
+[14/04/2021 15:10:17] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'ExampleApi.Controllers.WeatherForecastController.Get (ExampleApi)'
+[14/04/2021 15:10:17] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 692.7702ms 204 
+[14/04/2021 15:10:26] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/api/v1/WeatherForecast/8  
+[14/04/2021 15:10:26] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.Get (ExampleApi)'
+[14/04/2021 15:10:26] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Int32) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[14/04/2021 15:10:26] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'null'.
+[14/04/2021 15:10:26] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action ExampleApi.Controllers.WeatherForecastController.Get (ExampleApi) in 6.732ms
+[14/04/2021 15:10:26] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'ExampleApi.Controllers.WeatherForecastController.Get (ExampleApi)'
+[14/04/2021 15:10:26] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 35.504ms 204 
+[14/04/2021 15:11:27] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/api/v1/WeatherForecast/8  
+[14/04/2021 15:11:27] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.Get (ExampleApi)'
+[14/04/2021 15:11:27] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Int32) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[14/04/2021 15:11:44] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'null'.
+[14/04/2021 15:11:44] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action ExampleApi.Controllers.WeatherForecastController.Get (ExampleApi) in 16387.8163ms
+[14/04/2021 15:11:44] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'ExampleApi.Controllers.WeatherForecastController.Get (ExampleApi)'
+[14/04/2021 15:11:44] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 16405.8561ms 204 
+[14/04/2021 15:13:03] [INF] [] Application Starting.
+[14/04/2021 15:13:07] [INF] [Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager] User profile is available. Using 'C:\Users\vu.dt99\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[14/04/2021 15:13:07] [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+[14/04/2021 15:13:07] [INF] [Microsoft.Hosting.Lifetime] Hosting environment: Development
+[14/04/2021 15:13:07] [INF] [Microsoft.Hosting.Lifetime] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[14/04/2021 15:13:07] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/index.html  
+[14/04/2021 15:13:08] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 446.4824ms 200 text/html;charset=utf-8
+[14/04/2021 15:13:08] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/v1/swagger.json  
+[14/04/2021 15:13:08] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 249.4461ms 200 application/json;charset=utf-8
+[14/04/2021 15:13:19] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/api/v1/WeatherForecast/8  
+[14/04/2021 15:13:20] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.Get (ExampleApi)'
+[14/04/2021 15:13:20] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Int32) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[14/04/2021 15:13:23] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'null'.
+[14/04/2021 15:13:23] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action ExampleApi.Controllers.WeatherForecastController.Get (ExampleApi) in 2888.1536ms
+[14/04/2021 15:13:23] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'ExampleApi.Controllers.WeatherForecastController.Get (ExampleApi)'
+[14/04/2021 15:13:23] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 3515.0159ms 204 
+[14/04/2021 15:13:53] [INF] [] Application Starting.
+[14/04/2021 15:13:57] [INF] [Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager] User profile is available. Using 'C:\Users\vu.dt99\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[14/04/2021 15:13:58] [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+[14/04/2021 15:13:58] [INF] [Microsoft.Hosting.Lifetime] Hosting environment: Development
+[14/04/2021 15:13:58] [INF] [Microsoft.Hosting.Lifetime] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[14/04/2021 15:13:58] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/index.html  
+[14/04/2021 15:13:58] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 374.607ms 200 text/html;charset=utf-8
+[14/04/2021 15:13:59] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/v1/swagger.json  
+[14/04/2021 15:13:59] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 426.1099ms 200 application/json;charset=utf-8
+[14/04/2021 15:14:04] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/api/v1/WeatherForecast/1  
+[14/04/2021 15:14:04] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.Get (ExampleApi)'
+[14/04/2021 15:14:05] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Int32) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[14/04/2021 15:14:05] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'null'.
+[14/04/2021 15:14:05] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action ExampleApi.Controllers.WeatherForecastController.Get (ExampleApi) in 159.5831ms
+[14/04/2021 15:14:05] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'ExampleApi.Controllers.WeatherForecastController.Get (ExampleApi)'
+[14/04/2021 15:14:05] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 770.4115ms 204 
+[14/04/2021 15:15:59] [INF] [] Application Starting.
+[14/04/2021 15:16:01] [INF] [Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager] User profile is available. Using 'C:\Users\vu.dt99\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[14/04/2021 15:16:01] [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+[14/04/2021 15:16:01] [INF] [Microsoft.Hosting.Lifetime] Hosting environment: Development
+[14/04/2021 15:16:01] [INF] [Microsoft.Hosting.Lifetime] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[14/04/2021 15:16:01] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/index.html  
+[14/04/2021 15:16:02] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 277.1092ms 200 text/html;charset=utf-8
+[14/04/2021 15:16:02] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/v1/swagger.json  
+[14/04/2021 15:16:03] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 556.2144ms 200 application/json;charset=utf-8
+[14/04/2021 15:16:07] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/api/v1/WeatherForecast/4  
+[14/04/2021 15:16:08] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.Get (ExampleApi)'
+[14/04/2021 15:16:08] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Int32) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[14/04/2021 15:16:08] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'null'.
+[14/04/2021 15:16:08] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action ExampleApi.Controllers.WeatherForecastController.Get (ExampleApi) in 80.5784ms
+[14/04/2021 15:16:08] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'ExampleApi.Controllers.WeatherForecastController.Get (ExampleApi)'
+[14/04/2021 15:16:08] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 684.3779ms 204 
+[14/04/2021 15:17:35] [INF] [] Application Starting.
+[14/04/2021 15:17:37] [INF] [Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager] User profile is available. Using 'C:\Users\vu.dt99\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[14/04/2021 15:17:38] [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+[14/04/2021 15:17:38] [INF] [Microsoft.Hosting.Lifetime] Hosting environment: Development
+[14/04/2021 15:17:38] [INF] [Microsoft.Hosting.Lifetime] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[14/04/2021 15:17:38] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/index.html  
+[14/04/2021 15:17:39] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 524.009ms 200 text/html;charset=utf-8
+[14/04/2021 15:17:40] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/v1/swagger.json  
+[14/04/2021 15:17:40] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 368.2225ms 200 application/json;charset=utf-8
+[14/04/2021 15:17:44] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/api/v1/WeatherForecast/1  
+[14/04/2021 15:17:45] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.Get (ExampleApi)'
+[14/04/2021 15:17:45] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Int32) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[14/04/2021 15:17:45] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'null'.
+[14/04/2021 15:17:45] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action ExampleApi.Controllers.WeatherForecastController.Get (ExampleApi) in 82.565ms
+[14/04/2021 15:17:45] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'ExampleApi.Controllers.WeatherForecastController.Get (ExampleApi)'
+[14/04/2021 15:17:45] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 821.2449ms 204 
+[14/04/2021 15:19:16] [INF] [] Application Starting.
+[14/04/2021 15:19:20] [INF] [Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager] User profile is available. Using 'C:\Users\vu.dt99\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[14/04/2021 15:19:20] [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+[14/04/2021 15:19:20] [INF] [Microsoft.Hosting.Lifetime] Hosting environment: Development
+[14/04/2021 15:19:20] [INF] [Microsoft.Hosting.Lifetime] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[14/04/2021 15:19:21] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/index.html  
+[14/04/2021 15:19:21] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 390.9354ms 200 text/html;charset=utf-8
+[14/04/2021 15:19:21] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/v1/swagger.json  
+[14/04/2021 15:19:22] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 320.3491ms 200 application/json;charset=utf-8
+[14/04/2021 15:19:26] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/api/v1/WeatherForecast/22  
+[14/04/2021 15:19:27] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.Get (ExampleApi)'
+[14/04/2021 15:19:27] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Int32) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[14/04/2021 15:19:33] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'null'.
+[14/04/2021 15:19:33] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action ExampleApi.Controllers.WeatherForecastController.Get (ExampleApi) in 6078.0671ms
+[14/04/2021 15:19:33] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'ExampleApi.Controllers.WeatherForecastController.Get (ExampleApi)'
+[14/04/2021 15:19:33] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 6691.8911ms 204 
+[14/04/2021 15:21:40] [INF] [] Application Starting.
+[14/04/2021 15:21:42] [INF] [Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager] User profile is available. Using 'C:\Users\vu.dt99\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[14/04/2021 15:21:43] [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+[14/04/2021 15:21:43] [INF] [Microsoft.Hosting.Lifetime] Hosting environment: Development
+[14/04/2021 15:21:43] [INF] [Microsoft.Hosting.Lifetime] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[14/04/2021 15:21:43] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/index.html  
+[14/04/2021 15:21:43] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 284.6394ms 200 text/html;charset=utf-8
+[14/04/2021 15:21:44] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/v1/swagger.json  
+[14/04/2021 15:21:44] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 338.1768ms 200 application/json;charset=utf-8
+[14/04/2021 15:21:48] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 POST https://localhost:44371/api/v1/WeatherForecast application/json 17
+[14/04/2021 15:21:48] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.Create (ExampleApi)'
+[14/04/2021 15:21:48] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "Create", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Application.Features.ExampleFeature.Commands.CreateExampleCommand) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[14/04/2021 15:21:49] [INF] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[14/04/2021 15:21:51] [INF] [Application.Behaviours.TransactionBehaviour] =====>  Start transaction for CreateExampleCommand
+[14/04/2021 15:21:52] [INF] [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (171ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Int32), @p5='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [ExampleModel] ([CreatedBy], [CreatedDate], [IsDeleted], [Name], [UpdatedBy], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [Id]
+FROM [ExampleModel]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+[14/04/2021 15:21:54] [INF] [Application.Behaviours.TransactionBehaviour] =====> End transaction for CreateExampleCommand
+[14/04/2021 15:21:54] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'System.String'.
+[14/04/2021 15:21:54] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action ExampleApi.Controllers.WeatherForecastController.Create (ExampleApi) in 5588.656ms
+[14/04/2021 15:21:54] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'ExampleApi.Controllers.WeatherForecastController.Create (ExampleApi)'
+[14/04/2021 15:21:54] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 6197.0825ms 200 text/plain; charset=utf-8
+[14/04/2021 15:22:00] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/api/v1/WeatherForecast  
+[14/04/2021 15:22:00] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.List (ExampleApi)'
+[14/04/2021 15:22:00] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "List", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] List(Application.Extensions.SearchExtension) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[14/04/2021 15:22:00] [INF] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[14/04/2021 15:22:01] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'Application.Extensions.ResponseExtension'.
+[14/04/2021 15:22:01] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action ExampleApi.Controllers.WeatherForecastController.List (ExampleApi) in 466.0841ms
+[14/04/2021 15:22:01] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'ExampleApi.Controllers.WeatherForecastController.List (ExampleApi)'
+[14/04/2021 15:22:01] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 495.8084ms 200 application/json; charset=utf-8
+[14/04/2021 15:22:10] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/api/v1/WeatherForecast/21  
+[14/04/2021 15:22:10] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.Get (ExampleApi)'
+[14/04/2021 15:22:10] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Int32) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[14/04/2021 15:22:20] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'null'.
+[14/04/2021 15:22:20] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action ExampleApi.Controllers.WeatherForecastController.Get (ExampleApi) in 9255.5984ms
+[14/04/2021 15:22:20] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'ExampleApi.Controllers.WeatherForecastController.Get (ExampleApi)'
+[14/04/2021 15:22:20] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 9290.2243ms 204 
+[14/04/2021 15:24:26] [INF] [] Application Starting.
+[14/04/2021 15:24:28] [INF] [Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager] User profile is available. Using 'C:\Users\vu.dt99\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[14/04/2021 15:24:29] [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+[14/04/2021 15:24:29] [INF] [Microsoft.Hosting.Lifetime] Hosting environment: Development
+[14/04/2021 15:24:29] [INF] [Microsoft.Hosting.Lifetime] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[14/04/2021 15:24:30] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/index.html  
+[14/04/2021 15:24:30] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 314.7291ms 200 text/html;charset=utf-8
+[14/04/2021 15:24:30] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/v1/swagger.json  
+[14/04/2021 15:24:31] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 302.3259ms 200 application/json;charset=utf-8
+[14/04/2021 15:24:42] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/api/v1/WeatherForecast/3  
+[14/04/2021 15:24:43] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.Get (ExampleApi)'
+[14/04/2021 15:24:43] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Int32) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[14/04/2021 15:24:43] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'null'.
+[14/04/2021 15:24:43] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action ExampleApi.Controllers.WeatherForecastController.Get (ExampleApi) in 104.8511ms
+[14/04/2021 15:24:43] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'ExampleApi.Controllers.WeatherForecastController.Get (ExampleApi)'
+[14/04/2021 15:24:43] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 727.2044ms 204 
+[14/04/2021 15:25:52] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/api/v1/WeatherForecast/3  
+[14/04/2021 15:25:52] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.Get (ExampleApi)'
+[14/04/2021 15:25:52] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Int32) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[14/04/2021 15:25:59] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'null'.
+[14/04/2021 15:25:59] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action ExampleApi.Controllers.WeatherForecastController.Get (ExampleApi) in 7387.2485ms
+[14/04/2021 15:25:59] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'ExampleApi.Controllers.WeatherForecastController.Get (ExampleApi)'
+[14/04/2021 15:25:59] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 7417.6161ms 204 
+[14/04/2021 15:26:04] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/api/v1/WeatherForecast/3  
+[14/04/2021 15:26:04] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.Get (ExampleApi)'
+[14/04/2021 15:26:04] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Int32) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[14/04/2021 15:26:13] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'null'.
+[14/04/2021 15:26:13] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action ExampleApi.Controllers.WeatherForecastController.Get (ExampleApi) in 8839.5336ms
+[14/04/2021 15:26:13] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'ExampleApi.Controllers.WeatherForecastController.Get (ExampleApi)'
+[14/04/2021 15:26:13] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 8892.9643ms 204 
+[14/04/2021 15:27:15] [INF] [] Application Starting.
+[14/04/2021 15:27:19] [INF] [Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager] User profile is available. Using 'C:\Users\vu.dt99\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[14/04/2021 15:27:20] [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+[14/04/2021 15:27:20] [INF] [Microsoft.Hosting.Lifetime] Hosting environment: Development
+[14/04/2021 15:27:20] [INF] [Microsoft.Hosting.Lifetime] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[14/04/2021 15:27:20] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/index.html  
+[14/04/2021 15:27:21] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 456.934ms 200 text/html;charset=utf-8
+[14/04/2021 15:27:21] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/v1/swagger.json  
+[14/04/2021 15:27:22] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 496.8131ms 200 application/json;charset=utf-8
+[14/04/2021 15:27:26] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/api/v1/WeatherForecast/8  
+[14/04/2021 15:27:26] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.Get (ExampleApi)'
+[14/04/2021 15:27:27] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Int32) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[14/04/2021 15:27:38] [INF] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[14/04/2021 15:27:41] [INF] [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (153ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[CreatedBy], [e].[CreatedDate], [e].[IsDeleted], [e].[Name], [e].[UpdatedBy], [e].[UpdatedDate]
+FROM [ExampleModel] AS [e]
+WHERE ([e].[IsDeleted] <> CAST(1 AS bit)) AND ([e].[Id] = @__p_0)
+[14/04/2021 15:27:41] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'Application.Features.ExampleFeature.Queries.ExampleDto'.
+[14/04/2021 15:27:41] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action ExampleApi.Controllers.WeatherForecastController.Get (ExampleApi) in 14192.1639ms
+[14/04/2021 15:27:41] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'ExampleApi.Controllers.WeatherForecastController.Get (ExampleApi)'
+[14/04/2021 15:27:41] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 14935.9005ms 200 application/json; charset=utf-8
+[14/04/2021 15:32:20] [INF] [] Application Starting.
+[14/04/2021 15:32:23] [INF] [Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager] User profile is available. Using 'C:\Users\vu.dt99\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[14/04/2021 15:32:23] [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+[14/04/2021 15:32:23] [INF] [Microsoft.Hosting.Lifetime] Hosting environment: Development
+[14/04/2021 15:32:23] [INF] [Microsoft.Hosting.Lifetime] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[14/04/2021 15:32:24] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/index.html  
+[14/04/2021 15:32:24] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 275.1773ms 200 text/html;charset=utf-8
+[14/04/2021 15:32:24] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/v1/swagger.json  
+[14/04/2021 15:32:25] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 400.4989ms 200 application/json;charset=utf-8
+[14/04/2021 15:32:30] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/api/v1/WeatherForecast/{id}  
+[14/04/2021 15:32:30] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.Get (ExampleApi)'
+[14/04/2021 15:32:30] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Application.Features.ExampleFeature.Queries.GetQuery) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[14/04/2021 15:32:31] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'Application.Extensions.ResponseExtension'.
+[14/04/2021 15:32:31] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action ExampleApi.Controllers.WeatherForecastController.Get (ExampleApi) in 119.2841ms
+[14/04/2021 15:32:31] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'ExampleApi.Controllers.WeatherForecastController.Get (ExampleApi)'
+[14/04/2021 15:32:31] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 847.8457ms 400 application/json; charset=utf-8
+[14/04/2021 15:47:02] [INF] [] Application Starting.
+[14/04/2021 15:47:05] [INF] [Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager] User profile is available. Using 'C:\Users\vu.dt99\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[14/04/2021 15:47:06] [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+[14/04/2021 15:47:06] [INF] [Microsoft.Hosting.Lifetime] Hosting environment: Development
+[14/04/2021 15:47:06] [INF] [Microsoft.Hosting.Lifetime] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[14/04/2021 15:47:06] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/index.html  
+[14/04/2021 15:47:06] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 280.8179ms 200 text/html;charset=utf-8
+[14/04/2021 15:47:07] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/v1/swagger.json  
+[14/04/2021 15:47:07] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 342.2587ms 200 application/json;charset=utf-8
+[14/04/2021 15:47:11] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/api/v1/WeatherForecast  
+[14/04/2021 15:47:11] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.List (ExampleApi)'
+[14/04/2021 15:47:11] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "List", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] List(Application.Extensions.SearchExtension) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[14/04/2021 15:47:13] [INF] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[14/04/2021 15:47:14] [INF] [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (127ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[CreatedBy], [e].[CreatedDate], [e].[IsDeleted], [e].[Name], [e].[UpdatedBy], [e].[UpdatedDate]
+FROM [ExampleModel] AS [e]
+WHERE [e].[IsDeleted] <> CAST(1 AS bit)
+[14/04/2021 15:47:14] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'Application.Extensions.ResponseExtension'.
+[14/04/2021 15:47:15] [INF] [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (118ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[CreatedBy], [e].[CreatedDate], [e].[IsDeleted], [e].[Name], [e].[UpdatedBy], [e].[UpdatedDate]
+FROM [ExampleModel] AS [e]
+WHERE [e].[IsDeleted] <> CAST(1 AS bit)
+ORDER BY (SELECT 1)
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+[14/04/2021 15:47:15] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action ExampleApi.Controllers.WeatherForecastController.List (ExampleApi) in 3175.3673ms
+[14/04/2021 15:47:15] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'ExampleApi.Controllers.WeatherForecastController.List (ExampleApi)'
+[14/04/2021 15:47:15] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 3861.2829ms 200 application/json; charset=utf-8
+[14/04/2021 15:47:29] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/api/v1/WeatherForecast?OrderBy=id&OrderByDesc=true  
+[14/04/2021 15:47:29] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.List (ExampleApi)'
+[14/04/2021 15:47:29] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "List", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] List(Application.Extensions.SearchExtension) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[14/04/2021 15:47:29] [INF] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[14/04/2021 15:47:30] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'Application.Extensions.ResponseExtension'.
+[14/04/2021 15:47:30] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action ExampleApi.Controllers.WeatherForecastController.List (ExampleApi) in 687.2387ms
+[14/04/2021 15:47:30] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'ExampleApi.Controllers.WeatherForecastController.List (ExampleApi)'
+[14/04/2021 15:47:30] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 696.9094ms 500 application/json; charset=utf-8
+[14/04/2021 15:49:25] [INF] [] Application Starting.
+[14/04/2021 15:49:28] [INF] [Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager] User profile is available. Using 'C:\Users\vu.dt99\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[14/04/2021 15:49:28] [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+[14/04/2021 15:49:28] [INF] [Microsoft.Hosting.Lifetime] Hosting environment: Development
+[14/04/2021 15:49:28] [INF] [Microsoft.Hosting.Lifetime] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[14/04/2021 15:49:28] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/index.html  
+[14/04/2021 15:49:29] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 337.1002ms 200 text/html;charset=utf-8
+[14/04/2021 15:49:29] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/v1/swagger.json  
+[14/04/2021 15:49:29] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 382.524ms 200 application/json;charset=utf-8
+[14/04/2021 15:49:37] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/api/v1/WeatherForecast?OrderBy=id&OrderByDesc=true  
+[14/04/2021 15:49:37] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.List (ExampleApi)'
+[14/04/2021 15:49:38] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "List", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] List(Application.Extensions.SearchExtension) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[14/04/2021 15:49:39] [INF] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[14/04/2021 15:49:40] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'Application.Extensions.ResponseExtension'.
+[14/04/2021 15:49:40] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action ExampleApi.Controllers.WeatherForecastController.List (ExampleApi) in 2241.1671ms
+[14/04/2021 15:49:40] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'ExampleApi.Controllers.WeatherForecastController.List (ExampleApi)'
+[14/04/2021 15:49:40] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 2817.0801ms 500 application/json; charset=utf-8
+[14/04/2021 15:50:24] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/api/v1/WeatherForecast?OrderByDesc=true  
+[14/04/2021 15:50:24] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.List (ExampleApi)'
+[14/04/2021 15:50:24] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "List", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] List(Application.Extensions.SearchExtension) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[14/04/2021 15:50:24] [INF] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[14/04/2021 15:50:25] [INF] [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (117ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[CreatedBy], [e].[CreatedDate], [e].[IsDeleted], [e].[Name], [e].[UpdatedBy], [e].[UpdatedDate]
+FROM [ExampleModel] AS [e]
+WHERE [e].[IsDeleted] <> CAST(1 AS bit)
+[14/04/2021 15:50:26] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'Application.Extensions.ResponseExtension'.
+[14/04/2021 15:50:26] [INF] [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (103ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[CreatedBy], [e].[CreatedDate], [e].[IsDeleted], [e].[Name], [e].[UpdatedBy], [e].[UpdatedDate]
+FROM [ExampleModel] AS [e]
+WHERE [e].[IsDeleted] <> CAST(1 AS bit)
+ORDER BY (SELECT 1)
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+[14/04/2021 15:50:26] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action ExampleApi.Controllers.WeatherForecastController.List (ExampleApi) in 1642.8402ms
+[14/04/2021 15:50:26] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'ExampleApi.Controllers.WeatherForecastController.List (ExampleApi)'
+[14/04/2021 15:50:26] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 1682.2442ms 200 application/json; charset=utf-8
+[14/04/2021 15:50:30] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/api/v1/WeatherForecast?OrderByDesc=false  
+[14/04/2021 15:50:30] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.List (ExampleApi)'
+[14/04/2021 15:50:30] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "List", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] List(Application.Extensions.SearchExtension) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[14/04/2021 15:50:30] [INF] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[14/04/2021 15:50:30] [INF] [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (64ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[CreatedBy], [e].[CreatedDate], [e].[IsDeleted], [e].[Name], [e].[UpdatedBy], [e].[UpdatedDate]
+FROM [ExampleModel] AS [e]
+WHERE [e].[IsDeleted] <> CAST(1 AS bit)
+[14/04/2021 15:50:30] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'Application.Extensions.ResponseExtension'.
+[14/04/2021 15:50:30] [INF] [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (61ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[CreatedBy], [e].[CreatedDate], [e].[IsDeleted], [e].[Name], [e].[UpdatedBy], [e].[UpdatedDate]
+FROM [ExampleModel] AS [e]
+WHERE [e].[IsDeleted] <> CAST(1 AS bit)
+ORDER BY (SELECT 1)
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+[14/04/2021 15:50:30] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action ExampleApi.Controllers.WeatherForecastController.List (ExampleApi) in 192.5346ms
+[14/04/2021 15:50:30] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'ExampleApi.Controllers.WeatherForecastController.List (ExampleApi)'
+[14/04/2021 15:50:30] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 240.4583ms 200 application/json; charset=utf-8
+[14/04/2021 15:50:34] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/api/v1/WeatherForecast?OrderBy=id&OrderByDesc=false  
+[14/04/2021 15:50:34] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.List (ExampleApi)'
+[14/04/2021 15:50:34] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "List", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] List(Application.Extensions.SearchExtension) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[14/04/2021 15:50:34] [INF] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[14/04/2021 15:50:34] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'Application.Extensions.ResponseExtension'.
+[14/04/2021 15:50:34] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action ExampleApi.Controllers.WeatherForecastController.List (ExampleApi) in 283.7101ms
+[14/04/2021 15:50:34] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'ExampleApi.Controllers.WeatherForecastController.List (ExampleApi)'
+[14/04/2021 15:50:34] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 293.2957ms 500 application/json; charset=utf-8
+[14/04/2021 15:50:38] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/api/v1/WeatherForecast?OrderBy=name&OrderByDesc=false  
+[14/04/2021 15:50:38] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.List (ExampleApi)'
+[14/04/2021 15:50:38] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "List", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] List(Application.Extensions.SearchExtension) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[14/04/2021 15:50:38] [INF] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[14/04/2021 15:50:38] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'Application.Extensions.ResponseExtension'.
+[14/04/2021 15:50:38] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action ExampleApi.Controllers.WeatherForecastController.List (ExampleApi) in 315.3095ms
+[14/04/2021 15:50:38] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'ExampleApi.Controllers.WeatherForecastController.List (ExampleApi)'
+[14/04/2021 15:50:38] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 322.3826ms 500 application/json; charset=utf-8
+[14/04/2021 15:54:11] [INF] [] Application Starting.
+[14/04/2021 15:54:14] [INF] [Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager] User profile is available. Using 'C:\Users\vu.dt99\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[14/04/2021 15:54:14] [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+[14/04/2021 15:54:14] [INF] [Microsoft.Hosting.Lifetime] Hosting environment: Development
+[14/04/2021 15:54:14] [INF] [Microsoft.Hosting.Lifetime] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[14/04/2021 15:54:14] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/index.html  
+[14/04/2021 15:54:15] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 253.5053ms 200 text/html;charset=utf-8
+[14/04/2021 15:54:15] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/v1/swagger.json  
+[14/04/2021 15:54:16] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 356.9596ms 200 application/json;charset=utf-8
+[14/04/2021 15:54:20] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/api/v1/WeatherForecast?OrderBy=id  
+[14/04/2021 15:54:20] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.List (ExampleApi)'
+[14/04/2021 15:54:21] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "List", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] List(Application.Extensions.SearchExtension) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[14/04/2021 15:54:22] [INF] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[14/04/2021 15:54:24] [INF] [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (111ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[CreatedBy], [e].[CreatedDate], [e].[IsDeleted], [e].[Name], [e].[UpdatedBy], [e].[UpdatedDate]
+FROM [ExampleModel] AS [e]
+WHERE [e].[IsDeleted] <> CAST(1 AS bit)
+ORDER BY [e].[Id] DESC
+[14/04/2021 15:54:24] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'Application.Extensions.ResponseExtension'.
+[14/04/2021 15:54:24] [INF] [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (128ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[CreatedBy], [e].[CreatedDate], [e].[IsDeleted], [e].[Name], [e].[UpdatedBy], [e].[UpdatedDate]
+FROM [ExampleModel] AS [e]
+WHERE [e].[IsDeleted] <> CAST(1 AS bit)
+ORDER BY [e].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+[14/04/2021 15:54:24] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action ExampleApi.Controllers.WeatherForecastController.List (ExampleApi) in 3016.8305ms
+[14/04/2021 15:54:24] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'ExampleApi.Controllers.WeatherForecastController.List (ExampleApi)'
+[14/04/2021 15:54:24] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 3684.0484ms 200 application/json; charset=utf-8
+[14/04/2021 15:54:51] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/api/v1/WeatherForecast?OrderBy=id&OrderByDesc=false  
+[14/04/2021 15:54:51] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.List (ExampleApi)'
+[14/04/2021 15:54:51] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "List", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] List(Application.Extensions.SearchExtension) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[14/04/2021 15:54:51] [INF] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[14/04/2021 15:54:51] [INF] [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (61ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[CreatedBy], [e].[CreatedDate], [e].[IsDeleted], [e].[Name], [e].[UpdatedBy], [e].[UpdatedDate]
+FROM [ExampleModel] AS [e]
+WHERE [e].[IsDeleted] <> CAST(1 AS bit)
+ORDER BY [e].[Id]
+[14/04/2021 15:54:51] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'Application.Extensions.ResponseExtension'.
+[14/04/2021 15:54:51] [INF] [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (61ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[CreatedBy], [e].[CreatedDate], [e].[IsDeleted], [e].[Name], [e].[UpdatedBy], [e].[UpdatedDate]
+FROM [ExampleModel] AS [e]
+WHERE [e].[IsDeleted] <> CAST(1 AS bit)
+ORDER BY [e].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+[14/04/2021 15:54:51] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action ExampleApi.Controllers.WeatherForecastController.List (ExampleApi) in 246.9049ms
+[14/04/2021 15:54:51] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'ExampleApi.Controllers.WeatherForecastController.List (ExampleApi)'
+[14/04/2021 15:54:51] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 265.7958ms 200 application/json; charset=utf-8
+[14/04/2021 15:55:31] [INF] [] Application Starting.
+[14/04/2021 15:55:34] [INF] [Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager] User profile is available. Using 'C:\Users\vu.dt99\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[14/04/2021 15:55:35] [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+[14/04/2021 15:55:35] [INF] [Microsoft.Hosting.Lifetime] Hosting environment: Development
+[14/04/2021 15:55:35] [INF] [Microsoft.Hosting.Lifetime] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[14/04/2021 15:55:35] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/index.html  
+[14/04/2021 15:55:35] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 300.1565ms 200 text/html;charset=utf-8
+[14/04/2021 15:55:36] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/v1/swagger.json  
+[14/04/2021 15:55:36] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 346.6281ms 200 application/json;charset=utf-8
+[14/04/2021 15:55:41] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/api/v1/WeatherForecast?OrderBy=id  
+[14/04/2021 15:55:41] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.List (ExampleApi)'
+[14/04/2021 15:55:41] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "List", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] List(Application.Extensions.SearchExtension) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[14/04/2021 15:55:43] [INF] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[14/04/2021 15:55:43] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'Application.Extensions.ResponseExtension'.
+[14/04/2021 15:55:43] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action ExampleApi.Controllers.WeatherForecastController.List (ExampleApi) in 2033.2368ms
+[14/04/2021 15:55:43] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'ExampleApi.Controllers.WeatherForecastController.List (ExampleApi)'
+[14/04/2021 15:55:43] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 2589.7327ms 500 application/json; charset=utf-8
+[14/04/2021 15:56:27] [INF] [] Application Starting.
+[14/04/2021 15:56:31] [INF] [Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager] User profile is available. Using 'C:\Users\vu.dt99\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[14/04/2021 15:56:31] [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+[14/04/2021 15:56:31] [INF] [Microsoft.Hosting.Lifetime] Hosting environment: Development
+[14/04/2021 15:56:31] [INF] [Microsoft.Hosting.Lifetime] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[14/04/2021 15:56:32] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/index.html  
+[14/04/2021 15:56:32] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 323.3615ms 200 text/html;charset=utf-8
+[14/04/2021 15:56:32] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/v1/swagger.json  
+[14/04/2021 15:56:33] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 309.8134ms 200 application/json;charset=utf-8
+[14/04/2021 15:56:38] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/api/v1/WeatherForecast?OrderBy=id  
+[14/04/2021 15:56:38] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.List (ExampleApi)'
+[14/04/2021 15:56:38] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "List", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] List(Application.Extensions.SearchExtension) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[14/04/2021 15:56:40] [INF] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[14/04/2021 15:56:49] [INF] [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (127ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[CreatedBy], [e].[CreatedDate], [e].[IsDeleted], [e].[Name], [e].[UpdatedBy], [e].[UpdatedDate]
+FROM [ExampleModel] AS [e]
+WHERE [e].[IsDeleted] <> CAST(1 AS bit)
+[14/04/2021 15:57:32] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'Application.Extensions.ResponseExtension'.
+[14/04/2021 15:57:32] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action ExampleApi.Controllers.WeatherForecastController.List (ExampleApi) in 53329.5405ms
+[14/04/2021 15:57:32] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'ExampleApi.Controllers.WeatherForecastController.List (ExampleApi)'
+[14/04/2021 15:57:32] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 53943.8047ms 500 application/json; charset=utf-8
+[14/04/2021 15:59:24] [INF] [] Application Starting.
+[14/04/2021 15:59:27] [INF] [Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager] User profile is available. Using 'C:\Users\vu.dt99\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[14/04/2021 15:59:28] [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+[14/04/2021 15:59:28] [INF] [Microsoft.Hosting.Lifetime] Hosting environment: Development
+[14/04/2021 15:59:28] [INF] [Microsoft.Hosting.Lifetime] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[14/04/2021 15:59:28] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/index.html  
+[14/04/2021 15:59:28] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 319.4466ms 200 text/html;charset=utf-8
+[14/04/2021 15:59:28] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/v1/swagger.json  
+[14/04/2021 15:59:29] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 349.7347ms 200 application/json;charset=utf-8
+[14/04/2021 15:59:40] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/api/v1/WeatherForecast?OrderBy=id&OrderByDesc=true  
+[14/04/2021 15:59:41] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.List (ExampleApi)'
+[14/04/2021 15:59:41] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "List", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] List(Application.Extensions.SearchExtension) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[14/04/2021 15:59:43] [INF] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[14/04/2021 15:59:51] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'Application.Extensions.ResponseExtension'.
+[14/04/2021 15:59:51] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action ExampleApi.Controllers.WeatherForecastController.List (ExampleApi) in 10023.9601ms
+[14/04/2021 15:59:51] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'ExampleApi.Controllers.WeatherForecastController.List (ExampleApi)'
+[14/04/2021 15:59:51] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 10679.0612ms 500 application/json; charset=utf-8
+[14/04/2021 16:11:06] [INF] [] Application Starting.
+[14/04/2021 16:11:08] [INF] [Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager] User profile is available. Using 'C:\Users\vu.dt99\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[14/04/2021 16:11:09] [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+[14/04/2021 16:11:09] [INF] [Microsoft.Hosting.Lifetime] Hosting environment: Development
+[14/04/2021 16:11:09] [INF] [Microsoft.Hosting.Lifetime] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[14/04/2021 16:11:09] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/index.html  
+[14/04/2021 16:11:09] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 274.2882ms 200 text/html;charset=utf-8
+[14/04/2021 16:11:09] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/v1/swagger.json  
+[14/04/2021 16:11:10] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 339.843ms 200 application/json;charset=utf-8
+[14/04/2021 16:11:17] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/api/v1/WeatherForecast?OrderBy=id&OrderByDesc=false  
+[14/04/2021 16:11:17] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.List (ExampleApi)'
+[14/04/2021 16:11:18] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "List", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] List(Application.Extensions.SearchExtension) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[14/04/2021 16:11:19] [INF] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[14/04/2021 16:11:25] [INF] [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (181ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[CreatedBy], [e].[CreatedDate], [e].[IsDeleted], [e].[Name], [e].[UpdatedBy], [e].[UpdatedDate]
+FROM [ExampleModel] AS [e]
+WHERE [e].[IsDeleted] <> CAST(1 AS bit)
+ORDER BY [e].[Id]
+[14/04/2021 16:11:25] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'Application.Extensions.ResponseExtension'.
+[14/04/2021 16:11:25] [INF] [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (103ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[CreatedBy], [e].[CreatedDate], [e].[IsDeleted], [e].[Name], [e].[UpdatedBy], [e].[UpdatedDate]
+FROM [ExampleModel] AS [e]
+WHERE [e].[IsDeleted] <> CAST(1 AS bit)
+ORDER BY [e].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+[14/04/2021 16:11:25] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action ExampleApi.Controllers.WeatherForecastController.List (ExampleApi) in 7288.732ms
+[14/04/2021 16:11:25] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'ExampleApi.Controllers.WeatherForecastController.List (ExampleApi)'
+[14/04/2021 16:11:25] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 7961.0004ms 200 application/json; charset=utf-8
+[14/04/2021 16:11:28] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/api/v1/WeatherForecast?OrderBy=id&OrderByDesc=true  
+[14/04/2021 16:11:28] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.List (ExampleApi)'
+[14/04/2021 16:11:28] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "List", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] List(Application.Extensions.SearchExtension) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[14/04/2021 16:11:28] [INF] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[14/04/2021 16:11:28] [INF] [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (65ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[CreatedBy], [e].[CreatedDate], [e].[IsDeleted], [e].[Name], [e].[UpdatedBy], [e].[UpdatedDate]
+FROM [ExampleModel] AS [e]
+WHERE [e].[IsDeleted] <> CAST(1 AS bit)
+ORDER BY [e].[Id] DESC
+[14/04/2021 16:11:28] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'Application.Extensions.ResponseExtension'.
+[14/04/2021 16:11:28] [INF] [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (62ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[CreatedBy], [e].[CreatedDate], [e].[IsDeleted], [e].[Name], [e].[UpdatedBy], [e].[UpdatedDate]
+FROM [ExampleModel] AS [e]
+WHERE [e].[IsDeleted] <> CAST(1 AS bit)
+ORDER BY [e].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+[14/04/2021 16:11:28] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action ExampleApi.Controllers.WeatherForecastController.List (ExampleApi) in 224.8398ms
+[14/04/2021 16:11:28] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'ExampleApi.Controllers.WeatherForecastController.List (ExampleApi)'
+[14/04/2021 16:11:28] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 259.5205ms 200 application/json; charset=utf-8
+[14/04/2021 16:11:58] [INF] [] Application Starting.
+[14/04/2021 16:12:00] [INF] [Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager] User profile is available. Using 'C:\Users\vu.dt99\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[14/04/2021 16:12:01] [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+[14/04/2021 16:12:01] [INF] [Microsoft.Hosting.Lifetime] Hosting environment: Development
+[14/04/2021 16:12:01] [INF] [Microsoft.Hosting.Lifetime] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[14/04/2021 16:12:01] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/index.html  
+[14/04/2021 16:12:01] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 251.1332ms 200 text/html;charset=utf-8
+[14/04/2021 16:12:01] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/v1/swagger.json  
+[14/04/2021 16:12:02] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 276.6643ms 200 application/json;charset=utf-8
+[14/04/2021 16:12:10] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/api/v1/WeatherForecast?OrderBy=id  
+[14/04/2021 16:12:10] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.List (ExampleApi)'
+[14/04/2021 16:12:10] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "List", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] List(Application.Extensions.SearchExtension) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[14/04/2021 16:12:12] [INF] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[14/04/2021 16:12:13] [INF] [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (114ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[CreatedBy], [e].[CreatedDate], [e].[IsDeleted], [e].[Name], [e].[UpdatedBy], [e].[UpdatedDate]
+FROM [ExampleModel] AS [e]
+WHERE [e].[IsDeleted] <> CAST(1 AS bit)
+ORDER BY [e].[Id] DESC
+[14/04/2021 16:12:13] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'Application.Extensions.ResponseExtension'.
+[14/04/2021 16:12:13] [INF] [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (95ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[CreatedBy], [e].[CreatedDate], [e].[IsDeleted], [e].[Name], [e].[UpdatedBy], [e].[UpdatedDate]
+FROM [ExampleModel] AS [e]
+WHERE [e].[IsDeleted] <> CAST(1 AS bit)
+ORDER BY [e].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+[14/04/2021 16:12:13] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action ExampleApi.Controllers.WeatherForecastController.List (ExampleApi) in 3051.6608ms
+[14/04/2021 16:12:13] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'ExampleApi.Controllers.WeatherForecastController.List (ExampleApi)'
+[14/04/2021 16:12:13] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 3644.8331ms 200 application/json; charset=utf-8
+[14/04/2021 16:18:27] [INF] [] Application Starting.
+[14/04/2021 16:18:30] [INF] [Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager] User profile is available. Using 'C:\Users\vu.dt99\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[14/04/2021 16:18:31] [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+[14/04/2021 16:18:31] [INF] [Microsoft.Hosting.Lifetime] Hosting environment: Development
+[14/04/2021 16:18:31] [INF] [Microsoft.Hosting.Lifetime] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[14/04/2021 16:18:31] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/index.html  
+[14/04/2021 16:18:31] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 292.6334ms 200 text/html;charset=utf-8
+[14/04/2021 16:18:31] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/v1/swagger.json  
+[14/04/2021 16:18:32] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 286.2895ms 200 application/json;charset=utf-8
+[14/04/2021 16:18:43] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/api/v1/WeatherForecast?OrderBy=id  
+[14/04/2021 16:18:43] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.List (ExampleApi)'
+[14/04/2021 16:18:43] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "List", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] List(Application.Extensions.SearchExtension) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[14/04/2021 16:18:44] [INF] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[14/04/2021 16:18:45] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'Application.Extensions.ResponseExtension'.
+[14/04/2021 16:18:45] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action ExampleApi.Controllers.WeatherForecastController.List (ExampleApi) in 2132.604ms
+[14/04/2021 16:18:45] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'ExampleApi.Controllers.WeatherForecastController.List (ExampleApi)'
+[14/04/2021 16:18:45] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 2734.271ms 500 application/json; charset=utf-8
+[14/04/2021 16:26:00] [INF] [] Application Starting.
+[14/04/2021 16:26:06] [INF] [Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager] User profile is available. Using 'C:\Users\vu.dt99\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[14/04/2021 16:26:07] [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+[14/04/2021 16:26:07] [INF] [Microsoft.Hosting.Lifetime] Hosting environment: Development
+[14/04/2021 16:26:07] [INF] [Microsoft.Hosting.Lifetime] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[14/04/2021 16:26:07] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/index.html  
+[14/04/2021 16:26:07] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 308.486ms 200 text/html;charset=utf-8
+[14/04/2021 16:26:07] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/v1/swagger.json  
+[14/04/2021 16:26:08] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 376.2136ms 200 application/json;charset=utf-8
+[14/04/2021 16:26:16] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/api/v1/WeatherForecast?OrderBy=id  
+[14/04/2021 16:26:17] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.List (ExampleApi)'
+[14/04/2021 16:26:18] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "List", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] List(Application.Extensions.SearchExtension) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[14/04/2021 16:26:19] [INF] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[14/04/2021 16:26:21] [INF] [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (114ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ExampleModel] AS [e]
+WHERE [e].[IsDeleted] <> CAST(1 AS bit)
+[14/04/2021 16:26:21] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'Application.Extensions.ResponseExtension'.
+[14/04/2021 16:26:21] [INF] [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (97ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[CreatedBy], [e].[CreatedDate], [e].[IsDeleted], [e].[Name], [e].[UpdatedBy], [e].[UpdatedDate]
+FROM [ExampleModel] AS [e]
+WHERE [e].[IsDeleted] <> CAST(1 AS bit)
+ORDER BY [e].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+[14/04/2021 16:26:21] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action ExampleApi.Controllers.WeatherForecastController.List (ExampleApi) in 3540.9099ms
+[14/04/2021 16:26:21] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'ExampleApi.Controllers.WeatherForecastController.List (ExampleApi)'
+[14/04/2021 16:26:21] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 4906.6551ms 200 application/json; charset=utf-8
+[14/04/2021 16:26:25] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/api/v1/WeatherForecast?OrderBy=id&OrderByDesc=false  
+[14/04/2021 16:26:25] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.List (ExampleApi)'
+[14/04/2021 16:26:25] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "List", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] List(Application.Extensions.SearchExtension) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[14/04/2021 16:26:25] [INF] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[14/04/2021 16:26:25] [INF] [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (62ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ExampleModel] AS [e]
+WHERE [e].[IsDeleted] <> CAST(1 AS bit)
+[14/04/2021 16:26:25] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'Application.Extensions.ResponseExtension'.
+[14/04/2021 16:26:25] [INF] [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (59ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[CreatedBy], [e].[CreatedDate], [e].[IsDeleted], [e].[Name], [e].[UpdatedBy], [e].[UpdatedDate]
+FROM [ExampleModel] AS [e]
+WHERE [e].[IsDeleted] <> CAST(1 AS bit)
+ORDER BY [e].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+[14/04/2021 16:26:25] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action ExampleApi.Controllers.WeatherForecastController.List (ExampleApi) in 239.3251ms
+[14/04/2021 16:26:25] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'ExampleApi.Controllers.WeatherForecastController.List (ExampleApi)'
+[14/04/2021 16:26:25] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 283.135ms 200 application/json; charset=utf-8

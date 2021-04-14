@@ -38,7 +38,7 @@ namespace Application.Extensions
                     }
                 }
             }
-            var totalRecords = source.ToList().Count;
+            var totalRecords = source.Count();
             var totalPages = Convert.ToInt32(Math.Ceiling((double)totalRecords / (double)search.PageSize));
             var paging = new Paging(search.PageNumber, search.PageSize, totalPages, totalRecords);
             source = source.Skip((search.PageNumber - 1) * search.PageSize).Take(search.PageSize);

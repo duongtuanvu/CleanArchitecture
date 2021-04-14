@@ -3,9 +3,9 @@ using FluentValidation;
 
 namespace Application.Features.ExampleFeature.Validations
 {
-    class CreateExampleCommandValidator : AbstractValidator<CreateExampleCommand>
+    class CreateCommandValidator : AbstractValidator<CreateCommand>
     {
-        public CreateExampleCommandValidator()
+        public CreateCommandValidator()
         {
             RuleFor(x => x.Name).NotEmpty();
         }

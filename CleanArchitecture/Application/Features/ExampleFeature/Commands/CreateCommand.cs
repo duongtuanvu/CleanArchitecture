@@ -7,18 +7,18 @@ using System.Threading.Tasks;
 
 namespace Application.Features.ExampleFeature.Commands
 {
-    public class CreateExampleCommand : IRequest<bool>
+    public class CreateCommand : IRequest<bool>
     {
         public string Name { get; set; }
 
-        public class CreateExampleCommandHandler : IRequestHandler<CreateExampleCommand, bool>
+        public class CreateCommandHandler : IRequestHandler<CreateCommand, bool>
         {
             private readonly IUnitOfWork _uow;
-            public CreateExampleCommandHandler(IUnitOfWork uow)
+            public CreateCommandHandler(IUnitOfWork uow)
             {
                 _uow = uow;
             }
-            public async Task<bool> Handle(CreateExampleCommand request, CancellationToken cancellationToken)
+            public async Task<bool> Handle(CreateCommand request, CancellationToken cancellationToken)
             {
                 var example = new ExampleModel()
                 {

@@ -50,6 +50,7 @@ namespace Application.Behaviours
                     throw;
                 }
             }
+            response = await next();
             return response;
         }
     }

@@ -5,7 +5,7 @@ using Serilog.Formatting.Json;
 using System;
 using System.IO;
 
-namespace Application.Logger
+namespace Application.Extensions
 {
     public static class LoggerExtension
     {

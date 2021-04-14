@@ -34,6 +34,7 @@ namespace Application.IoC
             service.AddTransient<IExampleQuery, ExampleQuery>();
             service.AddSingleton(typeof(IConverter), new SynchronizedConverter(new PdfTools()));
             service.AddTransient<IRestSharpClient, RestSharpClient>();
+            service.AddHttpContextAccessor();
             #region Add jwt authen
             var jwtSettings = configuration.GetSection("JwtSettings").Get<JwtSettings>();
             service.AddAuthentication(x =>

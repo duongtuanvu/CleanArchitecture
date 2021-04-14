@@ -1,4 +1,4 @@
-﻿using Application.Commons;
+﻿using Application.Extensions;
 using Application.Extensions;
 using Data.Context;
 using Domain.Interface;
@@ -8,7 +8,7 @@ namespace Application.Features.ExampleFeature.Queries
 {
     public interface IExampleQuery
     {
-        Task<ResponseExtension> List(Search search);
+        Task<ResponseExtension> List(SearchExtension search);
         Task<ResponseExtension> Get(int id);
     }
     public class ExampleQuery : IExampleQuery
@@ -25,7 +25,7 @@ namespace Application.Features.ExampleFeature.Queries
             var data = await _uow.exampleRepository.QuerySingleAsync<ExampleDto>($"select * from ExampleModel where Id = {id}");
             return new ResponseExtension(data: data);
         }
-        public async Task<ResponseExtension> List(Search search)
+        public async Task<ResponseExtension> List(SearchExtension search)
         {
             #region Query
             var data = await _uow.exampleRepository.QueryAsync<ExampleDto>($"select * from ExampleModel");

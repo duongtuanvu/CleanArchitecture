@@ -59,5 +59,41 @@ namespace Application {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DELETE.
+        /// </summary>
+        internal static string METHOD_DELETE {
+            get {
+                return ResourceManager.GetString("METHOD_DELETE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GET.
+        /// </summary>
+        internal static string METHOD_GET {
+            get {
+                return ResourceManager.GetString("METHOD_GET", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to POST.
+        /// </summary>
+        internal static string METHOD_POST {
+            get {
+                return ResourceManager.GetString("METHOD_POST", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PUT.
+        /// </summary>
+        internal static string METHOD_PUT {
+            get {
+                return ResourceManager.GetString("METHOD_PUT", resourceCulture);
+            }
+        }
     }
 }

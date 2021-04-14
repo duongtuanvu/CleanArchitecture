@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Application.Commons
+namespace Application.Extensions
 {
-    public class Search
+    public class SearchExtension
     {
         public int PageNumber { get; set; } = 1;
         public int PageSize { get; set; } = 20;

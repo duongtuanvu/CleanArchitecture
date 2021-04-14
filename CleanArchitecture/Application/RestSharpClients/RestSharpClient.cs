@@ -1,4 +1,6 @@
-﻿using RestSharp;
+﻿using Application.Common;
+using Application.Extensions;
+using RestSharp;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -16,16 +18,16 @@ namespace Application.RestSharpClients
         {
             RestClient client = new RestClient(rq_params.BaseUrl);
             RestRequest request = new RestRequest(rq_params.ApiEndPoint,
-                rq_params.Method.Equals(RequestMethods.GET) ? Method.GET :
-                rq_params.Method.Equals(RequestMethods.POST) ? Method.POST :
-                rq_params.Method.Equals(RequestMethods.PUT) ? Method.PUT : Method.DELETE);
+                rq_params.Method.Equals(Constant.GET) ? Method.GET :
+                rq_params.Method.Equals(Constant.POST) ? Method.POST :
+                rq_params.Method.Equals(Constant.PUT) ? Method.PUT : Method.DELETE);
 
             foreach (var header in rq_params.Headers)
             {
                 request.AddHeader(header.Key, header.Value);
             }
 
-            if (rq_params.Method.Equals(RequestMethods.GET))
+            if (rq_params.Method.Equals(Constant.GET))
             {
                 foreach (var param in rq_params.Parameters)
                 {
@@ -39,14 +41,18 @@ namespace Application.RestSharpClients
                     }
                 }
             }
-            if (rq_params.Method.Equals(RequestMethods.POST))
+            else
             {
                 request.AddJsonBody(rq_params.Body);
             }
-            if (rq_params.Method.Equals(RequestMethods.PUT))
-            {
-                request.AddJsonBody(rq_params.Body);
-            }
+            //if (rq_params.Method.Equals(Resource.METHOD_POST) || rq_params.Method.Equals(Resource.METHOD_PUT))
+            //{
+
+            //}
+            //if (rq_params.Method.Equals(Resource.METHOD_DELETE))
+            //{
+            //    request.AddJsonBody(rq_params.Body);
+            //}
 
             return await client.ExecuteAsync(request);
 
@@ -110,15 +116,7 @@ namespace Application.RestSharpClients
         public object Body { get; set; }
         public Dictionary<string, string> Headers { get; set; }
         public Dictionary<string, string> Parameters { get; set; }
-        public RequestMethods Method { get; set; }
+        public string Method { get; set; }
         public bool isUrlSegment { get; set; }
-    }
-
-    public enum RequestMethods
-    {
-        GET,
-        POST,
-        PUT,
-        DELETE
     }
 }

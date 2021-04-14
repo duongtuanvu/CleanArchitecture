@@ -1,4 +1,4 @@
-﻿using Application.Commons;
+﻿using Application.Extensions;
 using Application.Extensions;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -12,7 +12,7 @@ namespace Application.Extensions
 {
     public static class SortingExtension
     {
-        public static ResponseExtension Sort<T>(this IQueryable<T> query, Search search) where T : class
+        public static ResponseExtension Sort<T>(this IQueryable<T> query, SearchExtension search) where T : class
         {
             if (!string.IsNullOrWhiteSpace(search.Keyword))
             {

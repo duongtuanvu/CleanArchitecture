@@ -9,8 +9,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Application.Commons;
+using Application.Extensions;
 using Application.RestSharpClients;
+using Application.Common;
 
 namespace ExampleApi.Controllers
 {
@@ -33,7 +34,7 @@ namespace ExampleApi.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> List([FromQuery] Search search)
+        public async Task<IActionResult> List([FromQuery] SearchExtension search)
         {
             var result = await _exampleQuery.List(search);
             return Ok(result);
@@ -49,7 +50,7 @@ namespace ExampleApi.Controllers
         }
 
         [HttpPost]
-        [Authorize]
+        //[Authorize]
         public async Task<IActionResult> Create(CreateExampleCommand request)
         {
             await _mediat.Send(request);
@@ -64,14 +65,14 @@ namespace ExampleApi.Controllers
         }
 
         [HttpGet("Excel")]
-        public async Task<IActionResult> ExportExcel([FromQuery] Search search)
+        public async Task<IActionResult> ExportExcel([FromQuery] SearchExtension search)
         {
             var result = await _exampleQuery.List(search);
             return File(((IEnumerable<ExampleDto>)result.Data).ExportExcel(), "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "text.xlsx");
         }
 
         [HttpGet("Pdf")]
-        public async Task<IActionResult> ExportPdf([FromQuery] Search search)
+        public async Task<IActionResult> ExportPdf([FromQuery] SearchExtension search)
         {
             var result = await _exampleQuery.List(search);
             //var _byte = Pdf.Export<ExampleDto>((IEnumerable<ExampleDto>)result.Data);
@@ -80,7 +81,7 @@ namespace ExampleApi.Controllers
         }
 
         [HttpPost("rest")]
-        public async Task<IActionResult> RestSharp(Search search)
+        public async Task<IActionResult> RestSharp(SearchExtension search)
         {
             var headers = new Dictionary<string, string>();
             headers.Add("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiJjMGM0OGJiNC1kOTlkLTQ4NDYtODRhMC0wM2RhOWFjOWY3NjkiLCJQZXJtaXNzaW9ucyI6IiIsIklzQWRtaW4iOiJUcnVlIiwibmJmIjoxNjE4Mzc0NTA2LCJleHAiOjE2MTg0MTc3MDYsImlzcyI6ImNyb3duLXgiLCJhdWQiOiJjcm93bi14In0.wMF94LrTJ7uBMK1Q7wxChNWnSXTrg8r2sP8zUWZ_Drc");
@@ -92,7 +93,7 @@ namespace ExampleApi.Controllers
                 BaseUrl = "http://localhost:62025/",
                 Body = new { Id = "02a3b9d7-6242-4a3d-8f0a-6d5a64632b2e", FullName = "test REST" },
                 ApiEndPoint = "api/v1/users",
-                Method = RequestMethods.PUT,
+                Method = Constant.PUT,
                 Headers = headers,
                 Parameters = param,
                 isUrlSegment = true

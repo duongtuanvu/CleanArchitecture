@@ -778,3 +778,46 @@ OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
 [14/04/2021 16:26:25] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action ExampleApi.Controllers.WeatherForecastController.List (ExampleApi) in 239.3251ms
 [14/04/2021 16:26:25] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'ExampleApi.Controllers.WeatherForecastController.List (ExampleApi)'
 [14/04/2021 16:26:25] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 283.135ms 200 application/json; charset=utf-8
+[14/04/2021 16:35:44] [INF] [] Application Starting.
+[14/04/2021 16:35:51] [INF] [Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager] User profile is available. Using 'C:\Users\vu.dt99\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[14/04/2021 16:35:52] [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+[14/04/2021 16:35:52] [INF] [Microsoft.Hosting.Lifetime] Hosting environment: Development
+[14/04/2021 16:35:52] [INF] [Microsoft.Hosting.Lifetime] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[14/04/2021 16:35:52] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/index.html  
+[14/04/2021 16:35:52] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 241.3555ms 200 text/html;charset=utf-8
+[14/04/2021 16:35:53] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 GET https://localhost:44371/swagger/v1/swagger.json  
+[14/04/2021 16:35:53] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 284.8289ms 200 application/json;charset=utf-8
+[14/04/2021 16:35:57] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 POST https://localhost:44371/api/v1/WeatherForecast application/json 17
+[14/04/2021 16:35:58] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.Create (ExampleApi)'
+[14/04/2021 16:35:59] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "Create", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Application.Features.ExampleFeature.Commands.CreateCommand) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[14/04/2021 16:36:06] [INF] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[14/04/2021 16:36:10] [INF] [Application.Behaviours.TransactionBehaviour] =====>  Start transaction for CreateCommand
+[14/04/2021 16:36:10] [INF] [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (137ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Int32), @p5='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [ExampleModel] ([CreatedBy], [CreatedDate], [IsDeleted], [Name], [UpdatedBy], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [Id]
+FROM [ExampleModel]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+[14/04/2021 16:36:11] [INF] [Application.Behaviours.TransactionBehaviour] =====> End transaction for CreateCommand
+[14/04/2021 16:36:14] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'System.String'.
+[14/04/2021 16:36:14] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action ExampleApi.Controllers.WeatherForecastController.Create (ExampleApi) in 15633.5476ms
+[14/04/2021 16:36:14] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'ExampleApi.Controllers.WeatherForecastController.Create (ExampleApi)'
+[14/04/2021 16:36:14] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 17023.2495ms 200 text/plain; charset=utf-8
+[14/04/2021 16:37:33] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2.0 POST https://localhost:44371/api/v1/WeatherForecast application/json 17
+[14/04/2021 16:37:33] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'ExampleApi.Controllers.WeatherForecastController.Create (ExampleApi)'
+[14/04/2021 16:37:33] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "Create", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Application.Features.ExampleFeature.Commands.CreateCommand) on controller ExampleApi.Controllers.WeatherForecastController (ExampleApi).
+[14/04/2021 16:37:33] [INF] [Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[14/04/2021 16:37:33] [INF] [Application.Behaviours.TransactionBehaviour] =====>  Start transaction for CreateCommand
+[14/04/2021 16:37:33] [INF] [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (61ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Int32), @p5='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [ExampleModel] ([CreatedBy], [CreatedDate], [IsDeleted], [Name], [UpdatedBy], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [Id]
+FROM [ExampleModel]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+[14/04/2021 16:37:33] [INF] [Application.Behaviours.TransactionBehaviour] =====> End transaction for CreateCommand
+[14/04/2021 16:37:33] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'System.String'.
+[14/04/2021 16:37:33] [INF] [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action ExampleApi.Controllers.WeatherForecastController.Create (ExampleApi) in 231.0008ms
+[14/04/2021 16:37:33] [INF] [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'ExampleApi.Controllers.WeatherForecastController.Create (ExampleApi)'
+[14/04/2021 16:37:33] [INF] [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 248.3437ms 200 text/plain; charset=utf-8

@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Serilog;
+using Serilog.Events;
 using Serilog.Formatting.Json;
 using System;
 using System.IO;
@@ -21,12 +22,13 @@ namespace Application.Extensions
             //Initialize Logger
             Log.Logger = new LoggerConfiguration()
                 .MinimumLevel.Debug()
+                .MinimumLevel.Override("Microsoft.AspNetCore", LogEventLevel.Warning)
                 .WriteTo.Logger(c =>
                     c.Filter.ByIncludingOnly(e => e.Level == Serilog.Events.LogEventLevel.Error)
-                    .WriteTo.File(path: ".\\Logs\\Errors\\error-.txt", outputTemplate: "[{Timestamp:dd/MM/yyyy HH:mm:ss}] [{Level:u3}] [{SourceContext}] {Message:lj}{NewLine}{Exception}", rollingInterval: RollingInterval.Day))
+                    .WriteTo.File(path: ".\\Logs\\Errors\\error-.txt", outputTemplate: "[{Timestamp:dd/MM/yyyy HH:mm:ss} {Level:u3}] {Message:lj}{NewLine}{Exception}", rollingInterval: RollingInterval.Day))
                 .WriteTo.Logger(c =>
                     c.Filter.ByIncludingOnly(e => e.Level == Serilog.Events.LogEventLevel.Information)
-                    .WriteTo.File(path: ".\\Logs\\Informations\\log-.txt", outputTemplate: "[{Timestamp:dd/MM/yyyy HH:mm:ss}] [{Level:u3}] [{SourceContext}] {Message:lj}{NewLine}{Exception}", rollingInterval: RollingInterval.Day))
+                    .WriteTo.File(path: ".\\Logs\\Informations\\log-.txt", outputTemplate: "[{Timestamp:dd/MM/yyyy HH:mm:ss} {Level:u3}] {Message:lj}{NewLine}{Exception}", rollingInterval: RollingInterval.Day))
                 //.ReadFrom.Configuration(_configuration)
                 .CreateLogger();
         }

@@ -1,0 +1,119 @@
+[15/04/2021 11:34:35 INF] Application Starting.
+[15/04/2021 11:34:39 INF] Application started. Press Ctrl+C to shut down.
+[15/04/2021 11:34:39 INF] Hosting environment: Development
+[15/04/2021 11:34:39 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[15/04/2021 11:34:57 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[15/04/2021 11:34:59 INF] Executed DbCommand (105ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ExampleModel] AS [e]
+WHERE [e].[IsDeleted] <> CAST(1 AS bit)
+[15/04/2021 11:34:59 INF] Executed DbCommand (97ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[CreatedBy], [e].[CreatedDate], [e].[IsDeleted], [e].[Name], [e].[UpdatedBy], [e].[UpdatedDate]
+FROM [ExampleModel] AS [e]
+WHERE [e].[IsDeleted] <> CAST(1 AS bit)
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+[15/04/2021 11:37:35 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[15/04/2021 11:37:35 INF] Executed DbCommand (76ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[CreatedBy], [e].[CreatedDate], [e].[IsDeleted], [e].[Name], [e].[UpdatedBy], [e].[UpdatedDate]
+FROM [ExampleModel] AS [e]
+WHERE ([e].[IsDeleted] <> CAST(1 AS bit)) AND ([e].[Id] = @__p_0)
+[15/04/2021 12:38:00 INF] Application Starting.
+[15/04/2021 12:38:04 INF] Application started. Press Ctrl+C to shut down.
+[15/04/2021 12:38:04 INF] Hosting environment: Development
+[15/04/2021 12:38:04 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[15/04/2021 12:41:59 INF] Application Starting.
+[15/04/2021 12:42:03 INF] Application started. Press Ctrl+C to shut down.
+[15/04/2021 12:42:03 INF] Hosting environment: Development
+[15/04/2021 12:42:03 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[15/04/2021 12:43:32 INF] Application Starting.
+[15/04/2021 12:43:35 INF] Application started. Press Ctrl+C to shut down.
+[15/04/2021 12:43:35 INF] Hosting environment: Development
+[15/04/2021 12:43:35 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[15/04/2021 12:44:52 INF] Application Starting.
+[15/04/2021 12:44:55 INF] Application started. Press Ctrl+C to shut down.
+[15/04/2021 12:44:55 INF] Hosting environment: Development
+[15/04/2021 12:44:55 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[15/04/2021 13:05:53 INF] Application Starting.
+[15/04/2021 13:05:56 INF] Application started. Press Ctrl+C to shut down.
+[15/04/2021 13:05:56 INF] Hosting environment: Development
+[15/04/2021 13:05:56 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[15/04/2021 13:28:13 INF] Application Starting.
+[15/04/2021 13:28:16 INF] Application started. Press Ctrl+C to shut down.
+[15/04/2021 13:28:16 INF] Hosting environment: Development
+[15/04/2021 13:28:16 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[15/04/2021 13:28:57 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[15/04/2021 13:29:00 INF] Executed DbCommand (200ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ExampleModel] AS [e]
+WHERE [e].[IsDeleted] <> CAST(1 AS bit)
+[15/04/2021 13:29:00 INF] Executed DbCommand (96ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[CreatedBy], [e].[CreatedDate], [e].[IsDeleted], [e].[Name], [e].[UpdatedBy], [e].[UpdatedDate]
+FROM [ExampleModel] AS [e]
+WHERE [e].[IsDeleted] <> CAST(1 AS bit)
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+[15/04/2021 13:29:29 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[15/04/2021 13:29:30 INF] Executed DbCommand (64ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ExampleModel] AS [e]
+WHERE [e].[IsDeleted] <> CAST(1 AS bit)
+[15/04/2021 13:29:30 INF] Executed DbCommand (62ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[CreatedBy], [e].[CreatedDate], [e].[IsDeleted], [e].[Name], [e].[UpdatedBy], [e].[UpdatedDate]
+FROM [ExampleModel] AS [e]
+WHERE [e].[IsDeleted] <> CAST(1 AS bit)
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+[15/04/2021 13:31:30 INF] Application Starting.
+[15/04/2021 13:31:32 INF] Application started. Press Ctrl+C to shut down.
+[15/04/2021 13:31:32 INF] Hosting environment: Development
+[15/04/2021 13:31:32 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[15/04/2021 13:31:58 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[15/04/2021 13:31:59 INF] Executed DbCommand (103ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ExampleModel] AS [e]
+WHERE [e].[IsDeleted] <> CAST(1 AS bit)
+[15/04/2021 13:31:59 INF] Executed DbCommand (115ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[CreatedBy], [e].[CreatedDate], [e].[IsDeleted], [e].[Name], [e].[UpdatedBy], [e].[UpdatedDate]
+FROM [ExampleModel] AS [e]
+WHERE [e].[IsDeleted] <> CAST(1 AS bit)
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+[15/04/2021 13:32:06 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[15/04/2021 13:32:06 INF] Executed DbCommand (64ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ExampleModel] AS [e]
+WHERE [e].[IsDeleted] <> CAST(1 AS bit)
+[15/04/2021 13:32:06 INF] Executed DbCommand (72ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[CreatedBy], [e].[CreatedDate], [e].[IsDeleted], [e].[Name], [e].[UpdatedBy], [e].[UpdatedDate]
+FROM [ExampleModel] AS [e]
+WHERE [e].[IsDeleted] <> CAST(1 AS bit)
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+[15/04/2021 13:43:10 INF] Application Starting.
+[15/04/2021 13:43:12 INF] Application started. Press Ctrl+C to shut down.
+[15/04/2021 13:43:12 INF] Hosting environment: Development
+[15/04/2021 13:43:12 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[15/04/2021 13:43:28 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[15/04/2021 13:43:51 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[15/04/2021 13:43:52 INF] Executed DbCommand (127ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ExampleModel] AS [e]
+WHERE [e].[IsDeleted] <> CAST(1 AS bit)
+[15/04/2021 13:43:52 INF] Executed DbCommand (114ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[CreatedBy], [e].[CreatedDate], [e].[IsDeleted], [e].[Name], [e].[UpdatedBy], [e].[UpdatedDate]
+FROM [ExampleModel] AS [e]
+WHERE [e].[IsDeleted] <> CAST(1 AS bit)
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+[15/04/2021 13:43:58 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[15/04/2021 13:43:58 INF] Executed DbCommand (65ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ExampleModel] AS [e]
+WHERE [e].[IsDeleted] <> CAST(1 AS bit)
+[15/04/2021 13:43:58 INF] Executed DbCommand (58ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[CreatedBy], [e].[CreatedDate], [e].[IsDeleted], [e].[Name], [e].[UpdatedBy], [e].[UpdatedDate]
+FROM [ExampleModel] AS [e]
+WHERE [e].[IsDeleted] <> CAST(1 AS bit)
+ORDER BY [e].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY

@@ -13,7 +13,7 @@ namespace Application.Extensions
 {
     public static class ExcelExtension
     {
-        public static async Task<object> ReadDataFromExcelFile<T>(IFormFile file) where T : class, new()
+        public static async Task<List<T>> ReadDataFromExcelFile<T>(this List<T> data, IFormFile file) where T : class, new()
         {
             if (file == null || file.Length <= 0)
             {
@@ -30,7 +30,7 @@ namespace Application.Extensions
                 await file.CopyToAsync(stream);
                 using (var package = new ExcelPackage(stream))
                 {
-                    var data = new List<T>();
+                    //var data = new List<T>();
                     var lstProperties = typeof(T).GetProperties();
 
                     ExcelPackage.LicenseContext = LicenseContext.NonCommercial;

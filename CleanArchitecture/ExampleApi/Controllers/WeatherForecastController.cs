@@ -60,8 +60,8 @@ namespace ExampleApi.Controllers
         [HttpPost("Excel")]
         public async Task<IActionResult> ImportExcel(IFormFile file)
         {
-            var result = await ExcelExtension.ReadDataFromExcelFile<ExampleDto>(file);
-            return Ok(result);
+            var data = await (new List<ExampleDto>()).ReadDataFromExcelFile<ExampleDto>(file);
+            return Ok(data);
         }
 
         [HttpGet("Excel")]

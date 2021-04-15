@@ -1,9 +1,15 @@
 using Application.Extensions;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace ExampleApi
+namespace ApiGateway.Ocelot
 {
     public class Program
     {
@@ -24,15 +30,19 @@ namespace ExampleApi
             {
                 LoggerExtension.CloseAndFlush();
             }
+            //CreateHostBuilder(args).Build().Run();
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
-            .UseSeriLog()
-            .ConfigureWebHostDefaults(webBuilder =>
+                .UseSeriLog()
+                .ConfigureAppConfiguration((hostingContext, config) =>
+                {
+                    config.AddJsonFile(Path.Combine("configuration.json"));
+                })
+                .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
-                })
-            ;
+                });
     }
 }

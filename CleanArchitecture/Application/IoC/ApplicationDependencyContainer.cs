@@ -23,21 +23,41 @@ namespace Application.IoC
 {
     public static class ApplicationDependencyContainer
     {
-        public static void ApplicationRegisterServices(this IServiceCollection service, IConfiguration configuration)
+        public static void ApplicationRegisterServices(this IServiceCollection services, IConfiguration configuration)
         {
-            service.RegisterServices();
-            service.RegisterValidations();
-            service.Configure<JwtSettings>(configuration.GetSection("JwtSettings"));
-            service.AddMediatR(Assembly.GetExecutingAssembly());
-            service.AddScoped(typeof(IPipelineBehavior<,>), typeof(TransactionBehaviour<,>));
-            service.AddScoped<IJwtToken, JwtToken>();
-            service.AddTransient<IExampleQuery, ExampleQuery>();
-            service.AddSingleton(typeof(IConverter), new SynchronizedConverter(new PdfTools()));
-            service.AddTransient<IRestSharpClient, RestSharpClient>();
-            service.AddHttpContextAccessor();
+            services.RegisterServices();
+            services.RegisterValidations();
+            services.Configure<JwtSettings>(configuration.GetSection("JwtSettings"));
+            services.AddMediatR(Assembly.GetExecutingAssembly());
+            services.AddScoped(typeof(IPipelineBehavior<,>), typeof(TransactionBehaviour<,>));
+            services.AddScoped<IJwtToken, JwtToken>();
+            services.AddTransient<IExampleQuery, ExampleQuery>();
+            services.AddSingleton(typeof(IConverter), new SynchronizedConverter(new PdfTools()));
+            services.AddTransient<IRestSharpClient, RestSharpClient>();
+            services.AddHttpContextAccessor();
+            //services.RegisterAuthentication(configuration);
+        }
+
+        public static void RegisterValidations(this IServiceCollection services)
+        {
+            services.AddMvc(opts =>
+            {
+                opts.Filters.Add<FilterBehaviour>();
+                opts.Filters.Add<ExceptionBehaviour>();
+            })
+                .AddFluentValidation();
+            services.AddTransient<IValidator<CreateExampleCommand>, CreateExampleCommandValidator>();
+            services.Configure<ApiBehaviorOptions>(options =>
+            {
+                options.SuppressModelStateInvalidFilter = true;
+            });
+        }
+
+        public static void RegisterAuthentication(this IServiceCollection services, IConfiguration configuration)
+        {
             #region Add jwt authen
             var jwtSettings = configuration.GetSection("JwtSettings").Get<JwtSettings>();
-            service.AddAuthentication(x =>
+            services.AddAuthentication(x =>
             {
                 x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
                 x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -56,21 +76,6 @@ namespace Application.IoC
                 };
             });
             #endregion
-        }
-
-        public static void RegisterValidations(this IServiceCollection service)
-        {
-            service.AddMvc(opts =>
-            {
-                opts.Filters.Add<FilterBehaviour>();
-                opts.Filters.Add<ExceptionBehaviour>();
-            })
-                .AddFluentValidation();
-            service.AddTransient<IValidator<CreateExampleCommand>, CreateExampleCommandValidator>();
-            service.Configure<ApiBehaviorOptions>(options =>
-            {
-                options.SuppressModelStateInvalidFilter = true;
-            });
         }
     }
 }

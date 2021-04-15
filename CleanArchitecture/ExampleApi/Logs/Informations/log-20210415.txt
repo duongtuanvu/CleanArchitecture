@@ -1,0 +1,36 @@
+[15/04/2021 16:30:18 INF] Application Starting.
+[15/04/2021 16:30:27 INF] Application started. Press Ctrl+C to shut down.
+[15/04/2021 16:30:27 INF] Hosting environment: Development
+[15/04/2021 16:30:27 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[15/04/2021 16:43:42 INF] Application Starting.
+[15/04/2021 16:44:59 INF] Application Starting.
+[15/04/2021 16:45:02 INF] Application started. Press Ctrl+C to shut down.
+[15/04/2021 16:45:02 INF] Hosting environment: Development
+[15/04/2021 16:45:02 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[15/04/2021 16:46:48 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[15/04/2021 16:47:31 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[15/04/2021 16:48:07 INF] Application Starting.
+[15/04/2021 16:48:12 INF] Application started. Press Ctrl+C to shut down.
+[15/04/2021 16:48:12 INF] Hosting environment: Development
+[15/04/2021 16:48:12 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[15/04/2021 16:48:56 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[15/04/2021 16:49:03 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[15/04/2021 16:50:59 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[15/04/2021 16:50:59 INF] =====>  Start transaction for CreateExampleCommand
+[15/04/2021 16:51:00 INF] Executed DbCommand (128ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Int32), @p5='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [ExampleModel] ([CreatedBy], [CreatedDate], [IsDeleted], [Name], [UpdatedBy], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [Id]
+FROM [ExampleModel]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+[15/04/2021 16:51:00 INF] =====> End transaction for CreateExampleCommand
+[15/04/2021 16:56:22 INF] Application Starting.
+[15/04/2021 16:56:56 INF] Application Starting.
+[15/04/2021 16:57:26 INF] Application Starting.
+[15/04/2021 16:59:07 INF] Application Starting.
+[15/04/2021 16:59:26 INF] Application Starting.
+[15/04/2021 17:00:26 INF] Application Starting.
+[15/04/2021 17:00:29 INF] Application started. Press Ctrl+C to shut down.
+[15/04/2021 17:00:29 INF] Hosting environment: Development
+[15/04/2021 17:00:29 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi

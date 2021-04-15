@@ -3,8 +3,8 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:5001",
-      "sslPort": 44382
+      "applicationUrl": "http://localhost:5000",
+      "sslPort": 44338
     }
   },
   "$schema": "http://json.schemastore.org/launchsettings.json",
@@ -17,12 +17,12 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "ExampleApi": {
+    "ApiGateway.Ocelot": {
       "commandName": "Project",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
-      "applicationUrl": "https://localhost:8001;http://localhost:5001"
+      "applicationUrl": "https://localhost:8000;http://localhost:5000"
     }
   }
 }

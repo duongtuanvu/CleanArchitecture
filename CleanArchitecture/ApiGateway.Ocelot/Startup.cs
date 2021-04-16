@@ -111,7 +111,7 @@ namespace ApiGateway.Ocelot
         {
             return new OpenApiInfo
             {
-                Title = string.Format("CrownX {0}", apiDescription.GroupName.ToUpperInvariant()),
+                Title = string.Format("Ocelot {0}", apiDescription.GroupName.ToUpperInvariant()),
                 Version = apiDescription.ApiVersion.ToString(),
                 Description = "Swagger aides in development across the entire API lifecycle, from design and documentation, to test and deployment.",
             };

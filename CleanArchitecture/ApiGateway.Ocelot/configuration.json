@@ -2,7 +2,7 @@
   "Routes": [
     // Example Api
     {
-      "DownstreamPathTemplate": "/api/{version}/{controller}/{todo}",
+      "DownstreamPathTemplate": "/api/{everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -14,7 +14,7 @@
           "Port": 6001
         }
       ],
-      "UpstreamPathTemplate": "/api/{version}/{controller}",
+      "UpstreamPathTemplate": "/api/{everything}",
       "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
       "SwaggerKey": "ExampleApi",
       // Add Load Balancing
@@ -40,7 +40,7 @@
     },
     // Other Api
     {
-      "DownstreamPathTemplate": "/api/{version}/{controller1}/{todo}",
+      "DownstreamPathTemplate": "/api/{everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -48,7 +48,7 @@
           "Port": 5002
         }
       ],
-      "UpstreamPathTemplate": "/api/{version}/{controller1}",
+      "UpstreamPathTemplate": "/api/test/{everything}",
       "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
       "SwaggerKey": "OrtherApi"
       //"AuthenticationOptions": {

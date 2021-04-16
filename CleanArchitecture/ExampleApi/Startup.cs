@@ -24,6 +24,7 @@ namespace ExampleApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors();
             services.AddControllers();
             #region RegisterServices
             services.ApplicationRegisterServices(Configuration);
@@ -85,6 +86,7 @@ namespace ExampleApi
                 //opts.IncludeXmlComments(string.Format(@"{0}\OnionArchitecture.xml", System.AppDomain.CurrentDomain.BaseDirectory));
             });
             #endregion
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -94,6 +96,11 @@ namespace ExampleApi
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.UseCors(x => x
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+                .SetIsOriginAllowed(origin => true) // allow any origin
+                .AllowCredentials()); // allow credentials
             app.UseSwagger();
             app.UseSwaggerUI(opts =>
             {
@@ -110,14 +117,14 @@ namespace ExampleApi
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
-            });
+            });            
         }
 
         private OpenApiInfo CreateMetaInfoAPIVersion(ApiVersionDescription apiDescription)
         {
             return new OpenApiInfo
             {
-                Title = string.Format("CrownX {0}", apiDescription.GroupName.ToUpperInvariant()),
+                Title = string.Format("Example API {0}", apiDescription.GroupName.ToUpperInvariant()),
                 Version = apiDescription.ApiVersion.ToString(),
                 Description = "Swagger aides in development across the entire API lifecycle, from design and documentation, to test and deployment.",
             };

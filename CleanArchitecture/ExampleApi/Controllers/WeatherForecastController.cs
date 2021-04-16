@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 using Application.Extensions;
 using Application.RestSharpClients;
 using Application.Common;
+using Microsoft.AspNetCore.Cors;
 
 namespace ExampleApi.Controllers
 {

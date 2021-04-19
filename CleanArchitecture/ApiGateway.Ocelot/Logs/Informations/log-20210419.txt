@@ -1,0 +1,64 @@
+[19/04/2021 11:02:44 INF] Application Starting.
+[19/04/2021 11:03:16 INF] Application Starting.
+[19/04/2021 11:03:18 INF] Application started. Press Ctrl+C to shut down.
+[19/04/2021 11:03:18 INF] Hosting environment: Development
+[19/04/2021 11:03:18 INF] Content root path: D:\Project\Vudt\CleanArchitecture\CleanArchitecture\ApiGateway.Ocelot
+[19/04/2021 11:03:18 INF] Start processing HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[19/04/2021 11:03:18 INF] Sending HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[19/04/2021 11:03:18 INF] Received HTTP response after 105.7462ms - "OK"
+[19/04/2021 11:03:18 INF] End processing HTTP request after 122.9397ms - "OK"
+[19/04/2021 11:04:04 INF] Application Starting.
+[19/04/2021 11:04:06 INF] Application started. Press Ctrl+C to shut down.
+[19/04/2021 11:04:06 INF] Hosting environment: Development
+[19/04/2021 11:04:06 INF] Content root path: D:\Project\Vudt\CleanArchitecture\CleanArchitecture\ApiGateway.Ocelot
+[19/04/2021 11:04:06 INF] Start processing HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[19/04/2021 11:04:06 INF] Sending HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[19/04/2021 11:04:07 INF] Received HTTP response after 204.5682ms - "NotFound"
+[19/04/2021 11:04:07 INF] End processing HTTP request after 221.7442ms - "NotFound"
+[19/04/2021 11:04:13 INF] Start processing HTTP request GET "http://localhost:5003/swagger/v1/swagger.json"
+[19/04/2021 11:04:13 INF] Sending HTTP request GET "http://localhost:5003/swagger/v1/swagger.json"
+[19/04/2021 11:04:18 INF] Start processing HTTP request GET "http://localhost:5002/swagger/v1/swagger.json"
+[19/04/2021 11:04:18 INF] Sending HTTP request GET "http://localhost:5002/swagger/v1/swagger.json"
+[19/04/2021 11:04:18 INF] Received HTTP response after 10.2589ms - "OK"
+[19/04/2021 11:04:18 INF] End processing HTTP request after 11.3554ms - "OK"
+[19/04/2021 11:04:22 INF] requestId: 80000006-0000-f800-b63f-84710c7967bb, previousRequestId: no previous request id, message: No authentication needed for /api/v1/WeatherForecast
+[19/04/2021 11:04:22 INF] requestId: 80000006-0000-f800-b63f-84710c7967bb, previousRequestId: no previous request id, message: /api/{everything} route does not require user to be authorised
+[19/04/2021 11:04:22 INF] requestId: 80000006-0000-f800-b63f-84710c7967bb, previousRequestId: no previous request id, message: 307 (Temporary Redirect) status code, request uri: http://localhost:5001/api/v1/WeatherForecast
+[19/04/2021 11:05:21 INF] Application Starting.
+[19/04/2021 11:05:22 INF] Application started. Press Ctrl+C to shut down.
+[19/04/2021 11:05:22 INF] Hosting environment: Development
+[19/04/2021 11:05:22 INF] Content root path: D:\Project\Vudt\CleanArchitecture\CleanArchitecture\ApiGateway.Ocelot
+[19/04/2021 11:05:23 INF] Start processing HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[19/04/2021 11:05:23 INF] Sending HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[19/04/2021 11:05:23 INF] Received HTTP response after 231.1667ms - "NotFound"
+[19/04/2021 11:05:23 INF] End processing HTTP request after 243.2272ms - "NotFound"
+[19/04/2021 11:05:33 INF] Start processing HTTP request GET "http://localhost:5002/swagger/v1/swagger.json"
+[19/04/2021 11:05:33 INF] Sending HTTP request GET "http://localhost:5002/swagger/v1/swagger.json"
+[19/04/2021 11:05:33 INF] Received HTTP response after 8.1554ms - "OK"
+[19/04/2021 11:05:33 INF] End processing HTTP request after 8.6097ms - "OK"
+[19/04/2021 11:05:38 INF] requestId: 80000008-0003-f600-b63f-84710c7967bb, previousRequestId: no previous request id, message: No authentication needed for /api/v1/WeatherForecast
+[19/04/2021 11:05:38 INF] requestId: 80000008-0003-f600-b63f-84710c7967bb, previousRequestId: no previous request id, message: /api/{everything} route does not require user to be authorised
+[19/04/2021 11:05:38 INF] requestId: 80000008-0003-f600-b63f-84710c7967bb, previousRequestId: no previous request id, message: 307 (Temporary Redirect) status code, request uri: http://localhost:5001/api/v1/WeatherForecast
+[19/04/2021 11:06:10 INF] Application Starting.
+[19/04/2021 11:06:12 INF] Application started. Press Ctrl+C to shut down.
+[19/04/2021 11:06:12 INF] Hosting environment: Development
+[19/04/2021 11:06:12 INF] Content root path: D:\Project\Vudt\CleanArchitecture\CleanArchitecture\ApiGateway.Ocelot
+[19/04/2021 11:06:13 INF] Start processing HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[19/04/2021 11:06:13 INF] Sending HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[19/04/2021 11:06:13 INF] Received HTTP response after 228.3698ms - "NotFound"
+[19/04/2021 11:06:13 INF] End processing HTTP request after 241.0855ms - "NotFound"
+[19/04/2021 11:06:18 INF] Start processing HTTP request GET "http://localhost:5002/swagger/v1/swagger.json"
+[19/04/2021 11:06:18 INF] Sending HTTP request GET "http://localhost:5002/swagger/v1/swagger.json"
+[19/04/2021 11:06:18 INF] Received HTTP response after 15.8279ms - "OK"
+[19/04/2021 11:06:18 INF] End processing HTTP request after 16.3025ms - "OK"
+[19/04/2021 11:06:21 INF] requestId: 80000070-0001-fd00-b63f-84710c7967bb, previousRequestId: no previous request id, message: No authentication needed for /api/v1/WeatherForecast
+[19/04/2021 11:06:21 INF] requestId: 80000070-0001-fd00-b63f-84710c7967bb, previousRequestId: no previous request id, message: /api/{everything} route does not require user to be authorised
+[19/04/2021 11:06:21 INF] requestId: 80000070-0001-fd00-b63f-84710c7967bb, previousRequestId: no previous request id, message: 307 (Temporary Redirect) status code, request uri: http://localhost:5002/api/v1/WeatherForecast
+[19/04/2021 11:12:51 INF] Application Starting.
+[19/04/2021 11:12:53 INF] Application started. Press Ctrl+C to shut down.
+[19/04/2021 11:12:53 INF] Hosting environment: Development
+[19/04/2021 11:12:53 INF] Content root path: D:\Project\Vudt\CleanArchitecture\CleanArchitecture\ApiGateway.Ocelot
+[19/04/2021 11:12:53 INF] Start processing HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[19/04/2021 11:12:53 INF] Sending HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[19/04/2021 11:12:53 INF] Received HTTP response after 220.7362ms - "NotFound"
+[19/04/2021 11:12:53 INF] End processing HTTP request after 232.6175ms - "NotFound"

@@ -1,6 +1,6 @@
 ﻿{
   "Routes": [
-    // Example Api
+    // Authentication Api
     {
       "DownstreamPathTemplate": "/api/{everything}",
       "DownstreamScheme": "http",
@@ -8,10 +8,28 @@
         {
           "Host": "localhost",
           "Port": 5001
+        }
+      ],
+      "UpstreamPathTemplate": "/api/token",
+      "UpstreamHttpMethod": [ "GET" ],
+      "SwaggerKey": "AuthenticationApi"
+      //"AuthenticationOptions": {
+      //"AuthenticationProviderKey": "TestKey",
+      //"AllowedScopes": []
+      //}
+    },
+    // Example Api
+    {
+      "DownstreamPathTemplate": "/api/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5002
         }, // Add Load Balancing
         {
           "Host": "localhost",
-          "Port": 6001
+          "Port": 6002
         }
       ],
       "UpstreamPathTemplate": "/api/{everything}",
@@ -45,7 +63,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 5002
+          "Port": 5003
         }
       ],
       "UpstreamPathTemplate": "/api/test/{everything}",
@@ -59,13 +77,24 @@
   ],
   "SwaggerEndPoints": [
     {
+      "Key": "AuthenticationApi",
+      "TakeServersFromDownstreamService": true,
+      "Config": [
+        {
+          "Name": "Authentication Api",
+          "Version": "v1",
+          "Url": "http://localhost:5001/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
       "Key": "ExampleApi",
       "TakeServersFromDownstreamService": true,
       "Config": [
         {
           "Name": "Example Api",
           "Version": "v1",
-          "Url": "http://localhost:5001/swagger/v1/swagger.json"
+          "Url": "http://localhost:5002/swagger/v1/swagger.json"
         }
       ]
     },
@@ -76,7 +105,7 @@
         {
           "Name": "Orther Api",
           "Version": "v1",
-          "Url": "http://localhost:5002/swagger/v1/swagger.json"
+          "Url": "http://localhost:5003/swagger/v1/swagger.json"
         }
       ]
     }

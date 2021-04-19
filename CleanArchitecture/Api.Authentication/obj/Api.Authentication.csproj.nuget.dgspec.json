@@ -1,31 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\Domain\\Domain.csproj": {}
+    "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\Api.Authentication\\Api.Authentication.csproj": {}
   },
   "projects": {
-    "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\Domain\\Domain.csproj": {
+    "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\Api.Authentication\\Api.Authentication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\Domain\\Domain.csproj",
-        "projectName": "Domain",
-        "projectPath": "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\Domain\\Domain.csproj",
+        "projectUniqueName": "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\Api.Authentication\\Api.Authentication.csproj",
+        "projectName": "Api.Authentication",
+        "projectPath": "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\Api.Authentication\\Api.Authentication.csproj",
         "packagesPath": "C:\\Users\\Duong Vu\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\Domain\\obj\\",
+        "outputPath": "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\Api.Authentication\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Duong Vu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netstandard2.1"
+          "netcoreapp3.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netstandard2.1": {
+          "netcoreapp3.1": {
             "projectReferences": {}
           }
         },
@@ -36,11 +36,11 @@
         }
       },
       "frameworks": {
-        "netstandard2.1": {
+        "netcoreapp3.1": {
           "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
-              "version": "[5.0.4, )"
+              "version": "[3.1.14, )"
             }
           },
           "imports": [
@@ -54,7 +54,10 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "NETStandard.Library": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },

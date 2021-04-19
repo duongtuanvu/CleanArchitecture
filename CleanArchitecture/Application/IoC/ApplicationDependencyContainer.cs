@@ -27,6 +27,7 @@ namespace Application.IoC
         {
             services.RegisterServices();
             services.RegisterValidations();
+            services.RegisterAuthentication(configuration);
             services.Configure<JwtSettings>(configuration.GetSection("JwtSettings"));
             services.AddMediatR(Assembly.GetExecutingAssembly());
             services.AddScoped(typeof(IPipelineBehavior<,>), typeof(TransactionBehaviour<,>));
@@ -35,7 +36,6 @@ namespace Application.IoC
             services.AddSingleton(typeof(IConverter), new SynchronizedConverter(new PdfTools()));
             services.AddTransient<IRestSharpClient, RestSharpClient>();
             services.AddHttpContextAccessor();
-            //services.RegisterAuthentication(configuration);
         }
 
         public static void RegisterValidations(this IServiceCollection services)
@@ -61,7 +61,7 @@ namespace Application.IoC
             {
                 x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
                 x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-            }).AddJwtBearer(x =>
+            }).AddJwtBearer("Bearer", x =>
             {
                 x.RequireHttpsMetadata = true;
                 x.SaveToken = true;

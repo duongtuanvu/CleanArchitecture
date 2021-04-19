@@ -13,10 +13,6 @@
       "UpstreamPathTemplate": "/api/token",
       "UpstreamHttpMethod": [ "GET" ],
       "SwaggerKey": "AuthenticationApi"
-      //"AuthenticationOptions": {
-      //"AuthenticationProviderKey": "TestKey",
-      //"AllowedScopes": []
-      //}
     },
     // Example Api
     {
@@ -52,7 +48,7 @@
       //  "TimeoutValue": 2000
       //},
       "AuthenticationOptions": {
-        //"AuthenticationProviderKey": "Bearer",
+        "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": []
       }
     },

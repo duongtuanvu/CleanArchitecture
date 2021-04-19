@@ -62,3 +62,100 @@
 [19/04/2021 11:12:53 INF] Sending HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
 [19/04/2021 11:12:53 INF] Received HTTP response after 220.7362ms - "NotFound"
 [19/04/2021 11:12:53 INF] End processing HTTP request after 232.6175ms - "NotFound"
+[19/04/2021 15:27:21 INF] Application Starting.
+[19/04/2021 15:27:24 INF] Application started. Press Ctrl+C to shut down.
+[19/04/2021 15:27:24 INF] Hosting environment: Development
+[19/04/2021 15:27:24 INF] Content root path: D:\Project\Vudt\CleanArchitecture\CleanArchitecture\ApiGateway.Ocelot
+[19/04/2021 15:27:25 INF] Start processing HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[19/04/2021 15:27:25 INF] Sending HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[19/04/2021 15:27:25 INF] Received HTTP response after 504.2041ms - "NotFound"
+[19/04/2021 15:27:25 INF] End processing HTTP request after 520.0345ms - "NotFound"
+[19/04/2021 15:27:28 INF] Start processing HTTP request GET "http://localhost:5002/swagger/v1/swagger.json"
+[19/04/2021 15:27:28 INF] Sending HTTP request GET "http://localhost:5002/swagger/v1/swagger.json"
+[19/04/2021 15:27:28 INF] Received HTTP response after 9.875ms - "OK"
+[19/04/2021 15:27:28 INF] End processing HTTP request after 10.4009ms - "OK"
+[19/04/2021 15:27:31 INF] requestId: 80000031-0003-fc00-b63f-84710c7967bb, previousRequestId: no previous request id, message: /api/v1/WeatherForecast is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+[19/04/2021 15:27:46 INF] requestId: 80000033-0003-fc00-b63f-84710c7967bb, previousRequestId: no previous request id, message: /api/v1/WeatherForecast is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+[19/04/2021 15:27:46 INF] requestId: 80000033-0003-fc00-b63f-84710c7967bb, previousRequestId: no previous request id, message: Client has been authenticated for /api/v1/WeatherForecast
+[19/04/2021 15:27:46 INF] requestId: 80000033-0003-fc00-b63f-84710c7967bb, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+[19/04/2021 15:27:46 INF] requestId: 80000033-0003-fc00-b63f-84710c7967bb, previousRequestId: no previous request id, message: user scopes is authorised calling next authorisation checks
+[19/04/2021 15:27:46 INF] requestId: 80000033-0003-fc00-b63f-84710c7967bb, previousRequestId: no previous request id, message: /api/{everything} route does not require user to be authorised
+[19/04/2021 15:27:46 INF] requestId: 80000033-0003-fc00-b63f-84710c7967bb, previousRequestId: no previous request id, message: 307 (Temporary Redirect) status code, request uri: http://localhost:5002/api/v1/WeatherForecast
+[19/04/2021 15:28:45 INF] Application Starting.
+[19/04/2021 15:28:47 INF] Application started. Press Ctrl+C to shut down.
+[19/04/2021 15:28:47 INF] Hosting environment: Development
+[19/04/2021 15:28:47 INF] Content root path: D:\Project\Vudt\CleanArchitecture\CleanArchitecture\ApiGateway.Ocelot
+[19/04/2021 15:28:47 INF] Start processing HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[19/04/2021 15:28:47 INF] Sending HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[19/04/2021 15:28:48 INF] Received HTTP response after 221.5148ms - "NotFound"
+[19/04/2021 15:28:48 INF] End processing HTTP request after 235.5608ms - "NotFound"
+[19/04/2021 15:29:32 INF] Application Starting.
+[19/04/2021 15:29:44 INF] Application Starting.
+[19/04/2021 15:29:46 INF] Application started. Press Ctrl+C to shut down.
+[19/04/2021 15:29:46 INF] Hosting environment: Development
+[19/04/2021 15:29:46 INF] Content root path: D:\Project\Vudt\CleanArchitecture\CleanArchitecture\ApiGateway.Ocelot
+[19/04/2021 15:29:47 INF] Start processing HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[19/04/2021 15:29:47 INF] Sending HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[19/04/2021 15:29:47 INF] Received HTTP response after 198.1919ms - "NotFound"
+[19/04/2021 15:29:47 INF] End processing HTTP request after 213.1873ms - "NotFound"
+[19/04/2021 15:30:05 INF] Start processing HTTP request GET "http://localhost:5003/swagger/v1/swagger.json"
+[19/04/2021 15:30:05 INF] Sending HTTP request GET "http://localhost:5003/swagger/v1/swagger.json"
+[19/04/2021 15:30:10 INF] Start processing HTTP request GET "http://localhost:5002/swagger/v1/swagger.json"
+[19/04/2021 15:30:10 INF] Sending HTTP request GET "http://localhost:5002/swagger/v1/swagger.json"
+[19/04/2021 15:30:10 INF] Received HTTP response after 15.0312ms - "OK"
+[19/04/2021 15:30:10 INF] End processing HTTP request after 16.1193ms - "OK"
+[19/04/2021 15:30:14 INF] requestId: 8000001e-0002-fb00-b63f-84710c7967bb, previousRequestId: no previous request id, message: /api/v1/WeatherForecast is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+[19/04/2021 15:30:21 INF] requestId: 8000003b-0000-fa00-b63f-84710c7967bb, previousRequestId: no previous request id, message: /api/v1/WeatherForecast is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+[19/04/2021 15:30:21 INF] requestId: 8000003b-0000-fa00-b63f-84710c7967bb, previousRequestId: no previous request id, message: Client has been authenticated for /api/v1/WeatherForecast
+[19/04/2021 15:30:21 INF] requestId: 8000003b-0000-fa00-b63f-84710c7967bb, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+[19/04/2021 15:30:21 INF] requestId: 8000003b-0000-fa00-b63f-84710c7967bb, previousRequestId: no previous request id, message: user scopes is authorised calling next authorisation checks
+[19/04/2021 15:30:21 INF] requestId: 8000003b-0000-fa00-b63f-84710c7967bb, previousRequestId: no previous request id, message: /api/{everything} route does not require user to be authorised
+[19/04/2021 15:30:21 INF] requestId: 8000003b-0000-fa00-b63f-84710c7967bb, previousRequestId: no previous request id, message: 307 (Temporary Redirect) status code, request uri: http://localhost:5002/api/v1/WeatherForecast
+[19/04/2021 15:30:25 INF] requestId: 8000003d-0000-fa00-b63f-84710c7967bb, previousRequestId: no previous request id, message: /api/v1/WeatherForecast is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+[19/04/2021 15:30:25 INF] requestId: 8000003d-0000-fa00-b63f-84710c7967bb, previousRequestId: no previous request id, message: Client has been authenticated for /api/v1/WeatherForecast
+[19/04/2021 15:30:25 INF] requestId: 8000003d-0000-fa00-b63f-84710c7967bb, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+[19/04/2021 15:30:25 INF] requestId: 8000003d-0000-fa00-b63f-84710c7967bb, previousRequestId: no previous request id, message: user scopes is authorised calling next authorisation checks
+[19/04/2021 15:30:25 INF] requestId: 8000003d-0000-fa00-b63f-84710c7967bb, previousRequestId: no previous request id, message: /api/{everything} route does not require user to be authorised
+[19/04/2021 15:30:25 INF] requestId: 8000003d-0000-fa00-b63f-84710c7967bb, previousRequestId: no previous request id, message: 307 (Temporary Redirect) status code, request uri: http://localhost:5002/api/v1/WeatherForecast?OrderBy=id
+[19/04/2021 15:34:54 INF] Application Starting.
+[19/04/2021 15:34:57 INF] Application started. Press Ctrl+C to shut down.
+[19/04/2021 15:34:57 INF] Hosting environment: Development
+[19/04/2021 15:34:57 INF] Content root path: D:\Project\Vudt\CleanArchitecture\CleanArchitecture\ApiGateway.Ocelot
+[19/04/2021 15:34:57 INF] Start processing HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[19/04/2021 15:34:57 INF] Sending HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[19/04/2021 15:34:58 INF] Received HTTP response after 541.2274ms - "NotFound"
+[19/04/2021 15:34:58 INF] End processing HTTP request after 555.7673ms - "NotFound"
+[19/04/2021 15:35:26 INF] Start processing HTTP request GET "http://localhost:5002/swagger/v1/swagger.json"
+[19/04/2021 15:35:26 INF] Sending HTTP request GET "http://localhost:5002/swagger/v1/swagger.json"
+[19/04/2021 15:35:26 INF] Received HTTP response after 17.4153ms - "OK"
+[19/04/2021 15:35:26 INF] End processing HTTP request after 17.909ms - "OK"
+[19/04/2021 15:35:29 INF] requestId: 80000016-0000-f900-b63f-84710c7967bb, previousRequestId: no previous request id, message: /api/v1/WeatherForecast is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+[19/04/2021 15:35:38 INF] requestId: 8000003f-0003-fc00-b63f-84710c7967bb, previousRequestId: no previous request id, message: /api/v1/WeatherForecast is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+[19/04/2021 15:35:38 INF] requestId: 8000003f-0003-fc00-b63f-84710c7967bb, previousRequestId: no previous request id, message: Client has been authenticated for /api/v1/WeatherForecast
+[19/04/2021 15:35:38 INF] requestId: 8000003f-0003-fc00-b63f-84710c7967bb, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+[19/04/2021 15:35:38 INF] requestId: 8000003f-0003-fc00-b63f-84710c7967bb, previousRequestId: no previous request id, message: user scopes is authorised calling next authorisation checks
+[19/04/2021 15:35:38 INF] requestId: 8000003f-0003-fc00-b63f-84710c7967bb, previousRequestId: no previous request id, message: /api/{everything} route does not require user to be authorised
+[19/04/2021 15:35:38 INF] requestId: 8000003f-0003-fc00-b63f-84710c7967bb, previousRequestId: no previous request id, message: 307 (Temporary Redirect) status code, request uri: http://localhost:5002/api/v1/WeatherForecast
+[19/04/2021 15:35:44 INF] requestId: 8000002c-0001-ff00-b63f-84710c7967bb, previousRequestId: no previous request id, message: /api/v1/WeatherForecast is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+[19/04/2021 15:35:44 INF] requestId: 8000002c-0001-ff00-b63f-84710c7967bb, previousRequestId: no previous request id, message: Client has been authenticated for /api/v1/WeatherForecast
+[19/04/2021 15:35:44 INF] requestId: 8000002c-0001-ff00-b63f-84710c7967bb, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+[19/04/2021 15:35:44 INF] requestId: 8000002c-0001-ff00-b63f-84710c7967bb, previousRequestId: no previous request id, message: user scopes is authorised calling next authorisation checks
+[19/04/2021 15:35:44 INF] requestId: 8000002c-0001-ff00-b63f-84710c7967bb, previousRequestId: no previous request id, message: /api/{everything} route does not require user to be authorised
+[19/04/2021 15:35:44 INF] requestId: 8000002c-0001-ff00-b63f-84710c7967bb, previousRequestId: no previous request id, message: 307 (Temporary Redirect) status code, request uri: http://localhost:5002/api/v1/WeatherForecast?OrderBy=id
+[19/04/2021 15:36:21 INF] Application Starting.
+[19/04/2021 15:36:24 INF] Application started. Press Ctrl+C to shut down.
+[19/04/2021 15:36:24 INF] Hosting environment: Development
+[19/04/2021 15:36:24 INF] Content root path: D:\Project\Vudt\CleanArchitecture\CleanArchitecture\ApiGateway.Ocelot
+[19/04/2021 15:36:25 INF] Start processing HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[19/04/2021 15:36:25 INF] Sending HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[19/04/2021 15:36:25 INF] Received HTTP response after 189.353ms - "NotFound"
+[19/04/2021 15:36:25 INF] End processing HTTP request after 202.329ms - "NotFound"
+[19/04/2021 15:37:58 INF] Application Starting.
+[19/04/2021 15:38:01 INF] Application started. Press Ctrl+C to shut down.
+[19/04/2021 15:38:01 INF] Hosting environment: Development
+[19/04/2021 15:38:01 INF] Content root path: D:\Project\Vudt\CleanArchitecture\CleanArchitecture\ApiGateway.Ocelot
+[19/04/2021 15:38:01 INF] Start processing HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[19/04/2021 15:38:01 INF] Sending HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[19/04/2021 15:38:01 INF] Received HTTP response after 204.4354ms - "NotFound"
+[19/04/2021 15:38:01 INF] End processing HTTP request after 216.8428ms - "NotFound"
+[19/04/2021 15:41:48 INF] Application Starting.

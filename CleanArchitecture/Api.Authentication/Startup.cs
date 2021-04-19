@@ -31,13 +31,13 @@ namespace Api.Authentication
             services.AddCors();
             services.AddControllers();
             services.AddTransient<IJwtToken, JwtToken>();
-            //services.Configure<JwtSettings>(Configuration.GetSection("JwtSettings"));
+            services.Configure<JwtSettings>(Configuration.GetSection("JwtSettings"));
             //var jwtSettings = Configuration.GetSection("JwtSettings").Get<JwtSettings>();
             //services.AddAuthentication(x =>
             //{
             //    x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
             //    x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-            //}).AddJwtBearer(x =>
+            //}).AddJwtBearer("Bearer", x =>
             //{
             //    x.RequireHttpsMetadata = true;
             //    x.SaveToken = true;
@@ -67,9 +67,9 @@ namespace Api.Authentication
                 .AllowCredentials()); // allow credentials
 
             app.UseHttpsRedirection();
-
             app.UseRouting();
-
+            //app.UseAuthentication();
+            //app.UseAuthorization();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

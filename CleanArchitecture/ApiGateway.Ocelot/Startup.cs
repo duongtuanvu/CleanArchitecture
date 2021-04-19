@@ -33,7 +33,7 @@ namespace ApiGateway.Ocelot
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //services.RegisterAuthentication(Configuration);
+            services.RegisterAuthentication(Configuration);
             services.AddApiVersioning(config =>
             {
                 //config.DefaultApiVersion = new ApiVersion(1, 0);
@@ -95,6 +95,7 @@ namespace ApiGateway.Ocelot
             app.UseHttpsRedirection();
             app.UseRouting();
             app.UseAuthentication();
+            app.UseAuthorization();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

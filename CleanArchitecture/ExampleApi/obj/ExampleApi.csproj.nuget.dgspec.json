@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\ExampleApi\\ExampleApi.csproj": {}
+    "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\ExampleApi\\ExampleApi.csproj": {}
   },
   "projects": {
-    "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\Application\\Application.csproj": {
+    "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\Application\\Application.csproj",
-        "packagesPath": "C:\\Users\\Duong Vu\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\Application\\obj\\",
+        "projectPath": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\vu.dt99\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Duong Vu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vu.dt99\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,12 +26,13 @@
         },
         "frameworks": {
           "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\Data\\Data.csproj": {
-                "projectPath": "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\Data\\Data.csproj"
+              "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Data\\Data.csproj"
               },
-              "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\IoC\\IoC.csproj": {
-                "projectPath": "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\IoC\\IoC.csproj"
+              "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\IoC\\IoC.csproj": {
+                "projectPath": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\IoC\\IoC.csproj"
               }
             }
           }
@@ -44,6 +45,7 @@
       },
       "frameworks": {
         "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
           "dependencies": {
             "DinkToPdf": {
               "target": "Package",
@@ -145,21 +147,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.406\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\Data\\Data.csproj": {
+    "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\Data\\Data.csproj",
+        "projectUniqueName": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\Data\\Data.csproj",
-        "packagesPath": "C:\\Users\\Duong Vu\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\Data\\obj\\",
+        "projectPath": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Data\\Data.csproj",
+        "packagesPath": "C:\\Users\\vu.dt99\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Duong Vu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vu.dt99\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -171,9 +173,10 @@
         },
         "frameworks": {
           "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\Domain\\Domain.csproj": {
-                "projectPath": "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\Domain\\Domain.csproj"
+              "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Domain\\Domain.csproj"
               }
             }
           }
@@ -186,6 +189,7 @@
       },
       "frameworks": {
         "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
           "dependencies": {
             "Dapper": {
               "target": "Package",
@@ -227,21 +231,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.406\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\Domain\\Domain.csproj": {
+    "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\Duong Vu\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\vu.dt99\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Duong Vu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vu.dt99\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -253,6 +257,7 @@
         },
         "frameworks": {
           "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
             "projectReferences": {}
           }
         },
@@ -264,6 +269,7 @@
       },
       "frameworks": {
         "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -285,21 +291,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.406\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\ExampleApi\\ExampleApi.csproj": {
+    "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\ExampleApi\\ExampleApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\ExampleApi\\ExampleApi.csproj",
+        "projectUniqueName": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\ExampleApi\\ExampleApi.csproj",
         "projectName": "ExampleApi",
-        "projectPath": "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\ExampleApi\\ExampleApi.csproj",
-        "packagesPath": "C:\\Users\\Duong Vu\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\ExampleApi\\obj\\",
+        "projectPath": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\ExampleApi\\ExampleApi.csproj",
+        "packagesPath": "C:\\Users\\vu.dt99\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\ExampleApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Duong Vu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vu.dt99\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -311,12 +317,13 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\Application\\Application.csproj": {
-                "projectPath": "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\Application\\Application.csproj"
+              "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Application\\Application.csproj"
               },
-              "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\Data\\Data.csproj": {
-                "projectPath": "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\Data\\Data.csproj"
+              "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Data\\Data.csproj"
               }
             }
           }
@@ -329,6 +336,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.AspNetCore.Mvc.Versioning": {
               "target": "Package",
@@ -351,6 +359,10 @@
             "Microsoft.EntityFrameworkCore.InMemory": {
               "target": "Package",
               "version": "[5.0.4, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.10.13, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -379,21 +391,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.406\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\IoC\\IoC.csproj": {
+    "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\IoC\\IoC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\IoC\\IoC.csproj",
+        "projectUniqueName": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\IoC\\IoC.csproj",
         "projectName": "IoC",
-        "projectPath": "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\IoC\\IoC.csproj",
-        "packagesPath": "C:\\Users\\Duong Vu\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\IoC\\obj\\",
+        "projectPath": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\IoC\\IoC.csproj",
+        "packagesPath": "C:\\Users\\vu.dt99\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\IoC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Duong Vu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vu.dt99\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -405,9 +417,10 @@
         },
         "frameworks": {
           "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\Data\\Data.csproj": {
-                "projectPath": "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\Data\\Data.csproj"
+              "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Data\\Data.csproj"
               }
             }
           }
@@ -420,6 +433,7 @@
       },
       "frameworks": {
         "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
           "dependencies": {
             "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
@@ -441,7 +455,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.406\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

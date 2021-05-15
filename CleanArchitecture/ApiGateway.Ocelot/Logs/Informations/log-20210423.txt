@@ -1,0 +1,231 @@
+[23/04/2021 15:13:24 INF] Application Starting.
+[23/04/2021 15:13:37 INF] Application started. Press Ctrl+C to shut down.
+[23/04/2021 15:13:37 INF] Hosting environment: Development
+[23/04/2021 15:13:37 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ApiGateway.Ocelot
+[23/04/2021 15:13:39 INF] Start processing HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[23/04/2021 15:13:39 INF] Sending HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[23/04/2021 15:14:11 INF] Application Starting.
+[23/04/2021 15:14:14 INF] Application started. Press Ctrl+C to shut down.
+[23/04/2021 15:14:14 INF] Hosting environment: Development
+[23/04/2021 15:14:14 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ApiGateway.Ocelot
+[23/04/2021 15:14:17 INF] Start processing HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[23/04/2021 15:14:17 INF] Sending HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[23/04/2021 15:14:24 INF] Start processing HTTP request GET "http://localhost:5002/swagger/v1/swagger.json"
+[23/04/2021 15:14:24 INF] Sending HTTP request GET "http://localhost:5002/swagger/v1/swagger.json"
+[23/04/2021 15:14:53 INF] Application Starting.
+[23/04/2021 15:14:57 INF] Application started. Press Ctrl+C to shut down.
+[23/04/2021 15:14:57 INF] Hosting environment: Development
+[23/04/2021 15:14:57 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ApiGateway.Ocelot
+[23/04/2021 15:15:00 INF] Start processing HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[23/04/2021 15:15:00 INF] Sending HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[23/04/2021 15:16:06 INF] Application Starting.
+[23/04/2021 15:16:10 INF] Application started. Press Ctrl+C to shut down.
+[23/04/2021 15:16:10 INF] Hosting environment: Development
+[23/04/2021 15:16:10 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ApiGateway.Ocelot
+[23/04/2021 15:16:13 INF] Start processing HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[23/04/2021 15:16:13 INF] Sending HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[23/04/2021 15:17:14 INF] Application Starting.
+[23/04/2021 15:17:20 INF] Application started. Press Ctrl+C to shut down.
+[23/04/2021 15:17:20 INF] Hosting environment: Development
+[23/04/2021 15:17:21 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ApiGateway.Ocelot
+[23/04/2021 15:17:26 INF] Start processing HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[23/04/2021 15:17:26 INF] Sending HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[23/04/2021 15:17:48 INF] Application Starting.
+[23/04/2021 15:17:54 INF] Application started. Press Ctrl+C to shut down.
+[23/04/2021 15:17:54 INF] Hosting environment: Development
+[23/04/2021 15:17:54 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ApiGateway.Ocelot
+[23/04/2021 15:17:55 INF] Start processing HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[23/04/2021 15:17:55 INF] Sending HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[23/04/2021 15:18:01 INF] Start processing HTTP request GET "http://localhost:5002/swagger/v1/swagger.json"
+[23/04/2021 15:18:01 INF] Sending HTTP request GET "http://localhost:5002/swagger/v1/swagger.json"
+[23/04/2021 15:18:01 INF] Received HTTP response after 52.5299ms - "OK"
+[23/04/2021 15:18:01 INF] End processing HTTP request after 61.7588ms - "OK"
+[23/04/2021 15:18:29 INF] Application Starting.
+[23/04/2021 15:18:35 INF] Application started. Press Ctrl+C to shut down.
+[23/04/2021 15:18:35 INF] Hosting environment: Development
+[23/04/2021 15:18:35 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ApiGateway.Ocelot
+[23/04/2021 15:18:37 INF] Start processing HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[23/04/2021 15:18:37 INF] Sending HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[23/04/2021 15:18:43 INF] Start processing HTTP request GET "http://localhost:5002/swagger/v1/swagger.json"
+[23/04/2021 15:18:43 INF] Sending HTTP request GET "http://localhost:5002/swagger/v1/swagger.json"
+[23/04/2021 15:18:43 INF] Received HTTP response after 47.9771ms - "OK"
+[23/04/2021 15:18:43 INF] End processing HTTP request after 56.7842ms - "OK"
+[23/04/2021 15:18:53 INF] requestId: 8000000e-0002-ff00-b63f-84710c7967bb, previousRequestId: no previous request id, message: /api/auth/token is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+[23/04/2021 15:20:16 INF] Application Starting.
+[23/04/2021 15:20:21 INF] Application started. Press Ctrl+C to shut down.
+[23/04/2021 15:20:21 INF] Hosting environment: Development
+[23/04/2021 15:20:21 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ApiGateway.Ocelot
+[23/04/2021 15:20:23 INF] Start processing HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[23/04/2021 15:20:23 INF] Sending HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[23/04/2021 15:20:30 INF] Start processing HTTP request GET "http://localhost:5002/swagger/v1/swagger.json"
+[23/04/2021 15:20:30 INF] Sending HTTP request GET "http://localhost:5002/swagger/v1/swagger.json"
+[23/04/2021 15:20:30 INF] Received HTTP response after 44.8049ms - "OK"
+[23/04/2021 15:20:30 INF] End processing HTTP request after 54.1277ms - "OK"
+[23/04/2021 15:27:11 INF] Application Starting.
+[23/04/2021 15:27:39 INF] Application Starting.
+[23/04/2021 15:27:45 INF] Application started. Press Ctrl+C to shut down.
+[23/04/2021 15:27:45 INF] Hosting environment: Development
+[23/04/2021 15:27:45 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ApiGateway.Ocelot
+[23/04/2021 15:27:47 INF] Start processing HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[23/04/2021 15:27:47 INF] Sending HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[23/04/2021 15:27:53 INF] Start processing HTTP request GET "http://localhost:5002/swagger/v1/swagger.json"
+[23/04/2021 15:27:53 INF] Sending HTTP request GET "http://localhost:5002/swagger/v1/swagger.json"
+[23/04/2021 15:27:53 INF] Received HTTP response after 63.4164ms - "OK"
+[23/04/2021 15:27:53 INF] End processing HTTP request after 73.5276ms - "OK"
+[23/04/2021 15:28:20 INF] Application Starting.
+[23/04/2021 15:28:28 INF] Application started. Press Ctrl+C to shut down.
+[23/04/2021 15:28:28 INF] Hosting environment: Development
+[23/04/2021 15:28:28 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ApiGateway.Ocelot
+[23/04/2021 15:28:30 INF] Start processing HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[23/04/2021 15:28:30 INF] Sending HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[23/04/2021 15:29:01 INF] Start processing HTTP request GET "http://localhost:5002/swagger/v1/swagger.json"
+[23/04/2021 15:29:01 INF] Sending HTTP request GET "http://localhost:5002/swagger/v1/swagger.json"
+[23/04/2021 15:29:01 INF] Received HTTP response after 66.8356ms - "OK"
+[23/04/2021 15:29:01 INF] End processing HTTP request after 75.3256ms - "OK"
+[23/04/2021 15:29:06 INF] requestId: 8000000f-0000-fe00-b63f-84710c7967bb, previousRequestId: no previous request id, message: /api/v1/auth/token is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+[23/04/2021 15:37:03 INF] Application Starting.
+[23/04/2021 15:37:10 INF] Application started. Press Ctrl+C to shut down.
+[23/04/2021 15:37:10 INF] Hosting environment: Development
+[23/04/2021 15:37:10 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ApiGateway.Ocelot
+[23/04/2021 15:37:12 INF] Start processing HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[23/04/2021 15:37:12 INF] Sending HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[23/04/2021 15:37:18 INF] Start processing HTTP request GET "http://localhost:5002/swagger/v1/swagger.json"
+[23/04/2021 15:37:18 INF] Sending HTTP request GET "http://localhost:5002/swagger/v1/swagger.json"
+[23/04/2021 15:37:18 INF] Received HTTP response after 50.4932ms - "OK"
+[23/04/2021 15:37:18 INF] End processing HTTP request after 57.1174ms - "OK"
+[23/04/2021 15:38:08 INF] Application Starting.
+[23/04/2021 15:38:14 INF] Application started. Press Ctrl+C to shut down.
+[23/04/2021 15:38:14 INF] Hosting environment: Development
+[23/04/2021 15:38:14 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ApiGateway.Ocelot
+[23/04/2021 15:38:16 INF] Start processing HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[23/04/2021 15:38:16 INF] Sending HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[23/04/2021 15:38:23 INF] Start processing HTTP request GET "http://localhost:5002/swagger/v1/swagger.json"
+[23/04/2021 15:38:23 INF] Sending HTTP request GET "http://localhost:5002/swagger/v1/swagger.json"
+[23/04/2021 15:38:23 INF] Received HTTP response after 50.9544ms - "OK"
+[23/04/2021 15:38:23 INF] End processing HTTP request after 57.8268ms - "OK"
+[23/04/2021 15:39:22 INF] Application Starting.
+[23/04/2021 15:39:26 INF] Application started. Press Ctrl+C to shut down.
+[23/04/2021 15:39:26 INF] Hosting environment: Development
+[23/04/2021 15:39:26 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ApiGateway.Ocelot
+[23/04/2021 15:39:28 INF] Start processing HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[23/04/2021 15:39:28 INF] Sending HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[23/04/2021 15:39:34 INF] Start processing HTTP request GET "http://localhost:5003/swagger/v1/swagger.json"
+[23/04/2021 15:39:34 INF] Sending HTTP request GET "http://localhost:5003/swagger/v1/swagger.json"
+[23/04/2021 15:39:39 INF] Start processing HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[23/04/2021 15:39:39 INF] Sending HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[23/04/2021 15:39:46 INF] Start processing HTTP request GET "http://localhost:5002/swagger/v1/swagger.json"
+[23/04/2021 15:39:46 INF] Sending HTTP request GET "http://localhost:5002/swagger/v1/swagger.json"
+[23/04/2021 15:39:46 INF] Received HTTP response after 55.6351ms - "OK"
+[23/04/2021 15:39:46 INF] End processing HTTP request after 65.1194ms - "OK"
+[23/04/2021 15:46:34 INF] Application Starting.
+[23/04/2021 15:46:38 INF] Application started. Press Ctrl+C to shut down.
+[23/04/2021 15:46:38 INF] Hosting environment: Development
+[23/04/2021 15:46:38 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ApiGateway.Ocelot
+[23/04/2021 15:46:40 INF] Start processing HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[23/04/2021 15:46:40 INF] Sending HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[23/04/2021 15:46:45 INF] Start processing HTTP request GET "http://localhost:5002/swagger/v1/swagger.json"
+[23/04/2021 15:46:45 INF] Sending HTTP request GET "http://localhost:5002/swagger/v1/swagger.json"
+[23/04/2021 15:46:45 INF] Received HTTP response after 70.8094ms - "OK"
+[23/04/2021 15:46:45 INF] End processing HTTP request after 82.2472ms - "OK"
+[23/04/2021 15:46:53 INF] requestId: 80000018-0001-ff00-b63f-84710c7967bb, previousRequestId: no previous request id, message: /api/c/v1/WeatherForecast is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+[23/04/2021 15:47:24 INF] Application Starting.
+[23/04/2021 15:47:30 INF] Application started. Press Ctrl+C to shut down.
+[23/04/2021 15:47:30 INF] Hosting environment: Development
+[23/04/2021 15:47:30 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ApiGateway.Ocelot
+[23/04/2021 15:47:33 INF] Start processing HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[23/04/2021 15:47:33 INF] Sending HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[23/04/2021 15:48:31 INF] Start processing HTTP request GET "http://localhost:5002/swagger/v1/swagger.json"
+[23/04/2021 15:48:31 INF] Sending HTTP request GET "http://localhost:5002/swagger/v1/swagger.json"
+[23/04/2021 15:48:31 INF] Received HTTP response after 65.463ms - "OK"
+[23/04/2021 15:48:31 INF] End processing HTTP request after 72.4522ms - "OK"
+[23/04/2021 15:48:35 INF] requestId: 8000000c-0001-fe00-b63f-84710c7967bb, previousRequestId: no previous request id, message: No authentication needed for /api/c/v1/auth/token
+[23/04/2021 15:48:35 INF] requestId: 8000000c-0001-fe00-b63f-84710c7967bb, previousRequestId: no previous request id, message: /api/{everything} route does not require user to be authorised
+[23/04/2021 15:48:37 INF] requestId: 8000000c-0001-fe00-b63f-84710c7967bb, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:5002/api/v1/auth/token
+[23/04/2021 15:48:59 INF] requestId: 80000012-0003-fd00-b63f-84710c7967bb, previousRequestId: no previous request id, message: No authentication needed for /api/c/v1/WeatherForecast
+[23/04/2021 15:48:59 INF] requestId: 80000012-0003-fd00-b63f-84710c7967bb, previousRequestId: no previous request id, message: /api/{everything} route does not require user to be authorised
+[23/04/2021 15:49:19 INF] requestId: 80000016-0000-fb00-b63f-84710c7967bb, previousRequestId: no previous request id, message: No authentication needed for /api/c/v1/WeatherForecast
+[23/04/2021 15:49:19 INF] requestId: 80000016-0000-fb00-b63f-84710c7967bb, previousRequestId: no previous request id, message: /api/{everything} route does not require user to be authorised
+[23/04/2021 15:49:22 INF] requestId: 80000016-0000-fb00-b63f-84710c7967bb, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:5002/api/v1/WeatherForecast
+[23/04/2021 15:49:26 INF] requestId: 80000014-0002-fe00-b63f-84710c7967bb, previousRequestId: no previous request id, message: No authentication needed for /api/c/v1/WeatherForecast
+[23/04/2021 15:49:26 INF] requestId: 80000014-0002-fe00-b63f-84710c7967bb, previousRequestId: no previous request id, message: /api/{everything} route does not require user to be authorised
+[23/04/2021 15:49:26 INF] requestId: 80000014-0002-fe00-b63f-84710c7967bb, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:5002/api/v1/WeatherForecast?OrderBy=id
+[23/04/2021 15:49:29 INF] requestId: 80000010-0001-fe00-b63f-84710c7967bb, previousRequestId: no previous request id, message: No authentication needed for /api/c/v1/auth/token
+[23/04/2021 15:49:29 INF] requestId: 80000010-0001-fe00-b63f-84710c7967bb, previousRequestId: no previous request id, message: /api/{everything} route does not require user to be authorised
+[23/04/2021 15:49:29 INF] requestId: 80000010-0001-fe00-b63f-84710c7967bb, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:5002/api/v1/auth/token
+[23/04/2021 15:51:32 INF] Application Starting.
+[23/04/2021 15:51:38 INF] Application started. Press Ctrl+C to shut down.
+[23/04/2021 15:51:38 INF] Hosting environment: Development
+[23/04/2021 15:51:38 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ApiGateway.Ocelot
+[23/04/2021 15:51:40 INF] Start processing HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[23/04/2021 15:51:40 INF] Sending HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[23/04/2021 15:52:15 INF] Start processing HTTP request GET "http://localhost:5002/swagger/v1/swagger.json"
+[23/04/2021 15:52:15 INF] Sending HTTP request GET "http://localhost:5002/swagger/v1/swagger.json"
+[23/04/2021 15:52:15 INF] Received HTTP response after 59.7841ms - "OK"
+[23/04/2021 15:52:15 INF] End processing HTTP request after 70.1677ms - "OK"
+[23/04/2021 15:53:17 INF] Application Starting.
+[23/04/2021 15:53:23 INF] Application started. Press Ctrl+C to shut down.
+[23/04/2021 15:53:23 INF] Hosting environment: Development
+[23/04/2021 15:53:23 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ApiGateway.Ocelot
+[23/04/2021 15:53:25 INF] Start processing HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[23/04/2021 15:53:25 INF] Sending HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[23/04/2021 15:53:31 INF] Start processing HTTP request GET "http://localhost:5002/swagger/v1/swagger.json"
+[23/04/2021 15:53:31 INF] Sending HTTP request GET "http://localhost:5002/swagger/v1/swagger.json"
+[23/04/2021 15:53:31 INF] Received HTTP response after 67.9148ms - "OK"
+[23/04/2021 15:53:31 INF] End processing HTTP request after 75.9345ms - "OK"
+[23/04/2021 15:53:37 INF] requestId: 80000008-0002-fc00-b63f-84710c7967bb, previousRequestId: no previous request id, message: No authentication needed for /api/ExampleApi/v1/auth/token
+[23/04/2021 15:53:37 INF] requestId: 80000008-0002-fc00-b63f-84710c7967bb, previousRequestId: no previous request id, message: /api/{everything} route does not require user to be authorised
+[23/04/2021 15:53:38 INF] requestId: 80000008-0002-fc00-b63f-84710c7967bb, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:5002/api/v1/auth/token
+[23/04/2021 15:57:22 INF] Application Starting.
+[23/04/2021 15:57:27 INF] Application started. Press Ctrl+C to shut down.
+[23/04/2021 15:57:27 INF] Hosting environment: Development
+[23/04/2021 15:57:27 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ApiGateway.Ocelot
+[23/04/2021 15:57:29 INF] Start processing HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[23/04/2021 15:57:29 INF] Sending HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[23/04/2021 15:57:38 INF] Start processing HTTP request GET "http://localhost:5002/swagger/v1/swagger.json"
+[23/04/2021 15:57:38 INF] Sending HTTP request GET "http://localhost:5002/swagger/v1/swagger.json"
+[23/04/2021 15:57:38 INF] Received HTTP response after 51.2393ms - "OK"
+[23/04/2021 15:57:38 INF] End processing HTTP request after 59.0215ms - "OK"
+[23/04/2021 15:57:50 INF] requestId: 80000015-0003-fd00-b63f-84710c7967bb, previousRequestId: no previous request id, message: /api/ExampleApi/v1/WeatherForecast is an authenticated route. AuthenticationMiddleware checking if client is authenticated
+[23/04/2021 15:57:50 INF] requestId: 80000015-0003-fd00-b63f-84710c7967bb, previousRequestId: no previous request id, message: Client has been authenticated for /api/ExampleApi/v1/WeatherForecast
+[23/04/2021 15:57:50 INF] requestId: 80000015-0003-fd00-b63f-84710c7967bb, previousRequestId: no previous request id, message: route is authenticated scopes must be checked
+[23/04/2021 15:57:50 INF] requestId: 80000015-0003-fd00-b63f-84710c7967bb, previousRequestId: no previous request id, message: user scopes is authorised calling next authorisation checks
+[23/04/2021 15:57:50 INF] requestId: 80000015-0003-fd00-b63f-84710c7967bb, previousRequestId: no previous request id, message: /api/{everything} route does not require user to be authorised
+[23/04/2021 15:57:53 INF] requestId: 80000015-0003-fd00-b63f-84710c7967bb, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:5002/api/v1/WeatherForecast
+[23/04/2021 15:58:10 INF] Application Starting.
+[23/04/2021 15:58:57 INF] Application Starting.
+[23/04/2021 16:00:13 INF] Application Starting.
+[23/04/2021 16:00:21 INF] Application started. Press Ctrl+C to shut down.
+[23/04/2021 16:00:21 INF] Hosting environment: Development
+[23/04/2021 16:00:21 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ApiGateway.Ocelot
+[23/04/2021 16:00:23 INF] Start processing HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[23/04/2021 16:00:23 INF] Sending HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[23/04/2021 16:00:33 INF] Start processing HTTP request GET "http://localhost:5002/swagger/v1/swagger.json"
+[23/04/2021 16:00:33 INF] Sending HTTP request GET "http://localhost:5002/swagger/v1/swagger.json"
+[23/04/2021 16:00:34 INF] Received HTTP response after 169.801ms - "OK"
+[23/04/2021 16:00:34 INF] End processing HTTP request after 189.2097ms - "OK"
+[23/04/2021 16:00:39 INF] requestId: 8000001c-0001-ff00-b63f-84710c7967bb, previousRequestId: no previous request id, message: No authentication needed for /api/ExampleApi/v1/WeatherForecast
+[23/04/2021 16:00:39 INF] requestId: 8000001c-0001-ff00-b63f-84710c7967bb, previousRequestId: no previous request id, message: /api/{everything} route does not require user to be authorised
+[23/04/2021 16:00:49 INF] requestId: 80000016-0002-fe00-b63f-84710c7967bb, previousRequestId: no previous request id, message: No authentication needed for /api/ExampleApi/v1/WeatherForecast
+[23/04/2021 16:00:49 INF] requestId: 80000016-0002-fe00-b63f-84710c7967bb, previousRequestId: no previous request id, message: /api/{everything} route does not require user to be authorised
+[23/04/2021 16:00:52 INF] requestId: 80000016-0002-fe00-b63f-84710c7967bb, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:5002/api/v1/WeatherForecast
+[23/04/2021 16:01:12 INF] requestId: 8000001e-0001-ff00-b63f-84710c7967bb, previousRequestId: no previous request id, message: No authentication needed for /api/ExampleApi/v1/WeatherForecast
+[23/04/2021 16:01:12 INF] requestId: 8000001e-0001-ff00-b63f-84710c7967bb, previousRequestId: no previous request id, message: /api/{everything} route does not require user to be authorised
+[23/04/2021 16:01:12 INF] requestId: 8000001e-0001-ff00-b63f-84710c7967bb, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:5002/api/v1/WeatherForecast?OrderBy=id
+[23/04/2021 16:02:30 INF] requestId: 80000020-0001-ff00-b63f-84710c7967bb, previousRequestId: no previous request id, message: No authentication needed for /api/ExampleApi/v1/WeatherForecast
+[23/04/2021 16:02:30 INF] requestId: 80000020-0001-ff00-b63f-84710c7967bb, previousRequestId: no previous request id, message: /api/{everything} route does not require user to be authorised
+[23/04/2021 16:03:08 INF] requestId: 80000021-0001-ff00-b63f-84710c7967bb, previousRequestId: no previous request id, message: No authentication needed for /api/ExampleApi/v1/WeatherForecast
+[23/04/2021 16:03:08 INF] requestId: 80000021-0001-ff00-b63f-84710c7967bb, previousRequestId: no previous request id, message: /api/{everything} route does not require user to be authorised
+[23/04/2021 16:03:08 INF] requestId: 80000021-0001-ff00-b63f-84710c7967bb, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:5002/api/v1/WeatherForecast
+[23/04/2021 16:03:28 INF] requestId: 80000022-0001-ff00-b63f-84710c7967bb, previousRequestId: no previous request id, message: No authentication needed for /api/ExampleApi/v1/WeatherForecast
+[23/04/2021 16:03:28 INF] requestId: 80000022-0001-ff00-b63f-84710c7967bb, previousRequestId: no previous request id, message: /api/{everything} route does not require user to be authorised
+[23/04/2021 16:03:28 INF] requestId: 80000022-0001-ff00-b63f-84710c7967bb, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: http://localhost:5002/api/v1/WeatherForecast?orderby=id
+[23/04/2021 16:18:33 INF] Application Starting.
+[23/04/2021 16:18:39 INF] Application started. Press Ctrl+C to shut down.
+[23/04/2021 16:18:39 INF] Hosting environment: Development
+[23/04/2021 16:18:39 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ApiGateway.Ocelot
+[23/04/2021 16:18:40 INF] Start processing HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[23/04/2021 16:18:40 INF] Sending HTTP request GET "http://localhost:5001/swagger/v1/swagger.json"
+[23/04/2021 16:18:55 INF] Start processing HTTP request GET "http://localhost:5002/swagger/v1/swagger.json"
+[23/04/2021 16:18:55 INF] Sending HTTP request GET "http://localhost:5002/swagger/v1/swagger.json"
+[23/04/2021 16:18:55 INF] Received HTTP response after 53.0153ms - "OK"
+[23/04/2021 16:18:55 INF] End processing HTTP request after 61.9397ms - "OK"

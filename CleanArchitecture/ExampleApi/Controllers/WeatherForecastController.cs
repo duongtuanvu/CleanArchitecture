@@ -19,7 +19,8 @@ namespace ExampleApi.Controllers
     [Authorize]
     [ApiController]
     [ApiVersion("1.0")]
-    [Route("api/v{version:apiVersion}/[controller]")]
+    //[Route("api/v{version:apiVersion}/[controller]")]
+    [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
         private readonly IMediator _mediat;
@@ -35,6 +36,13 @@ namespace ExampleApi.Controllers
             _restSharpClient = restSharpClient;
         }
 
+        [AllowAnonymous]
+        [HttpGet("~/api/v{version:apiVersion}/auth/token")]
+        public string Token()
+        {
+            return _jwtToken.GenerateToken();
+        }
+
         [HttpGet]
         public async Task<IActionResult> List([FromQuery] SearchExtension search)
         {
@@ -48,7 +56,7 @@ namespace ExampleApi.Controllers
         {
             var result = await _exampleQuery.Get(id);
             return Ok(result);
-            //return _jwtToken.GenerateToken();
+
         }
 
         [HttpPost]

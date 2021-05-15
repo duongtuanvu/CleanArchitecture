@@ -3580,19 +3580,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Duong Vu\\.nuget\\packages\\": {}
+    "C:\\Users\\vu.dt99\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\Api.Authentication\\Api.Authentication.csproj",
+      "projectUniqueName": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Api.Authentication\\Api.Authentication.csproj",
       "projectName": "Api.Authentication",
-      "projectPath": "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\Api.Authentication\\Api.Authentication.csproj",
-      "packagesPath": "C:\\Users\\Duong Vu\\.nuget\\packages\\",
-      "outputPath": "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\Api.Authentication\\obj\\",
+      "projectPath": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Api.Authentication\\Api.Authentication.csproj",
+      "packagesPath": "C:\\Users\\vu.dt99\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Api.Authentication\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Duong Vu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\vu.dt99\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3604,6 +3604,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -3615,6 +3616,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
             "target": "Package",
@@ -3639,7 +3641,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.406\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

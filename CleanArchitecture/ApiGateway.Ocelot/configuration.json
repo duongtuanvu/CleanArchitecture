@@ -28,7 +28,7 @@
           "Port": 6002
         }
       ],
-      "UpstreamPathTemplate": "/api/{everything}",
+      "UpstreamPathTemplate": "/ExampleApi/{everything}",
       "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
       "SwaggerKey": "ExampleApi",
       // Add Load Balancing
@@ -48,7 +48,7 @@
       //  "TimeoutValue": 2000
       //},
       "AuthenticationOptions": {
-        "AuthenticationProviderKey": "Bearer",
+        //"AuthenticationProviderKey": "Bearer",
         "AllowedScopes": []
       }
     },
@@ -62,7 +62,7 @@
           "Port": 5003
         }
       ],
-      "UpstreamPathTemplate": "/api/test/{everything}",
+      "UpstreamPathTemplate": "/api/{everything}",
       "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
       "SwaggerKey": "OrtherApi"
       //"AuthenticationOptions": {

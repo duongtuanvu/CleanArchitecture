@@ -1,0 +1,77 @@
+[23/04/2021 15:14:21 INF] Application Starting.
+[23/04/2021 15:14:57 INF] Application Starting.
+[23/04/2021 15:16:09 INF] Application Starting.
+[23/04/2021 15:17:19 INF] Application Starting.
+[23/04/2021 15:17:31 INF] Application started. Press Ctrl+C to shut down.
+[23/04/2021 15:17:31 INF] Hosting environment: Development
+[23/04/2021 15:17:31 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[23/04/2021 15:17:49 INF] Application Starting.
+[23/04/2021 15:17:54 INF] Application started. Press Ctrl+C to shut down.
+[23/04/2021 15:17:54 INF] Hosting environment: Development
+[23/04/2021 15:17:54 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[23/04/2021 15:18:30 INF] Application Starting.
+[23/04/2021 15:18:35 INF] Application started. Press Ctrl+C to shut down.
+[23/04/2021 15:18:35 INF] Hosting environment: Development
+[23/04/2021 15:18:35 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[23/04/2021 15:20:16 INF] Application Starting.
+[23/04/2021 15:20:22 INF] Application started. Press Ctrl+C to shut down.
+[23/04/2021 15:20:22 INF] Hosting environment: Development
+[23/04/2021 15:20:22 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[23/04/2021 15:27:12 INF] Application Starting.
+[23/04/2021 15:27:39 INF] Application Starting.
+[23/04/2021 15:27:45 INF] Application started. Press Ctrl+C to shut down.
+[23/04/2021 15:27:45 INF] Hosting environment: Development
+[23/04/2021 15:27:45 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[23/04/2021 15:28:21 INF] Application Starting.
+[23/04/2021 15:28:28 INF] Application started. Press Ctrl+C to shut down.
+[23/04/2021 15:28:28 INF] Hosting environment: Development
+[23/04/2021 15:28:28 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[23/04/2021 15:37:04 INF] Application Starting.
+[23/04/2021 15:37:10 INF] Application started. Press Ctrl+C to shut down.
+[23/04/2021 15:37:10 INF] Hosting environment: Development
+[23/04/2021 15:37:10 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[23/04/2021 15:38:09 INF] Application Starting.
+[23/04/2021 15:38:14 INF] Application started. Press Ctrl+C to shut down.
+[23/04/2021 15:38:14 INF] Hosting environment: Development
+[23/04/2021 15:38:14 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[23/04/2021 15:39:23 INF] Application Starting.
+[23/04/2021 15:39:26 INF] Application started. Press Ctrl+C to shut down.
+[23/04/2021 15:39:26 INF] Hosting environment: Development
+[23/04/2021 15:39:26 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[23/04/2021 15:46:35 INF] Application Starting.
+[23/04/2021 15:46:38 INF] Application started. Press Ctrl+C to shut down.
+[23/04/2021 15:46:38 INF] Hosting environment: Development
+[23/04/2021 15:46:38 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[23/04/2021 15:47:25 INF] Application Starting.
+[23/04/2021 15:47:31 INF] Application started. Press Ctrl+C to shut down.
+[23/04/2021 15:47:31 INF] Hosting environment: Development
+[23/04/2021 15:47:31 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[23/04/2021 15:49:20 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[23/04/2021 15:49:26 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[23/04/2021 15:51:32 INF] Application Starting.
+[23/04/2021 15:51:37 INF] Application started. Press Ctrl+C to shut down.
+[23/04/2021 15:51:37 INF] Hosting environment: Development
+[23/04/2021 15:51:37 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[23/04/2021 15:53:18 INF] Application Starting.
+[23/04/2021 15:53:24 INF] Application started. Press Ctrl+C to shut down.
+[23/04/2021 15:53:24 INF] Hosting environment: Development
+[23/04/2021 15:53:24 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[23/04/2021 15:57:22 INF] Application Starting.
+[23/04/2021 15:57:27 INF] Application started. Press Ctrl+C to shut down.
+[23/04/2021 15:57:27 INF] Hosting environment: Development
+[23/04/2021 15:57:27 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[23/04/2021 15:57:52 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[23/04/2021 15:58:11 INF] Application Starting.
+[23/04/2021 15:58:58 INF] Application Starting.
+[23/04/2021 16:00:14 INF] Application Starting.
+[23/04/2021 16:00:21 INF] Application started. Press Ctrl+C to shut down.
+[23/04/2021 16:00:21 INF] Hosting environment: Development
+[23/04/2021 16:00:21 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[23/04/2021 16:00:51 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[23/04/2021 16:01:12 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[23/04/2021 16:03:08 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[23/04/2021 16:03:28 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[23/04/2021 16:18:34 INF] Application Starting.
+[23/04/2021 16:18:38 INF] Application started. Press Ctrl+C to shut down.
+[23/04/2021 16:18:38 INF] Hosting environment: Development
+[23/04/2021 16:18:38 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi

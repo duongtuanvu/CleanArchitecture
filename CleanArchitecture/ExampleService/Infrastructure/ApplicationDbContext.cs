@@ -1,4 +1,6 @@
 ﻿using ExampleService.Infrastructure.Entities;
+using ExampleService.Infrastructure.EntityConfigurations;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -7,18 +9,24 @@ using System.Threading.Tasks;
 
 namespace ExampleService.Infrastructure
 {
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : IdentityDbContext<User, Role, Guid>
     {
-        public int UserId { get; set; }
+        public Guid UserId { get; set; }
 
-        public ApplicationDbContext(DbContextOptions options) : base(options)
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
 
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Example>().HasQueryFilter(x => !x.IsDeleted);
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.ApplyConfiguration(new ExampleConfiguration());
+            modelBuilder.ApplyConfiguration(new UserConfiguration());
+            modelBuilder.ApplyConfiguration(new RoleConfiguration());
+            modelBuilder.ApplyConfiguration(new UserRoleConfiguration());
+            modelBuilder.ApplyConfiguration(new UserClaimConfiguration());
+            modelBuilder.ApplyConfiguration(new RoleClaimConfiguration());
         }
 
         public override int SaveChanges()
@@ -33,7 +41,7 @@ namespace ExampleService.Infrastructure
             var now = DateTime.Now;
             var entries = ChangeTracker
                 .Entries()
-                .Where(e => e.Entity is BaseEntity && ( e.State == EntityState.Added || e.State == EntityState.Modified));
+                .Where(e => e.Entity is BaseEntity && (e.State == EntityState.Added || e.State == EntityState.Modified));
 
             foreach (var entityEntry in entries)
             {

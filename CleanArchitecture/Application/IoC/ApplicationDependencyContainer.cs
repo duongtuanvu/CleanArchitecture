@@ -1,13 +1,7 @@
-﻿using Application.Features.ExampleFeature.Commands;
-using Application.Features.ExampleFeature.Queries;
-using Application.Features.ExampleFeature.Validations;
-using Application.Behaviours;
+﻿using Application.Behaviours;
 using Application.Extensions;
 using DinkToPdf;
 using DinkToPdf.Contracts;
-using FluentValidation;
-using FluentValidation.AspNetCore;
-using IoC;
 using MediatR;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Mvc;
@@ -25,16 +19,16 @@ namespace Application.IoC
     {
         public static void ApplicationRegisterServices(this IServiceCollection services, IConfiguration configuration)
         {
-            services.RegisterServices();
+            //services.RegisterServices();
             services.RegisterValidations();
             services.RegisterAuthentication(configuration);
             services.Configure<JwtSettings>(configuration.GetSection("JwtSettings"));
             services.AddMediatR(Assembly.GetExecutingAssembly());
-            services.AddScoped(typeof(IPipelineBehavior<,>), typeof(TransactionBehaviour<,>));
+            //services.AddScoped(typeof(IPipelineBehavior<,>), typeof(TransactionBehaviour<,>));
             services.AddScoped<IJwtToken, JwtToken>();
-            services.AddTransient<IExampleQuery, ExampleQuery>();
-            services.AddSingleton(typeof(IConverter), new SynchronizedConverter(new PdfTools()));
-            services.AddTransient<IRestSharpClient, RestSharpClient>();
+            //services.AddTransient<IExampleQuery, ExampleQuery>();
+            //services.AddSingleton(typeof(IConverter), new SynchronizedConverter(new PdfTools()));
+            //services.AddTransient<IRestSharpClient, RestSharpClient>();
             services.AddHttpContextAccessor();
         }
 
@@ -44,9 +38,9 @@ namespace Application.IoC
             {
                 opts.Filters.Add<FilterBehaviour>();
                 opts.Filters.Add<ExceptionBehaviour>();
-            })
-                .AddFluentValidation();
-            services.AddTransient<IValidator<CreateExampleCommand>, CreateExampleCommandValidator>();
+            });
+                //.AddFluentValidation();
+            //services.AddTransient<IValidator<CreateExampleCommand>, CreateExampleCommandValidator>();
             services.Configure<ApiBehaviorOptions>(options =>
             {
                 options.SuppressModelStateInvalidFilter = true;

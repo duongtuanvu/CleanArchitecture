@@ -8,7 +8,7 @@ namespace Application.Features.ExampleFeature.Queries
 {
     public interface IExampleQuery
     {
-        Task<ResponseExtension> List(SearchExtension search);
+        Task<ResponseExtension> List(SearchBase search);
         Task<ResponseExtension> Get(int id);
     }
     public class ExampleQuery : IExampleQuery
@@ -25,12 +25,12 @@ namespace Application.Features.ExampleFeature.Queries
             var data = await _uow.exampleRepository.QuerySingleAsync<ExampleDto>($"select * from ExampleModel where Id = {id}");
             return new ResponseExtension(data: data);
         }
-        public async Task<ResponseExtension> List(SearchExtension search)
+        public async Task<ResponseExtension> List(SearchBase search)
         {
             #region Query
             var data = await _uow.exampleRepository.QueryAsync<ExampleDto>($"select * from ExampleModel");
             //var data = await _uow.exampleRepository.QueryAsync<ExampleDto>($"select * from ExampleModel where Name like = '%{search.Keyword}%'");
-            return data.Sort<ExampleDto>(search);
+            return await data.Sort<ExampleDto>(search);
             #endregion
 
             #region StoredProcedure

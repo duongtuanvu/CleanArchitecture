@@ -44,7 +44,7 @@ namespace ExampleApi.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> List([FromQuery] SearchExtension search)
+        public async Task<IActionResult> List([FromQuery] SearchBase search)
         {
             var result = await _exampleQuery.List(search);
             return Ok(result);
@@ -75,14 +75,14 @@ namespace ExampleApi.Controllers
         }
 
         [HttpGet("Excel")]
-        public async Task<IActionResult> ExportExcel([FromQuery] SearchExtension search)
+        public async Task<IActionResult> ExportExcel([FromQuery] SearchBase search)
         {
             var result = await _exampleQuery.List(search);
             return File(((IEnumerable<ExampleDto>)result.Data).ExportExcel(), "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "text.xlsx");
         }
 
         [HttpGet("Pdf")]
-        public async Task<IActionResult> ExportPdf([FromQuery] SearchExtension search)
+        public async Task<IActionResult> ExportPdf([FromQuery] SearchBase search)
         {
             var result = await _exampleQuery.List(search);
             //var _byte = Pdf.Export<ExampleDto>((IEnumerable<ExampleDto>)result.Data);
@@ -91,7 +91,7 @@ namespace ExampleApi.Controllers
         }
 
         [HttpPost("rest")]
-        public async Task<IActionResult> RestSharp(SearchExtension search)
+        public async Task<IActionResult> RestSharp(SearchBase search)
         {
             var headers = new Dictionary<string, string>();
             headers.Add("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiJjMGM0OGJiNC1kOTlkLTQ4NDYtODRhMC0wM2RhOWFjOWY3NjkiLCJQZXJtaXNzaW9ucyI6IiIsIklzQWRtaW4iOiJUcnVlIiwibmJmIjoxNjE4Mzc0NTA2LCJleHAiOjE2MTg0MTc3MDYsImlzcyI6ImNyb3duLXgiLCJhdWQiOiJjcm93bi14In0.wMF94LrTJ7uBMK1Q7wxChNWnSXTrg8r2sP8zUWZ_Drc");

@@ -1,18 +1,17 @@
-﻿using Application.Extensions;
-using Application.Extensions;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Application.Extensions
 {
     public static class SortingExtension
     {
-        public static ResponseExtension Sort<T>(this IQueryable<T> query, SearchExtension search) where T : class
+        public static async Task<ResponseExtension> Sort<T>(this IQueryable<T> query, SearchBase search) where T : class
         {
             var source = query;
             if (!string.IsNullOrWhiteSpace(search.OrderBy))
@@ -34,7 +33,7 @@ namespace Application.Extensions
                     }
                 }
             }
-            var totalRecords = source.ToList().Count;
+            var totalRecords = await source.CountAsync();
             var totalPages = Convert.ToInt32(Math.Ceiling((double)totalRecords / (double)search.PageSize));
             var paging = new Paging(search.PageNumber, search.PageSize, totalPages, totalRecords);
             source = source.Skip((search.PageNumber - 1) * search.PageSize).Take(search.PageSize);

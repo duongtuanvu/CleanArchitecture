@@ -1,5 +1,4 @@
 ﻿using Application.Common;
-using Application.Extensions;
 using Data.Context;
 using MediatR;
 using Microsoft.AspNetCore.Http;

@@ -1,0 +1,4 @@
+[30/05/2021 16:27:30 INF] Application Starting.
+[30/05/2021 16:27:32 INF] Application started. Press Ctrl+C to shut down.
+[30/05/2021 16:27:32 INF] Hosting environment: Development
+[30/05/2021 16:27:32 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ApiGateway.Ocelot

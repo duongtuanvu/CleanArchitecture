@@ -1,15 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "XHRc2h/RS0iCeGvl1ivE9YmRL0tHjIrH8+kTFl4fixOoa6k/f0p7EsGvhrDxQR67iUtrd76GiNqLjD95cdmVWQ==",
-  "success": true,
+  "dgSpecHash": "rgf9A1GsZYekpuko5DkRTK/VfH5zbv3BRj7P9CYc7pNJXMApAAVK/SwHWi/BHl5Da5nSW6s7J1oWy0fnoG6iAw==",
+  "success": false,
   "projectFilePath": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\ExampleApi\\ExampleApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vu.dt99\\.nuget\\packages\\dapper\\2.0.78\\dapper.2.0.78.nupkg.sha512",
     "C:\\Users\\vu.dt99\\.nuget\\packages\\dinktopdf\\1.0.8\\dinktopdf.1.0.8.nupkg.sha512",
     "C:\\Users\\vu.dt99\\.nuget\\packages\\epplus\\5.6.2\\epplus.5.6.2.nupkg.sha512",
-    "C:\\Users\\vu.dt99\\.nuget\\packages\\fluentvalidation\\8.6.3\\fluentvalidation.8.6.3.nupkg.sha512",
-    "C:\\Users\\vu.dt99\\.nuget\\packages\\fluentvalidation.aspnetcore\\8.6.3\\fluentvalidation.aspnetcore.8.6.3.nupkg.sha512",
-    "C:\\Users\\vu.dt99\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\8.6.3\\fluentvalidation.dependencyinjectionextensions.8.6.3.nupkg.sha512",
     "C:\\Users\\vu.dt99\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\vu.dt99\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
     "C:\\Users\\vu.dt99\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
@@ -243,5 +240,15 @@
     "C:\\Users\\vu.dt99\\.nuget\\packages\\system.xml.xpath.xdocument\\4.3.0\\system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\vu.dt99\\.nuget\\packages\\system.xml.xpath.xmldocument\\4.3.0\\system.xml.xpath.xmldocument.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Detected package downgrade: Microsoft.EntityFrameworkCore from 5.0.6 to 5.0.4. Reference the package directly from the project to select a different version. \r\n ExampleApi -> Application -> Microsoft.EntityFrameworkCore (>= 5.0.6) \r\n ExampleApi -> Microsoft.EntityFrameworkCore (>= 5.0.4)",
+      "libraryId": "Microsoft.EntityFrameworkCore",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
 }

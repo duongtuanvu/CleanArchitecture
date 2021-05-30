@@ -1,7 +1,12 @@
+using Application.IoC;
+using ExampleService.Behaviours;
 using ExampleService.Infrastructure;
+using ExampleService.Infrastructure.Entities;
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ApiExplorer;
 using Microsoft.EntityFrameworkCore;
@@ -30,12 +35,21 @@ namespace ExampleService
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.ApplicationRegisterServices(Configuration);
 
-            services.AddDbContext<ApplicationDbContext>(opts =>
-            {
-                //opts.UseInMemoryDatabase("ExampleDatabase");
-                opts.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
-            });
+            #region DbContext
+            services.AddEntityFrameworkNpgsql()
+                .AddDbContext<ApplicationDbContext>(opt => opt.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
+            //services.AddDbContext<ApplicationDbContext>(opts =>
+            //{
+            //    //opts.UseInMemoryDatabase("ExampleDatabase");
+            //    opts.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
+            //});
+            services.AddIdentity<User, Role>()
+                .AddEntityFrameworkStores<ApplicationDbContext>()
+                .AddDefaultTokenProviders();
+            services.AddScoped(typeof(IPipelineBehavior<,>), typeof(TransactionBehaviour<,>));
+            #endregion
 
             #region Api versioning
             services.AddApiVersioning(config =>
@@ -90,17 +104,31 @@ namespace ExampleService
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IApiVersionDescriptionProvider provider)
         {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            app.UseCors(x => x
+              .AllowAnyMethod()
+              .AllowAnyHeader()
+              .SetIsOriginAllowed(origin => true) // allow any origin
+              .AllowCredentials()); // allow credentials
+            app.UseSwagger();
+            app.UseSwaggerUI(opts =>
+            {
+                // build a swagger endpoint for each discovered API version
+                foreach (var description in provider.ApiVersionDescriptions)
+                {
+                    opts.SwaggerEndpoint($"/swagger/{description.GroupName}/swagger.json", description.GroupName.ToUpperInvariant());
+                }
+            });
             app.UseHttpsRedirection();
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

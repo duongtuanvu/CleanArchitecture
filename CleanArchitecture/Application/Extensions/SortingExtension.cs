@@ -14,10 +14,6 @@ namespace Application.Extensions
     {
         public static ResponseExtension Sort<T>(this IQueryable<T> query, SearchExtension search) where T : class
         {
-            if (!string.IsNullOrWhiteSpace(search.Keyword))
-            {
-                query.Where("Name");
-            }
             var source = query;
             if (!string.IsNullOrWhiteSpace(search.OrderBy))
             {

@@ -29,7 +29,7 @@ namespace Application.Extensions
 
         public string GenerateToken()
         {
-            // generate token that is valid for 7 days
+            // generate token that is valid for 7 hours
             var tokenHandler = new JwtSecurityTokenHandler();
             var tokenDescriptor = new SecurityTokenDescriptor
             {

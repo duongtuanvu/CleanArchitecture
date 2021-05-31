@@ -18,15 +18,17 @@ namespace ExampleService.Infrastructure
 
         }
 
+        public DbSet<Example> Examples { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
             modelBuilder.ApplyConfiguration(new ExampleConfiguration());
             modelBuilder.ApplyConfiguration(new UserConfiguration());
             modelBuilder.ApplyConfiguration(new RoleConfiguration());
-            modelBuilder.ApplyConfiguration(new UserRoleConfiguration());
-            modelBuilder.ApplyConfiguration(new UserClaimConfiguration());
-            modelBuilder.ApplyConfiguration(new RoleClaimConfiguration());
+            //modelBuilder.ApplyConfiguration(new UserRoleConfiguration());
+            //modelBuilder.ApplyConfiguration(new UserClaimConfiguration());
+            //modelBuilder.ApplyConfiguration(new RoleClaimConfiguration());
         }
 
         public override int SaveChanges()

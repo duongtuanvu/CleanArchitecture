@@ -12,6 +12,7 @@ namespace ExampleService.Infrastructure.EntityConfigurations
     {
         public void Configure(EntityTypeBuilder<Example> builder)
         {
+            builder.ToTable("Examples");
             BaseEntityConfiguration.Configuration<Example>(builder);
             builder.HasQueryFilter(x => !x.IsDeleted);
         }

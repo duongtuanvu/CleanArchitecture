@@ -10,6 +10,6 @@ namespace ExampleService.Infrastructure.Entities
         public DateTime? UpdatedDate { get; set; }
         public Guid UpdatedBy { get; set; }
         public bool IsDeleted { get; set; }
-        public Role Role { get; set; }
+        //public Role Role { get; set; }
     }
 }

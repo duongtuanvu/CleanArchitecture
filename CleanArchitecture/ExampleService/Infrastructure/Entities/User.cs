@@ -13,7 +13,5 @@ namespace ExampleService.Infrastructure.Entities
         public DateTime? UpdatedDate { get; set; }
         public Guid UpdatedBy { get; set; }
         public bool IsDeleted { get; set; }
-        public ICollection<UserClaim> UserClaims { get; set; }
-        public ICollection<UserRole> UserRoles { get; set; }
     }
 }

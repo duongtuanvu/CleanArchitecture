@@ -1,4 +1,4 @@
-using Application.IoC;
+﻿using Application.IoC;
 using ExampleService.Behaviours;
 using ExampleService.Infrastructure;
 using ExampleService.Infrastructure.Entities;
@@ -45,7 +45,26 @@ namespace ExampleService
             //    //opts.UseInMemoryDatabase("ExampleDatabase");
             //    opts.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
             //});
-            services.AddIdentity<User, Role>()
+            services.AddIdentity<User, Role>(options =>
+               {
+                   // Cấu hình về Password
+                   options.Password.RequireDigit = true; // Không bắt phải có số
+                   options.Password.RequireLowercase = true; // Không bắt phải có chữ thường
+                   options.Password.RequireNonAlphanumeric = true; // Không bắt ký tự đặc biệt
+                   options.Password.RequireUppercase = true; // Không bắt buộc chữ in
+                   options.Password.RequiredLength = 8; // Số ký tự tối thiểu của password
+                   options.Password.RequiredUniqueChars = 1; // Số ký tự riêng biệt
+
+                   // Cấu hình Lockout - khóa user
+                   options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5); // Khóa 5 phút
+                   options.Lockout.MaxFailedAccessAttempts = 5; // Thất bại 5 lầ thì khóa
+                   options.Lockout.AllowedForNewUsers = true;
+
+                   // Cấu hình về User.
+                   options.User.AllowedUserNameCharacters = // các ký tự đặt tên user
+                       "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_@";
+                   options.User.RequireUniqueEmail = true; // Email là duy nhất
+               })
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
             services.AddScoped(typeof(IPipelineBehavior<,>), typeof(TransactionBehaviour<,>));

@@ -63,7 +63,7 @@ namespace ExampleService
                    // Cấu hình về User.
                    options.User.AllowedUserNameCharacters = // các ký tự đặt tên user
                        "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_@";
-                   options.User.RequireUniqueEmail = true; // Email là duy nhất
+                   //options.User.RequireUniqueEmail = true; // Email là duy nhất
                })
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();

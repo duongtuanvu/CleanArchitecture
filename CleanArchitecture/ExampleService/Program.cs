@@ -1,4 +1,5 @@
 using Application.Extensions;
+using ExampleService.Infrastructure;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
@@ -18,7 +19,10 @@ namespace ExampleService
             try
             {
                 LoggerExtension.Information("Application Starting.");
-                CreateHostBuilder(args).Build().Run();
+                CreateHostBuilder(args)
+                    .Build()
+                    .MigrateDatabase().GetAwaiter().GetResult()
+                    .Run();
             }
             catch (Exception ex)
             {

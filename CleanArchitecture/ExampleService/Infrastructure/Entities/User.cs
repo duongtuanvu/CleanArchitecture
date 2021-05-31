@@ -8,10 +8,20 @@ namespace ExampleService.Infrastructure.Entities
 {
     public class User : IdentityUser<Guid>, IBaseEntity
     {
+        public User()
+        {
+
+        }
+        public User(string userName, bool isAdmin)
+        {
+            UserName = userName;
+            IsAdmin = isAdmin;
+        }
         public DateTime? CreatedDate { get; set; }
         public Guid CreatedBy { get; set; }
         public DateTime? UpdatedDate { get; set; }
         public Guid UpdatedBy { get; set; }
         public bool IsDeleted { get; set; }
+        public bool IsAdmin { get; set; }
     }
 }

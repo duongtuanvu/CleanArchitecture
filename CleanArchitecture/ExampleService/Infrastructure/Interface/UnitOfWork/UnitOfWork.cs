@@ -14,16 +14,23 @@ namespace ExampleService.Infrastructure.Interface.UnitOfWork
     public interface IUnitOfWork
     {
         public IRepository<Example> ExampleRepository { get; }
+        public IUserRepository UserRepository { get; }
         public IExampleRepository ExampleRepo { get; }
     }
     public class UnitOfWork : IUnitOfWork, IDisposable
     {
         private readonly ApplicationDbContext _context;
         private IRepository<Example> _emxampleRepository;
+        private IUserRepository _userRepository;
         public IExampleRepository _exampleRepo;
         public UnitOfWork(ApplicationDbContext context)
         {
             _context = context;
+        }
+
+        public IUserRepository UserRepository
+        {
+            get { return _userRepository ??= new UserRepository(_context); }
         }
 
         public IRepository<Example> ExampleRepository

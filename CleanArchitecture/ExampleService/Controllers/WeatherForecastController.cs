@@ -26,7 +26,7 @@ namespace ExampleService.Controllers
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
         };
 
-        [HasPermission("admin", new[] { "View" })]
+        [HasPermission(new[] { "Admin", "Quản lý nhân viên" }, new[] { "View" })]
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
@@ -38,13 +38,6 @@ namespace ExampleService.Controllers
                 Summary = Summaries[rng.Next(Summaries.Length)]
             })
             .ToArray();
-        }
-
-        [AllowAnonymous]
-        [HttpGet("token")]
-        public string Token()
-        {
-            return _jwtToken.GenerateToken();
         }
     }
 }

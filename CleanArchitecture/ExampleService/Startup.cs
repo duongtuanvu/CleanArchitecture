@@ -1,8 +1,13 @@
 ﻿using Application.IoC;
 using ExampleService.Authorization;
 using ExampleService.Behaviours;
+using ExampleService.Extensions;
 using ExampleService.Infrastructure;
 using ExampleService.Infrastructure.Entities;
+using ExampleService.Infrastructure.Interface.IRepository;
+using ExampleService.Infrastructure.Interface.Repository;
+using ExampleService.Infrastructure.Interface.UnitOfWork;
+using ExampleService.Services;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -19,6 +24,7 @@ using Microsoft.OpenApi.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 
 namespace ExampleService
@@ -69,6 +75,12 @@ namespace ExampleService
             services.AddScoped(typeof(IPipelineBehavior<,>), typeof(TransactionBehaviour<,>));
             #endregion
             services.ApplicationRegisterServices(Configuration);
+            services.InstallServices();
+            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.Configure<JwtSettings>(Configuration.GetSection("JwtSettings"));
+            services.AddScoped<IJwtToken, JwtToken>();
+            services.AddMediatR(Assembly.GetExecutingAssembly());
             #region Api versioning
             services.AddApiVersioning(config =>
             {

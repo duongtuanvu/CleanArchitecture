@@ -11,5 +11,7 @@ namespace ExampleService.Common
         public const string POST = "POST";
         public const string PUT = "PUT";
         public const string DELETE = "DELETE";
+        public const string UserId = "UserId";
+        public const string Permissions = "Permissions";
     }
 }

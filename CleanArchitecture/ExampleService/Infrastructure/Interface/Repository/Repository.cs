@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace ExampleService.Infrastructure.Interface.Repository
 {
-    public class Repository<T> : IRepository<T> where T : BaseEntity
+    public class Repository<T> : IRepository<T> where T : BaseEntity, IBaseEntity
     {
         private readonly ApplicationDbContext _context;
         private DbSet<T> table = null;

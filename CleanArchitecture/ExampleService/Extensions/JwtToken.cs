@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.Options;
+﻿using ExampleService.DTOes;
+using ExampleService.Infrastructure.Entities;
+using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
@@ -17,7 +19,7 @@ namespace ExampleService.Extensions
     }
     public interface IJwtToken
     {
-        string GenerateToken();
+        string GenerateToken(User user, string jsonClaims);
     }
     public class JwtToken : IJwtToken
     {
@@ -27,19 +29,25 @@ namespace ExampleService.Extensions
             _jwtSettings = jwtSettings.Value;
         }
 
-        public string GenerateToken()
+        public string GenerateToken(User user, string jsonClaims)
         {
             // generate token that is valid for 7 hours
-            var tokenHandler = new JwtSecurityTokenHandler();
-            var tokenDescriptor = new SecurityTokenDescriptor
+            var claims = new[]
             {
-                Expires = DateTime.UtcNow.AddHours(_jwtSettings.Expires),
-                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(Encoding.ASCII.GetBytes(_jwtSettings.SecretKey)), SecurityAlgorithms.HmacSha256Signature),
-                Issuer = _jwtSettings.Issuer,
-                Audience = _jwtSettings.Audience
+                new Claim("UserId", user.Id.ToString()),
+                new Claim("UserName", user.UserName),
+                new Claim("IsAdmin", user.IsAdmin.ToString()),
+                new Claim("Permissions", jsonClaims)
             };
-            var token = tokenHandler.CreateToken(tokenDescriptor);
-            return tokenHandler.WriteToken(token);
+            var token = new JwtSecurityToken(
+                    issuer: _jwtSettings.Issuer,
+                    audience: _jwtSettings.Audience,
+                    claims: claims,
+                    expires: DateTime.UtcNow.AddHours(_jwtSettings.Expires),
+                    signingCredentials: new SigningCredentials(
+                                            new SymmetricSecurityKey(Encoding.ASCII.GetBytes(_jwtSettings.SecretKey)),
+                                            SecurityAlgorithms.HmacSha256Signature));
+            return new JwtSecurityTokenHandler().WriteToken(token);
         }
     }
 }

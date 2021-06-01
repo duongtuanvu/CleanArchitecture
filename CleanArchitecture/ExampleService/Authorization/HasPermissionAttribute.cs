@@ -1,4 +1,6 @@
 ﻿using Application.Extensions;
+using ExampleService.Common;
+using ExampleService.DTOes;
 using ExampleService.Infrastructure;
 using ExampleService.Infrastructure.Entities;
 using Microsoft.AspNetCore.Authorization;
@@ -6,6 +8,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
@@ -16,14 +19,17 @@ namespace ExampleService.Authorization
 {
     public class HasPermissionAttribute : AuthorizeAttribute, IAsyncAuthorizationFilter
     {
-        private readonly string Role;
-        private readonly List<string> Claims;
-        public HasPermissionAttribute(string role, string[] claims = null)
+        private readonly List<string> Roles;
+        private readonly List<string> Permissions;
+        public HasPermissionAttribute(string[] roles, string[] permissions = null)
         {
-            Role = role;
-            if (claims != null)
+            if (permissions != null)
             {
-                Claims = claims.ToList();
+                Roles = roles.ToList();
+            }
+            if (permissions != null)
+            {
+                Permissions = permissions.ToList();
             }
         }
 
@@ -50,13 +56,19 @@ namespace ExampleService.Authorization
                 }
                 else
                 {
-                    if (user.IsAdmin)
+                    if (!user.IsAdmin)
                     {
                         return;
                     }
                     else
                     {
-
+                        var permissions = JsonConvert.DeserializeObject<List<RoleDto>>(jsonToken.Claims.Where(x => x.Type.Equals(Constant.Permissions)).FirstOrDefault()?.Value);
+                        if (permissions.Any(x => Roles.Contains(x.Name) && x.Permissions.Any(p => Permissions.Any(p1 => p1.Contains(p.Type)))))
+                        {
+                            return;
+                        }
+                        context.Result = new ForbidResult();
+                        return;
                     }
                 }
             }

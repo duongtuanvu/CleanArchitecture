@@ -1,4 +1,5 @@
 ﻿using Application.IoC;
+using ExampleService.Authorization;
 using ExampleService.Behaviours;
 using ExampleService.Infrastructure;
 using ExampleService.Infrastructure.Entities;
@@ -35,8 +36,6 @@ namespace ExampleService
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.ApplicationRegisterServices(Configuration);
-
             #region DbContext
             services.AddEntityFrameworkNpgsql()
                 .AddDbContext<ApplicationDbContext>(opt => opt.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
@@ -69,7 +68,7 @@ namespace ExampleService
                 .AddDefaultTokenProviders();
             services.AddScoped(typeof(IPipelineBehavior<,>), typeof(TransactionBehaviour<,>));
             #endregion
-
+            services.ApplicationRegisterServices(Configuration);
             #region Api versioning
             services.AddApiVersioning(config =>
             {

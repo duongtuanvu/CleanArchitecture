@@ -1,4 +1,6 @@
 ﻿using Application.Extensions;
+using ExampleService.Authorization;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -8,6 +10,7 @@ using System.Threading.Tasks;
 
 namespace ExampleService.Controllers
 {
+    //[Authorize]
     [ApiController]
     [ApiVersion("1.0")]
     [Route("api/v{version:apiVersion}/[controller]")]
@@ -23,6 +26,7 @@ namespace ExampleService.Controllers
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
         };
 
+        [HasPermission("admin", new[] { "View" })]
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
@@ -36,6 +40,7 @@ namespace ExampleService.Controllers
             .ToArray();
         }
 
+        [AllowAnonymous]
         [HttpGet("token")]
         public string Token()
         {

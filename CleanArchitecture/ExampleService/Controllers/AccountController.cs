@@ -20,9 +20,19 @@ namespace ExampleService.Controllers
     public class AccountController : ControllerBase
     {
         private readonly IAccountService _accountService;
-        public AccountController(IAccountService accountService)
+        private readonly IMediator _mediator;
+        public AccountController(IAccountService accountService, IMediator mediator)
         {
             _accountService = accountService;
+            _mediator = mediator;
+        }
+
+        [AllowAnonymous]
+        [HttpPost]
+        public async Task<IActionResult> Token([FromBody] TestCommand request)
+        {
+            await _mediator.Send(request);
+            return Ok(new ResponseExtension(data: request.Name));
         }
 
         [AllowAnonymous]

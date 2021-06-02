@@ -1,5 +1,5 @@
 ﻿using Application.Common;
-using Data.Context;
+using Application.Infrastructure;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
@@ -13,16 +13,15 @@ namespace Application.Behaviours
     public class TransactionBehaviour<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse> where TRequest : IRequest<TResponse>
     {
         private readonly ILogger<TransactionBehaviour<TRequest, TResponse>> _logger;
-        private readonly ApplicationDbContext _context;
         private readonly IHttpContextAccessor _httpContextAccessor;
-        public TransactionBehaviour(ILogger<TransactionBehaviour<TRequest, TResponse>> logger, ApplicationDbContext context, IHttpContextAccessor httpContextAccessor)
+        public TransactionBehaviour(ILogger<TransactionBehaviour<TRequest, TResponse>> logger, IHttpContextAccessor httpContextAccessor)
         {
             _logger = logger;
-            _context = context;
             _httpContextAccessor = httpContextAccessor;
         }
         public async Task<TResponse> Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate<TResponse> next)
         {
+            var _context = (DbContext)_httpContextAccessor.HttpContext.RequestServices.GetService(typeof(DbContext));
             var response = default(TResponse);
             var method = _httpContextAccessor.HttpContext.Request.Method;
             if (method.Equals(Constant.POST) || method.Equals(Constant.PUT) || method.Equals(Constant.DELETE))

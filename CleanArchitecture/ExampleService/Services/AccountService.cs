@@ -1,6 +1,7 @@
 ﻿using ExampleService.Application.Commands.AccountCommand;
 using ExampleService.DTOes;
 using ExampleService.Extensions;
+using ExampleService.Infrastructure;
 using ExampleService.Infrastructure.Entities;
 using ExampleService.Infrastructure.Interface.UnitOfWork;
 using Microsoft.AspNetCore.Identity;
@@ -23,8 +24,10 @@ namespace ExampleService.Services
         private readonly IJwtToken _jwtToken;
         private readonly UserManager<User> _userManager;
         private readonly RoleManager<Role> _roleManager;
-        public AccountService(IUnitOfWork uow, IJwtToken jwtToken, UserManager<User> userManager, RoleManager<Role> roleManager)
+        private readonly ApplicationDbContext _context;
+        public AccountService(ApplicationDbContext context,IUnitOfWork uow, IJwtToken jwtToken, UserManager<User> userManager, RoleManager<Role> roleManager)
         {
+            _context = context;
             _uow = uow;
             _jwtToken = jwtToken;
             _userManager = userManager;

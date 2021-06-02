@@ -14,4 +14,10 @@ namespace ExampleService.Common
         public const string UserId = "UserId";
         public const string Permissions = "Permissions";
     }
+
+    public enum ServerType
+    {
+        SqlServer,
+        Postgres
+    }
 }

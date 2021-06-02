@@ -8,7 +8,7 @@ namespace ExampleService.Services
 {
     public static class ServicesInstaller
     {
-        public static void InstallServices(this IServiceCollection services)
+        public static void AddServices(this IServiceCollection services)
         {
             services.AddScoped<IAccountService, AccountService>();
         }

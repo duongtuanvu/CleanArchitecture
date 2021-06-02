@@ -40,17 +40,13 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
-            "App.AspNetCore.Core": {
-              "target": "Package",
-              "version": "[1.0.0, )"
-            },
             "FluentValidation": {
               "target": "Package",
-              "version": "[10.2.0, )"
+              "version": "[8.6.3, )"
             },
             "FluentValidation.AspNetCore": {
               "target": "Package",
-              "version": "[10.2.0, )"
+              "version": "[8.6.3, )"
             },
             "MediatR": {
               "target": "Package",

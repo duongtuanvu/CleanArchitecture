@@ -3,12 +3,32 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
     <UserSecretsId>5a4bced1-7b8f-4f6c-9046-3d778bd80f37</UserSecretsId>
+    <PackageId>App.AspNetCore.Core</PackageId>
+    <Authors>VuDuong</Authors>
+    <Company></Company>
+    <Product>Not used</Product>
+    <Description>- Global Exception
+- Filter
+- Sort Dynamic
+- Convert data from Excel to dynamic object. Export excel</Description>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <PackageLicenseFile></PackageLicenseFile>
+    <PackageIcon>Icon.jpg</PackageIcon>
+    <Copyright>copyright © 2021</Copyright>
   </PropertyGroup>
 
   <ItemGroup>
     <Compile Remove="Features\**" />
     <EmbeddedResource Remove="Features\**" />
     <None Remove="Features\**" />
+    <None Include="Icon\Icon.jpg">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="Icon\Icon.jpg">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
   <ItemGroup>

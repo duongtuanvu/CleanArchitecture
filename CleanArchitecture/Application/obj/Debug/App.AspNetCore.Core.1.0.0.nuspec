@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>App.AspNetCore.Core</id>
+    <version>1.0.0</version>
+    <authors>VuDuong</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <icon>Icon.jpg</icon>
+    <description>- Global Exception
+- Filter
+- Sort Dynamic
+- Convert data from Excel to dynamic object. Export excel</description>
+    <copyright>copyright © 2021</copyright>
+    <dependencies>
+      <group targetFramework=".NETStandard2.1">
+        <dependency id="DinkToPdf" version="1.0.8" exclude="Build,Analyzers" />
+        <dependency id="EPPlus" version="5.6.2" exclude="Build,Analyzers" />
+        <dependency id="MediatR" version="9.0.0" exclude="Build,Analyzers" />
+        <dependency id="MediatR.Extensions.Microsoft.DependencyInjection" version="9.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Authentication" version="2.2.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Authentication.JwtBearer" version="2.2.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Mvc" version="2.2.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore" version="5.0.6" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration" version="5.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration.FileExtensions" version="5.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration.Json" version="5.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Hosting.Abstractions" version="5.0.0" exclude="Build,Analyzers" />
+        <dependency id="RestSharp" version="106.11.7" exclude="Build,Analyzers" />
+        <dependency id="Serilog" version="2.10.0" exclude="Build,Analyzers" />
+        <dependency id="Serilog.AspNetCore" version="4.1.0" exclude="Build,Analyzers" />
+        <dependency id="Serilog.Extensions.Logging" version="3.0.1" exclude="Build,Analyzers" />
+        <dependency id="Serilog.Settings.Configuration" version="3.1.0" exclude="Build,Analyzers" />
+        <dependency id="Serilog.Sinks.Console" version="3.1.1" exclude="Build,Analyzers" />
+        <dependency id="Serilog.Sinks.File" version="4.1.0" exclude="Build,Analyzers" />
+        <dependency id="System.Configuration.ConfigurationManager" version="5.0.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\Application\bin\Debug\netstandard2.1\Application.dll" target="lib\netstandard2.1\Application.dll" />
+    <file src="C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\Application\Icon\Icon.jpg" target="Icon.jpg" />
+  </files>
+</package>

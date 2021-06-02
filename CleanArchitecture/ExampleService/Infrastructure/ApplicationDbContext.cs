@@ -18,6 +18,7 @@ namespace ExampleService.Infrastructure
 
         }
 
+        public DbSet<Permission> Permissions { get; set; }
         public DbSet<Example> Examples { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
 
-namespace ExampleService.DTOes
+namespace ExampleService.Core.DTOes
 {
     public class PermissionDto
     {

@@ -1,6 +1,6 @@
 [02/06/2021 13:48:18 ERR] [null]
 System.Exception: User not exists
-   at ExampleService.Services.AccountService.Login(LoginCommand login) in C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService\Services\AccountService.cs:line 40
+   at ExampleService.Core.Services.AccountService.Login(LoginCommand login) in C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService\Services\AccountService.cs:line 40
    at ExampleService.Controllers.AccountController.Token(LoginCommand request) in C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService\Controllers\AccountController.cs:line 42
    at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
@@ -11,7 +11,7 @@ System.Exception: User not exists
    at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
 [02/06/2021 13:51:10 ERR] [null]
 System.Exception: User not exists
-   at ExampleService.Services.AccountService.Login(LoginCommand login) in C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService\Services\AccountService.cs:line 44
+   at ExampleService.Core.Services.AccountService.Login(LoginCommand login) in C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService\Services\AccountService.cs:line 44
    at ExampleService.Controllers.AccountController.Token(LoginCommand request) in C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService\Controllers\AccountController.cs:line 42
    at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
@@ -21,7 +21,7 @@ System.Exception: User not exists
    at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
 [02/06/2021 14:00:27 ERR] [null]
-System.InvalidOperationException: Unable to resolve service for type 'Microsoft.EntityFrameworkCore.DbContext' while attempting to activate 'Application.Behaviours.TransactionBehaviour`2[ExampleService.Application.Commands.AccountCommand.TestCommand,System.Boolean]'.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.EntityFrameworkCore.DbContext' while attempting to activate 'Application.Behaviours.TransactionBehaviour`2[ExampleService.Core.Application.Commands.AccountCommand.TestCommand,System.Boolean]'.
    at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
    at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
    at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateOpenGeneric(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot, Boolean throwOnConstraintViolation)
@@ -47,7 +47,7 @@ System.InvalidOperationException: Unable to resolve service for type 'Microsoft.
 --- End of stack trace from previous location where exception was thrown ---
    at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
 [02/06/2021 15:18:26 ERR] [null]
-System.InvalidOperationException: Unable to resolve service for type 'Microsoft.EntityFrameworkCore.DbContext' while attempting to activate 'Application.Behaviours.TransactionBehaviour`2[ExampleService.Application.Commands.AccountCommand.TestCommand,System.Boolean]'.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.EntityFrameworkCore.DbContext' while attempting to activate 'Application.Behaviours.TransactionBehaviour`2[ExampleService.Core.Application.Commands.AccountCommand.TestCommand,System.Boolean]'.
    at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
    at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
    at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateOpenGeneric(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot, Boolean throwOnConstraintViolation)
@@ -72,9 +72,9 @@ System.InvalidOperationException: Unable to resolve service for type 'Microsoft.
    at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
 --- End of stack trace from previous location where exception was thrown ---
    at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-[02/06/2021 15:19:35 ERR] =====> Error: Handler was not found for request of type MediatR.IRequestHandler`2[ExampleService.Application.Commands.AccountCommand.TestCommand,System.Boolean]. Register your handlers with the container. See the samples in GitHub for examples.
+[02/06/2021 15:19:35 ERR] =====> Error: Handler was not found for request of type MediatR.IRequestHandler`2[ExampleService.Core.Application.Commands.AccountCommand.TestCommand,System.Boolean]. Register your handlers with the container. See the samples in GitHub for examples.
 [02/06/2021 15:19:35 ERR] [null]
-System.InvalidOperationException: Handler was not found for request of type MediatR.IRequestHandler`2[ExampleService.Application.Commands.AccountCommand.TestCommand,System.Boolean]. Register your handlers with the container. See the samples in GitHub for examples.
+System.InvalidOperationException: Handler was not found for request of type MediatR.IRequestHandler`2[ExampleService.Core.Application.Commands.AccountCommand.TestCommand,System.Boolean]. Register your handlers with the container. See the samples in GitHub for examples.
    at MediatR.Internal.RequestHandlerBase.GetHandler[THandler](ServiceFactory factory)
    at MediatR.Internal.RequestHandlerWrapperImpl`2.<>c__DisplayClass1_0.<Handle>g__Handler|0()
    at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
@@ -83,12 +83,12 @@ System.InvalidOperationException: Handler was not found for request of type Medi
    at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
    at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
    at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
-   at ExampleService.Behaviours.TransactionBehaviour`2.<>c__DisplayClass4_1.<<Handle>b__0>d.MoveNext() in C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService\Behaviours\TransactionBehaviour.cs:line 38
+   at ExampleService.Core.Behaviours.TransactionBehaviour`2.<>c__DisplayClass4_1.<<Handle>b__0>d.MoveNext() in C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService\Behaviours\TransactionBehaviour.cs:line 38
 --- End of stack trace from previous location where exception was thrown ---
-   at ExampleService.Behaviours.TransactionBehaviour`2.<>c__DisplayClass4_1.<<Handle>b__0>d.MoveNext() in C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService\Behaviours\TransactionBehaviour.cs:line 42
+   at ExampleService.Core.Behaviours.TransactionBehaviour`2.<>c__DisplayClass4_1.<<Handle>b__0>d.MoveNext() in C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService\Behaviours\TransactionBehaviour.cs:line 42
 --- End of stack trace from previous location where exception was thrown ---
    at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
-   at ExampleService.Behaviours.TransactionBehaviour`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService\Behaviours\TransactionBehaviour.cs:line 34
+   at ExampleService.Core.Behaviours.TransactionBehaviour`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService\Behaviours\TransactionBehaviour.cs:line 34
    at ExampleService.Controllers.AccountController.Token(TestCommand request) in C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService\Controllers\AccountController.cs:line 34
    at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
@@ -138,20 +138,20 @@ System.InvalidOperationException: An exception was thrown while attempting to ev
    at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, CancellationToken cancellationToken)
    at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.FirstOrDefaultAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
    at ExampleService.Infrastructure.Interface.Repository.UserRepository.GetBy(Expression`1 predicate, Boolean asNoTracking) in C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService\Infrastructure\Interface\Repository\UserRepository.cs:line 27
-   at ExampleService.Services.AccountService.Login(LoginCommand login) in C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService\Services\AccountService.cs:line 38
-   at ExampleService.Application.Commands.AccountCommand.TestCommand.TestCommandHandler.Handle(TestCommand request, CancellationToken cancellationToken) in C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService\Application\Commands\AccountCommand\TestCommand.cs:line 23
+   at ExampleService.Core.Services.AccountService.Login(LoginCommand login) in C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService\Services\AccountService.cs:line 38
+   at ExampleService.Core.Application.Commands.AccountCommand.TestCommand.TestCommandHandler.Handle(TestCommand request, CancellationToken cancellationToken) in C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService\Application\Commands\AccountCommand\TestCommand.cs:line 23
    at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
    at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
    at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
    at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
    at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
    at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
-   at ExampleService.Behaviours.TransactionBehaviour`2.<>c__DisplayClass4_1.<<Handle>b__0>d.MoveNext() in C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService\Behaviours\TransactionBehaviour.cs:line 38
+   at ExampleService.Core.Behaviours.TransactionBehaviour`2.<>c__DisplayClass4_1.<<Handle>b__0>d.MoveNext() in C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService\Behaviours\TransactionBehaviour.cs:line 38
 --- End of stack trace from previous location where exception was thrown ---
-   at ExampleService.Behaviours.TransactionBehaviour`2.<>c__DisplayClass4_1.<<Handle>b__0>d.MoveNext() in C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService\Behaviours\TransactionBehaviour.cs:line 42
+   at ExampleService.Core.Behaviours.TransactionBehaviour`2.<>c__DisplayClass4_1.<<Handle>b__0>d.MoveNext() in C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService\Behaviours\TransactionBehaviour.cs:line 42
 --- End of stack trace from previous location where exception was thrown ---
    at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
-   at ExampleService.Behaviours.TransactionBehaviour`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService\Behaviours\TransactionBehaviour.cs:line 34
+   at ExampleService.Core.Behaviours.TransactionBehaviour`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService\Behaviours\TransactionBehaviour.cs:line 34
    at ExampleService.Controllers.AccountController.Token(TestCommand request) in C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService\Controllers\AccountController.cs:line 34
    at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
@@ -201,20 +201,20 @@ System.InvalidOperationException: An exception was thrown while attempting to ev
    at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, CancellationToken cancellationToken)
    at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.FirstOrDefaultAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
    at ExampleService.Infrastructure.Interface.Repository.UserRepository.GetBy(Expression`1 predicate, Boolean asNoTracking) in C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService\Infrastructure\Interface\Repository\UserRepository.cs:line 27
-   at ExampleService.Services.AccountService.Login(LoginCommand login) in C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService\Services\AccountService.cs:line 38
-   at ExampleService.Application.Commands.AccountCommand.TestCommand.TestCommandHandler.Handle(TestCommand request, CancellationToken cancellationToken) in C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService\Application\Commands\AccountCommand\TestCommand.cs:line 23
+   at ExampleService.Core.Services.AccountService.Login(LoginCommand login) in C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService\Services\AccountService.cs:line 38
+   at ExampleService.Core.Application.Commands.AccountCommand.TestCommand.TestCommandHandler.Handle(TestCommand request, CancellationToken cancellationToken) in C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService\Application\Commands\AccountCommand\TestCommand.cs:line 23
    at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
    at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
    at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
    at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
    at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
    at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
-   at ExampleService.Behaviours.TransactionBehaviour`2.<>c__DisplayClass4_1.<<Handle>b__0>d.MoveNext() in C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService\Behaviours\TransactionBehaviour.cs:line 38
+   at ExampleService.Core.Behaviours.TransactionBehaviour`2.<>c__DisplayClass4_1.<<Handle>b__0>d.MoveNext() in C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService\Behaviours\TransactionBehaviour.cs:line 38
 --- End of stack trace from previous location where exception was thrown ---
-   at ExampleService.Behaviours.TransactionBehaviour`2.<>c__DisplayClass4_1.<<Handle>b__0>d.MoveNext() in C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService\Behaviours\TransactionBehaviour.cs:line 42
+   at ExampleService.Core.Behaviours.TransactionBehaviour`2.<>c__DisplayClass4_1.<<Handle>b__0>d.MoveNext() in C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService\Behaviours\TransactionBehaviour.cs:line 42
 --- End of stack trace from previous location where exception was thrown ---
    at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
-   at ExampleService.Behaviours.TransactionBehaviour`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService\Behaviours\TransactionBehaviour.cs:line 34
+   at ExampleService.Core.Behaviours.TransactionBehaviour`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService\Behaviours\TransactionBehaviour.cs:line 34
    at ExampleService.Controllers.AccountController.Token(TestCommand request) in C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService\Controllers\AccountController.cs:line 34
    at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
@@ -224,7 +224,7 @@ System.InvalidOperationException: An exception was thrown while attempting to ev
    at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
 [02/06/2021 17:02:52 ERR] [null]
-System.InvalidOperationException: Unable to resolve service for type 'Microsoft.EntityFrameworkCore.DbContext' while attempting to activate 'ExampleService.Behaviours.TransactionBehaviour`2[ExampleService.Application.Commands.AccountCommand.TestCommand,System.Boolean]'.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.EntityFrameworkCore.DbContext' while attempting to activate 'ExampleService.Core.Behaviours.TransactionBehaviour`2[ExampleService.Core.Application.Commands.AccountCommand.TestCommand,System.Boolean]'.
    at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
    at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
    at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateOpenGeneric(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot, Boolean throwOnConstraintViolation)
@@ -294,7 +294,7 @@ System.TypeLoadException: Could not load type 'FluentValidation.Validators.Maxim
    at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
 [02/06/2021 17:27:06 ERR] [null]
-System.InvalidOperationException: Unable to resolve service for type 'Microsoft.EntityFrameworkCore.DbContext' while attempting to activate 'ExampleService.Behaviours.TransactionBehaviour`2[ExampleService.Application.Commands.AccountCommand.TestCommand,System.Boolean]'.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.EntityFrameworkCore.DbContext' while attempting to activate 'ExampleService.Core.Behaviours.TransactionBehaviour`2[ExampleService.Core.Application.Commands.AccountCommand.TestCommand,System.Boolean]'.
    at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
    at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
    at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateOpenGeneric(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot, Boolean throwOnConstraintViolation)
@@ -360,20 +360,20 @@ System.InvalidOperationException: An exception was thrown while attempting to ev
    at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, CancellationToken cancellationToken)
    at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.FirstOrDefaultAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
    at ExampleService.Infrastructure.Interface.Repository.UserRepository.GetBy(Expression`1 predicate, Boolean asNoTracking) in C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService\Infrastructure\Interface\Repository\UserRepository.cs:line 27
-   at ExampleService.Services.AccountService.Login(LoginCommand login) in C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService\Services\AccountService.cs:line 38
-   at ExampleService.Application.Commands.AccountCommand.TestCommand.TestCommandHandler.Handle(TestCommand request, CancellationToken cancellationToken) in C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService\Application\Commands\AccountCommand\TestCommand.cs:line 23
+   at ExampleService.Core.Services.AccountService.Login(LoginCommand login) in C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService\Services\AccountService.cs:line 38
+   at ExampleService.Core.Application.Commands.AccountCommand.TestCommand.TestCommandHandler.Handle(TestCommand request, CancellationToken cancellationToken) in C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService\Application\Commands\AccountCommand\TestCommand.cs:line 23
    at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
    at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
    at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
    at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
    at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
    at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
-   at ExampleService.Behaviours.TransactionBehaviour`2.<>c__DisplayClass4_1.<<Handle>b__0>d.MoveNext() in C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService\Behaviours\TransactionBehaviour.cs:line 38
+   at ExampleService.Core.Behaviours.TransactionBehaviour`2.<>c__DisplayClass4_1.<<Handle>b__0>d.MoveNext() in C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService\Behaviours\TransactionBehaviour.cs:line 38
 --- End of stack trace from previous location where exception was thrown ---
-   at ExampleService.Behaviours.TransactionBehaviour`2.<>c__DisplayClass4_1.<<Handle>b__0>d.MoveNext() in C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService\Behaviours\TransactionBehaviour.cs:line 42
+   at ExampleService.Core.Behaviours.TransactionBehaviour`2.<>c__DisplayClass4_1.<<Handle>b__0>d.MoveNext() in C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService\Behaviours\TransactionBehaviour.cs:line 42
 --- End of stack trace from previous location where exception was thrown ---
    at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
-   at ExampleService.Behaviours.TransactionBehaviour`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService\Behaviours\TransactionBehaviour.cs:line 34
+   at ExampleService.Core.Behaviours.TransactionBehaviour`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService\Behaviours\TransactionBehaviour.cs:line 34
    at ExampleService.Controllers.AccountController.Token(TestCommand request) in C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService\Controllers\AccountController.cs:line 34
    at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)

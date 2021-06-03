@@ -36,8 +36,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Application\Queries\" />
-    <Folder Include="Lib\" />
+    <Folder Include="Core\Extensions\" />
+    <Folder Include="Core\Lib\" />
   </ItemGroup>
 
   <ItemGroup>

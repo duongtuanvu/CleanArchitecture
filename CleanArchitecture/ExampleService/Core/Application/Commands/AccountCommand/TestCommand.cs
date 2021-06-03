@@ -1,4 +1,4 @@
-﻿using ExampleService.Services;
+﻿using ExampleService.Core.Services;
 using MediatR;
 using System;
 using System.Collections.Generic;
@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace ExampleService.Application.Commands.AccountCommand
+namespace ExampleService.Core.Application.Commands.AccountCommand
 {
     public class TestCommand : IRequest<bool>
     {
@@ -20,7 +20,6 @@ namespace ExampleService.Application.Commands.AccountCommand
             }
             public async Task<bool> Handle(TestCommand request, CancellationToken cancellationToken)
             {
-                var s = await _accountService.Login(new LoginCommand());
                 var name = request.Name;
                 return true;
             }

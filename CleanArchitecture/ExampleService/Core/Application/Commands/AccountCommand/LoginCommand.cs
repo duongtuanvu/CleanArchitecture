@@ -1,5 +1,4 @@
-﻿using ExampleService.DTOes;
-using ExampleService.Extensions;
+﻿using ExampleService.Core.DTOes;
 using ExampleService.Infrastructure.Entities;
 using ExampleService.Infrastructure.Interface.UnitOfWork;
 using MediatR;
@@ -10,7 +9,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace ExampleService.Application.Commands.AccountCommand
+namespace ExampleService.Core.Application.Commands.AccountCommand
 {
     public class LoginCommand
     {

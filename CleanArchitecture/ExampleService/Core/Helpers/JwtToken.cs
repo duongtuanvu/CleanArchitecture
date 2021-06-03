@@ -1,4 +1,4 @@
-﻿using ExampleService.DTOes;
+﻿using ExampleService.Core.DTOes;
 using ExampleService.Infrastructure.Entities;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
@@ -8,7 +8,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 
-namespace ExampleService.Extensions
+namespace ExampleService.Core.Helpers
 {
     public class JwtSettings
     {

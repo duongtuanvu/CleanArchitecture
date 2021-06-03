@@ -1,7 +1,7 @@
 ﻿using Application.Extensions;
-using ExampleService.Application.Commands.AccountCommand;
+using ExampleService.Core.Application.Commands.AccountCommand;
 using ExampleService.Infrastructure.Entities;
-using ExampleService.Services;
+using ExampleService.Core.Services;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;

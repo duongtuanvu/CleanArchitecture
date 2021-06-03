@@ -1,6 +1,6 @@
 ﻿using Application.Extensions;
-using ExampleService.Common;
-using ExampleService.DTOes;
+using ExampleService.Core.Helpers;
+using ExampleService.Core.DTOes;
 using ExampleService.Infrastructure;
 using ExampleService.Infrastructure.Entities;
 using Microsoft.AspNetCore.Authorization;
@@ -15,7 +15,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ExampleService.Authorization
+namespace ExampleService.Core.Authorization
 {
     public class HasPermissionAttribute : AuthorizeAttribute, IAsyncAuthorizationFilter
     {

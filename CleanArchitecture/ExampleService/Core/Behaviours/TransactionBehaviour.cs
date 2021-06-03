@@ -1,4 +1,4 @@
-﻿using Application.Common;
+﻿using ExampleService.Core.Helpers;
 using ExampleService.Infrastructure;
 using MediatR;
 using Microsoft.AspNetCore.Http;
@@ -8,7 +8,7 @@ using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace ExampleService.Behaviours
+namespace ExampleService.Core.Behaviours
 {
     public class TransactionBehaviour<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse> where TRequest : IRequest<TResponse>
     {

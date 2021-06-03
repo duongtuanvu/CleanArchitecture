@@ -1,6 +1,6 @@
-﻿using ExampleService.Application.Commands.AccountCommand;
-using ExampleService.DTOes;
-using ExampleService.Extensions;
+﻿using ExampleService.Core.Application.Commands.AccountCommand;
+using ExampleService.Core.DTOes;
+using ExampleService.Core.Helpers;
 using ExampleService.Infrastructure;
 using ExampleService.Infrastructure.Entities;
 using ExampleService.Infrastructure.Interface.UnitOfWork;
@@ -11,7 +11,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ExampleService.Services
+namespace ExampleService.Core.Services
 {
     public interface IAccountService
     {
@@ -25,7 +25,7 @@ namespace ExampleService.Services
         private readonly UserManager<User> _userManager;
         private readonly RoleManager<Role> _roleManager;
         private readonly ApplicationDbContext _context;
-        public AccountService(ApplicationDbContext context,IUnitOfWork uow, IJwtToken jwtToken, UserManager<User> userManager, RoleManager<Role> roleManager)
+        public AccountService(ApplicationDbContext context, IUnitOfWork uow, IJwtToken jwtToken, UserManager<User> userManager, RoleManager<Role> roleManager)
         {
             _context = context;
             _uow = uow;
@@ -46,7 +46,7 @@ namespace ExampleService.Services
                 throw new Exception("Incorrect password");
             }
             var roleNamies = await _userManager.GetRolesAsync(user);
-            var roleDtoes = new List<RoleDto>();
+            var roleDTOes = new List<RoleDto>();
             foreach (var roleName in roleNamies)
             {
                 var role = await _roleManager.FindByNameAsync(roleName);
@@ -54,9 +54,10 @@ namespace ExampleService.Services
                 {
                     var claims = await _roleManager.GetClaimsAsync(role);
                     var roleDto = new RoleDto(roleName, claims.Select(x => new PermissionDto(x.Type, x.Value)).ToList());
-                    roleDtoes.Add(roleDto);
+                    roleDTOes.Add(roleDto);
                 }
-            }var jsonClaims = JsonConvert.SerializeObject(roleDtoes);
+            }
+            var jsonClaims = JsonConvert.SerializeObject(roleDTOes);
             return _jwtToken.GenerateToken(user, jsonClaims); ;
         }
     }

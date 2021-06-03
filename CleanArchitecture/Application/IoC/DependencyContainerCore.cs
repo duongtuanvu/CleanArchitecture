@@ -29,9 +29,9 @@ namespace Application.IoC
             services.AddSwagger();
             services.AddValidations();
             services.AddAuthentication(configuration);
-            services.Configure<JwtSettings>(configuration.GetSection("JwtSettings"));
-            services.AddMediatR(Assembly.GetExecutingAssembly());
-            services.AddScoped(typeof(IPipelineBehavior<,>), typeof(TransactionBehaviour<,>));
+            //services.Configure<JwtSettings>(configuration.GetSection("JwtSettings"));
+            //services.AddMediatR(Assembly.GetExecutingAssembly());
+            //services.AddScoped(typeof(IPipelineBehavior<,>), typeof(TransactionBehaviour<,>));
             //services.AddScoped<IJwtToken, JwtToken>();
             //services.AddTransient<IExampleQuery, ExampleQuery>();
             //services.AddSingleton(typeof(IConverter), new SynchronizedConverter(new PdfTools()));

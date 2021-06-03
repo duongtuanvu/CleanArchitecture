@@ -1,5 +1,5 @@
 ﻿using Application.Extensions;
-using ExampleService.Authorization;
+using ExampleService.Core.Authorization;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;

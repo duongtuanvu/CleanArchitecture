@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ExampleService.Common
+namespace ExampleService.Core.Helpers
 {
     public class Constant
     {
@@ -13,11 +13,5 @@ namespace ExampleService.Common
         public const string DELETE = "DELETE";
         public const string UserId = "UserId";
         public const string Permissions = "Permissions";
-    }
-
-    public enum ServerType
-    {
-        SqlServer,
-        Postgres
     }
 }

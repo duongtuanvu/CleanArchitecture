@@ -56,14 +56,6 @@
               "target": "Package",
               "version": "[8.6.3, )"
             },
-            "MediatR": {
-              "target": "Package",
-              "version": "[9.0.0, )"
-            },
-            "MediatR.Extensions.Microsoft.DependencyInjection": {
-              "target": "Package",
-              "version": "[9.0.0, )"
-            },
             "Microsoft.AspNetCore.Authentication": {
               "target": "Package",
               "version": "[2.2.0, )"
@@ -86,7 +78,7 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.0.6, )"
+              "version": "[5.0.0, )"
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",

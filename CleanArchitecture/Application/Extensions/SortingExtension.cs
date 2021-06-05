@@ -3,8 +3,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Reflection;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Application.Extensions
@@ -129,5 +127,14 @@ namespace Application.Extensions
         //{
         //    return source.OrderByDescending(GetExpression<TSource>(propertyName));
         //}
+    }
+
+    public class SearchBase
+    {
+        public int PageNumber { get; set; } = 1;
+        public int PageSize { get; set; } = 20;
+        public string Keyword { get; set; }
+        public string OrderBy { get; set; }
+        public bool OrderByDesc { get; set; } = true;
     }
 }

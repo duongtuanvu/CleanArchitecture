@@ -1,22 +1,16 @@
 ﻿using Application.Behaviours;
 using Application.Extensions;
-using DinkToPdf;
-using DinkToPdf.Contracts;
-using MediatR;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
-using System.Configuration;
-using System.Reflection;
 using System.Text;
 using Application.RestSharpClients;
 using Microsoft.AspNetCore.Mvc.ApiExplorer;
 using Microsoft.OpenApi.Models;
 using System.Collections.Generic;
 using FluentValidation.AspNetCore;
-using FluentValidation;
 
 namespace Application.IoC
 {

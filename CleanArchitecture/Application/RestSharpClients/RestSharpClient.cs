@@ -18,16 +18,16 @@ namespace Application.RestSharpClients
         {
             RestClient client = new RestClient(rq_params.BaseUrl);
             RestRequest request = new RestRequest(rq_params.ApiEndPoint,
-                rq_params.Method.Equals(Constant.GET) ? Method.GET :
-                rq_params.Method.Equals(Constant.POST) ? Method.POST :
-                rq_params.Method.Equals(Constant.PUT) ? Method.PUT : Method.DELETE);
+                rq_params.Method.Equals(Constants.GET) ? Method.GET :
+                rq_params.Method.Equals(Constants.POST) ? Method.POST :
+                rq_params.Method.Equals(Constants.PUT) ? Method.PUT : Method.DELETE);
 
             foreach (var header in rq_params.Headers)
             {
                 request.AddHeader(header.Key, header.Value);
             }
 
-            if (rq_params.Method.Equals(Constant.GET))
+            if (rq_params.Method.Equals(Constants.GET))
             {
                 foreach (var param in rq_params.Parameters)
                 {

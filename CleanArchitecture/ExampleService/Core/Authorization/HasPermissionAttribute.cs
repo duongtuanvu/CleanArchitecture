@@ -14,6 +14,7 @@ using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace ExampleService.Core.Authorization
 {
@@ -48,7 +49,7 @@ namespace ExampleService.Core.Authorization
             }
             else
             {
-                var user = await userManager.FindByIdAsync(userId);
+                var user = await dbContext.Users.FirstOrDefaultAsync(x => x.Id.ToString() == userId);
                 if (user == null)
                 {
                     context.Result = new ForbidResult();

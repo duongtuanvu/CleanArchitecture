@@ -10,7 +10,7 @@ namespace ExampleService.Core.Application.Queries
     {
         public static void AddQuery(this IServiceCollection services)
         {
-
+            services.AddTransient(typeof(AccountQuery.AccountQuery), typeof(AccountQuery.AccountQuery));
         }
     }
 }

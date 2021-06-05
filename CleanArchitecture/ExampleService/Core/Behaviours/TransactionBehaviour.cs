@@ -25,7 +25,7 @@ namespace ExampleService.Core.Behaviours
         {
             var response = default(TResponse);
             var method = _httpContextAccessor.HttpContext.Request.Method;
-            if (method.Equals(Constant.POST) || method.Equals(Constant.PUT) || method.Equals(Constant.DELETE))
+            if (method.Equals(Constants.POST) || method.Equals(Constants.PUT) || method.Equals(Constants.DELETE))
             {
                 var typeName = request.GetType().Name;
                 var strage = _context.Database.CreateExecutionStrategy();

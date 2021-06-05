@@ -1,4 +1,4 @@
-﻿using ExampleService.Core.DTOes;
+﻿using ExampleService.Core.DTOs;
 using ExampleService.Infrastructure.Entities;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;

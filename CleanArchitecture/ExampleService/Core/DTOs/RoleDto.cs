@@ -5,7 +5,7 @@ using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
 
-namespace ExampleService.Core.DTOes
+namespace ExampleService.Core.DTOs
 {
     public class RoleDto
     {

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace ExampleService.Core.Helpers
 {
-    public class Constant
+    public class Constants
     {
         public const string GET = "GET";
         public const string POST = "POST";

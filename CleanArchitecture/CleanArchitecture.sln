@@ -35,7 +35,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Authentication", "Authentic
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api.Authentication", "Api.Authentication\Api.Authentication.csproj", "{D132E734-57CE-45D5-9A33-D2546B0CA479}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleService", "ExampleService\ExampleService.csproj", "{91831A4D-1081-4A95-90DD-6C4006C51640}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExampleService", "ExampleService\ExampleService.csproj", "{91831A4D-1081-4A95-90DD-6C4006C51640}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

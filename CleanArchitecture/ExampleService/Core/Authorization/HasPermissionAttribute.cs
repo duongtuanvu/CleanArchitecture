@@ -1,6 +1,6 @@
 ﻿using Application.Extensions;
 using ExampleService.Core.Helpers;
-using ExampleService.Core.DTOes;
+using ExampleService.Core.DTOs;
 using ExampleService.Infrastructure;
 using ExampleService.Infrastructure.Entities;
 using Microsoft.AspNetCore.Authorization;
@@ -62,7 +62,7 @@ namespace ExampleService.Core.Authorization
                     }
                     else
                     {
-                        var permissions = JsonConvert.DeserializeObject<List<RoleDto>>(jsonToken.Claims.Where(x => x.Type.Equals(Constant.Permissions)).FirstOrDefault()?.Value);
+                        var permissions = JsonConvert.DeserializeObject<List<RoleDto>>(jsonToken.Claims.Where(x => x.Type.Equals(Constants.Permissions)).FirstOrDefault()?.Value);
                         if (permissions.Any(x => Roles.Contains(x.Name) && x.Permissions.Any(p => Permissions.Any(p1 => p1.Contains(p.Type)))))
                         {
                             return;

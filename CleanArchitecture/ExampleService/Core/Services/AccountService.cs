@@ -1,5 +1,5 @@
 ﻿using ExampleService.Core.Application.Commands.AccountCommand;
-using ExampleService.Core.DTOes;
+using ExampleService.Core.DTOs;
 using ExampleService.Core.Helpers;
 using ExampleService.Infrastructure;
 using ExampleService.Infrastructure.Entities;

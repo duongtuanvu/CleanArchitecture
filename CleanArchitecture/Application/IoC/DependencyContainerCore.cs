@@ -17,8 +17,6 @@ using Microsoft.OpenApi.Models;
 using System.Collections.Generic;
 using FluentValidation.AspNetCore;
 using FluentValidation;
-using Application.Features.ExampleFeature.Commands;
-using Application.Features.ExampleFeature.Validations;
 
 namespace Application.IoC
 {

@@ -11,6 +11,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ExampleService.Core.Application.Queries.AccountQuery;
 
 namespace ExampleService.Controllers
 {
@@ -21,10 +22,20 @@ namespace ExampleService.Controllers
     {
         private readonly IAccountService _accountService;
         private readonly IMediator _mediator;
-        public AccountController(IAccountService accountService, IMediator mediator)
+        private readonly AccountQuery _accountQuery;
+        public AccountController(IAccountService accountService, IMediator mediator, AccountQuery accountQuery)
         {
             _accountService = accountService;
             _mediator = mediator;
+            _accountQuery = accountQuery;
+        }
+
+        [AllowAnonymous]
+        [HttpGet]
+        public async Task<IActionResult> List([FromQuery] AccountSearch search)
+        {
+            var result = await _accountQuery.List(search);
+            return Ok(result);
         }
 
         [AllowAnonymous]

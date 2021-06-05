@@ -27,7 +27,7 @@ namespace ProductService.Controllers
         }
 
         [HttpGet]
-        //[HasPermission(new[] { "Admin", "Quản lý nhân viên" }, new[] { "View" })]
+        [HasPermission(new[] { "Admin", "Quản lý nhân viên" }, new[] { "View" })]
         public IEnumerable<WeatherForecast> Get()
         {
             var rng = new Random();

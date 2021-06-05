@@ -1,7 +1,9 @@
+using Application.IoC;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ApiExplorer;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -26,6 +28,8 @@ namespace ProductService
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddAuthentication(Configuration);
+            services.AddSwagger();
             services.AddApiVersioning(config =>
             {
                 //config.DefaultApiVersion = new ApiVersion(1, 0);
@@ -35,13 +39,21 @@ namespace ProductService
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IApiVersionDescriptionProvider provider)
         {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            app.UseSwagger();
+            app.UseSwaggerUI(opts =>
+            {
+                // build a swagger endpoint for each discovered API version
+                foreach (var description in provider.ApiVersionDescriptions)
+                {
+                    opts.SwaggerEndpoint($"/swagger/{description.GroupName}/swagger.json", description.GroupName.ToUpperInvariant());
+                }
+            });
             app.UseHttpsRedirection();
 
             app.UseRouting();

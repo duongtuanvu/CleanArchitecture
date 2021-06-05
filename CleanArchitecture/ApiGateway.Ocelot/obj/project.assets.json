@@ -3382,7 +3382,7 @@
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
       },
-      "DependencyInjection.AspNetCore.Core/1.0.0": {
+      "DependencyInjection.AspNetCore.Core/1.1.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
@@ -10218,7 +10218,7 @@
         "system.xml.xpath.xmldocument.nuspec"
       ]
     },
-    "DependencyInjection.AspNetCore.Core/1.0.0": {
+    "DependencyInjection.AspNetCore.Core/1.1.0": {
       "type": "project",
       "path": "../Application/Application.csproj",
       "msbuildProject": "../Application/Application.csproj"
@@ -10226,7 +10226,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "DependencyInjection.AspNetCore.Core >= 1.0.0",
+      "DependencyInjection.AspNetCore.Core >= 1.1.0",
       "MMLib.SwaggerForOcelot >= 3.2.1",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 3.1.14",
       "Microsoft.AspNetCore.Mvc.Versioning >= 5.0.0",

@@ -36,43 +36,22 @@ namespace ExampleService.Core.Authorization
 
         public async Task OnAuthorizationAsync(AuthorizationFilterContext context)
         {
-            var dbContext = context.HttpContext.RequestServices.GetService(typeof(ApplicationDbContext)) as ApplicationDbContext;
-            var userManager = context.HttpContext.RequestServices.GetService(typeof(UserManager<User>)) as UserManager<User>;
+            //var dbContext = context.HttpContext.RequestServices.GetService(typeof(ApplicationDbContext)) as ApplicationDbContext;
+            //var userManager = context.HttpContext.RequestServices.GetService(typeof(UserManager<User>)) as UserManager<User>;
             var token = context.HttpContext.Request.Headers["Authorization"].FirstOrDefault()?.Split(" ").Last();
-            var handler = new JwtSecurityTokenHandler();
-            var jsonToken = handler.ReadToken(token) as JwtSecurityToken;
-            var userId = jsonToken.Claims.Where(x => x.Type.Equals("UserId")).FirstOrDefault()?.Value;
-            if (string.IsNullOrWhiteSpace(userId))
+            var jsonToken = new JwtSecurityTokenHandler().ReadToken(token) as JwtSecurityToken;
+            var isAdmin = jsonToken.Claims.Where(x => x.Type.Equals(Constants.IsAdmin)).FirstOrDefault()?.Value;
+            if (bool.Parse(isAdmin))
             {
+                var permissions = JsonConvert.DeserializeObject<List<RoleDto>>(jsonToken.Claims.Where(x => x.Type.Equals(Constants.Permissions)).FirstOrDefault()?.Value);
+                if (permissions.Any(x => Roles.Contains(x.Name) && x.Permissions.Any(p => Permissions.Any(p1 => p1.Contains(p.Type)))))
+                {
+                    return;
+                }
                 context.Result = new ForbidResult();
                 return;
             }
-            else
-            {
-                var user = await dbContext.Users.FirstOrDefaultAsync(x => x.Id.ToString() == userId);
-                if (user == null)
-                {
-                    context.Result = new ForbidResult();
-                    return;
-                }
-                else
-                {
-                    if (!user.IsAdmin)
-                    {
-                        return;
-                    }
-                    else
-                    {
-                        var permissions = JsonConvert.DeserializeObject<List<RoleDto>>(jsonToken.Claims.Where(x => x.Type.Equals(Constants.Permissions)).FirstOrDefault()?.Value);
-                        if (permissions.Any(x => Roles.Contains(x.Name) && x.Permissions.Any(p => Permissions.Any(p1 => p1.Contains(p.Type)))))
-                        {
-                            return;
-                        }
-                        context.Result = new ForbidResult();
-                        return;
-                    }
-                }
-            }
+            return;
         }
     }
 }

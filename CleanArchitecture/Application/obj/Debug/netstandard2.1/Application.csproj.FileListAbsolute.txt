@@ -1,11 +1,11 @@
-C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\Application\bin\Debug\netstandard2.1\Application.deps.json
-C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\Application\bin\Debug\netstandard2.1\Application.dll
-C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\Application\bin\Debug\netstandard2.1\Application.pdb
-C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\Application\obj\Debug\netstandard2.1\Application.csprojAssemblyReference.cache
 C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\Application\obj\Debug\netstandard2.1\Application.Resource.resources
 C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\Application\obj\Debug\netstandard2.1\Application.csproj.GenerateResource.cache
 C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\Application\obj\Debug\netstandard2.1\Application.AssemblyInfoInputs.cache
 C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\Application\obj\Debug\netstandard2.1\Application.AssemblyInfo.cs
 C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\Application\obj\Debug\netstandard2.1\Application.csproj.CoreCompileInputs.cache
+C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\Application\bin\Debug\netstandard2.1\Application.deps.json
+C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\Application\bin\Debug\netstandard2.1\Application.dll
+C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\Application\bin\Debug\netstandard2.1\Application.pdb
+C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\Application\obj\Debug\netstandard2.1\Application.csprojAssemblyReference.cache
 C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\Application\obj\Debug\netstandard2.1\Application.dll
 C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\Application\obj\Debug\netstandard2.1\Application.pdb

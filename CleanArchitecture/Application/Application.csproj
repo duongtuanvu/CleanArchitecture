@@ -7,15 +7,12 @@
     <Authors>VuDuong</Authors>
     <Company></Company>
     <Product>Not used</Product>
-    <Description>- Global Exception
-- Filter
-- Sort Dynamic
-- Convert data from Excel to dynamic object. Export excel</Description>
+    <Description>A package using for .Net Core include: Filter, Exception, Dynamic Sort, Excel, Log, ...</Description>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <PackageLicenseFile></PackageLicenseFile>
     <PackageIcon>Core.png</PackageIcon>
     <Copyright>copyright © 2021</Copyright>
-    <Version>1.0.0</Version>
+    <Version>1.1.0</Version>
   </PropertyGroup>
 
   <ItemGroup>

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "K5wHk1ckZKMmiXgfoqhCeJEuX8kMdQnnKwnVFPVyuQ9bX/KT6HH6fjbNItppYAq8gtye24A6YjD0a9WJoraLBQ==",
+  "dgSpecHash": "J7r2ttcMHQ/wav8KZhrZ86Ldi813BvyrYK5TSTxAiYIpsC5PP6A8wBa0KMNb1WY/JT1izwPtWFzcjUCln+p3iw==",
   "success": true,
   "projectFilePath": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\ApiGateway.Ocelot\\ApiGateway.Ocelot.csproj",
   "expectedPackageFiles": [
@@ -230,8 +230,7 @@
     "C:\\Users\\vu.dt99\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\vu.dt99\\.nuget\\packages\\system.xml.xpath\\4.3.0\\system.xml.xpath.4.3.0.nupkg.sha512",
     "C:\\Users\\vu.dt99\\.nuget\\packages\\system.xml.xpath.xdocument\\4.3.0\\system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\vu.dt99\\.nuget\\packages\\system.xml.xpath.xmldocument\\4.3.0\\system.xml.xpath.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\vu.dt99\\.nuget\\packages\\dependencyinjection.aspnetcore.core\\1.0.0\\dependencyinjection.aspnetcore.core.1.0.0.nupkg.sha512"
+    "C:\\Users\\vu.dt99\\.nuget\\packages\\system.xml.xpath.xmldocument\\4.3.0\\system.xml.xpath.xmldocument.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }

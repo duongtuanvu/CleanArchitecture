@@ -12,6 +12,8 @@ namespace ExampleService.Core.Helpers
         public const string PUT = "PUT";
         public const string DELETE = "DELETE";
         public const string UserId = "UserId";
+        public const string UserName = "UserName";
         public const string Permissions = "Permissions";
+        public const string IsAdmin = "IsAdmin";
     }
 }

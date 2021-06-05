@@ -5,7 +5,7 @@
   },
   "projects": {
     "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Application\\Application.csproj": {
-      "version": "1.0.0",
+      "version": "1.1.0",
       "restore": {
         "projectUniqueName": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Application\\Application.csproj",
         "projectName": "DependencyInjection.AspNetCore.Core",

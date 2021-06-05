@@ -30,7 +30,6 @@ namespace Application.Extensions
                 await file.CopyToAsync(stream);
                 using (var package = new ExcelPackage(stream))
                 {
-                    //var data = new List<T>();
                     var lstProperties = typeof(T).GetProperties();
 
                     ExcelPackage.LicenseContext = LicenseContext.NonCommercial;

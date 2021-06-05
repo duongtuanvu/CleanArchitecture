@@ -34,10 +34,10 @@ namespace ExampleService.Core.Helpers
             // generate token that is valid for 7 hours
             var claims = new[]
             {
-                new Claim("UserId", user.Id.ToString()),
-                new Claim("UserName", user.UserName),
-                new Claim("IsAdmin", user.IsAdmin.ToString()),
-                new Claim("Permissions", jsonClaims)
+                new Claim(Constants.UserId, user.Id.ToString()),
+                new Claim(Constants.UserName, user.UserName),
+                new Claim(Constants.IsAdmin, user.IsAdmin.ToString()),
+                new Claim(Constants.Permissions, jsonClaims)
             };
             var token = new JwtSecurityToken(
                     issuer: _jwtSettings.Issuer,

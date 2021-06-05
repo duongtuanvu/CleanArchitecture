@@ -43,3 +43,22 @@ SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedBy", a."Cr
 FROM "AspNetUsers" AS a
 ORDER BY a."UserName"
 LIMIT @__p_1 OFFSET @__p_0
+[05/06/2021 11:33:08 INF] Application Starting.
+[05/06/2021 11:33:17 INF] Entity Framework Core 5.0.6 initialized 'ApplicationDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+[05/06/2021 11:33:18 INF] Executed DbCommand (43ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+[05/06/2021 11:33:18 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+[05/06/2021 11:33:18 INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+[05/06/2021 11:33:19 INF] No migrations were applied. The database is already up to date.
+[05/06/2021 11:33:19 INF] Executed DbCommand (72ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedBy", a."CreatedDate", a."Email", a."EmailConfirmed", a."IsAdmin", a."IsDeleted", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."SecurityStamp", a."TwoFactorEnabled", a."UpdatedBy", a."UpdatedDate", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+[05/06/2021 11:33:20 INF] Application started. Press Ctrl+C to shut down.
+[05/06/2021 11:33:20 INF] Hosting environment: Development
+[05/06/2021 11:33:20 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService

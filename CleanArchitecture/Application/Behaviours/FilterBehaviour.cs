@@ -1,11 +1,11 @@
-﻿using Application.Extensions;
+﻿using Core.Extensions;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Application.Behaviours
+namespace Core.Behaviours
 {
     public class FilterBehaviour : IAsyncActionFilter
     {
@@ -17,7 +17,7 @@ namespace Application.Behaviours
                     .Select(x => x.Value.Errors.FirstOrDefault()?.ErrorMessage).ToList();
                 HttpResponse response = context.HttpContext.Response;
                 response.StatusCode = StatusCodes.Status400BadRequest;
-                response.ContentType = "application/json";
+                response.ContentType = "Core/json";
                 context.Result = new ObjectResult(new ResponseExtension(errors: errors));
                 return;
             }

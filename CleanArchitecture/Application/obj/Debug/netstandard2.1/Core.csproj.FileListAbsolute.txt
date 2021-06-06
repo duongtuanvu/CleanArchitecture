@@ -1,0 +1,11 @@
+C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\Application\bin\Debug\netstandard2.1\Core.deps.json
+C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\Application\bin\Debug\netstandard2.1\Core.dll
+C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\Application\bin\Debug\netstandard2.1\Core.pdb
+C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\Application\obj\Debug\netstandard2.1\Core.csprojAssemblyReference.cache
+C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\Application\obj\Debug\netstandard2.1\Core.Resource.resources
+C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\Application\obj\Debug\netstandard2.1\Core.csproj.GenerateResource.cache
+C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\Application\obj\Debug\netstandard2.1\Core.AssemblyInfoInputs.cache
+C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\Application\obj\Debug\netstandard2.1\Core.AssemblyInfo.cs
+C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\Application\obj\Debug\netstandard2.1\Core.csproj.CoreCompileInputs.cache
+C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\Application\obj\Debug\netstandard2.1\Core.dll
+C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\Application\obj\Debug\netstandard2.1\Core.pdb

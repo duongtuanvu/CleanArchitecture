@@ -17,7 +17,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data", "Data\Data.csproj", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{DD13F3F4-807C-49A0-9694-0F618354888F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Application\Application.csproj", "{9D6FEE10-E2CF-4079-8B84-DF6684065C71}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "Application\Core.csproj", "{9D6FEE10-E2CF-4079-8B84-DF6684065C71}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IoC", "IoC", "{FC99B5EA-B2A3-4CFD-A424-AE5006BDC783}"
 EndProject
@@ -29,7 +29,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiGateway.Ocelot", "ApiGat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExampleService", "ExampleService\ExampleService.csproj", "{91831A4D-1081-4A95-90DD-6C4006C51640}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductService", "ProductService\ProductService.csproj", "{EC6893DB-B2C1-43AA-A6CC-57EE76877D1E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductService", "ProductService\ProductService.csproj", "{EC6893DB-B2C1-43AA-A6CC-57EE76877D1E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Application.Extensions
+namespace Core.Extensions
 {
     public class ResponseExtension
     {

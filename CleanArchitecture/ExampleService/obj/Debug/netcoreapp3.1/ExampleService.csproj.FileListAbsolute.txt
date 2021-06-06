@@ -1,0 +1,6 @@
+C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService\obj\Debug\netcoreapp3.1\ExampleService.csprojAssemblyReference.cache
+C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService\obj\Debug\netcoreapp3.1\ExampleService.AssemblyInfoInputs.cache
+C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService\obj\Debug\netcoreapp3.1\ExampleService.AssemblyInfo.cs
+C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService\obj\Debug\netcoreapp3.1\ExampleService.csproj.CoreCompileInputs.cache
+C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService\obj\Debug\netcoreapp3.1\ExampleService.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService\obj\Debug\netcoreapp3.1\ExampleService.MvcApplicationPartsAssemblyInfo.cache

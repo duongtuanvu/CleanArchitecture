@@ -1,0 +1,62 @@
+[06/06/2021 16:22:51 INF] Application Starting.
+[06/06/2021 16:23:03 INF] Entity Framework Core 5.0.6 initialized 'ApplicationDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+[06/06/2021 16:23:05 INF] Executed DbCommand (40ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+[06/06/2021 16:23:05 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+[06/06/2021 16:23:05 INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+[06/06/2021 16:23:05 INF] No migrations were applied. The database is already up to date.
+[06/06/2021 16:23:05 INF] Executed DbCommand (50ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedBy", a."CreatedDate", a."Email", a."EmailConfirmed", a."IsAdmin", a."IsDeleted", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."SecurityStamp", a."TwoFactorEnabled", a."UpdatedBy", a."UpdatedDate", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+[06/06/2021 16:23:06 INF] Application started. Press Ctrl+C to shut down.
+[06/06/2021 16:23:06 INF] Hosting environment: Development
+[06/06/2021 16:23:06 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService
+[06/06/2021 16:23:36 INF] Entity Framework Core 5.0.6 initialized 'ApplicationDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+[06/06/2021 16:23:36 INF] Executed DbCommand (5ms) [Parameters=[@__ToLower_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedBy", a."CreatedDate", a."Email", a."EmailConfirmed", a."IsAdmin", a."IsDeleted", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."SecurityStamp", a."TwoFactorEnabled", a."UpdatedBy", a."UpdatedDate", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE lower(a."UserName") = @__ToLower_0
+LIMIT 1
+[06/06/2021 16:23:36 INF] Executed DbCommand (18ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT a0."Name"
+FROM "AspNetUserRoles" AS a
+INNER JOIN "AspNetRoles" AS a0 ON a."RoleId" = a0."Id"
+WHERE a."UserId" = @__userId_0
+[06/06/2021 16:25:07 INF] Application Starting.
+[06/06/2021 16:27:30 INF] Application Starting.
+[06/06/2021 16:33:09 INF] Application Starting.
+[06/06/2021 16:33:15 INF] Entity Framework Core 5.0.6 initialized 'ApplicationDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+[06/06/2021 16:33:17 INF] Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+[06/06/2021 16:33:17 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+[06/06/2021 16:33:17 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+[06/06/2021 16:33:17 INF] No migrations were applied. The database is already up to date.
+[06/06/2021 16:33:18 INF] Executed DbCommand (64ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedBy", a."CreatedDate", a."Email", a."EmailConfirmed", a."IsAdmin", a."IsDeleted", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."SecurityStamp", a."TwoFactorEnabled", a."UpdatedBy", a."UpdatedDate", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+[06/06/2021 16:33:19 INF] Application started. Press Ctrl+C to shut down.
+[06/06/2021 16:33:19 INF] Hosting environment: Development
+[06/06/2021 16:33:19 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService
+[06/06/2021 16:33:30 INF] Entity Framework Core 5.0.6 initialized 'ApplicationDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+[06/06/2021 16:33:30 INF] Executed DbCommand (3ms) [Parameters=[@__ToLower_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedBy", a."CreatedDate", a."Email", a."EmailConfirmed", a."IsAdmin", a."IsDeleted", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."SecurityStamp", a."TwoFactorEnabled", a."UpdatedBy", a."UpdatedDate", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE lower(a."UserName") = @__ToLower_0
+LIMIT 1
+[06/06/2021 16:33:30 INF] Executed DbCommand (14ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT a0."Name"
+FROM "AspNetUserRoles" AS a
+INNER JOIN "AspNetRoles" AS a0 ON a."RoleId" = a0."Id"
+WHERE a."UserId" = @__userId_0

@@ -28,8 +28,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Application\\Application.csproj"
+              "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Application\\Core.csproj": {
+                "projectPath": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Application\\Core.csproj"
               }
             }
           }
@@ -87,12 +87,12 @@
         }
       }
     },
-    "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Application\\Application.csproj": {
-      "version": "1.1.0",
+    "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Application\\Core.csproj": {
+      "version": "1.2.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Application\\Core.csproj",
         "projectName": "DependencyInjection.AspNetCore.Core",
-        "projectPath": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Application\\Application.csproj",
+        "projectPath": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Application\\Core.csproj",
         "packagesPath": "C:\\Users\\vu.dt99\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Application\\obj\\",
         "projectStyle": "PackageReference",

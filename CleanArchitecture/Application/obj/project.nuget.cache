@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Xs47FVLtxu2gD5F5SzvggGCmXAsuBnqBCy8EAkAurtz2FpXmgMaIZhuQ8Y80g4WOXVrPD2VBi8HHb7/PEvvZwA==",
+  "dgSpecHash": "OV9OIjbZzgLp8IN6jy5n/m/ksx/rms2KnD+oRekBQEmqnU9RW+HfzGx6AWHAyIZu/3eMVt+ChqWVz2wcLz/WvQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Application\\Application.csproj",
+  "projectFilePath": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Application\\Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vu.dt99\\.nuget\\packages\\dinktopdf\\1.0.8\\dinktopdf.1.0.8.nupkg.sha512",
     "C:\\Users\\vu.dt99\\.nuget\\packages\\epplus\\5.6.2\\epplus.5.6.2.nupkg.sha512",

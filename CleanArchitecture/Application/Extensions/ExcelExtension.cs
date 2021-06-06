@@ -9,11 +9,18 @@ using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
 
-namespace Application.Extensions
+namespace Core.Extensions
 {
     public static class ExcelExtension
     {
-        public static async Task<List<T>> ReadDataFromExcelFile<T>(this List<T> data, IFormFile file) where T : class, new()
+        /// <summary>
+        /// Read data from Excel file then return a List<typeparamref name="T"/>
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="data"></param>
+        /// <param name="file"></param>
+        /// <returns></returns>
+        public static async Task<List<T>> ToListAsync<T>(this List<T> data, IFormFile file) where T : class, new()
         {
             if (file == null || file.Length <= 0)
             {
@@ -81,7 +88,13 @@ namespace Application.Extensions
             }
         }
 
-        public static byte[] ExportExcel<T>(this IEnumerable<T> data) where T : class
+        /// <summary>
+        /// Convert a list data to byte array
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="data"></param>
+        /// <returns></returns>
+        public static byte[] ToByteArray<T>(this IEnumerable<T> data) where T : class
         {
             using (var stream = new MemoryStream())
             {
@@ -97,11 +110,18 @@ namespace Application.Extensions
             }
         }
 
-        public static TObject ToObject<TObject>(this IDictionary<string, object> someSource, BindingFlags bindingFlags = BindingFlags.Instance | BindingFlags.Public) where TObject : class, new()
+        /// <summary>
+        /// Convert dynamic object to T
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="someSource"></param>
+        /// <param name="bindingFlags"></param>
+        /// <returns></returns>
+        public static T ToObject<T>(this IDictionary<string, object> someSource, BindingFlags bindingFlags = BindingFlags.Instance | BindingFlags.Public) where T : class, new()
         {
             Contract.Requires(someSource != null);
-            TObject targetObject = new TObject();
-            Type targetObjectType = typeof(TObject);
+            T targetObject = new T();
+            Type targetObjectType = typeof(T);
             // Go through all bound target object type properties...
             foreach (PropertyInfo property in targetObjectType.GetProperties(bindingFlags))
             {

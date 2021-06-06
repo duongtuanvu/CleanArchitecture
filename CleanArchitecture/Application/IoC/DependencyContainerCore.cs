@@ -1,42 +1,50 @@
-﻿using Application.Behaviours;
-using Application.Extensions;
+﻿using Core.Behaviours;
+using Core.Extensions;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
-using Application.RestSharpClients;
+using Core.RestSharpClients;
 using Microsoft.AspNetCore.Mvc.ApiExplorer;
 using Microsoft.OpenApi.Models;
 using System.Collections.Generic;
 using FluentValidation.AspNetCore;
+using System;
 
-namespace Application.IoC
+namespace Core.IoC
 {
     public static class DependencyContainerCore
     {
         public static void AddServicesCore(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddSwagger();
-            services.AddValidations();
-            //services.AddAuthentication(configuration);
+            //services.AddValidations();
+            //services.AddAuthentication(string issuer, string audience, string sercret);
             //services.Configure<JwtSettings>(configuration.GetSection("JwtSettings"));
             //services.AddMediatR(Assembly.GetExecutingAssembly());
             //services.AddScoped(typeof(IPipelineBehavior<,>), typeof(TransactionBehaviour<,>));
-            //services.AddScoped<IJwtToken, JwtToken>();
             //services.AddTransient<IExampleQuery, ExampleQuery>();
             //services.AddSingleton(typeof(IConverter), new SynchronizedConverter(new PdfTools()));
-            services.AddTransient<IRestSharpClient, RestSharpClient>();
+            //services.AddTransient<IRestSharpClient, RestSharpClient>();
             services.AddHttpContextAccessor();
         }
 
-        public static void AddValidations(this IServiceCollection services)
+        /// <summary>
+        /// Add FluentValidation include add Filter, Exception
+        /// </summary>
+        /// <param name="services"></param>
+        /// <param name="filerType"></param>
+        /// <param name="exceptionType"></param>
+        public static void AddValidations(this IServiceCollection services, Type filerType, Type exceptionType)
         {
             services.AddMvc(opts =>
             {
-                opts.Filters.Add<FilterBehaviour>();
-                opts.Filters.Add<ExceptionBehaviour>();
+                opts.Filters.Add(filerType);
+                opts.Filters.Add(exceptionType);
+                //opts.Filters.Add<FilterBehaviour>();
+                //opts.Filters.Add<ExceptionBehaviour>();
             })
                 .AddFluentValidation();
             //services.AddTransient<IValidator<CreateExampleCommand>, CreateExampleCommandValidator>();
@@ -46,29 +54,49 @@ namespace Application.IoC
             });
         }
 
-        //public static void AddAuthentication(this IServiceCollection services, IConfiguration configuration)
-        //{
-        //    var jwtSettings = configuration.GetSection("JwtSettings").Get<JwtSettings>();
-        //    services.AddAuthentication(x =>
-        //    {
-        //        x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-        //        x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-        //    }).AddJwtBearer("Bearer", x =>
-        //    {
-        //        x.RequireHttpsMetadata = true;
-        //        x.SaveToken = true;
-        //        x.TokenValidationParameters = new TokenValidationParameters
-        //        {
-        //            ValidateIssuer = true,
-        //            ValidIssuer = jwtSettings.Issuer,
-        //            ValidateIssuerSigningKey = true,
-        //            IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(jwtSettings.SecretKey)),
-        //            ValidAudience = jwtSettings.Audience,
-        //            ValidateAudience = true,
-        //        };
-        //    });
-        //}
+        /// <summary>
+        /// Add Jwt authentication
+        /// </summary>
+        /// <param name="services"></param>
+        /// <param name="issuer"></param>
+        /// <param name="audience"></param>
+        /// <param name="sercret"></param>
+        public static void AddAuthentication(this IServiceCollection services, string issuer, string audience, string sercret)
+        {
+            services.AddScoped<IJwtToken, JwtToken>();
+            services.AddAuthentication(x =>
+            {
+                x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            }).AddJwtBearer("Bearer", x =>
+            {
+                x.RequireHttpsMetadata = true;
+                x.SaveToken = true;
+                x.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuer = string.IsNullOrWhiteSpace(issuer),
+                    ValidIssuer = issuer ?? "",
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(sercret)),
+                    ValidAudience = audience ?? "",
+                    ValidateAudience = string.IsNullOrWhiteSpace(audience),
+                };
+            });
+        }
 
+        /// <summary>
+        /// Add RestSharp
+        /// </summary>
+        /// <param name="services"></param>
+        public static void AddRestSharp(this IServiceCollection services)
+        {
+            services.AddTransient<IRestSharpClient, RestSharpClient>();
+        }
+
+        /// <summary>
+        /// Add Swagger include Api versioning
+        /// </summary>
+        /// <param name="services"></param>
         public static void AddSwagger(this IServiceCollection services)
         {
             #region Api versioning
@@ -122,7 +150,6 @@ namespace Application.IoC
             });
             #endregion
         }
-
         private static OpenApiInfo CreateMetaInfoAPIVersion(ApiVersionDescription apiDescription)
         {
             return new OpenApiInfo

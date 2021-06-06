@@ -1,4 +1,5 @@
 using Application.IoC;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -8,9 +9,11 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace ProductService
@@ -28,7 +31,25 @@ namespace ProductService
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddAuthentication(Configuration);
+            var jwtSettings = Configuration.GetSection("JwtSettings").Get<JwtSettings>();
+            services.AddAuthentication(x =>
+            {
+                x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            }).AddJwtBearer("Bearer", x =>
+            {
+                x.RequireHttpsMetadata = true;
+                x.SaveToken = true;
+                x.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuer = true,
+                    ValidIssuer = jwtSettings.Issuer,
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(jwtSettings.SecretKey)),
+                    ValidAudience = jwtSettings.Audience,
+                    ValidateAudience = true,
+                };
+            });
             services.AddSwagger();
             services.AddApiVersioning(config =>
             {
@@ -65,6 +86,14 @@ namespace ProductService
             {
                 endpoints.MapControllers();
             });
+        }
+
+        public class JwtSettings
+        {
+            public string SecretKey { get; set; }
+            public int Expires { get; set; }
+            public string Issuer { get; set; }
+            public string Audience { get; set; }
         }
     }
 }

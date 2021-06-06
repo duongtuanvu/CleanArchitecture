@@ -1,17 +1,17 @@
-﻿using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Hosting;
+﻿using Microsoft.Extensions.Hosting;
 using Serilog;
 using Serilog.Events;
-using Serilog.Formatting.Json;
 using System;
-using System.IO;
 
-namespace Application.Extensions
+namespace Core.Extensions
 {
     public static class LoggerExtension
     {
-        private static IConfiguration _configuration;
+        //private static IConfiguration _configuration;
 
+        /// <summary>
+        /// Config Serilog
+        /// </summary>
         public static void Configure()
         {
             //Read Configuration from appSettings
@@ -40,7 +40,7 @@ namespace Application.Extensions
 
         public static void Error(Exception ex)
         {
-            Log.Logger.Fatal(ex, "The Application failed to start.");
+            Log.Logger.Fatal(ex, "The Core failed to start.");
         }
 
         public static void CloseAndFlush()

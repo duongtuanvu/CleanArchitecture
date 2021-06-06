@@ -5,10 +5,17 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace Application.Extensions
+namespace Core.Extensions
 {
     public static class SortingExtension
     {
+        /// <summary>
+        /// Dynamic sort
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="query"></param>
+        /// <param name="search"></param>
+        /// <returns></returns>
         public static async Task<ResponseExtension> Sort<T>(this IQueryable<T> query, SearchBase search) where T : class
         {
             var source = query;
@@ -52,6 +59,7 @@ namespace Application.Extensions
         {
             return CallOrderedQueryable(query, "OrderByDescending", propertyName);
         }
+
         public static IOrderedQueryable<TEntity> CallOrderedQueryable<TEntity>(this IQueryable<TEntity> query, string methodName, string propertyName, string keyword = null, List<string> propertyNameToSearch = null) where TEntity : class
         {
             var param = Expression.Parameter(typeof(TEntity), "x");

@@ -1,45 +1,64 @@
-﻿using Microsoft.Extensions.Options;
-using Microsoft.IdentityModel.Tokens;
+﻿using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using static Core.Helpers.Enums;
 
-namespace Application.Extensions
+namespace Core.Extensions
 {
-    public class JwtSettings
-    {
-        public string SecretKey { get; set; }
-        public int Expires { get; set; }
-        public string Issuer { get; set; }
-        public string Audience { get; set; }
-    }
     public interface IJwtToken
     {
-        string GenerateToken();
+        /// <summary>
+        /// Generate Jwt token
+        /// </summary>
+        /// <param name="issuer"></param>
+        /// <param name="audience"></param>
+        /// <param name="secret"></param>
+        /// <param name="claims"></param>
+        /// <param name="expires"></param>
+        /// <param name="expirationType"></param>
+        /// <returns></returns>
+        string GenerateToken(string issuer, string audience, string secret, IEnumerable<Claim> claims, int expires, ExpirationType expirationType);
     }
     public class JwtToken : IJwtToken
     {
-        private readonly JwtSettings _jwtSettings;
-        public JwtToken(IOptions<JwtSettings> jwtSettings)
+        public string GenerateToken(string issuer, string audience, string secret, IEnumerable<Claim> claims, int expires, ExpirationType expirationType)
         {
-            _jwtSettings = jwtSettings.Value;
-        }
-
-        public string GenerateToken()
-        {
-            // generate token that is valid for 7 hours
-            var tokenHandler = new JwtSecurityTokenHandler();
-            var tokenDescriptor = new SecurityTokenDescriptor
+            DateTime expire = DateTime.UtcNow;
+            switch (expirationType)
             {
-                Expires = DateTime.UtcNow.AddHours(_jwtSettings.Expires),
-                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(Encoding.ASCII.GetBytes(_jwtSettings.SecretKey)), SecurityAlgorithms.HmacSha256Signature),
-                Issuer = _jwtSettings.Issuer,
-                Audience = _jwtSettings.Audience
-            };
-            var token = tokenHandler.CreateToken(tokenDescriptor);
-            return tokenHandler.WriteToken(token);
+                case ExpirationType.Second:
+                    expire = expire.AddSeconds(expires);
+                    break;
+                case ExpirationType.Minute:
+                    expire = expire.AddMinutes(expires);
+                    break;
+                case ExpirationType.Hour:
+                    expire = expire.AddHours(expires);
+                    break;
+                case ExpirationType.Day:
+                    expire = expire.AddDays(expires);
+                    break;
+                case ExpirationType.Month:
+                    expire = expire.AddMonths(expires);
+                    break;
+                case ExpirationType.Year:
+                    expire = expire.AddYears(expires);
+                    break;
+                default:
+                    break;
+            }
+            var token = new JwtSecurityToken(
+                    issuer: issuer,
+                    audience: audience,
+                    claims: claims,
+                    expires: expire,
+                    signingCredentials: new SigningCredentials(
+                                            new SymmetricSecurityKey(Encoding.ASCII.GetBytes(secret)),
+                                            SecurityAlgorithms.HmacSha256Signature));
+            return new JwtSecurityTokenHandler().WriteToken(token);
         }
     }
 }

@@ -1,0 +1,6 @@
+C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ApiGateway.Ocelot\obj\Debug\netcoreapp3.1\ApiGateway.Ocelot.csprojAssemblyReference.cache
+C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ApiGateway.Ocelot\obj\Debug\netcoreapp3.1\ApiGateway.Ocelot.AssemblyInfoInputs.cache
+C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ApiGateway.Ocelot\obj\Debug\netcoreapp3.1\ApiGateway.Ocelot.AssemblyInfo.cs
+C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ApiGateway.Ocelot\obj\Debug\netcoreapp3.1\ApiGateway.Ocelot.csproj.CoreCompileInputs.cache
+C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ApiGateway.Ocelot\obj\Debug\netcoreapp3.1\ApiGateway.Ocelot.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ApiGateway.Ocelot\obj\Debug\netcoreapp3.1\ApiGateway.Ocelot.MvcApplicationPartsAssemblyInfo.cache

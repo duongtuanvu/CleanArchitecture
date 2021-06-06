@@ -7,7 +7,7 @@ using System.IO;
 using System.Runtime.CompilerServices;
 using System.Text;
 
-namespace Application.Extensions
+namespace Core.Extensions
 {
     public class PdfExtension
     {

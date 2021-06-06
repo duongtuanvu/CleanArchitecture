@@ -2,21 +2,19 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "DependencyInjection.AspNetCore.Core/1.0.0": {
+      "DependencyInjection.AspNetCore.Core/1.1.0": {
         "type": "package",
         "dependencies": {
           "DinkToPdf": "1.0.8",
           "EPPlus": "5.6.2",
           "FluentValidation": "8.6.3",
           "FluentValidation.AspNetCore": "8.6.3",
-          "MediatR": "9.0.0",
-          "MediatR.Extensions.Microsoft.DependencyInjection": "9.0.0",
           "Microsoft.AspNetCore.Authentication": "2.2.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "2.2.0",
           "Microsoft.AspNetCore.Mvc": "2.2.0",
           "Microsoft.AspNetCore.Mvc.Versioning": "4.1.0",
           "Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer": "4.1.0",
-          "Microsoft.EntityFrameworkCore": "5.0.6",
+          "Microsoft.EntityFrameworkCore": "5.0.0",
           "Microsoft.Extensions.Configuration": "5.0.0",
           "Microsoft.Extensions.Configuration.FileExtensions": "5.0.0",
           "Microsoft.Extensions.Configuration.Json": "5.0.0",
@@ -3746,15 +3744,15 @@
     }
   },
   "libraries": {
-    "DependencyInjection.AspNetCore.Core/1.0.0": {
-      "sha512": "u6lXAuk09IRhrzHU8M8XACQMALKINGTZgykzwkzhwntryu07IgMWcpUjO/fpA3ZSuMwCGPzW1H9gVLyQ2Frm4Q==",
+    "DependencyInjection.AspNetCore.Core/1.1.0": {
+      "sha512": "vk1jYbsqJUPfd1e4vr/kjT1l4H+weMtgGglwg9nVNMiPM0zV/OBcAHFb0yIB7FaybNnRhY5Es3FSvo9OIey3mg==",
       "type": "package",
-      "path": "dependencyinjection.aspnetcore.core/1.0.0",
+      "path": "dependencyinjection.aspnetcore.core/1.1.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Core.png",
-        "dependencyinjection.aspnetcore.core.1.0.0.nupkg.sha512",
+        "dependencyinjection.aspnetcore.core.1.1.0.nupkg.sha512",
         "dependencyinjection.aspnetcore.core.nuspec",
         "lib/netstandard2.1/Application.dll"
       ]
@@ -11211,7 +11209,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "DependencyInjection.AspNetCore.Core >= 1.0.0",
+      "DependencyInjection.AspNetCore.Core >= 1.1.0",
       "FluentValidation >= 8.6.3",
       "FluentValidation.AspNetCore >= 8.6.3",
       "MediatR >= 9.0.0",
@@ -11278,7 +11276,7 @@
         "dependencies": {
           "DependencyInjection.AspNetCore.Core": {
             "target": "Package",
-            "version": "[1.0.0, )"
+            "version": "[1.1.0, )"
           },
           "FluentValidation": {
             "target": "Package",

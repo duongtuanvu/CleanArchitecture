@@ -21,7 +21,7 @@ namespace ExampleService.Core.Services
     public class AccountService : IAccountService
     {
         private readonly IUnitOfWork _uow;
-        private readonly IJwtToken _jwtToken;
+        //private readonly IJwtToken _jwtToken;
         private readonly UserManager<User> _userManager;
         private readonly RoleManager<Role> _roleManager;
         private readonly ApplicationDbContext _context;

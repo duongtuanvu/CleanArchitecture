@@ -1,15 +1,20 @@
-﻿using Application.Common;
-using Application.Extensions;
+﻿using Core.Helpers;
+using Core.Extensions;
 using RestSharp;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.RestSharpClients
+namespace Core.RestSharpClients
 {
     public interface IRestSharpClient
     {
+        /// <summary>
+        /// Call api with params
+        /// </summary>
+        /// <param name="rq_params"></param>
+        /// <returns></returns>
         Task<IRestResponse> ExcuteApi(RequestParams rq_params);
     }
     public class RestSharpClient : IRestSharpClient

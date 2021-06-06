@@ -55,26 +55,8 @@ namespace ExampleService
             services.AddControllers();
             services.AddInfrastructure(Configuration, ServerType.Postgres);
             services.AddServicesCore(Configuration);
-            var jwtSettings = Configuration.GetSection("JwtSettings").Get<JwtSettings>();
-            services.AddAuthentication(x =>
-            {
-                x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-                x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-            }).AddJwtBearer("Bearer", x =>
-            {
-                x.RequireHttpsMetadata = true;
-                x.SaveToken = true;
-                x.TokenValidationParameters = new TokenValidationParameters
-                {
-                    ValidateIssuer = true,
-                    ValidIssuer = jwtSettings.Issuer,
-                    ValidateIssuerSigningKey = true,
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(jwtSettings.SecretKey)),
-                    ValidAudience = jwtSettings.Audience,
-                    ValidateAudience = true,
-                };
-            });
-            services.AddServices();
+            //services.AddJwtAuthentication(Configuration);
+            services.AddApplicationServices();
             services.AddMediatR();
             services.AddHelper(Configuration);
 

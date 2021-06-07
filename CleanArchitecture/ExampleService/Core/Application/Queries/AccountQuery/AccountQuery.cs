@@ -1,4 +1,4 @@
-﻿using Application.Extensions;
+﻿using Core.Extensions;
 using ExampleService.Infrastructure;
 using ExampleService.Infrastructure.Entities;
 using System;

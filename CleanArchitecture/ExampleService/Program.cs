@@ -1,4 +1,4 @@
-using Application.Extensions;
+using Core.Extensions;
 using ExampleService.Infrastructure;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;

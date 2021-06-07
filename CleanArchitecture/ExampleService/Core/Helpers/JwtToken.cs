@@ -9,52 +9,65 @@ using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
+using Core.IoC;
 using System.Text;
 
 namespace ExampleService.Core.Helpers
 {
-    public interface IJwtToken
+    public class JwtSettings
     {
-        string GenerateToken(string issuer, string audience, string secret, IEnumerable<Claim> claims);
+        public string SecretKey { get; set; }
+        public int Expires { get; set; }
+        public string Issuer { get; set; }
+        public string Audience { get; set; }
     }
-    public class JwtToken : IJwtToken
-    {
-        public string GenerateToken(string issuer, string audience, string secret, IEnumerable<Claim> claims, int expires, )
-        {
-            // generate token that is valid for 7 hours
-            var token = new JwtSecurityToken(
-                    issuer: issuer,
-                    audience: audience,
-                    claims: claims,
-                    expires: DateTime.UtcNow.AddHours(_jwtSettings.Expires),
-                    signingCredentials: new SigningCredentials(
-                                            new SymmetricSecurityKey(Encoding.ASCII.GetBytes(secret)),
-                                            SecurityAlgorithms.HmacSha256Signature));
-            return new JwtSecurityTokenHandler().WriteToken(token);
-        }
-    }
+
+    //public interface IJwtToken
+    //{
+    //    string GenerateToken(string issuer, string audience, string secret, IEnumerable<Claim> claims);
+    //}
+    //public class JwtToken : IJwtToken
+    //{
+    //    public string GenerateToken(string issuer, string audience, string secret, IEnumerable<Claim> claims, int expires, )
+    //    {
+    //        // generate token that is valid for 7 hours
+    //        var token = new JwtSecurityToken(
+    //                issuer: issuer,
+    //                audience: audience,
+    //                claims: claims,
+    //                expires: DateTime.UtcNow.AddHours(_jwtSettings.Expires),
+    //                signingCredentials: new SigningCredentials(
+    //                                        new SymmetricSecurityKey(Encoding.ASCII.GetBytes(secret)),
+    //                                        SecurityAlgorithms.HmacSha256Signature));
+    //        return new JwtSecurityTokenHandler().WriteToken(token);
+    //    }
+    //}
+
     public static class AuthenticationInstaller
     {
-        public static void AddJwtAuthentication(this IServiceCollection services, string issuer, string audience, string secret)
+        public static void AddJwtAuthentication(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddAuthentication(x =>
-            {
-                x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-                x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-            }).AddJwtBearer("Bearer", x =>
-            {
-                x.RequireHttpsMetadata = true;
-                x.SaveToken = true;
-                x.TokenValidationParameters = new TokenValidationParameters
-                {
-                    ValidateIssuer = string.IsNullOrWhiteSpace(issuer),
-                    ValidIssuer = issuer ?? "",
-                    ValidateIssuerSigningKey = true,
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(secret)),
-                    ValidAudience = audience ?? "",
-                    ValidateAudience = string.IsNullOrWhiteSpace(audience),
-                };
-            });
+            var jwtSettings = configuration.GetSection("JwtSettings").Get<JwtSettings>();
+            services.AddAuthentication(jwtSettings.Issuer, jwtSettings.Audience, jwtSettings.SecretKey);
+
+            //services.AddAuthentication(x =>
+            //{
+            //    x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+            //    x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            //}).AddJwtBearer("Bearer", x =>
+            //{
+            //    x.RequireHttpsMetadata = true;
+            //    x.SaveToken = true;
+            //    x.TokenValidationParameters = new TokenValidationParameters
+            //    {
+            //        ValidateIssuer = string.IsNullOrWhiteSpace(issuer),
+            //        ValidIssuer = issuer ?? "",
+            //        ValidateIssuerSigningKey = true,
+            //        IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(secret)),
+            //        ValidAudience = audience ?? "",
+            //        ValidateAudience = string.IsNullOrWhiteSpace(audience),
+            //    };
+            //});
         }
     }
 }

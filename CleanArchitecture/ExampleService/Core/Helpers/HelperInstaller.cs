@@ -12,7 +12,7 @@ namespace ExampleService.Core.Helpers
         public static void AddHelper(this IServiceCollection services, IConfiguration configuration)
         {
             services.Configure<JwtSettings>(configuration.GetSection("JwtSettings"));
-            services.AddScoped<IJwtToken, JwtToken>();
+            //services.AddScoped<IJwtToken, JwtToken>();
         }
     }
 }

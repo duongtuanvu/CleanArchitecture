@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "0UTeb1qXheQx83/JanuCWkCa1Q5LUAi/QOG2nzM96eNbN+HR71wS4ilERIvlbLJYln26JSqQQphT0FPqHiNppQ==",
+  "dgSpecHash": "11XvXoyJdaF4LQoXfwWE/5JZy+f6FD21VW0kznlTgGBr7+Wo+6AV9nCTuMzdPKRhTlazlTIU8bUbi2jYuc7cKQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\ExampleService\\ExampleService.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\vu.dt99\\.nuget\\packages\\dependencyinjection.aspnetcore.core\\1.1.0\\dependencyinjection.aspnetcore.core.1.1.0.nupkg.sha512",
+    "C:\\Users\\vu.dt99\\.nuget\\packages\\dependencyinjection.aspnetcore.core\\1.2.0\\dependencyinjection.aspnetcore.core.1.2.0.nupkg.sha512",
     "C:\\Users\\vu.dt99\\.nuget\\packages\\dinktopdf\\1.0.8\\dinktopdf.1.0.8.nupkg.sha512",
     "C:\\Users\\vu.dt99\\.nuget\\packages\\epplus\\5.6.2\\epplus.5.6.2.nupkg.sha512",
     "C:\\Users\\vu.dt99\\.nuget\\packages\\fluentvalidation\\8.6.3\\fluentvalidation.8.6.3.nupkg.sha512",

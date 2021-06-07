@@ -1,4 +1,4 @@
-﻿using Application.Extensions;
+﻿using Core.Extensions;
 using ExampleService.Core.Authorization;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;

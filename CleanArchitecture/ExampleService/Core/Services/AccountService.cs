@@ -1,15 +1,19 @@
-﻿using ExampleService.Core.Application.Commands.AccountCommand;
+﻿using Core.Extensions;
+using ExampleService.Core.Application.Commands.AccountCommand;
 using ExampleService.Core.DTOs;
 using ExampleService.Core.Helpers;
 using ExampleService.Infrastructure;
 using ExampleService.Infrastructure.Entities;
 using ExampleService.Infrastructure.Interface.UnitOfWork;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
+using static Core.Helpers.Enums;
 
 namespace ExampleService.Core.Services
 {
@@ -21,13 +25,13 @@ namespace ExampleService.Core.Services
     public class AccountService : IAccountService
     {
         private readonly IUnitOfWork _uow;
-        //private readonly IJwtToken _jwtToken;
+        private readonly IJwtToken _jwtToken;
         private readonly UserManager<User> _userManager;
         private readonly RoleManager<Role> _roleManager;
-        private readonly ApplicationDbContext _context;
-        public AccountService(ApplicationDbContext context, IUnitOfWork uow, IJwtToken jwtToken, UserManager<User> userManager, RoleManager<Role> roleManager)
+        private readonly IConfiguration _configuration;
+        public AccountService(IConfiguration configuration, IUnitOfWork uow, IJwtToken jwtToken, UserManager<User> userManager, RoleManager<Role> roleManager)
         {
-            _context = context;
+            _configuration = configuration;
             _uow = uow;
             _jwtToken = jwtToken;
             _userManager = userManager;
@@ -58,7 +62,14 @@ namespace ExampleService.Core.Services
                 }
             }
             var jsonClaims = JsonConvert.SerializeObject(roleDTOes);
-            return _jwtToken.GenerateToken(user, jsonClaims); ;
+
+            var jwtSettings = _configuration.GetSection("JwtSettings").Get<JwtSettings>();
+            var jwtClaims = new List<Claim>() {
+                new Claim(Constants.UserId, user.Id.ToString()),
+                new Claim(Constants.UserName, user.UserName),
+                new Claim(Constants.IsAdmin, user.IsAdmin.ToString()),
+                new Claim(Constants.Permissions, jsonClaims)};
+            return _jwtToken.GenerateToken(jwtSettings.Issuer, jwtSettings.Audience, jwtSettings.SecretKey, jwtClaims, 8, ExpirationType.Hour);
         }
     }
 }

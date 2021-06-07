@@ -1,4 +1,4 @@
-﻿using Application.Extensions;
+﻿using Core.Extensions;
 using ExampleService.Core.Application.Commands.AccountCommand;
 using ExampleService.Infrastructure.Entities;
 using ExampleService.Core.Services;

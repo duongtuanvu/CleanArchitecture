@@ -14,11 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Remove="Core\Helpers\JwtToken.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="DependencyInjection.AspNetCore.Core" Version="1.1.0" />
+    <PackageReference Include="DependencyInjection.AspNetCore.Core" Version="1.2.0" />
     <PackageReference Include="FluentValidation" Version="8.6.3" />
     <PackageReference Include="FluentValidation.AspNetCore" Version="8.6.3" />
     <PackageReference Include="MediatR" Version="9.0.0" />

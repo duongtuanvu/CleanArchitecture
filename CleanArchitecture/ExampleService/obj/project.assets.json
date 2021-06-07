@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "DependencyInjection.AspNetCore.Core/1.1.0": {
+      "DependencyInjection.AspNetCore.Core/1.2.0": {
         "type": "package",
         "dependencies": {
           "DinkToPdf": "1.0.8",
@@ -31,10 +31,10 @@
           "System.Configuration.ConfigurationManager": "5.0.0"
         },
         "compile": {
-          "lib/netstandard2.1/Application.dll": {}
+          "lib/netstandard2.1/Core.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.1/Application.dll": {}
+          "lib/netstandard2.1/Core.dll": {}
         }
       },
       "DinkToPdf/1.0.8": {
@@ -3744,17 +3744,17 @@
     }
   },
   "libraries": {
-    "DependencyInjection.AspNetCore.Core/1.1.0": {
-      "sha512": "vk1jYbsqJUPfd1e4vr/kjT1l4H+weMtgGglwg9nVNMiPM0zV/OBcAHFb0yIB7FaybNnRhY5Es3FSvo9OIey3mg==",
+    "DependencyInjection.AspNetCore.Core/1.2.0": {
+      "sha512": "cZyx68ZT0x4wDIZMk04O1KYk15nlAPPFR0UsRQ1le1dILgAQXuHQUcKWZbxExfPuaDS0suC4D9DuQqT2yahjNA==",
       "type": "package",
-      "path": "dependencyinjection.aspnetcore.core/1.1.0",
+      "path": "dependencyinjection.aspnetcore.core/1.2.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "Core.png",
-        "dependencyinjection.aspnetcore.core.1.1.0.nupkg.sha512",
+        "Core1.png",
+        "dependencyinjection.aspnetcore.core.1.2.0.nupkg.sha512",
         "dependencyinjection.aspnetcore.core.nuspec",
-        "lib/netstandard2.1/Application.dll"
+        "lib/netstandard2.1/Core.dll"
       ]
     },
     "DinkToPdf/1.0.8": {
@@ -11209,7 +11209,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "DependencyInjection.AspNetCore.Core >= 1.1.0",
+      "DependencyInjection.AspNetCore.Core >= 1.2.0",
       "FluentValidation >= 8.6.3",
       "FluentValidation.AspNetCore >= 8.6.3",
       "MediatR >= 9.0.0",
@@ -11276,7 +11276,7 @@
         "dependencies": {
           "DependencyInjection.AspNetCore.Core": {
             "target": "Package",
-            "version": "[1.1.0, )"
+            "version": "[1.2.0, )"
           },
           "FluentValidation": {
             "target": "Package",

@@ -1,42 +1,16 @@
-﻿//using Application.Behaviours;
-using Application.IoC;
-using ExampleService.Core.Application.Commands.AccountCommand;
-using ExampleService.Core.Application.Validations;
-using ExampleService.Core.Application.Validations.AccountCommandValidations;
-using ExampleService.Core.Authorization;
-using ExampleService.Core.Behaviours;
-using ExampleService.Core.Helpers;
+﻿using ExampleService.Core.Helpers;
 using ExampleService.Infrastructure;
-using ExampleService.Infrastructure.Entities;
-using ExampleService.Infrastructure.Interface.IRepository;
-using ExampleService.Infrastructure.Interface.Repository;
-using ExampleService.Infrastructure.Interface.UnitOfWork;
 using ExampleService.Core.Services;
-using FluentValidation;
-//using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ApiExplorer;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using Microsoft.OpenApi.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Threading.Tasks;
 using static ExampleService.Core.Helpers.Enums;
 using ExampleService.Core.Application;
 using MediatR;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.IdentityModel.Tokens;
-using System.Text;
+using Core.IoC;
 
 namespace ExampleService
 {
@@ -54,11 +28,12 @@ namespace ExampleService
         {
             services.AddControllers();
             services.AddInfrastructure(Configuration, ServerType.Postgres);
-            services.AddServicesCore(Configuration);
-            //services.AddJwtAuthentication(Configuration);
-            services.AddApplicationServices();
+            //services.AddServicesCore(Configuration);
+            services.AddJwtAuthentication(Configuration);
+            services.AddSwagger();
             services.AddMediatR();
-            services.AddHelper(Configuration);
+            services.AddApplicationServices();
+            //services.AddHelper(Configuration);
 
         }
 

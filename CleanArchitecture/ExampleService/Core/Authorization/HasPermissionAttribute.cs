@@ -1,4 +1,4 @@
-﻿using Application.Extensions;
+﻿using Core.Extensions;
 using ExampleService.Core.Helpers;
 using ExampleService.Core.DTOs;
 using ExampleService.Infrastructure;
@@ -41,7 +41,7 @@ namespace ExampleService.Core.Authorization
             var token = context.HttpContext.Request.Headers["Authorization"].FirstOrDefault()?.Split(" ").Last();
             var jsonToken = new JwtSecurityTokenHandler().ReadToken(token) as JwtSecurityToken;
             var isAdmin = jsonToken.Claims.Where(x => x.Type.Equals(Constants.IsAdmin)).FirstOrDefault()?.Value;
-            if (bool.Parse(isAdmin))
+            if (!bool.Parse(isAdmin))
             {
                 var permissions = JsonConvert.DeserializeObject<List<RoleDto>>(jsonToken.Claims.Where(x => x.Type.Equals(Constants.Permissions)).FirstOrDefault()?.Value);
                 if (permissions.Any(x => Roles.Contains(x.Name) && x.Permissions.Any(p => Permissions.Any(p1 => p1.Contains(p.Type)))))

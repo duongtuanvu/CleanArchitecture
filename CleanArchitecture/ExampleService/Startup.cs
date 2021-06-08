@@ -11,6 +11,7 @@ using static ExampleService.Core.Helpers.Enums;
 using ExampleService.Core.Application;
 using MediatR;
 using Core.IoC;
+using Core.Behaviours;
 
 namespace ExampleService
 {
@@ -28,12 +29,11 @@ namespace ExampleService
         {
             services.AddControllers();
             services.AddInfrastructure(Configuration, ServerType.Postgres);
-            //services.AddServicesCore(Configuration);
+            services.AddValidations(typeof(FilterBehaviour), typeof(ExceptionBehaviour));
             services.AddJwtAuthentication(Configuration);
             services.AddSwagger();
             services.AddMediatR();
             services.AddApplicationServices();
-            //services.AddHelper(Configuration);
 
         }
 

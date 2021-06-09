@@ -1,0 +1,116 @@
+[09/06/2021 06:53:38 INF] Application Starting.
+[09/06/2021 06:53:44 INF] Entity Framework Core 5.0.6 initialized 'ApplicationDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+[09/06/2021 06:53:45 INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+[09/06/2021 06:53:45 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+[09/06/2021 06:53:45 INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+[09/06/2021 06:53:45 INF] Applying migration '20210608234845_add_table'.
+[09/06/2021 06:53:45 INF] Executed DbCommand (50ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Groups" (
+    "Id" uuid NOT NULL,
+    "Name" text NULL,
+    "CreatedDate" timestamp without time zone NULL,
+    "CreatedBy" uuid NOT NULL,
+    "UpdatedDate" timestamp without time zone NULL,
+    "UpdatedBy" uuid NOT NULL,
+    "IsDeleted" boolean NOT NULL,
+    CONSTRAINT "PK_Groups" PRIMARY KEY ("Id")
+);
+[09/06/2021 06:53:45 INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Students" (
+    "Id" uuid NOT NULL,
+    "Name" text NULL,
+    "GroupId" uuid NULL,
+    "CreatedDate" timestamp without time zone NULL,
+    "CreatedBy" uuid NOT NULL,
+    "UpdatedDate" timestamp without time zone NULL,
+    "UpdatedBy" uuid NOT NULL,
+    "IsDeleted" boolean NOT NULL,
+    CONSTRAINT "PK_Students" PRIMARY KEY ("Id"),
+    CONSTRAINT "FK_Students_Groups_GroupId" FOREIGN KEY ("GroupId") REFERENCES "Groups" ("Id") ON DELETE RESTRICT
+);
+[09/06/2021 06:53:45 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_Students_GroupId" ON "Students" ("GroupId");
+[09/06/2021 06:53:45 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20210608234845_add_table', '5.0.6');
+[09/06/2021 06:53:46 INF] Executed DbCommand (56ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedBy", a."CreatedDate", a."Email", a."EmailConfirmed", a."IsAdmin", a."IsDeleted", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."SecurityStamp", a."TwoFactorEnabled", a."UpdatedBy", a."UpdatedDate", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+[09/06/2021 06:53:47 INF] Application started. Press Ctrl+C to shut down.
+[09/06/2021 06:53:47 INF] Hosting environment: Development
+[09/06/2021 06:53:47 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService
+[09/06/2021 06:58:51 INF] Application Starting.
+[09/06/2021 06:58:56 INF] Entity Framework Core 5.0.6 initialized 'ApplicationDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+[09/06/2021 06:58:57 INF] Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+[09/06/2021 06:58:57 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+[09/06/2021 06:58:57 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+[09/06/2021 06:58:57 INF] No migrations were applied. The database is already up to date.
+[09/06/2021 06:58:57 INF] Executed DbCommand (16ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?' (DbType = DateTime), @p3='?' (DbType = Boolean), @p4='?', @p5='?' (DbType = Guid), @p6='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Groups" ("Id", "CreatedBy", "CreatedDate", "IsDeleted", "Name", "UpdatedBy", "UpdatedDate")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+[09/06/2021 06:58:58 INF] Executed DbCommand (41ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedBy", a."CreatedDate", a."Email", a."EmailConfirmed", a."IsAdmin", a."IsDeleted", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."SecurityStamp", a."TwoFactorEnabled", a."UpdatedBy", a."UpdatedDate", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+[09/06/2021 06:58:58 INF] Application started. Press Ctrl+C to shut down.
+[09/06/2021 06:58:58 INF] Hosting environment: Development
+[09/06/2021 06:58:58 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService
+[09/06/2021 06:59:20 INF] Entity Framework Core 5.0.6 initialized 'ApplicationDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+[09/06/2021 06:59:20 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT g."Id", g."CreatedBy", g."CreatedDate", g."IsDeleted", g."Name", g."UpdatedBy", g."UpdatedDate"
+FROM "Groups" AS g
+WHERE g."Name" = 'Group'
+LIMIT 1
+[09/06/2021 06:59:22 INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?' (DbType = DateTime), @p3='?' (DbType = Guid), @p4='?' (DbType = Boolean), @p5='?', @p6='?' (DbType = Guid), @p7='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Students" ("Id", "CreatedBy", "CreatedDate", "GroupId", "IsDeleted", "Name", "UpdatedBy", "UpdatedDate")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+[09/06/2021 07:01:50 INF] Application Starting.
+[09/06/2021 07:01:55 INF] Entity Framework Core 5.0.6 initialized 'ApplicationDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+[09/06/2021 07:01:56 INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+[09/06/2021 07:01:56 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+[09/06/2021 07:01:56 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+[09/06/2021 07:01:56 INF] No migrations were applied. The database is already up to date.
+[09/06/2021 07:01:56 INF] Executed DbCommand (16ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?' (DbType = DateTime), @p3='?' (DbType = Boolean), @p4='?', @p5='?' (DbType = Guid), @p6='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Groups" ("Id", "CreatedBy", "CreatedDate", "IsDeleted", "Name", "UpdatedBy", "UpdatedDate")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+[09/06/2021 07:01:57 INF] Executed DbCommand (89ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."CreatedBy", a."CreatedDate", a."Email", a."EmailConfirmed", a."IsAdmin", a."IsDeleted", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."SecurityStamp", a."TwoFactorEnabled", a."UpdatedBy", a."UpdatedDate", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+[09/06/2021 07:01:57 INF] Application started. Press Ctrl+C to shut down.
+[09/06/2021 07:01:57 INF] Hosting environment: Development
+[09/06/2021 07:01:57 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleService
+[09/06/2021 07:02:43 INF] Entity Framework Core 5.0.6 initialized 'ApplicationDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+[09/06/2021 07:02:43 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT s."Id", s."CreatedBy", s."CreatedDate", s."GroupId", s."IsDeleted", s."Name", s."UpdatedBy", s."UpdatedDate"
+FROM "Students" AS s
+WHERE s."Name" = 'Student'
+LIMIT 1
+[09/06/2021 07:02:43 INF] Executed DbCommand (1ms) [Parameters=[@p1='?' (DbType = Guid), @p0='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Students" SET "IsDeleted" = @p0
+WHERE "Id" = @p1;
+[09/06/2021 07:03:20 INF] Entity Framework Core 5.0.6 initialized 'ApplicationDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+[09/06/2021 07:03:20 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT s."Id", s."CreatedBy", s."CreatedDate", s."GroupId", s."IsDeleted", s."Name", s."UpdatedBy", s."UpdatedDate"
+FROM "Students" AS s
+WHERE s."Name" = 'Student'
+LIMIT 1

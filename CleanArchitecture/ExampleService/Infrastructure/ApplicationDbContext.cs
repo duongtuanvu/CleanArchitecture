@@ -1,5 +1,7 @@
-﻿using ExampleService.Infrastructure.Entities;
+﻿using ExampleService.Core.Helpers;
+using ExampleService.Infrastructure.Entities;
 using ExampleService.Infrastructure.EntityConfigurations;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -11,13 +13,12 @@ namespace ExampleService.Infrastructure
 {
     public class ApplicationDbContext : IdentityDbContext<User, Role, Guid>
     {
-        public Guid UserId { get; set; }
-
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
+        private readonly IHttpContextAccessor _httpContextAccessor;
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options, IHttpContextAccessor httpContextAccessor) : base(options)
         {
-
+            _httpContextAccessor = httpContextAccessor;
         }
-
+        public Guid UserId { get; set; }
         public DbSet<Permission> Permissions { get; set; }
         public DbSet<Example> Examples { get; set; }
 
@@ -41,6 +42,7 @@ namespace ExampleService.Infrastructure
 
         private void BeforeSaving()
         {
+            UserId = Guid.Parse(_httpContextAccessor.HttpContext.User.FindFirst(Constants.UserId).Value);
             var now = DateTime.Now;
             var entries = ChangeTracker
                 .Entries()

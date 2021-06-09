@@ -1,5 +1,6 @@
 ﻿using Core.Extensions;
 using ExampleService.Core.Authorization;
+using ExampleService.Infrastructure;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -17,9 +18,11 @@ namespace ExampleService.Controllers
     public class WeatherForecastController : ControllerBase
     {
         private readonly IJwtToken _jwtToken;
-        public WeatherForecastController(IJwtToken jwtToken)
+        private readonly ApplicationDbContext _context;
+        public WeatherForecastController(IJwtToken jwtToken, ApplicationDbContext context)
         {
             _jwtToken = jwtToken;
+            _context = context;
         }
         private static readonly string[] Summaries = new[]
         {

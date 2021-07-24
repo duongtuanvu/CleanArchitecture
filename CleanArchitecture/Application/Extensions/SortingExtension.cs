@@ -14,11 +14,6 @@ namespace Application.Extensions
     {
         public static ResponseExtension Sort<T>(this IQueryable<T> query, SearchExtension search) where T : class
         {
-            if (!string.IsNullOrWhiteSpace(search.Keyword))
-            {
-                query.Where("Name");
-            }
-            var source = query;
             if (!string.IsNullOrWhiteSpace(search.OrderBy))
             {
                 var lstProperties = typeof(T).GetProperties();
@@ -28,21 +23,21 @@ namespace Application.Extensions
                     {
                         if (search.OrderByDesc)
                         {
-                            source = query.OrderByDescending(prop.Name);
+                            query = query.OrderByDescending(prop.Name);
                         }
                         else
                         {
-                            source = query.OrderBy(prop.Name);
+                            query = query.OrderBy(prop.Name);
                         }
                         break;
                     }
                 }
             }
-            var totalRecords = source.ToList().Count;
+            var totalRecords = query.Count();
             var totalPages = Convert.ToInt32(Math.Ceiling((double)totalRecords / (double)search.PageSize));
             var paging = new Paging(search.PageNumber, search.PageSize, totalPages, totalRecords);
-            source = source.Skip((search.PageNumber - 1) * search.PageSize).Take(search.PageSize);
-            return new ResponseExtension(data: source, paging: paging);
+            query = query.Skip((search.PageNumber - 1) * search.PageSize).Take(search.PageSize);
+            return new ResponseExtension(data: query, paging: paging);
         }
 
         private static IOrderedQueryable<TEntity> Where<TEntity>(this IQueryable<TEntity> query, string propertyName, string keyword = null) where TEntity : class

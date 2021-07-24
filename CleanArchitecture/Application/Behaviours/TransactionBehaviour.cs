@@ -37,7 +37,7 @@ namespace Application.Behaviours
                         await using var transaction = _context.Database.BeginTransaction();
                         _logger.LogInformation($"=====>  Start transaction for {typeName}");
                         var response = await next();
-                        _context.SaveChanges();
+                        await _context.SaveChangesAsync(cancellationToken);
                         await transaction.CommitAsync(cancellationToken);
                         _logger.LogInformation($"=====> End transaction for {typeName}");
                         return response;

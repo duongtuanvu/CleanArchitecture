@@ -5,12 +5,14 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Data;
 using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace Data.Context
 {
     public class ApplicationDbContext : DbContext, IApplicationDbContext
     {
-        public int UserId { get; set; }
+        public string UserId { get; set; }
 
         public ApplicationDbContext(DbContextOptions options) : base(options)
         {
@@ -28,8 +30,13 @@ namespace Data.Context
         public override int SaveChanges()
         {
             BeforeSaving();
-            Delete();
             return base.SaveChanges();
+        }
+
+        public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default(CancellationToken))
+        {
+            BeforeSaving();
+            return base.SaveChangesAsync();
         }
 
         private void BeforeSaving()
@@ -37,9 +44,7 @@ namespace Data.Context
             var now = DateTime.Now;
             var entries = ChangeTracker
                 .Entries()
-                .Where(e => e.Entity is BaseEntity && (
-                        e.State == EntityState.Added
-                        || e.State == EntityState.Modified));
+                .Where(e => e.Entity is BaseEntity);
 
             foreach (var entityEntry in entries)
             {
@@ -48,9 +53,15 @@ namespace Data.Context
                     ((BaseEntity)entityEntry.Entity).CreatedDate = now;
                     ((BaseEntity)entityEntry.Entity).CreatedBy = UserId;
                 }
-
                 if (entityEntry.State == EntityState.Modified)
                 {
+                    ((BaseEntity)entityEntry.Entity).UpdatedDate = now;
+                    ((BaseEntity)entityEntry.Entity).UpdatedBy = UserId;
+                }
+                if (entityEntry.State == EntityState.Modified)
+                {
+                    entityEntry.State = EntityState.Unchanged;
+                    ((BaseEntity)entityEntry.Entity).IsDeleted = true;
                     ((BaseEntity)entityEntry.Entity).UpdatedDate = now;
                     ((BaseEntity)entityEntry.Entity).UpdatedBy = UserId;
                 }

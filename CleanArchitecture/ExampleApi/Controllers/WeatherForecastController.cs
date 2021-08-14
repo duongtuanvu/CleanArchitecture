@@ -13,23 +13,28 @@ using Application.Extensions;
 using Application.RestSharpClients;
 using Application.Common;
 using Microsoft.AspNetCore.Cors;
+using MassTransit;
+using Domain.Share;
+using System;
 
 namespace ExampleApi.Controllers
 {
-    [Authorize]
+    //[Authorize]
     [ApiController]
     [ApiVersion("1.0")]
-    //[Route("api/v{version:apiVersion}/[controller]")]
-    [Route("[controller]")]
+    [Route("api/v{version:apiVersion}/[controller]")]
+    //[Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
         private readonly IMediator _mediat;
         private readonly IJwtToken _jwtToken;
         private readonly IExampleQuery _exampleQuery;
         private readonly IRestSharpClient _restSharpClient;
+        private readonly IBus _bus;
 
-        public WeatherForecastController(IExampleQuery exampleQuery, IMediator mediat, IJwtToken jwtToken, IRestSharpClient restSharpClient)
+        public WeatherForecastController(IBus bus, IExampleQuery exampleQuery, IMediator mediat, IJwtToken jwtToken, IRestSharpClient restSharpClient)
         {
+            _bus = bus;
             _exampleQuery = exampleQuery;
             _mediat = mediat;
             _jwtToken = jwtToken;
@@ -110,6 +115,19 @@ namespace ExampleApi.Controllers
             };
             var result = await _restSharpClient.ExcuteApi(requestParams);
             return Ok(result.Content);
+        }
+
+        [HttpPost("publisher")]
+        public async Task<IActionResult> Publisher([FromBody] Email email)
+        {
+            if (email != null)
+            {
+                email.To = "vudt";
+                Uri uri = new Uri("rabbitmq://localhost/ticketQueue");
+                var endPoint = await _bus.GetSendEndpoint(uri);
+                await endPoint.Send(email);
+            }
+            return Ok("Publisher done");
         }
 
         [HttpGet]

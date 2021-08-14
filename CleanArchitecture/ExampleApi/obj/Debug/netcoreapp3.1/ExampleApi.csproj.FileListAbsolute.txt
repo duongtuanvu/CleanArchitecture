@@ -132,3 +132,15 @@ C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleA
 C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi\obj\Debug\netcoreapp3.1\ExampleApi.genruntimeconfig.cache
 C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi\bin\Debug\netcoreapp3.1\Npgsql.dll
 C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi\bin\Debug\netcoreapp3.1\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi\bin\Debug\netcoreapp3.1\Automatonymous.dll
+C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi\bin\Debug\netcoreapp3.1\GreenPipes.dll
+C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi\bin\Debug\netcoreapp3.1\MassTransit.dll
+C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi\bin\Debug\netcoreapp3.1\MassTransit.AspNetCoreIntegration.dll
+C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi\bin\Debug\netcoreapp3.1\MassTransit.ExtensionsDependencyInjectionIntegration.dll
+C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi\bin\Debug\netcoreapp3.1\MassTransit.RabbitMqTransport.dll
+C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Diagnostics.HealthChecks.dll
+C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi\bin\Debug\netcoreapp3.1\NewId.dll
+C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi\bin\Debug\netcoreapp3.1\RabbitMQ.Client.dll
+C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi\bin\Debug\netcoreapp3.1\System.Threading.Channels.dll

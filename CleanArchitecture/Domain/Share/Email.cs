@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Domain.Share
 {
-    public class Mail
+    public class Email
     {
         public string To { get; set; }
         public string Subject { get; set; }

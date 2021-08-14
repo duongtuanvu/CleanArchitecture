@@ -33,7 +33,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiGateway.Ocelot", "ApiGat
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Authentication", "Authentication", "{03415509-16F1-4A45-A5C9-7A38FD561A7B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.Authentication", "Api.Authentication\Api.Authentication.csproj", "{D132E734-57CE-45D5-9A33-D2546B0CA479}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api.Authentication", "Api.Authentication\Api.Authentication.csproj", "{D132E734-57CE-45D5-9A33-D2546B0CA479}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Consumer", "Consumer\Consumer.csproj", "{F5ED8E12-088E-4A56-A152-501FB0412B0C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{D132E734-57CE-45D5-9A33-D2546B0CA479}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D132E734-57CE-45D5-9A33-D2546B0CA479}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D132E734-57CE-45D5-9A33-D2546B0CA479}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5ED8E12-088E-4A56-A152-501FB0412B0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5ED8E12-088E-4A56-A152-501FB0412B0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5ED8E12-088E-4A56-A152-501FB0412B0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5ED8E12-088E-4A56-A152-501FB0412B0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -85,6 +91,7 @@ Global
 		{6FE813D3-8383-4110-BFEE-38CE495EA9FC} = {FC99B5EA-B2A3-4CFD-A424-AE5006BDC783}
 		{B5EEF7FA-DE45-4882-ADFF-41769444776F} = {C94C6A40-F3E6-47A4-AFFB-B4CB4AC0FCF7}
 		{D132E734-57CE-45D5-9A33-D2546B0CA479} = {03415509-16F1-4A45-A5C9-7A38FD561A7B}
+		{F5ED8E12-088E-4A56-A152-501FB0412B0C} = {BA2C6BFD-F1EC-4A86-8F08-717A887664DD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {21FE2513-1675-4AF9-88E2-A04D82DAA648}

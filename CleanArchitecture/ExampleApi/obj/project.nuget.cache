@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "XHRc2h/RS0iCeGvl1ivE9YmRL0tHjIrH8+kTFl4fixOoa6k/f0p7EsGvhrDxQR67iUtrd76GiNqLjD95cdmVWQ==",
+  "dgSpecHash": "ZO75j+fMPQbJfh4ean+gwmrMewF+Rmue+3ZE9JR9u9LwTHJC7s0nYoigjBtVCVF6tdYLY3XkvVCy12OeVjFRQg==",
   "success": true,
   "projectFilePath": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\ExampleApi\\ExampleApi.csproj",
   "expectedPackageFiles": [
@@ -116,6 +116,8 @@
     "C:\\Users\\vu.dt99\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\vu.dt99\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
     "C:\\Users\\vu.dt99\\.nuget\\packages\\newtonsoft.json.bson\\1.0.1\\newtonsoft.json.bson.1.0.1.nupkg.sha512",
+    "C:\\Users\\vu.dt99\\.nuget\\packages\\npgsql\\5.0.0\\npgsql.5.0.0.nupkg.sha512",
+    "C:\\Users\\vu.dt99\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\5.0.0\\npgsql.entityframeworkcore.postgresql.5.0.0.nupkg.sha512",
     "C:\\Users\\vu.dt99\\.nuget\\packages\\restsharp\\106.11.7\\restsharp.106.11.7.nupkg.sha512",
     "C:\\Users\\vu.dt99\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
     "C:\\Users\\vu.dt99\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
@@ -197,6 +199,7 @@
     "C:\\Users\\vu.dt99\\.nuget\\packages\\system.resources.resourcemanager\\4.3.0\\system.resources.resourcemanager.4.3.0.nupkg.sha512",
     "C:\\Users\\vu.dt99\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
     "C:\\Users\\vu.dt99\\.nuget\\packages\\system.runtime.caching\\4.7.0\\system.runtime.caching.4.7.0.nupkg.sha512",
+    "C:\\Users\\vu.dt99\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.6.0\\system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512",
     "C:\\Users\\vu.dt99\\.nuget\\packages\\system.runtime.extensions\\4.3.0\\system.runtime.extensions.4.3.0.nupkg.sha512",
     "C:\\Users\\vu.dt99\\.nuget\\packages\\system.runtime.handles\\4.3.0\\system.runtime.handles.4.3.0.nupkg.sha512",
     "C:\\Users\\vu.dt99\\.nuget\\packages\\system.runtime.interopservices\\4.3.0\\system.runtime.interopservices.4.3.0.nupkg.sha512",

@@ -30,10 +30,15 @@ namespace ExampleApi
             services.ApplicationRegisterServices(Configuration);
             #endregion
             #region DbContext
+            //services.AddDbContext<ApplicationDbContext>(opts =>
+            //{
+            //    //opts.UseInMemoryDatabase("ExampleDatabase");
+            //    opts.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
+            //});
+
             services.AddDbContext<ApplicationDbContext>(opts =>
             {
-                //opts.UseInMemoryDatabase("ExampleDatabase");
-                opts.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
+                opts.UseNpgsql(Configuration.GetConnectionString("DefaultConnection"));
             });
             #endregion
             #region Api versioning
@@ -86,7 +91,7 @@ namespace ExampleApi
                 //opts.IncludeXmlComments(string.Format(@"{0}\OnionArchitecture.xml", System.AppDomain.CurrentDomain.BaseDirectory));
             });
             #endregion
-            
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -117,7 +122,7 @@ namespace ExampleApi
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
-            });            
+            });
         }
 
         private OpenApiInfo CreateMetaInfoAPIVersion(ApiVersionDescription apiDescription)

@@ -140,3 +140,5 @@ C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ApiGatew
 C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ApiGateway.Ocelot\obj\Debug\netcoreapp3.1\ApiGateway.Ocelot.dll
 C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ApiGateway.Ocelot\obj\Debug\netcoreapp3.1\ApiGateway.Ocelot.pdb
 C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ApiGateway.Ocelot\obj\Debug\netcoreapp3.1\ApiGateway.Ocelot.genruntimeconfig.cache
+C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ApiGateway.Ocelot\bin\Debug\netcoreapp3.1\Npgsql.dll
+C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ApiGateway.Ocelot\bin\Debug\netcoreapp3.1\Npgsql.EntityFrameworkCore.PostgreSQL.dll

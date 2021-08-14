@@ -130,3 +130,5 @@ C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleA
 C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi\obj\Debug\netcoreapp3.1\ExampleApi.dll
 C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi\obj\Debug\netcoreapp3.1\ExampleApi.pdb
 C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi\obj\Debug\netcoreapp3.1\ExampleApi.genruntimeconfig.cache
+C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi\bin\Debug\netcoreapp3.1\Npgsql.dll
+C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi\bin\Debug\netcoreapp3.1\Npgsql.EntityFrameworkCore.PostgreSQL.dll

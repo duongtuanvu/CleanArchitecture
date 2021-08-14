@@ -1,3 +1,4 @@
+using Consumer.Settings;
 using Domain.Share;
 using GreenPipes;
 using MassTransit;
@@ -29,6 +30,7 @@ namespace Consumer
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.Configure<EmailSettings>(Configuration.GetSection("MailSettings"));
             services.AddMassTransit(x =>
             {
                 x.AddConsumer<EmailConsumer>();
@@ -42,8 +44,8 @@ namespace Consumer
                     });
                     cfg.ReceiveEndpoint("ticketQueue", ep =>
                     {
-                        ep.PrefetchCount = 16;
-                        ep.UseMessageRetry(r => r.Interval(2, 100));
+                        ep.PrefetchCount = 15;
+                        ep.UseMessageRetry(r => r.Interval(2, 1000));
                         ep.ConfigureConsumer<EmailConsumer>(provider);
                     });
                 }));

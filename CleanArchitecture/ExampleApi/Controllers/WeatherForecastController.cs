@@ -122,8 +122,10 @@ namespace ExampleApi.Controllers
         {
             if (email != null)
             {
-                email.To = "vudt";
-                Uri uri = new Uri("rabbitmq://localhost/ticketQueue");
+                email.To = "vu.dt99@3si.vn";
+                email.Subject = "Test";
+                email.Body = "<h1>Hello world </h1>";
+                Uri uri = new Uri("rabbitmq://localhost/EmailQueue");
                 var endPoint = await _bus.GetSendEndpoint(uri);
                 await endPoint.Send(email);
             }

@@ -1,131 +1,20 @@
-[14/08/2021 10:46:26 INF] Application Starting.
-[14/08/2021 10:46:36 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
-[14/08/2021 10:48:30 INF] Application Starting.
-[14/08/2021 10:48:35 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
-[14/08/2021 10:49:27 INF] Application Starting.
-[14/08/2021 10:49:31 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
-[14/08/2021 10:49:32 INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+[14/08/2021 20:28:53 INF] Application Starting.
+[14/08/2021 20:28:58 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+[14/08/2021 20:28:59 INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
 SELECT EXISTS (
     SELECT 1
     FROM "ExampleModel" AS e
     WHERE NOT (e."IsDeleted") AND (e."Name" = 'vudt'))
-[14/08/2021 10:49:33 INF] Executed DbCommand (16ms) [Parameters=[@p0='?', @p1='?' (DbType = DateTime), @p2='?', @p3='?' (DbType = Boolean), @p4='?', @p5='?', @p6='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
-INSERT INTO "ExampleModel" ("CreatedBy", "CreatedDate", "Email", "IsDeleted", "Name", "UpdatedBy", "UpdatedDate")
-VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6)
-RETURNING "Id";
-[14/08/2021 10:49:33 INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+[14/08/2021 20:28:59 INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
 SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
-[14/08/2021 10:49:33 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+[14/08/2021 20:29:00 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
 SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
-[14/08/2021 10:49:33 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+[14/08/2021 20:29:00 INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
 SELECT "MigrationId", "ProductVersion"
 FROM "__EFMigrationsHistory"
 ORDER BY "MigrationId";
-[14/08/2021 10:49:33 INF] No migrations were applied. The database is already up to date.
-[14/08/2021 10:49:34 INF] Now listening on: https://localhost:8002
-[14/08/2021 10:49:34 INF] Now listening on: http://localhost:5002
-[14/08/2021 10:49:34 INF] Application started. Press Ctrl+C to shut down.
-[14/08/2021 10:49:34 INF] Hosting environment: Development
-[14/08/2021 10:49:34 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
-[14/08/2021 10:59:06 INF] Application Starting.
-[14/08/2021 10:59:11 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
-[14/08/2021 10:59:12 INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
-SELECT EXISTS (
-    SELECT 1
-    FROM "ExampleModel" AS e
-    WHERE NOT (e."IsDeleted") AND (e."Name" = 'vudt'))
-[14/08/2021 10:59:12 INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
-SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
-[14/08/2021 10:59:13 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
-SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
-[14/08/2021 10:59:13 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
-SELECT "MigrationId", "ProductVersion"
-FROM "__EFMigrationsHistory"
-ORDER BY "MigrationId";
-[14/08/2021 10:59:13 INF] No migrations were applied. The database is already up to date.
-[14/08/2021 10:59:14 INF] Bus started: "rabbitmq://localhost/"
-[14/08/2021 10:59:14 INF] Now listening on: https://localhost:8002
-[14/08/2021 10:59:14 INF] Now listening on: http://localhost:5002
-[14/08/2021 10:59:14 INF] Application started. Press Ctrl+C to shut down.
-[14/08/2021 10:59:14 INF] Hosting environment: Development
-[14/08/2021 10:59:14 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
-[14/08/2021 11:01:23 INF] Application Starting.
-[14/08/2021 11:01:27 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
-[14/08/2021 11:01:29 INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
-SELECT EXISTS (
-    SELECT 1
-    FROM "ExampleModel" AS e
-    WHERE NOT (e."IsDeleted") AND (e."Name" = 'vudt'))
-[14/08/2021 11:01:29 INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
-SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
-[14/08/2021 11:01:29 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
-SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
-[14/08/2021 11:01:29 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
-SELECT "MigrationId", "ProductVersion"
-FROM "__EFMigrationsHistory"
-ORDER BY "MigrationId";
-[14/08/2021 11:01:29 INF] No migrations were applied. The database is already up to date.
-[14/08/2021 11:01:30 INF] Bus started: "rabbitmq://localhost/"
-[14/08/2021 11:01:30 INF] Application started. Press Ctrl+C to shut down.
-[14/08/2021 11:01:30 INF] Hosting environment: Development
-[14/08/2021 11:01:30 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
-[14/08/2021 11:02:03 INF] Application Starting.
-[14/08/2021 11:02:07 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
-[14/08/2021 11:02:08 INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
-SELECT EXISTS (
-    SELECT 1
-    FROM "ExampleModel" AS e
-    WHERE NOT (e."IsDeleted") AND (e."Name" = 'vudt'))
-[14/08/2021 11:02:08 INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
-SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
-[14/08/2021 11:02:08 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
-SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
-[14/08/2021 11:02:08 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
-SELECT "MigrationId", "ProductVersion"
-FROM "__EFMigrationsHistory"
-ORDER BY "MigrationId";
-[14/08/2021 11:02:08 INF] No migrations were applied. The database is already up to date.
-[14/08/2021 11:02:10 INF] Bus started: "rabbitmq://localhost/"
-[14/08/2021 11:02:10 INF] Application started. Press Ctrl+C to shut down.
-[14/08/2021 11:02:10 INF] Hosting environment: Development
-[14/08/2021 11:02:10 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
-[14/08/2021 11:15:11 INF] Application Starting.
-[14/08/2021 11:15:15 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
-[14/08/2021 11:15:17 INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
-SELECT EXISTS (
-    SELECT 1
-    FROM "ExampleModel" AS e
-    WHERE NOT (e."IsDeleted") AND (e."Name" = 'vudt'))
-[14/08/2021 11:15:17 INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
-SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
-[14/08/2021 11:15:17 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
-SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
-[14/08/2021 11:15:17 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
-SELECT "MigrationId", "ProductVersion"
-FROM "__EFMigrationsHistory"
-ORDER BY "MigrationId";
-[14/08/2021 11:15:17 INF] No migrations were applied. The database is already up to date.
-[14/08/2021 11:15:19 INF] Bus started: "rabbitmq://localhost/"
-[14/08/2021 11:15:19 INF] Application started. Press Ctrl+C to shut down.
-[14/08/2021 11:15:19 INF] Hosting environment: Development
-[14/08/2021 11:15:19 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
-[14/08/2021 11:19:06 INF] Application Starting.
-[14/08/2021 11:19:13 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
-[14/08/2021 11:19:14 INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
-SELECT EXISTS (
-    SELECT 1
-    FROM "ExampleModel" AS e
-    WHERE NOT (e."IsDeleted") AND (e."Name" = 'vudt'))
-[14/08/2021 11:19:14 INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
-SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
-[14/08/2021 11:19:15 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
-SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
-[14/08/2021 11:19:15 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
-SELECT "MigrationId", "ProductVersion"
-FROM "__EFMigrationsHistory"
-ORDER BY "MigrationId";
-[14/08/2021 11:19:15 INF] No migrations were applied. The database is already up to date.
-[14/08/2021 11:19:16 INF] Bus started: "rabbitmq://localhost/"
-[14/08/2021 11:19:16 INF] Application started. Press Ctrl+C to shut down.
-[14/08/2021 11:19:16 INF] Hosting environment: Development
-[14/08/2021 11:19:16 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[14/08/2021 20:29:00 INF] No migrations were applied. The database is already up to date.
+[14/08/2021 20:29:01 INF] Bus started: "rabbitmq://localhost/"
+[14/08/2021 20:29:01 INF] Application started. Press Ctrl+C to shut down.
+[14/08/2021 20:29:01 INF] Hosting environment: Development
+[14/08/2021 20:29:01 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi

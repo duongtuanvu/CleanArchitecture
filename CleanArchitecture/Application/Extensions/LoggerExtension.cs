@@ -24,12 +24,13 @@ namespace Application.Extensions
                 .MinimumLevel.Debug()
                 .MinimumLevel.Override("Microsoft.AspNetCore", LogEventLevel.Warning)
                 .WriteTo.Logger(c =>
-                    c.Filter.ByIncludingOnly(e => e.Level == Serilog.Events.LogEventLevel.Error)
+                    c.Filter.ByIncludingOnly(e => e.Level == LogEventLevel.Error)
                     .WriteTo.File(path: ".\\Logs\\Errors\\error-.txt", outputTemplate: "[{Timestamp:dd/MM/yyyy HH:mm:ss} {Level:u3}] {Message:lj}{NewLine}{Exception}", rollingInterval: RollingInterval.Day))
                 .WriteTo.Logger(c =>
-                    c.Filter.ByIncludingOnly(e => e.Level == Serilog.Events.LogEventLevel.Information)
+                    c.Filter.ByIncludingOnly(e => e.Level == LogEventLevel.Information)
                     .WriteTo.File(path: ".\\Logs\\Informations\\log-.txt", outputTemplate: "[{Timestamp:dd/MM/yyyy HH:mm:ss} {Level:u3}] {Message:lj}{NewLine}{Exception}", rollingInterval: RollingInterval.Day))
                 //.ReadFrom.Configuration(_configuration)
+                .WriteTo.Console()
                 .CreateLogger();
         }
 

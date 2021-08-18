@@ -28,9 +28,10 @@ namespace Application.Features.ExampleFeature.Queries
         public async Task<ResponseExtension> List(SearchExtension search)
         {
             #region Query
-            var data = await _uow.exampleRepository.QueryAsync<ExampleDto>($"select * from ExampleModel");
+            return await _context.ExampleModel.AsQueryable().PagingAndSorting(search);
+            //var data = await _uow.exampleRepository.QueryAsync<ExampleDto>($"select * from ExampleModel");
             //var data = await _uow.exampleRepository.QueryAsync<ExampleDto>($"select * from ExampleModel where Name like = '%{search.Keyword}%'");
-            return data.Sort<ExampleDto>(search);
+            //return data.Sort<ExampleDto>(search);
             #endregion
 
             #region StoredProcedure

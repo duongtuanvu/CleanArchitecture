@@ -16,6 +16,7 @@ using Microsoft.AspNetCore.Cors;
 using MassTransit;
 using Domain.Share;
 using System;
+using ExampleApi.Queries.ExampleQuey;
 
 namespace ExampleApi.Controllers
 {
@@ -49,7 +50,7 @@ namespace ExampleApi.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> List([FromQuery] SearchExtension search)
+        public async Task<IActionResult> List([FromQuery] ExampleSearch search)
         {
             var result = await _exampleQuery.List(search);
             return Ok(result);

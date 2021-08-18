@@ -1,0 +1,208 @@
+[18/08/2021 15:39:56 INF] Application Starting.
+[18/08/2021 15:40:08 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+[18/08/2021 15:40:10 INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "ExampleModel" AS e
+    WHERE NOT (e."IsDeleted") AND (e."Name" = 'vudt'))
+[18/08/2021 15:40:10 INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+[18/08/2021 15:40:10 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+[18/08/2021 15:40:10 INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+[18/08/2021 15:40:10 INF] No migrations were applied. The database is already up to date.
+[18/08/2021 15:40:12 INF] Bus started: "rabbitmq://localhost/"
+[18/08/2021 15:40:12 INF] Application started. Press Ctrl+C to shut down.
+[18/08/2021 15:40:12 INF] Hosting environment: Development
+[18/08/2021 15:40:12 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[18/08/2021 15:40:38 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+[18/08/2021 15:40:39 INF] Executed DbCommand (31ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)::INT
+FROM "ExampleModel" AS e
+WHERE NOT (e."IsDeleted")
+[18/08/2021 15:40:39 INF] Executed DbCommand (15ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."CreatedBy", e."CreatedDate", e."Email", e."IsDeleted", e."Name", e."UpdatedBy", e."UpdatedDate"
+FROM "ExampleModel" AS e
+WHERE NOT (e."IsDeleted")
+LIMIT @__p_1 OFFSET @__p_0
+[18/08/2021 15:40:48 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+[18/08/2021 15:40:48 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)::INT
+FROM "ExampleModel" AS e
+WHERE NOT (e."IsDeleted")
+[18/08/2021 15:40:48 INF] Executed DbCommand (5ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."CreatedBy", e."CreatedDate", e."Email", e."IsDeleted", e."Name", e."UpdatedBy", e."UpdatedDate"
+FROM "ExampleModel" AS e
+WHERE NOT (e."IsDeleted")
+LIMIT @__p_1 OFFSET @__p_0
+[18/08/2021 15:40:52 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+[18/08/2021 15:40:52 INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)::INT
+FROM "ExampleModel" AS e
+WHERE NOT (e."IsDeleted")
+[18/08/2021 15:40:52 INF] Executed DbCommand (6ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."CreatedBy", e."CreatedDate", e."Email", e."IsDeleted", e."Name", e."UpdatedBy", e."UpdatedDate"
+FROM "ExampleModel" AS e
+WHERE NOT (e."IsDeleted")
+LIMIT @__p_1 OFFSET @__p_0
+[18/08/2021 15:40:54 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+[18/08/2021 15:40:54 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)::INT
+FROM "ExampleModel" AS e
+WHERE NOT (e."IsDeleted")
+[18/08/2021 15:40:55 INF] Executed DbCommand (10ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."CreatedBy", e."CreatedDate", e."Email", e."IsDeleted", e."Name", e."UpdatedBy", e."UpdatedDate"
+FROM "ExampleModel" AS e
+WHERE NOT (e."IsDeleted")
+LIMIT @__p_1 OFFSET @__p_0
+[18/08/2021 15:47:21 INF] Application Starting.
+[18/08/2021 15:47:25 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+[18/08/2021 15:47:27 INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "ExampleModel" AS e
+    WHERE NOT (e."IsDeleted") AND (e."Name" = 'vudt'))
+[18/08/2021 15:47:27 INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+[18/08/2021 15:47:27 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+[18/08/2021 15:47:27 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+[18/08/2021 15:47:27 INF] No migrations were applied. The database is already up to date.
+[18/08/2021 15:47:28 INF] Bus started: "rabbitmq://localhost/"
+[18/08/2021 15:47:28 INF] Application started. Press Ctrl+C to shut down.
+[18/08/2021 15:47:28 INF] Hosting environment: Development
+[18/08/2021 15:47:28 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[18/08/2021 15:47:42 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+[18/08/2021 15:47:42 INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)::INT
+FROM "ExampleModel" AS e
+WHERE NOT (e."IsDeleted")
+[18/08/2021 15:47:42 INF] Executed DbCommand (27ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."CreatedBy", e."CreatedDate", e."Email", e."IsDeleted", e."Name", e."UpdatedBy", e."UpdatedDate"
+FROM "ExampleModel" AS e
+WHERE NOT (e."IsDeleted")
+LIMIT @__p_1 OFFSET @__p_0
+[18/08/2021 15:47:58 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+[18/08/2021 15:47:58 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)::INT
+FROM "ExampleModel" AS e
+WHERE NOT (e."IsDeleted")
+[18/08/2021 15:47:58 INF] Executed DbCommand (5ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."CreatedBy", e."CreatedDate", e."Email", e."IsDeleted", e."Name", e."UpdatedBy", e."UpdatedDate"
+FROM "ExampleModel" AS e
+WHERE NOT (e."IsDeleted")
+LIMIT @__p_1 OFFSET @__p_0
+[18/08/2021 15:48:09 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+[18/08/2021 15:48:09 INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)::INT
+FROM "ExampleModel" AS e
+WHERE NOT (e."IsDeleted")
+[18/08/2021 15:48:09 INF] Executed DbCommand (5ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."CreatedBy", e."CreatedDate", e."Email", e."IsDeleted", e."Name", e."UpdatedBy", e."UpdatedDate"
+FROM "ExampleModel" AS e
+WHERE NOT (e."IsDeleted")
+LIMIT @__p_1 OFFSET @__p_0
+[18/08/2021 15:48:13 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+[18/08/2021 15:48:13 INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)::INT
+FROM "ExampleModel" AS e
+WHERE NOT (e."IsDeleted")
+[18/08/2021 15:48:13 INF] Executed DbCommand (3ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."CreatedBy", e."CreatedDate", e."Email", e."IsDeleted", e."Name", e."UpdatedBy", e."UpdatedDate"
+FROM "ExampleModel" AS e
+WHERE NOT (e."IsDeleted")
+LIMIT @__p_1 OFFSET @__p_0
+[18/08/2021 15:48:16 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+[18/08/2021 15:48:16 INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)::INT
+FROM "ExampleModel" AS e
+WHERE NOT (e."IsDeleted")
+[18/08/2021 15:48:16 INF] Executed DbCommand (7ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."CreatedBy", e."CreatedDate", e."Email", e."IsDeleted", e."Name", e."UpdatedBy", e."UpdatedDate"
+FROM "ExampleModel" AS e
+WHERE NOT (e."IsDeleted")
+LIMIT @__p_1 OFFSET @__p_0
+[18/08/2021 15:48:19 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+[18/08/2021 15:48:19 INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)::INT
+FROM "ExampleModel" AS e
+WHERE NOT (e."IsDeleted")
+[18/08/2021 15:48:19 INF] Executed DbCommand (2ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."CreatedBy", e."CreatedDate", e."Email", e."IsDeleted", e."Name", e."UpdatedBy", e."UpdatedDate"
+FROM "ExampleModel" AS e
+WHERE NOT (e."IsDeleted")
+LIMIT @__p_1 OFFSET @__p_0
+[18/08/2021 15:49:03 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+[18/08/2021 15:49:03 INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)::INT
+FROM "ExampleModel" AS e
+WHERE NOT (e."IsDeleted")
+[18/08/2021 15:49:41 INF] Executed DbCommand (9ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."CreatedBy", e."CreatedDate", e."Email", e."IsDeleted", e."Name", e."UpdatedBy", e."UpdatedDate"
+FROM "ExampleModel" AS e
+WHERE NOT (e."IsDeleted")
+LIMIT @__p_1 OFFSET @__p_0
+[18/08/2021 15:49:45 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+[18/08/2021 15:49:45 INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)::INT
+FROM "ExampleModel" AS e
+WHERE NOT (e."IsDeleted")
+[18/08/2021 15:51:10 INF] Application Starting.
+[18/08/2021 15:51:14 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+[18/08/2021 15:51:16 INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "ExampleModel" AS e
+    WHERE NOT (e."IsDeleted") AND (e."Name" = 'vudt'))
+[18/08/2021 15:51:16 INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+[18/08/2021 15:51:16 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+[18/08/2021 15:51:16 INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+[18/08/2021 15:51:16 INF] No migrations were applied. The database is already up to date.
+[18/08/2021 15:51:18 INF] Bus started: "rabbitmq://localhost/"
+[18/08/2021 15:51:18 INF] Application started. Press Ctrl+C to shut down.
+[18/08/2021 15:51:18 INF] Hosting environment: Development
+[18/08/2021 15:51:18 INF] Content root path: C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\ExampleApi
+[18/08/2021 15:51:27 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+[18/08/2021 15:51:28 INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)::INT
+FROM "ExampleModel" AS e
+WHERE NOT (e."IsDeleted")
+[18/08/2021 15:51:37 INF] Executed DbCommand (33ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."CreatedBy", e."CreatedDate", e."Email", e."IsDeleted", e."Name", e."UpdatedBy", e."UpdatedDate"
+FROM "ExampleModel" AS e
+WHERE NOT (e."IsDeleted")
+ORDER BY e."Name" DESC, e."CreatedDate" DESC
+LIMIT @__p_1 OFFSET @__p_0
+[18/08/2021 15:51:42 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+[18/08/2021 15:51:42 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)::INT
+FROM "ExampleModel" AS e
+WHERE NOT (e."IsDeleted")
+[18/08/2021 15:51:42 INF] Executed DbCommand (4ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."CreatedBy", e."CreatedDate", e."Email", e."IsDeleted", e."Name", e."UpdatedBy", e."UpdatedDate"
+FROM "ExampleModel" AS e
+WHERE NOT (e."IsDeleted")
+ORDER BY e."Name" DESC, e."CreatedDate" DESC
+LIMIT @__p_1 OFFSET @__p_0
+[18/08/2021 15:51:44 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+[18/08/2021 15:51:44 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)::INT
+FROM "ExampleModel" AS e
+WHERE NOT (e."IsDeleted")
+[18/08/2021 15:51:44 INF] Executed DbCommand (4ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."CreatedBy", e."CreatedDate", e."Email", e."IsDeleted", e."Name", e."UpdatedBy", e."UpdatedDate"
+FROM "ExampleModel" AS e
+WHERE NOT (e."IsDeleted")
+ORDER BY e."Name", e."CreatedDate" DESC
+LIMIT @__p_1 OFFSET @__p_0

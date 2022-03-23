@@ -1,15 +1,21 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31025.194
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{85803908-32E7-4BA6-BDF6-95CB90325F2C}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\pipeline.txt = ..\..\pipeline.txt
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{5E59E6C0-835B-4BE8-8CAC-5B27CB34AD35}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApi", "WebApi", "{BA2C6BFD-F1EC-4A86-8F08-717A887664DD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{7EE6E448-C948-484F-82BA-86960783AF9C}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\pipeline.txt = ..\..\pipeline.txt
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{2B5A9A9C-B3A1-4D56-B3E8-67F4A1ADD925}"
 EndProject

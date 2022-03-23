@@ -148,5 +148,3 @@ C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\EmailCon
 C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\EmailConsumer\bin\Debug\netcoreapp3.1\Serilog.Enrichers.Process.dll
 C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\EmailConsumer\bin\Debug\netcoreapp3.1\Serilog.Enrichers.Thread.dll
 C:\Users\vu.dt99\Desktop\New folder\CleanArchitecture\CleanArchitecture\EmailConsumer\bin\Debug\netcoreapp3.1\Serilog.Sinks.RollingFile.dll
-D:\Project\Vudt\CleanArchitecture\CleanArchitecture\EmailConsumer\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-D:\Project\Vudt\CleanArchitecture\CleanArchitecture\EmailConsumer\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Text.Encoding.CodePages.dll

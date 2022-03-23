@@ -1,0 +1,10 @@
+[04/10/2021 13:12:32 INF] Application Starting.
+[04/10/2021 13:12:36 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None
+[04/10/2021 13:14:11 INF] Application Starting.
+[04/10/2021 13:14:13 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[04/10/2021 13:16:47 INF] Application Starting.
+[04/10/2021 13:16:49 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[04/10/2021 13:18:24 INF] Application Starting.
+[04/10/2021 13:18:26 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[04/10/2021 13:18:58 INF] Application Starting.
+[04/10/2021 13:19:01 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None

@@ -1,0 +1,36 @@
+[13/01/2022 20:12:02 INF] Application Starting.
+[13/01/2022 20:12:05 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[13/01/2022 20:14:55 INF] Application Starting.
+[13/01/2022 20:14:56 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[13/01/2022 20:14:57 INF] Executed DbCommand (34ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ExampleModel] AS [e]
+        WHERE ([e].[IsDeleted] <> CAST(1 AS bit)) AND ([e].[Name] = N'vudt')) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[13/01/2022 20:14:57 INF] Executed DbCommand (87ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [ExampleModel] ([CreatedBy], [CreatedDate], [Email], [IsDeleted], [Name], [UpdatedBy], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [Id]
+FROM [ExampleModel]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+[13/01/2022 20:14:57 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+[13/01/2022 20:14:57 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+[13/01/2022 20:14:57 INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+[13/01/2022 20:14:57 INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+[13/01/2022 20:14:57 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+[13/01/2022 20:14:57 INF] No migrations were applied. The database is already up to date.
+[13/01/2022 20:14:58 INF] Application started. Press Ctrl+C to shut down.
+[13/01/2022 20:14:58 INF] Hosting environment: Development
+[13/01/2022 20:14:58 INF] Content root path: D:\Project\Vudt\CleanArchitecture\CleanArchitecture\ExampleApi
+[13/01/2022 20:14:58 INF] Bus started: "rabbitmq://localhost/"

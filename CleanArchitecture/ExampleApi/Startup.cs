@@ -32,16 +32,16 @@ namespace ExampleApi
             services.ApplicationRegisterServices(Configuration);
             #endregion
             #region DbContext
-            //services.AddDbContext<ApplicationDbContext>(opts =>
-            //{
-            //    //opts.UseInMemoryDatabase("ExampleDatabase");
-            //    opts.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
-            //});
-
             services.AddDbContext<ApplicationDbContext>(opts =>
             {
-                opts.UseNpgsql(Configuration.GetConnectionString("DefaultConnection"));
+                //opts.UseInMemoryDatabase("ExampleDatabase");
+                opts.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
             });
+
+            //services.AddDbContext<ApplicationDbContext>(opts =>
+            //{
+            //    opts.UseNpgsql(Configuration.GetConnectionString("DefaultConnection"));
+            //});
             #endregion
             #region Api versioning
             services.AddApiVersioning(config =>

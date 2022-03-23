@@ -1,0 +1,336 @@
+[02/11/2021 07:29:52 INF] Application Starting.
+[02/11/2021 07:29:55 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[02/11/2021 07:29:56 INF] Executed DbCommand (51ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ExampleModel] AS [e]
+        WHERE ([e].[IsDeleted] <> CAST(1 AS bit)) AND ([e].[Name] = N'vudt')) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[02/11/2021 07:29:56 INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+[02/11/2021 07:29:56 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+[02/11/2021 07:29:56 INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+[02/11/2021 07:29:56 INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+[02/11/2021 07:29:56 INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+[02/11/2021 07:29:56 INF] No migrations were applied. The database is already up to date.
+[02/11/2021 07:29:57 INF] Application started. Press Ctrl+C to shut down.
+[02/11/2021 07:29:57 INF] Hosting environment: Development
+[02/11/2021 07:29:57 INF] Content root path: D:\Project\Vudt\CleanArchitecture\CleanArchitecture\ExampleApi
+[02/11/2021 07:29:57 INF] Bus started: "rabbitmq://localhost/"
+[02/11/2021 07:31:12 INF] Application Starting.
+[02/11/2021 07:31:14 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[02/11/2021 07:31:15 INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ExampleModel] AS [e]
+        WHERE ([e].[IsDeleted] <> CAST(1 AS bit)) AND ([e].[Name] = N'vudt')) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[02/11/2021 07:31:15 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+[02/11/2021 07:31:15 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+[02/11/2021 07:31:15 INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+[02/11/2021 07:31:15 INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+[02/11/2021 07:31:15 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+[02/11/2021 07:31:15 INF] No migrations were applied. The database is already up to date.
+[02/11/2021 07:31:15 INF] Bus started: "rabbitmq://localhost/"
+[02/11/2021 07:31:15 INF] Application started. Press Ctrl+C to shut down.
+[02/11/2021 07:31:15 INF] Hosting environment: Development
+[02/11/2021 07:31:15 INF] Content root path: D:\Project\Vudt\CleanArchitecture\CleanArchitecture\ExampleApi
+[02/11/2021 07:51:38 INF] Application Starting.
+[02/11/2021 07:51:40 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[02/11/2021 07:51:41 INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ExampleModel] AS [e]
+        WHERE ([e].[IsDeleted] <> CAST(1 AS bit)) AND ([e].[Name] = N'vudt')) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[02/11/2021 07:51:41 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+[02/11/2021 07:51:41 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+[02/11/2021 07:51:41 INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+[02/11/2021 07:51:41 INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+[02/11/2021 07:51:41 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+[02/11/2021 07:51:41 INF] No migrations were applied. The database is already up to date.
+[02/11/2021 07:51:41 INF] Bus started: "rabbitmq://localhost/"
+[02/11/2021 07:51:41 INF] Application started. Press Ctrl+C to shut down.
+[02/11/2021 07:51:41 INF] Hosting environment: Development
+[02/11/2021 07:51:41 INF] Content root path: D:\Project\Vudt\CleanArchitecture\CleanArchitecture\ExampleApi
+[02/11/2021 07:53:30 INF] Application Starting.
+[02/11/2021 07:53:31 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[02/11/2021 07:53:32 INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ExampleModel] AS [e]
+        WHERE ([e].[IsDeleted] <> CAST(1 AS bit)) AND ([e].[Name] = N'vudt')) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[02/11/2021 07:53:32 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+[02/11/2021 07:53:32 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+[02/11/2021 07:53:32 INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+[02/11/2021 07:53:32 INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+[02/11/2021 07:53:32 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+[02/11/2021 07:53:32 INF] No migrations were applied. The database is already up to date.
+[02/11/2021 07:53:32 INF] Bus started: "rabbitmq://localhost/"
+[02/11/2021 07:53:33 INF] Application started. Press Ctrl+C to shut down.
+[02/11/2021 07:53:33 INF] Hosting environment: Development
+[02/11/2021 07:53:33 INF] Content root path: D:\Project\Vudt\CleanArchitecture\CleanArchitecture\ExampleApi
+[02/11/2021 08:02:19 INF] Application Starting.
+[02/11/2021 08:02:21 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[02/11/2021 08:02:21 INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ExampleModel] AS [e]
+        WHERE ([e].[IsDeleted] <> CAST(1 AS bit)) AND ([e].[Name] = N'vudt')) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[02/11/2021 08:02:21 INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+[02/11/2021 08:02:21 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+[02/11/2021 08:02:21 INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+[02/11/2021 08:02:21 INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+[02/11/2021 08:02:21 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+[02/11/2021 08:02:21 INF] No migrations were applied. The database is already up to date.
+[02/11/2021 08:02:22 INF] Bus started: "rabbitmq://localhost/"
+[02/11/2021 08:02:22 INF] Application started. Press Ctrl+C to shut down.
+[02/11/2021 08:02:22 INF] Hosting environment: Development
+[02/11/2021 08:02:22 INF] Content root path: D:\Project\Vudt\CleanArchitecture\CleanArchitecture\ExampleApi
+[02/11/2021 08:03:35 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[02/11/2021 08:03:35 INF] Executed DbCommand (45ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ExampleModel] AS [e]
+WHERE [e].[IsDeleted] <> CAST(1 AS bit)
+[02/11/2021 08:03:35 INF] Executed DbCommand (46ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[CreatedBy], [e].[CreatedDate], [e].[Email], [e].[IsDeleted], [e].[Name], [e].[UpdatedBy], [e].[UpdatedDate]
+FROM [ExampleModel] AS [e]
+WHERE [e].[IsDeleted] <> CAST(1 AS bit)
+ORDER BY [e].[CreatedDate] DESC, [e].[Name]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+[02/11/2021 08:04:46 INF] Application Starting.
+[02/11/2021 08:04:48 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[02/11/2021 08:04:49 INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ExampleModel] AS [e]
+        WHERE ([e].[IsDeleted] <> CAST(1 AS bit)) AND ([e].[Name] = N'vudt')) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[02/11/2021 08:04:49 INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+[02/11/2021 08:04:49 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+[02/11/2021 08:04:49 INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+[02/11/2021 08:04:49 INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+[02/11/2021 08:04:49 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+[02/11/2021 08:04:49 INF] No migrations were applied. The database is already up to date.
+[02/11/2021 08:04:49 INF] Bus started: "rabbitmq://localhost/"
+[02/11/2021 08:04:49 INF] Application started. Press Ctrl+C to shut down.
+[02/11/2021 08:04:49 INF] Hosting environment: Development
+[02/11/2021 08:04:49 INF] Content root path: D:\Project\Vudt\CleanArchitecture\CleanArchitecture\ExampleApi
+[02/11/2021 08:06:17 INF] Application Starting.
+[02/11/2021 08:06:19 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[02/11/2021 08:06:19 INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ExampleModel] AS [e]
+        WHERE ([e].[IsDeleted] <> CAST(1 AS bit)) AND ([e].[Name] = N'vudt')) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[02/11/2021 08:06:19 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+[02/11/2021 08:06:19 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+[02/11/2021 08:06:19 INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+[02/11/2021 08:06:19 INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+[02/11/2021 08:06:19 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+[02/11/2021 08:06:19 INF] No migrations were applied. The database is already up to date.
+[02/11/2021 08:06:20 INF] Bus started: "rabbitmq://localhost/"
+[02/11/2021 08:06:20 INF] Application started. Press Ctrl+C to shut down.
+[02/11/2021 08:06:20 INF] Hosting environment: Development
+[02/11/2021 08:06:20 INF] Content root path: D:\Project\Vudt\CleanArchitecture\CleanArchitecture\ExampleApi
+[02/11/2021 08:07:20 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[02/11/2021 08:07:20 INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ExampleModel] AS [e]
+WHERE [e].[IsDeleted] <> CAST(1 AS bit)
+[02/11/2021 08:07:20 INF] Executed DbCommand (22ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[CreatedBy], [e].[CreatedDate], [e].[Email], [e].[IsDeleted], [e].[Name], [e].[UpdatedBy], [e].[UpdatedDate]
+FROM [ExampleModel] AS [e]
+WHERE [e].[IsDeleted] <> CAST(1 AS bit)
+ORDER BY [e].[CreatedDate] DESC, [e].[Name]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+[02/11/2021 08:09:00 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[02/11/2021 08:09:00 INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ExampleModel] AS [e]
+WHERE [e].[IsDeleted] <> CAST(1 AS bit)
+[02/11/2021 08:09:00 INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[CreatedBy], [e].[CreatedDate], [e].[Email], [e].[IsDeleted], [e].[Name], [e].[UpdatedBy], [e].[UpdatedDate]
+FROM [ExampleModel] AS [e]
+WHERE [e].[IsDeleted] <> CAST(1 AS bit)
+ORDER BY [e].[CreatedDate] DESC, [e].[Name]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+[02/11/2021 08:09:19 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[02/11/2021 08:09:19 INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ExampleModel] AS [e]
+WHERE [e].[IsDeleted] <> CAST(1 AS bit)
+[02/11/2021 08:09:19 INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[CreatedBy], [e].[CreatedDate], [e].[Email], [e].[IsDeleted], [e].[Name], [e].[UpdatedBy], [e].[UpdatedDate]
+FROM [ExampleModel] AS [e]
+WHERE [e].[IsDeleted] <> CAST(1 AS bit)
+ORDER BY [e].[CreatedDate] DESC, [e].[Name]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+[02/11/2021 08:13:32 INF] Application Starting.
+[02/11/2021 08:13:34 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[02/11/2021 08:13:35 INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ExampleModel] AS [e]
+        WHERE ([e].[IsDeleted] <> CAST(1 AS bit)) AND ([e].[Name] = N'vudt')) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[02/11/2021 08:13:35 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+[02/11/2021 08:13:35 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+[02/11/2021 08:13:35 INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+[02/11/2021 08:13:35 INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+[02/11/2021 08:13:35 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+[02/11/2021 08:13:35 INF] No migrations were applied. The database is already up to date.
+[02/11/2021 08:13:35 INF] Bus started: "rabbitmq://localhost/"
+[02/11/2021 08:13:35 INF] Application started. Press Ctrl+C to shut down.
+[02/11/2021 08:13:35 INF] Hosting environment: Development
+[02/11/2021 08:13:35 INF] Content root path: D:\Project\Vudt\CleanArchitecture\CleanArchitecture\ExampleApi
+[02/11/2021 08:15:01 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[02/11/2021 08:15:01 INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ExampleModel] AS [e]
+WHERE [e].[IsDeleted] <> CAST(1 AS bit)
+[02/11/2021 08:15:04 INF] Executed DbCommand (18ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[CreatedBy], [e].[CreatedDate], [e].[Email], [e].[IsDeleted], [e].[Name], [e].[UpdatedBy], [e].[UpdatedDate]
+FROM [ExampleModel] AS [e]
+WHERE [e].[IsDeleted] <> CAST(1 AS bit)
+ORDER BY [e].[CreatedDate] DESC, [e].[Name]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+[02/11/2021 08:16:34 INF] Application Starting.
+[02/11/2021 08:16:35 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[02/11/2021 08:16:36 INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ExampleModel] AS [e]
+        WHERE ([e].[IsDeleted] <> CAST(1 AS bit)) AND ([e].[Name] = N'vudt')) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[02/11/2021 08:16:36 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+[02/11/2021 08:16:36 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+[02/11/2021 08:16:36 INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+[02/11/2021 08:16:36 INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+[02/11/2021 08:16:36 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+[02/11/2021 08:16:36 INF] No migrations were applied. The database is already up to date.
+[02/11/2021 08:16:37 INF] Bus started: "rabbitmq://localhost/"
+[02/11/2021 08:16:37 INF] Application started. Press Ctrl+C to shut down.
+[02/11/2021 08:16:37 INF] Hosting environment: Development
+[02/11/2021 08:16:37 INF] Content root path: D:\Project\Vudt\CleanArchitecture\CleanArchitecture\ExampleApi
+[02/11/2021 08:17:17 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[02/11/2021 08:17:17 INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ExampleModel] AS [e]
+WHERE [e].[IsDeleted] <> CAST(1 AS bit)
+[02/11/2021 08:17:17 INF] Executed DbCommand (16ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[CreatedBy], [e].[CreatedDate], [e].[Email], [e].[IsDeleted], [e].[Name], [e].[UpdatedBy], [e].[UpdatedDate]
+FROM [ExampleModel] AS [e]
+WHERE [e].[IsDeleted] <> CAST(1 AS bit)
+ORDER BY [e].[CreatedDate] DESC, [e].[Name]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+[02/11/2021 08:18:58 INF] Application Starting.
+[02/11/2021 08:19:00 INF] Entity Framework Core 5.0.4 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+[02/11/2021 08:19:00 INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ExampleModel] AS [e]
+        WHERE ([e].[IsDeleted] <> CAST(1 AS bit)) AND ([e].[Name] = N'vudt')) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[02/11/2021 08:19:00 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+[02/11/2021 08:19:00 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+[02/11/2021 08:19:00 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+[02/11/2021 08:19:00 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+[02/11/2021 08:19:00 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+[02/11/2021 08:19:00 INF] No migrations were applied. The database is already up to date.
+[02/11/2021 08:19:01 INF] Bus started: "rabbitmq://localhost/"
+[02/11/2021 08:19:01 INF] Application started. Press Ctrl+C to shut down.
+[02/11/2021 08:19:01 INF] Hosting environment: Development
+[02/11/2021 08:19:01 INF] Content root path: D:\Project\Vudt\CleanArchitecture\CleanArchitecture\ExampleApi

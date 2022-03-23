@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Data\\Data.csproj": {}
+    "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\Data\\Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Data\\Data.csproj": {
+    "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Data\\Data.csproj",
+        "projectUniqueName": "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Data\\Data.csproj",
-        "packagesPath": "C:\\Users\\vu.dt99\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Data\\obj\\",
+        "projectPath": "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\Data\\Data.csproj",
+        "packagesPath": "C:\\Users\\Duong Vu\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\vu.dt99\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Duong Vu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Domain\\Domain.csproj"
+              "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\Domain\\Domain.csproj"
               }
             }
           }
@@ -92,21 +92,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Domain\\Domain.csproj": {
+    "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Domain\\Domain.csproj",
+        "projectUniqueName": "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\vu.dt99\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Domain\\obj\\",
+        "projectPath": "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\Duong Vu\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\vu.dt99\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Duong Vu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -156,7 +156,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

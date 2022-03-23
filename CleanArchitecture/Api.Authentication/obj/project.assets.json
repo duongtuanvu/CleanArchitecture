@@ -3580,19 +3580,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\vu.dt99\\.nuget\\packages\\": {}
+    "C:\\Users\\Duong Vu\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Api.Authentication\\Api.Authentication.csproj",
+      "projectUniqueName": "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\Api.Authentication\\Api.Authentication.csproj",
       "projectName": "Api.Authentication",
-      "projectPath": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Api.Authentication\\Api.Authentication.csproj",
-      "packagesPath": "C:\\Users\\vu.dt99\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vu.dt99\\Desktop\\New folder\\CleanArchitecture\\CleanArchitecture\\Api.Authentication\\obj\\",
+      "projectPath": "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\Api.Authentication\\Api.Authentication.csproj",
+      "packagesPath": "C:\\Users\\Duong Vu\\.nuget\\packages\\",
+      "outputPath": "D:\\Project\\Vudt\\CleanArchitecture\\CleanArchitecture\\Api.Authentication\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\vu.dt99\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Duong Vu\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3641,7 +3641,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

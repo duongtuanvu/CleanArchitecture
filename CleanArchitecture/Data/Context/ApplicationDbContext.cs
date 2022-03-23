@@ -58,7 +58,7 @@ namespace Data.Context
                     ((BaseEntity)entityEntry.Entity).UpdatedDate = now;
                     ((BaseEntity)entityEntry.Entity).UpdatedBy = UserId;
                 }
-                if (entityEntry.State == EntityState.Modified)
+                if (entityEntry.State == EntityState.Deleted)
                 {
                     entityEntry.State = EntityState.Unchanged;
                     ((BaseEntity)entityEntry.Entity).IsDeleted = true;

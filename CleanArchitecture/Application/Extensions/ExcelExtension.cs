@@ -51,24 +51,27 @@ namespace Application.Extensions
                         {
                             try
                             {
-                                object value = null;
-                                var cell = worksheet.Cells[row, dictionaryHeader[prop.Name]];
-                                var cellFormat = cell.Style.Numberformat.Format;
-                                var cellValue = cell.Value.ToString().Trim();
+                                if (dictionaryHeader.ContainsKey(prop.Name))
+                                {
+                                    object value = null;
+                                    var cell = worksheet.Cells[row, dictionaryHeader[prop.Name]];
+                                    var cellFormat = cell.Style.Numberformat.Format;
+                                    var cellValue = cell.Value.ToString().Trim();
 
-                                if (prop.PropertyType == typeof(int))
-                                {
-                                    value = int.Parse(cellValue);
+                                    if (prop.PropertyType == typeof(int))
+                                    {
+                                        value = int.Parse(cellValue);
+                                    }
+                                    if (prop.PropertyType == typeof(string))
+                                    {
+                                        value = cellValue;
+                                    }
+                                    if (prop.PropertyType == typeof(DateTime))
+                                    {
+                                        value = DateTime.FromOADate(double.Parse(cellValue));
+                                    }
+                                    dynamicObject.Add(prop.Name, value);
                                 }
-                                if (prop.PropertyType == typeof(string))
-                                {
-                                    value = cellValue;
-                                }
-                                if (prop.PropertyType == typeof(DateTime))
-                                {
-                                    value = DateTime.FromOADate(double.Parse(cellValue));
-                                }
-                                dynamicObject.Add(prop.Name, value);
                             }
                             catch (Exception ex)
                             {

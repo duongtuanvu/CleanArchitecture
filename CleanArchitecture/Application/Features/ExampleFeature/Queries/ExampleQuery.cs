@@ -22,8 +22,8 @@ namespace Application.Features.ExampleFeature.Queries
         }
         public async Task<ResponseExtension> Get(int id)
         {
-            var data = await _uow.exampleRepository.QuerySingleAsync<ExampleDto>($"select * from ExampleModel where Id = {id}");
-            return new ResponseExtension(data: data);
+            //var data = await _uow.ExampleRepository.QuerySingleAsync<ExampleDto>($"select * from ExampleModel where Id = {id}");
+            return new ResponseExtension(data: id);
         }
         public async Task<ResponseExtension> List(SearchExtension search)
         {

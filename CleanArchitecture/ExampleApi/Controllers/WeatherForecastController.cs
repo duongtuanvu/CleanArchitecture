@@ -17,6 +17,10 @@ using MassTransit;
 using Domain.Share;
 using System;
 using ExampleApi.Queries.ExampleQuey;
+using Domain.Entities;
+using Data.Context;
+using System.Linq;
+using System.Security.Claims;
 
 namespace ExampleApi.Controllers
 {
@@ -32,14 +36,16 @@ namespace ExampleApi.Controllers
         private readonly IExampleQuery _exampleQuery;
         private readonly IRestSharpClient _restSharpClient;
         private readonly IBus _bus;
+        private readonly ApplicationDbContext _context;
 
-        public WeatherForecastController(IBus bus, IExampleQuery exampleQuery, IMediator mediat, IJwtToken jwtToken, IRestSharpClient restSharpClient)
+        public WeatherForecastController(ApplicationDbContext context, IBus bus, IExampleQuery exampleQuery, IMediator mediat, IJwtToken jwtToken, IRestSharpClient restSharpClient)
         {
             _bus = bus;
             _exampleQuery = exampleQuery;
             _mediat = mediat;
             _jwtToken = jwtToken;
             _restSharpClient = restSharpClient;
+            _context = context;
         }
 
         [AllowAnonymous]
@@ -52,6 +58,10 @@ namespace ExampleApi.Controllers
         [HttpGet]
         public async Task<IActionResult> List([FromQuery] ExampleSearch search)
         {
+            var user = User;
+            var email = user.FindFirst(ClaimTypes.Email).Value;
+            var vudt = user.FindFirst("vudt").Value;
+            var roles = user.FindAll(ClaimTypes.Role).Select(x => x.Value);
             var result = await _exampleQuery.List(search);
             return Ok(result);
         }
@@ -69,7 +79,12 @@ namespace ExampleApi.Controllers
         //[Authorize]
         public async Task<IActionResult> Create(CreateExampleCommand request)
         {
-            await _mediat.Send(request);
+            var exampleModel = new ExampleModel()
+            {
+                Name = "test"
+            };
+            await _context.ExampleModel.AddAsync(exampleModel);
+            //await _mediat.Send(request);
             return Ok("Version 1");
         }
 

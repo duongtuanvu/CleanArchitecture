@@ -4,23 +4,25 @@ using Domain.Entities;
 using Domain.Interface;
 using Microsoft.Extensions.Configuration;
 using System;
+using System.Threading.Tasks;
 
 namespace Data.UnitOfWork
 {
     public class UnitOfWork : IUnitOfWork
     {
         private readonly ApplicationDbContext _context;
-        private IRepository<ExampleModel> _emxampleRepository;
-        private readonly IConfiguration _configuration;
-        public UnitOfWork(ApplicationDbContext context, IConfiguration configuration)
+
+        public IRepository<ExampleModel> ExampleRepository { get; private set; }
+
+        public UnitOfWork(ApplicationDbContext context)
         {
             _context = context;
-            _configuration = configuration;
+            ExampleRepository = new Repository<ExampleModel>(_context);
         }
 
-        public IRepository<ExampleModel> exampleRepository
+        public async Task SaveChangeAsync()
         {
-            get { return _emxampleRepository ??= new Repository<ExampleModel>(_context, _configuration); }
+            await _context.SaveChangesAsync();
         }
 
         private bool disposed = false;

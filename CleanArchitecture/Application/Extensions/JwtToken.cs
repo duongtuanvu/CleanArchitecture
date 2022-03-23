@@ -36,7 +36,13 @@ namespace Application.Extensions
                 Expires = DateTime.UtcNow.AddHours(_jwtSettings.Expires),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(Encoding.ASCII.GetBytes(_jwtSettings.SecretKey)), SecurityAlgorithms.HmacSha256Signature),
                 Issuer = _jwtSettings.Issuer,
-                Audience = _jwtSettings.Audience
+                Audience = _jwtSettings.Audience,
+                Subject = new ClaimsIdentity(new[] { 
+                    new Claim("vudt", "vudt"),
+                    new Claim("email", "vudt"),
+                    new Claim("role", "admin"),
+                    new Claim("role", "member")
+                })
             };
             var token = tokenHandler.CreateToken(tokenDescriptor);
             return tokenHandler.WriteToken(token);

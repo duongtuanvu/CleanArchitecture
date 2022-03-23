@@ -24,7 +24,7 @@ namespace Application.Features.ExampleFeature.Commands
                 {
                     Name = request.Name
                 };
-                await _uow.exampleRepository.Add(example);
+                _uow.ExampleRepository.Add(example);
                 return true;
             }
         }
